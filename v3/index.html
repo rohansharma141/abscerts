@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABS Certifications & Advisory — ISO certification, audits and advisory for global businesses</title>
+<meta name="description" content="Independent certification body serving UK, EU, US and Middle East. ISO 9001, 27001, SOC 2, PCI DSS, CMMI. Get a fixed-price quote in 24 hours.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
+
+<style>
+:root {
+  --navy-900: #042C53;
+  --navy-800: #0C447C;
+  --navy-700: #185FA5;
+  --navy-100: #B5D4F4;
+  --navy-50: #E6F1FB;
+  --accent: #C89B3C;
+  --ink: #0F1419;
+  --ink-muted: #4A5568;
+  --ink-soft: #718096;
+  --line: rgba(15, 20, 25, 0.08);
+  --line-strong: rgba(15, 20, 25, 0.16);
+  --surface: #FFFFFF;
+  --surface-warm: #FAF8F3;
+  --surface-cool: #F4F7FB;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+h1 { font-size: clamp(36px, 5vw, 56px); }
+h2 { font-size: clamp(28px, 3.5vw, 40px); }
+h3 { font-size: 20px; font-weight: 500; }
+
+p { color: var(--ink-muted); }
+
+a { color: inherit; text-decoration: none; }
+
+button { font-family: inherit; cursor: pointer; }
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy-800);
+}
+
+/* === TOP UTILITY BAR === */
+.utility-bar {
+  background: var(--navy-900);
+  color: var(--navy-100);
+  font-size: 13px;
+  padding: 10px 0;
+}
+.utility-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.utility-left { display: flex; gap: 24px; flex-wrap: wrap; }
+.utility-left span { display: inline-flex; align-items: center; gap: 6px; }
+.utility-left i { font-size: 14px; }
+.utility-right { display: flex; gap: 18px; align-items: center; color: #85B7EB; }
+
+/* === HEADER === */
+.header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 76px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo-mark {
+  width: 44px;
+  height: 44px;
+  background: var(--navy-800);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+.logo-text p:first-child {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.logo-text p:last-child {
+  font-size: 11px;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  font-size: 14px;
+}
+.nav a {
+  color: var(--ink-muted);
+  transition: color 0.2s;
+  font-weight: 500;
+}
+.nav a:hover, .nav a.active { color: var(--navy-800); }
+.btn-primary {
+  background: var(--navy-800);
+  color: #fff;
+  border: none;
+  padding: 11px 22px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-primary:hover {
+  background: var(--navy-900);
+  transform: translateY(-1px);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--navy-800);
+  border: 1.5px solid var(--navy-800);
+  padding: 11px 22px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.btn-secondary:hover {
+  background: var(--navy-50);
+}
+
+/* === HERO === */
+.hero {
+  background: var(--surface-warm);
+  padding: 100px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -100px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--navy-50) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero .container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--navy-50);
+  color: var(--navy-800);
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.hero-badge i { font-size: 14px; }
+.hero h1 {
+  margin-bottom: 24px;
+  color: var(--ink);
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--navy-800);
+  font-weight: 400;
+}
+.hero-sub {
+  font-size: 17px;
+  color: var(--ink-muted);
+  margin-bottom: 36px;
+  line-height: 1.6;
+  max-width: 540px;
+}
+.hero-cta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.stat-num {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--navy-800);
+  letter-spacing: -0.02em;
+}
+.stat-label {
+  font-size: 12px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 2px;
+}
+
+/* Hero visual */
+.hero-visual {
+  position: relative;
+  height: 480px;
+}
+.cert-card {
+  position: absolute;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 40px rgba(4, 44, 83, 0.08), 0 2px 8px rgba(4, 44, 83, 0.04);
+  padding: 20px;
+  border: 1px solid var(--line);
+}
+.cert-card-1 {
+  top: 20px;
+  left: 0;
+  width: 260px;
+  z-index: 3;
+}
+.cert-card-2 {
+  top: 140px;
+  right: 0;
+  width: 240px;
+  z-index: 2;
+}
+.cert-card-3 {
+  bottom: 30px;
+  left: 40px;
+  width: 280px;
+  z-index: 3;
+}
+.cert-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 12px;
+}
+.cert-seal {
+  width: 36px;
+  height: 36px;
+  background: var(--navy-50);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy-800);
+  font-size: 18px;
+}
+.cert-card h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.cert-card .cert-meta { font-size: 11px; color: var(--ink-soft); }
+.cert-row { display: flex; justify-content: space-between; font-size: 12px; padding: 4px 0; }
+.cert-row span:first-child { color: var(--ink-soft); }
+.cert-row span:last-child { color: var(--ink); font-weight: 500; }
+.cert-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #E8F5E9;
+  color: #1B5E20;
+  padding: 3px 8px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* === TRUST BAR === */
+.trust-bar {
+  padding: 28px 0;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.trust-label {
+  text-align: center;
+  font-size: 11px;
+  color: var(--ink-soft);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.trust-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.trust-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-muted);
+  letter-spacing: 0.02em;
+}
+.trust-divider {
+  width: 1px;
+  height: 24px;
+  background: var(--line);
+}
+.trust-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+/* === SECTIONS === */
+.section { padding: 100px 0; }
+.section-warm { background: var(--surface-warm); }
+.section-cool { background: var(--surface-cool); }
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+  gap: 40px;
+}
+.section-head-center {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.section-head h2 { margin-top: 10px; max-width: 620px; }
+.section-head-center h2 { margin: 10px auto 0; }
+.section-link {
+  font-size: 14px;
+  color: var(--navy-800);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+/* Services grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.service-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.service-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--navy-800);
+  transition: width 0.3s;
+}
+.service-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--navy-100);
+  box-shadow: 0 12px 32px rgba(4, 44, 83, 0.06);
+}
+.service-card:hover::after { width: 100%; }
+.service-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--navy-50);
+  color: var(--navy-800);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+.service-card h3 {
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+}
+.service-card p {
+  font-size: 14px;
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.service-tag {
+  font-size: 11px;
+  background: var(--surface-warm);
+  color: var(--ink-muted);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.service-link {
+  font-size: 13px;
+  color: var(--navy-800);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Process steps */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  position: relative;
+}
+.steps-grid::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  right: 60px;
+  height: 1px;
+  background: linear-gradient(to right, var(--line), var(--navy-100), var(--line));
+}
+.step {
+  background: #fff;
+  padding: 28px 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  position: relative;
+}
+.step-num {
+  width: 60px;
+  height: 60px;
+  background: var(--navy-50);
+  color: var(--navy-800);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: -50px 0 18px;
+  border: 6px solid var(--surface-warm);
+  position: relative;
+  z-index: 1;
+}
+.step h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.step p { font-size: 13px; line-height: 1.55; }
+
+/* Why */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.why-item {
+  display: flex;
+  gap: 18px;
+  padding: 24px;
+  background: #fff;
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--navy-800);
+}
+.why-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background: var(--navy-50);
+  color: var(--navy-800);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.why-item h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.why-item p { font-size: 14px; line-height: 1.55; }
+
+/* Testimonials */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.testimonial {
+  background: #fff;
+  padding: 32px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  position: relative;
+}
+.quote-mark {
+  font-family: 'Fraunces', serif;
+  font-size: 56px;
+  color: var(--navy-100);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.testimonial-text {
+  font-family: 'Fraunces', serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  margin-bottom: 24px;
+  font-style: italic;
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.author-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--navy-50);
+  color: var(--navy-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+.author-name { font-size: 14px; font-weight: 600; }
+.author-meta { font-size: 12px; color: var(--ink-soft); }
+
+/* CTA banner */
+.cta-banner {
+  background: var(--navy-800);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top, var(--navy-700) 0%, transparent 60%);
+  pointer-events: none;
+}
+.cta-banner .container { position: relative; }
+.cta-banner h2 { color: #fff; margin-bottom: 14px; }
+.cta-banner p { color: var(--navy-100); font-size: 17px; margin-bottom: 32px; max-width: 540px; margin-left: auto; margin-right: auto; }
+.cta-banner .btn-primary {
+  background: #fff;
+  color: var(--navy-800);
+}
+.cta-banner .btn-primary:hover { background: var(--surface-warm); }
+.cta-banner .btn-secondary {
+  border-color: var(--navy-100);
+  color: #fff;
+}
+.cta-banner .btn-secondary:hover {
+  background: var(--navy-700);
+}
+.cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+/* === FOOTER === */
+.footer {
+  background: var(--navy-900);
+  color: var(--navy-100);
+  padding: 64px 0 24px;
+  font-size: 14px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.2fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+.footer-brand .logo-mark { background: #fff; color: var(--navy-800); }
+.footer-brand .logo-text p:first-child { color: #fff; }
+.footer-brand .logo-text p:last-child { color: var(--navy-100); }
+.footer-tag {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 16px;
+  max-width: 320px;
+  color: var(--navy-100);
+}
+.footer h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 10px; font-size: 13px; }
+.footer-links a:hover { color: #fff; }
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+.footer-contact-item i { color: #85B7EB; margin-top: 2px; }
+.footer-bottom {
+  padding-top: 24px;
+  border-top: 1px solid var(--navy-700);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #85B7EB;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* === CONTACT PAGE === */
+.page-hero {
+  background: var(--surface-warm);
+  padding: 72px 0 56px;
+  text-align: left;
+}
+.page-hero .container { max-width: 720px; margin: 0; padding-left: max(32px, calc((100vw - 1240px) / 2 + 32px)); }
+.page-hero h1 { margin-bottom: 16px; font-size: clamp(32px, 4vw, 48px); }
+.page-hero p { font-size: 17px; max-width: 580px; }
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 56px;
+}
+.quick-action {
+  background: #fff;
+  padding: 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.quick-action:hover {
+  border-color: var(--navy-800);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(4, 44, 83, 0.06);
+}
+.quick-action i {
+  font-size: 26px;
+  color: var(--navy-800);
+  margin-bottom: 14px;
+  display: block;
+}
+.quick-action h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.quick-action p { font-size: 13px; line-height: 1.5; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+}
+.contact-form-wrap {
+  background: #fff;
+  padding: 36px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+}
+.contact-form-wrap h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.contact-form-wrap .subtitle {
+  font-size: 14px;
+  color: var(--ink-muted);
+  margin-bottom: 28px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.form-group { margin-bottom: 14px; }
+.form-group label, .form-row > div > label {
+  display: block;
+  font-size: 12px;
+  color: var(--ink-muted);
+  font-weight: 500;
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+.form-control {
+  width: 100%;
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--ink);
+  background: #fff;
+  transition: all 0.15s;
+}
+.form-control:focus {
+  outline: none;
+  border-color: var(--navy-800);
+  box-shadow: 0 0 0 3px var(--navy-50);
+}
+textarea.form-control {
+  height: auto;
+  padding: 12px 14px;
+  min-height: 100px;
+  resize: vertical;
+  line-height: 1.5;
+}
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+.form-submit {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+}
+
+.contact-sidebar { display: flex; flex-direction: column; gap: 16px; }
+.contact-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+}
+.contact-card h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.phone-item {
+  display: flex;
+  gap: 14px;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.phone-item:last-of-type { border-bottom: none; padding-bottom: 0; margin-bottom: 16px; }
+.phone-icon {
+  width: 40px; height: 40px; flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  background: var(--navy-50); color: var(--navy-800);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+}
+.phone-num {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy-800);
+  letter-spacing: -0.01em;
+  display: block;
+}
+.phone-meta { font-size: 12px; color: var(--ink-soft); }
+.hours-box {
+  background: var(--surface-warm);
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  color: var(--ink-muted);
+  line-height: 1.55;
+}
+.hours-box i { color: var(--navy-800); margin-right: 4px; }
+.hours-box .tz { color: var(--ink-soft); font-size: 11px; }
+.email-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.email-item i { color: var(--navy-800); }
+.email-item a { color: var(--navy-800); font-weight: 500; }
+.address-text {
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.map-link {
+  font-size: 13px;
+  color: var(--navy-800);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Regional grid */
+.regions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.region-card {
+  background: #fff;
+  padding: 22px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+}
+.region-flag { font-size: 24px; margin-bottom: 10px; display: block; }
+.region-card h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.region-card p { font-size: 13px; line-height: 1.55; }
+
+/* FAQ */
+.faq-wrap { max-width: 800px; margin: 0 auto; }
+.faq-item {
+  border-bottom: 1px solid var(--line);
+}
+.faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 24px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+}
+.faq-q:hover { color: var(--navy-800); }
+.faq-q i { color: var(--ink-soft); transition: transform 0.2s; }
+.faq-item.open .faq-q i { transform: rotate(180deg); }
+.faq-a {
+  font-size: 14px;
+  color: var(--ink-muted);
+  line-height: 1.65;
+  padding: 0 0 24px;
+  max-width: 700px;
+  display: none;
+}
+.faq-item.open .faq-a { display: block; }
+
+/* === PAGE TOGGLE === */
+.page { display: none; }
+.page.active { display: block; }
+
+/* === RESPONSIVE === */
+@media (max-width: 968px) {
+  .container { padding: 0 20px; }
+  .hero { padding: 60px 0; }
+  .hero .container { grid-template-columns: 1fr; gap: 48px; }
+  .hero-visual { height: 380px; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .services-grid, .why-grid, .testimonials-grid, .quick-actions, .regions-grid, .steps-grid { grid-template-columns: 1fr; }
+  .steps-grid::before { display: none; }
+  .step-num { margin-top: 0; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .section { padding: 60px 0; }
+  .section-head { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .nav { display: none; }
+  .utility-left { font-size: 11px; gap: 14px; }
+  .form-row { grid-template-columns: 1fr; }
+  .page-hero .container { padding-left: 20px; padding-right: 20px; }
+}
+@media (max-width: 600px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .utility-right { display: none; }
+  .hero-cta { flex-direction: column; align-items: stretch; }
+  .hero-cta button { width: 100%; justify-content: center; }
+}
+
+/* Subtle entrance */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-content > * { animation: fadeUp 0.6s ease backwards; }
+.hero-content > *:nth-child(1) { animation-delay: 0.05s; }
+.hero-content > *:nth-child(2) { animation-delay: 0.1s; }
+.hero-content > *:nth-child(3) { animation-delay: 0.15s; }
+.hero-content > *:nth-child(4) { animation-delay: 0.2s; }
+.hero-content > *:nth-child(5) { animation-delay: 0.25s; }
+.cert-card { animation: fadeUp 0.7s ease backwards; }
+.cert-card-1 { animation-delay: 0.3s; }
+.cert-card-2 { animation-delay: 0.45s; }
+.cert-card-3 { animation-delay: 0.6s; }
+</style>
+</head>
+<body>
+
+<!-- ============ UTILITY BAR (shared) ============ -->
+<div class="utility-bar">
+  <div class="container">
+    <div class="utility-left">
+      <span><i class="ti ti-mail"></i> info@abscerts.com</span>
+      <span><i class="ti ti-phone"></i> +91 96257 76771 &nbsp;·&nbsp; +91 97925 86202</span>
+    </div>
+    <div class="utility-right">
+      <span><i class="ti ti-world"></i> EN</span>
+      <span>Serving 40+ countries</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER (shared) ============ -->
+<header class="header">
+  <div class="container">
+    <a href="#" class="logo" onclick="showPage('home'); return false;">
+      <div class="logo-mark">ABS</div>
+      <div class="logo-text">
+        <p>ABS Certifications & Advisory</p>
+        <p>Independent certification body</p>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="#" id="nav-home" class="active" onclick="showPage('home'); return false;">Home</a>
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#about">About</a>
+      <a href="#">Verify certificate</a>
+      <a href="#" id="nav-contact" onclick="showPage('contact'); return false;">Contact</a>
+      <button class="btn-primary" onclick="showPage('contact')">Request a quote</button>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================================ -->
+<!-- ============ HOME PAGE ===================== -->
+<!-- ============================================ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="ti ti-shield-check"></i> IAS · IAF accredited</div>
+        <h1>ISO certification, audits and advisory for <em>global businesses</em></h1>
+        <p class="hero-sub">From ISO 9001 to 27001, SOC 2 and PCI DSS — we help organisations across the UK, EU, US and Middle East achieve compliance with confidence. 1,200+ certificates issued. Audits delivered remotely or on-site in 40+ countries.</p>
+        <div class="hero-cta">
+          <button class="btn-primary" onclick="showPage('contact')">Get a free quote <i class="ti ti-arrow-right"></i></button>
+          <button class="btn-secondary" onclick="showPage('contact')">Book a 30-min consultation</button>
+        </div>
+        <div class="hero-stats">
+          <div><div class="stat-num">1,200+</div><div class="stat-label">Certificates issued</div></div>
+          <div><div class="stat-num">40+</div><div class="stat-label">Countries served</div></div>
+          <div><div class="stat-num">18 yrs</div><div class="stat-label">In certification</div></div>
+          <div><div class="stat-num">98%</div><div class="stat-label">On-time delivery</div></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="cert-card cert-card-1">
+          <div class="cert-card-head">
+            <div class="cert-seal"><i class="ti ti-shield-check"></i></div>
+            <div>
+              <h4>ISO 27001:2022</h4>
+              <p class="cert-meta">Information Security</p>
+            </div>
+          </div>
+          <div class="cert-row"><span>Holder</span><span>Fintech Co. Ltd</span></div>
+          <div class="cert-row"><span>Location</span><span>London, UK</span></div>
+          <div class="cert-row"><span>Status</span><span class="cert-status"><i class="ti ti-circle-check" style="font-size:11px"></i> Active</span></div>
+        </div>
+        <div class="cert-card cert-card-2">
+          <div class="cert-card-head">
+            <div class="cert-seal" style="background:#FAEEDA;color:#854F0B"><i class="ti ti-leaf"></i></div>
+            <div>
+              <h4>ISO 14001:2015</h4>
+              <p class="cert-meta">Environmental Mgmt</p>
+            </div>
+          </div>
+          <div class="cert-row"><span>Holder</span><span>Manufacturing GmbH</span></div>
+          <div class="cert-row"><span>Location</span><span>Berlin, DE</span></div>
+        </div>
+        <div class="cert-card cert-card-3">
+          <div class="cert-card-head">
+            <div class="cert-seal" style="background:#E1F5EE;color:#0F6E56"><i class="ti ti-lock"></i></div>
+            <div>
+              <h4>SOC 2 Type II</h4>
+              <p class="cert-meta">Trust Services Report</p>
+            </div>
+          </div>
+          <div class="cert-row"><span>Holder</span><span>SaaS Platform Inc.</span></div>
+          <div class="cert-row"><span>Location</span><span>Austin, US</span></div>
+          <div class="cert-row"><span>Period</span><span>12 months</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust-bar">
+    <div class="container">
+      <p class="trust-label">Accredited by · Trusted by clients in</p>
+      <div class="trust-row">
+        <span class="trust-chip"><i class="ti ti-certificate" style="font-size:14px;color:var(--navy-800)"></i> IAS</span>
+        <span class="trust-chip"><i class="ti ti-certificate" style="font-size:14px;color:var(--navy-800)"></i> IAF MLA</span>
+        <span class="trust-chip"><i class="ti ti-certificate" style="font-size:14px;color:var(--navy-800)"></i> EGAC</span>
+        <span class="trust-chip"><i class="ti ti-certificate" style="font-size:14px;color:var(--navy-800)"></i> UKAS-ready</span>
+        <span class="trust-divider"></span>
+        <span class="trust-flag">🇬🇧 UK</span>
+        <span class="trust-flag">🇦🇪 UAE</span>
+        <span class="trust-flag">🇩🇪 Germany</span>
+        <span class="trust-flag">🇺🇸 USA</span>
+        <span class="trust-flag">🇸🇦 Saudi Arabia</span>
+        <span class="trust-flag">🇫🇷 France</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Our services</p>
+          <h2>Certifications that open international doors</h2>
+        </div>
+        <a href="#" class="section-link">View all services <i class="ti ti-arrow-right"></i></a>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="ti ti-shield-check"></i></div>
+          <h3>ISO management systems</h3>
+          <p>Globally accepted certifications covering quality, environment, security, safety and energy.</p>
+          <div class="service-tags">
+            <span class="service-tag">ISO 9001</span>
+            <span class="service-tag">14001</span>
+            <span class="service-tag">27001</span>
+            <span class="service-tag">45001</span>
+            <span class="service-tag">+ more</span>
+          </div>
+          <a href="#" class="service-link">Explore <i class="ti ti-arrow-right" style="font-size:14px"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="ti ti-lock"></i></div>
+          <h3>Cyber security & SOC 2</h3>
+          <p>End-to-end security assurance from SOC 2 readiness to penetration testing and PCI DSS audit.</p>
+          <div class="service-tags">
+            <span class="service-tag">SOC 2</span>
+            <span class="service-tag">VAPT</span>
+            <span class="service-tag">GDPR</span>
+            <span class="service-tag">NIST</span>
+            <span class="service-tag">PCI DSS</span>
+          </div>
+          <a href="#" class="service-link">Explore <i class="ti ti-arrow-right" style="font-size:14px"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="ti ti-chart-arcs"></i></div>
+          <h3>CMMI appraisals</h3>
+          <p>CMMI maturity level 2 and 3 readiness assessments, gap analysis and ATM support for IT services.</p>
+          <div class="service-tags">
+            <span class="service-tag">CMMI ML2</span>
+            <span class="service-tag">CMMI ML3</span>
+            <span class="service-tag">ATM</span>
+          </div>
+          <a href="#" class="service-link">Explore <i class="ti ti-arrow-right" style="font-size:14px"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="ti ti-chart-dots-3"></i></div>
+          <h3>Data analytics</h3>
+          <p>Data management, process automation, decision analytics and visualisation for compliance-driven teams.</p>
+          <div class="service-tags">
+            <span class="service-tag">Analytics</span>
+            <span class="service-tag">Automation</span>
+            <span class="service-tag">Reporting</span>
+          </div>
+          <a href="#" class="service-link">Explore <i class="ti ti-arrow-right" style="font-size:14px"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="ti ti-rocket"></i></div>
+          <h3>Agile transformation</h3>
+          <p>Scrum, SAFe and Kanban training plus enterprise rollouts. Certified trainers and lead auditors.</p>
+          <div class="service-tags">
+            <span class="service-tag">Scrum</span>
+            <span class="service-tag">SAFe</span>
+            <span class="service-tag">Kanban</span>
+          </div>
+          <a href="#" class="service-link">Explore <i class="ti ti-arrow-right" style="font-size:14px"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="ti ti-search"></i></div>
+          <h3>Third-party inspection</h3>
+          <p>Independent pre-shipment, factory, and supplier inspections to verify quality at source.</p>
+          <div class="service-tags">
+            <span class="service-tag">Pre-shipment</span>
+            <span class="service-tag">Factory</span>
+            <span class="service-tag">Supplier</span>
+          </div>
+          <a href="#" class="service-link">Explore <i class="ti ti-arrow-right" style="font-size:14px"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section section-warm">
+    <div class="container">
+      <div class="section-head section-head-center">
+        <p class="eyebrow">How it works</p>
+        <h2>Your path to certification in 4 clear steps</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Free quote</h3>
+          <p>Tell us your scope. We send a fixed-price proposal within 24 hours, in your preferred currency.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Gap assessment</h3>
+          <p>Stage 1 audit identifies what's needed against the standard. Remote or on-site, your choice.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Certification audit</h3>
+          <p>Stage 2 audit performed by qualified lead auditors based in or near your region.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>Certificate issued</h3>
+          <p>Globally recognised certificate, verifiable online by your customers in one click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Why ABS</p>
+          <h2>Built for buyers outside India</h2>
+        </div>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon"><i class="ti ti-clock-hour-4"></i></div>
+          <div>
+            <h3>Time-zone friendly delivery</h3>
+            <p>Dedicated coordinators working across GMT, CET, EST and GST hours. You're never waiting overnight.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><i class="ti ti-currency-pound"></i></div>
+          <div>
+            <h3>Transparent pricing</h3>
+            <p>Fixed-fee proposals in GBP, EUR, USD or AED. No scope creep. No hidden travel charges.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><i class="ti ti-users"></i></div>
+          <div>
+            <h3>Lead auditors in 12 countries</h3>
+            <p>On-site audits without expensive international travel. Local language support where needed.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><i class="ti ti-circle-check"></i></div>
+          <div>
+            <h3>Online certificate verification</h3>
+            <p>Your customers and partners can verify your ABS-issued certificate instantly via our portal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-warm">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Client outcomes</p>
+          <h2>Trusted by leaders across regions</h2>
+        </div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">ABS guided our ISO 27001 certification across our UK and Dubai offices in 11 weeks. Their auditors knew the regulatory landscape in both regions.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SH</div>
+            <div>
+              <div class="author-name">Sarah H.</div>
+              <div class="author-meta">CISO, fintech · London</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">We won a major government tender in KSA because ABS got us ISO 9001 and 45001 certified ahead of the deadline. Fixed price, no scope creep.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AK</div>
+            <div>
+              <div class="author-name">Ahmed K.</div>
+              <div class="author-meta">MD, construction · Riyadh</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">Switched to ABS after a poor experience with a larger registrar. Responsive, knowledgeable, and 40% lower fees for the same accredited scope.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MR</div>
+            <div>
+              <div class="author-name">Mark R.</div>
+              <div class="author-meta">COO, SaaS · Austin</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to get certified?</h2>
+      <p>Get a free, fixed-price quote within one business day. No obligation, no sales pressure.</p>
+      <div class="cta-buttons">
+        <button class="btn-primary" onclick="showPage('contact')">Request a quote</button>
+        <button class="btn-secondary" onclick="showPage('contact')">Talk to an auditor</button>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- end home page -->
+
+
+<!-- ============================================ -->
+<!-- ============ CONTACT PAGE ================== -->
+<!-- ============================================ -->
+<div class="page" id="page-contact">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow" style="margin-bottom:12px">Contact</p>
+      <h1>Talk to a certification specialist</h1>
+      <p>Most enquiries receive a response within 4 business hours. For urgent matters, call the numbers below or schedule a meeting in your time zone.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:56px;">
+    <div class="container">
+
+      <!-- Quick actions -->
+      <div class="quick-actions">
+        <div class="quick-action">
+          <i class="ti ti-file-invoice"></i>
+          <h3>Request a quote</h3>
+          <p>Fixed price within 24 hours</p>
+        </div>
+        <div class="quick-action">
+          <i class="ti ti-calendar-event"></i>
+          <h3>Book a meeting</h3>
+          <p>30-min consultation</p>
+        </div>
+        <div class="quick-action">
+          <i class="ti ti-shield-check"></i>
+          <h3>Verify a certificate</h3>
+          <p>Check ABS-issued documents</p>
+        </div>
+        <div class="quick-action">
+          <i class="ti ti-headset"></i>
+          <h3>Existing client</h3>
+          <p>Audit & support help</p>
+        </div>
+      </div>
+
+      <!-- Contact form + sidebar -->
+      <div class="contact-grid">
+
+        <div class="contact-form-wrap">
+          <h2>Send us an enquiry</h2>
+          <p class="subtitle">We'll respond within 4 business hours. All enquiries are handled confidentially.</p>
+
+          <form onsubmit="event.preventDefault(); alert('This is a mockup — form would submit here.');">
+            <div class="form-row">
+              <div>
+                <label>Full name *</label>
+                <input type="text" class="form-control" placeholder="Jane Smith" required>
+              </div>
+              <div>
+                <label>Work email *</label>
+                <input type="email" class="form-control" placeholder="jane@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label>Company *</label>
+                <input type="text" class="form-control" placeholder="Acme Ltd" required>
+              </div>
+              <div>
+                <label>Country *</label>
+                <select class="form-control" required>
+                  <option value="">Select country</option>
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+                  <option>United Arab Emirates</option>
+                  <option>Germany</option>
+                  <option>Saudi Arabia</option>
+                  <option>France</option>
+                  <option>Netherlands</option>
+                  <option>Qatar</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label>Phone (with country code)</label>
+                <input type="tel" class="form-control" placeholder="+44 20 7946 0958">
+              </div>
+              <div>
+                <label>Company size</label>
+                <select class="form-control">
+                  <option>1–10 employees</option>
+                  <option>11–50 employees</option>
+                  <option>51–200 employees</option>
+                  <option>201–1000 employees</option>
+                  <option>1000+ employees</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Service of interest *</label>
+              <select class="form-control" required>
+                <option value="">Select a service</option>
+                <option>ISO 9001 — Quality Management</option>
+                <option>ISO 27001 — Information Security</option>
+                <option>ISO 14001 — Environmental Management</option>
+                <option>ISO 45001 — Occupational Health & Safety</option>
+                <option>SOC 2 Type I / II</option>
+                <option>PCI DSS</option>
+                <option>CMMI appraisal</option>
+                <option>Cyber security / VAPT</option>
+                <option>Other / not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Tell us about your project</label>
+              <textarea class="form-control" placeholder="Brief on scope, target date, any existing certifications, number of sites, etc."></textarea>
+            </div>
+
+            <div class="checkbox-row">
+              <input type="checkbox" id="agree" required>
+              <label for="agree" style="margin:0;color:var(--ink-muted);font-weight:400">I agree to ABS's privacy policy. We never share your details with third parties.</label>
+            </div>
+
+            <button type="submit" class="btn-primary form-submit">Send enquiry <i class="ti ti-arrow-right"></i></button>
+          </form>
+        </div>
+
+        <div class="contact-sidebar">
+
+          <div class="contact-card">
+            <h3>Call us directly</h3>
+            <div class="phone-item">
+              <div class="phone-icon"><i class="ti ti-phone"></i></div>
+              <div>
+                <a href="tel:+919625776771" class="phone-num">+91 96257 76771</a>
+                <span class="phone-meta">Sales · new enquiries</span>
+              </div>
+            </div>
+            <div class="phone-item">
+              <div class="phone-icon"><i class="ti ti-phone"></i></div>
+              <div>
+                <a href="tel:+919792586202" class="phone-num">+91 97925 86202</a>
+                <span class="phone-meta">Audits · existing clients</span>
+              </div>
+            </div>
+            <div class="hours-box">
+              <i class="ti ti-clock"></i> Mon–Fri · 9:00–18:00 IST<br>
+              <span class="tz">(3:30–12:30 GMT · 6:30–15:30 GST · 23:30–08:30 EST previous day)</span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h3>Email</h3>
+            <div class="email-item"><i class="ti ti-mail"></i> <a href="mailto:info@abscerts.com">info@abscerts.com</a></div>
+            <div class="email-item"><i class="ti ti-mail"></i> <a href="mailto:sales@abscerts.com">sales@abscerts.com</a></div>
+            <div class="email-item"><i class="ti ti-mail"></i> <a href="mailto:audits@abscerts.com">audits@abscerts.com</a></div>
+          </div>
+
+          <div class="contact-card">
+            <h3>Head office</h3>
+            <p class="address-text">
+              Building No. 1, C/O Sriram,<br>
+              Near Railway Phatak, Mangli Purwa,<br>
+              Hardoi 241001, Uttar Pradesh,<br>
+              India
+            </p>
+            <a href="#" class="map-link"><i class="ti ti-map-pin"></i> View on Google Maps</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regional reach -->
+  <section class="section section-warm">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Regional reach</p>
+          <h2>Audit partners across your region</h2>
+        </div>
+      </div>
+      <div class="regions-grid">
+        <div class="region-card">
+          <span class="region-flag">🇬🇧</span>
+          <h3>United Kingdom</h3>
+          <p>Lead auditors in London & Manchester. GBP invoicing. UKAS-aligned methodology.</p>
+        </div>
+        <div class="region-card">
+          <span class="region-flag">🇪🇺</span>
+          <h3>Europe</h3>
+          <p>Auditors across DE, FR, NL, ES, PL. EUR invoicing. Multi-language support.</p>
+        </div>
+        <div class="region-card">
+          <span class="region-flag">🇦🇪</span>
+          <h3>Middle East</h3>
+          <p>Coverage in UAE, KSA, Qatar, Oman. AED & USD invoicing. Arabic-speaking auditors.</p>
+        </div>
+        <div class="region-card">
+          <span class="region-flag">🇺🇸</span>
+          <h3>North America</h3>
+          <p>SOC 2 and PCI DSS specialists in US & Canada. USD invoicing. AICPA-aligned.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head-center">
+        <p class="eyebrow">FAQ</p>
+        <h2>Common questions before reaching out</h2>
+      </div>
+      <div class="faq-wrap">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">How long does ISO 27001 certification typically take? <i class="ti ti-chevron-down"></i></button>
+          <div class="faq-a">For most organisations under 200 employees, the full path from kick-off to certificate takes 10–14 weeks. Larger or multi-site organisations typically take 4–6 months. We give you a firm timeline with your initial quote.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Are your certificates recognised internationally? <i class="ti ti-chevron-down"></i></button>
+          <div class="faq-a">Yes. Our certifications are issued under IAS accreditation, which is a signatory of the IAF Multilateral Recognition Arrangement. This means your certificate is recognised by IAF members across the UK, EU, US, Middle East and 70+ other countries.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Do you charge travel costs for on-site audits abroad? <i class="ti ti-chevron-down"></i></button>
+          <div class="faq-a">No surprise charges. Because we have lead auditors based in 12 countries, on-site audits in the UK, EU, US and Middle East are typically delivered without international travel costs. Any local travel is included in your fixed-fee quote.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Can audits be conducted remotely? <i class="ti ti-chevron-down"></i></button>
+          <div class="faq-a">Yes. Many of our audits — particularly Stage 1, surveillance audits and ISO 27001 / SOC 2 assessments — can be conducted fully remotely. Some certifications (e.g. ISO 45001 site safety) may require a physical visit, which we'll clarify upfront.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What does the certification cost? <i class="ti ti-chevron-down"></i></button>
+          <div class="faq-a">Pricing depends on standard, organisation size, number of sites, and complexity of scope. As a guide, ISO 9001 for a 50-person single-site company starts at around GBP 3,500 for the full 3-year cycle. We send a fixed-price proposal within 24 hours of your enquiry.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- end contact page -->
+
+
+<!-- ============ FOOTER (shared) ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark">ABS</div>
+          <div class="logo-text">
+            <p>ABS Certifications & Advisory</p>
+            <p>Independent certification body</p>
+          </div>
+        </div>
+        <p class="footer-tag">Independent certification body serving organisations across UK, EU, US, Middle East and APAC. Accredited audits, transparent pricing, global delivery.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#">ISO certifications</a></li>
+          <li><a href="#">SOC 2 & cyber security</a></li>
+          <li><a href="#">CMMI appraisals</a></li>
+          <li><a href="#">Training & advisory</a></li>
+          <li><a href="#">Third-party inspection</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Accreditation</a></li>
+          <li><a href="#">Verify certificate</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div class="footer-contact-item"><i class="ti ti-phone"></i><span>+91 96257 76771<br>+91 97925 86202</span></div>
+        <div class="footer-contact-item"><i class="ti ti-mail"></i><span>info@abscerts.com</span></div>
+        <div class="footer-contact-item"><i class="ti ti-map-pin"></i><span>Hardoi, Uttar Pradesh, India</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ABS Certifications & Advisory. All rights reserved.</span>
+      <span>Privacy policy · Terms of service · ISMS policy</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
+  if (name === 'home') document.getElementById('nav-home').classList.add('active');
+  if (name === 'contact') document.getElementById('nav-contact').classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+function toggleFaq(btn) {
+  btn.parentElement.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
