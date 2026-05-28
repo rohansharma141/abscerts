@@ -1,0 +1,2635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABS Certifications & Advisory — ISO certification, audits and advisory for global businesses</title>
+<meta name="description" content="Independent certification body serving UK, EU, US and Middle East. ISO 9001, 27001, SOC 2, PCI DSS, CMMI. Get a fixed-price quote in 24 hours.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
+
+<style>
+:root {
+  --ink: #0A0E1A;
+  --ink-2: #1A1F2E;
+  --ink-muted: #4A5165;
+  --ink-soft: #7A8195;
+  --paper: #FAF7F2;
+  --paper-2: #F3EFE7;
+  --paper-3: #E8E3D8;
+  --line: rgba(10, 14, 26, 0.10);
+  --line-strong: rgba(10, 14, 26, 0.20);
+  --accent: #B8935A;
+  --accent-deep: #8B6F3F;
+  --navy: #0D1F3C;
+  --navy-2: #1A2D4F;
+  --white: #FFFFFF;
+  --green: #2D6A4F;
+  --gold-bg: #F5EBD7;
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 12px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--ink);
+}
+h1 { font-size: clamp(48px, 7vw, 92px); font-weight: 300; letter-spacing: -0.03em; }
+h2 { font-size: clamp(36px, 4.5vw, 56px); font-weight: 400; }
+h3 { font-size: 22px; font-weight: 500; line-height: 1.2; }
+h4 { font-size: 18px; font-weight: 500; }
+p { color: var(--ink-muted); }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+img { display: block; max-width: 100%; }
+
+em { font-style: italic; color: var(--accent-deep); font-family: 'Fraunces', serif; }
+
+.container { max-width: 1340px; margin: 0 auto; padding: 0 40px; }
+.container-narrow { max-width: 1080px; margin: 0 auto; padding: 0 40px; }
+
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.eyebrow::before {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: var(--accent);
+}
+
+/* === Buttons === */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 26px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 100px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+.btn-dark {
+  background: var(--ink);
+  color: var(--white);
+}
+.btn-dark:hover {
+  background: var(--navy);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(10, 14, 26, 0.15);
+}
+.btn-light {
+  background: var(--white);
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+}
+.btn-light:hover {
+  background: var(--paper-2);
+  border-color: var(--ink);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+}
+.btn-outline:hover {
+  background: var(--ink);
+  color: var(--white);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  padding: 14px 0;
+}
+.btn-ghost:hover { color: var(--accent-deep); gap: 12px; }
+.btn-accent {
+  background: var(--accent);
+  color: var(--white);
+}
+.btn-accent:hover {
+  background: var(--accent-deep);
+  transform: translateY(-1px);
+}
+.btn .arrow {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+.btn:hover .arrow { transform: translateX(3px); }
+.btn-icon-circle {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--ink);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 12px;
+  transition: transform 0.3s;
+}
+.btn-dark .btn-icon-circle { background: var(--white); color: var(--ink); }
+.btn:hover .btn-icon-circle { transform: rotate(-45deg); }
+
+/* === Top Bar === */
+.topbar {
+  background: var(--ink);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  padding: 8px 0;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.04em;
+}
+.topbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.topbar-left, .topbar-right { display: flex; gap: 28px; flex-wrap: wrap; }
+.topbar a { color: rgba(255, 255, 255, 0.7); transition: color 0.2s; }
+.topbar a:hover { color: var(--white); }
+.topbar i { font-size: 12px; vertical-align: -1px; margin-right: 6px; color: var(--accent); }
+.live-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #4ADE80;
+  border-radius: 50%;
+  margin-right: 6px;
+  box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7); }
+  70% { box-shadow: 0 0 0 6px rgba(74, 222, 128, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
+}
+
+/* === Header === */
+.header {
+  background: rgba(250, 247, 242, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
+}
+.logo { display: flex; align-items: center; gap: 14px; }
+.logo-mark {
+  width: 44px;
+  height: 44px;
+  background: var(--ink);
+  color: var(--white);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+.logo-mark::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+  border: 2px solid var(--paper);
+}
+.logo-text p:first-child {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.logo-text p:last-child {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-soft);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.nav { display: flex; gap: 36px; align-items: center; font-size: 14px; }
+.nav a {
+  color: var(--ink);
+  font-weight: 500;
+  position: relative;
+  padding: 4px 0;
+  letter-spacing: 0.01em;
+}
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--ink);
+  transition: width 0.3s;
+}
+.nav a:hover::after, .nav a.active::after { width: 100%; }
+
+/* ============ HERO ============ */
+.hero {
+  padding: 80px 0 120px;
+  background: var(--paper);
+  position: relative;
+  overflow: hidden;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+}
+.hero-meta {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 40px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--ink-soft);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.hero-meta-item { display: flex; align-items: center; gap: 8px; }
+.hero-meta-item::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+.hero h1 {
+  margin-bottom: 32px;
+  letter-spacing: -0.035em;
+}
+.hero h1 em { display: inline; }
+.hero-sub {
+  font-size: 19px;
+  color: var(--ink-muted);
+  line-height: 1.55;
+  margin-bottom: 48px;
+  max-width: 540px;
+  font-weight: 400;
+}
+.hero-cta {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 64px;
+  flex-wrap: wrap;
+}
+
+.hero-visual {
+  position: relative;
+  aspect-ratio: 4 / 5;
+}
+.hero-img-main {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+.hero-img-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-img-overlay {
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  width: 240px;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 20px 60px rgba(10, 14, 26, 0.12);
+  border: 1px solid var(--line);
+}
+.hero-img-overlay .label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-soft);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.hero-img-overlay .num {
+  font-family: 'Fraunces', serif;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.hero-img-overlay .num small {
+  font-size: 18px;
+  color: var(--accent-deep);
+}
+.hero-img-overlay .desc { font-size: 12px; color: var(--ink-muted); line-height: 1.5; }
+.hero-badge {
+  position: absolute;
+  top: 32px;
+  right: -20px;
+  background: var(--ink);
+  color: var(--white);
+  padding: 14px 18px;
+  border-radius: 100px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 12px 30px rgba(10, 14, 26, 0.18);
+}
+.hero-badge i { color: var(--accent); }
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  padding: 40px 0 0;
+  border-top: 1px solid var(--line);
+  grid-column: 1 / -1;
+}
+.hero-stat {
+  padding-right: 24px;
+  border-right: 1px solid var(--line);
+}
+.hero-stat:last-child { border-right: none; }
+.hero-stat .num {
+  font-family: 'Fraunces', serif;
+  font-size: 44px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.hero-stat .num small {
+  font-size: 22px;
+  color: var(--accent-deep);
+  font-weight: 400;
+}
+.hero-stat .label {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+/* ============ Marquee Trust Bar ============ */
+.marquee {
+  background: var(--ink);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 28px 0;
+  overflow: hidden;
+  position: relative;
+}
+.marquee-track {
+  display: flex;
+  gap: 56px;
+  white-space: nowrap;
+  animation: marquee 40s linear infinite;
+  align-items: center;
+}
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.marquee-item i {
+  color: var(--accent);
+  font-size: 22px;
+}
+.marquee-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ============ Sections ============ */
+.section { padding: 140px 0; position: relative; }
+.section-paper { background: var(--paper); }
+.section-paper-2 { background: var(--paper-2); }
+.section-dark { background: var(--ink); color: var(--white); }
+.section-dark h1, .section-dark h2, .section-dark h3 { color: var(--white); }
+.section-dark p { color: rgba(255, 255, 255, 0.7); }
+.section-dark .eyebrow { color: var(--accent); }
+
+.section-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 72px;
+}
+.section-head-left .eyebrow { margin-bottom: 24px; }
+.section-head-left h2 { max-width: 540px; }
+.section-head-right {
+  text-align: left;
+  font-size: 16px;
+  color: var(--ink-muted);
+  line-height: 1.65;
+  padding-bottom: 8px;
+}
+.section-head-right p { margin-bottom: 24px; }
+.section-head-center {
+  text-align: center;
+  margin-bottom: 72px;
+}
+.section-head-center .eyebrow {
+  display: inline-flex;
+  margin-bottom: 24px;
+}
+.section-head-center .eyebrow::before { display: none; }
+.section-head-center h2 { max-width: 760px; margin: 0 auto 24px; }
+.section-head-center p { max-width: 580px; margin: 0 auto; font-size: 17px; }
+
+/* ============ Services ============ */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+.service-card {
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(10, 14, 26, 0.08);
+  border-color: transparent;
+}
+.service-img {
+  aspect-ratio: 16 / 10;
+  position: relative;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+.service-img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.service-card:hover .service-img img { transform: scale(1.05); }
+.service-img-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 6px 12px;
+  border-radius: 100px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 500;
+}
+.service-body {
+  padding: 28px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.service-body h3 {
+  margin-bottom: 12px;
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.service-body p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex: 1;
+}
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+.service-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  background: var(--paper);
+  color: var(--ink-muted);
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  text-transform: uppercase;
+}
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  transition: gap 0.3s;
+}
+.service-link:hover { gap: 12px; color: var(--accent-deep); }
+.service-link i { font-size: 16px; }
+
+.section-cta {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+/* ============ Process ============ */
+.process-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.process-img {
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4/5;
+  position: relative;
+}
+.process-img img { width: 100%; height: 100%; object-fit: cover; }
+.process-img-tag {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background: rgba(10, 14, 26, 0.85);
+  backdrop-filter: blur(12px);
+  color: var(--white);
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.process-img-tag i { color: var(--accent); font-size: 18px; }
+.process-steps { display: flex; flex-direction: column; }
+.process-step {
+  display: flex;
+  gap: 24px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
+}
+.process-step:last-child { border-bottom: none; }
+.process-step:first-child { padding-top: 0; }
+.process-step-num {
+  font-family: 'Fraunces', serif;
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+  width: 80px;
+}
+.process-step-body h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+.process-step-body p { font-size: 15px; line-height: 1.6; margin-bottom: 12px; }
+.process-step-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.process-step-meta i { color: var(--accent); font-size: 13px; }
+
+/* ============ Industries ============ */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 56px;
+}
+.industry-card {
+  aspect-ratio: 3/4;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background: var(--paper-2);
+}
+.industry-card img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.industry-card:hover img { transform: scale(1.08); }
+.industry-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 14, 26, 0.85) 0%, rgba(10, 14, 26, 0.1) 50%, transparent 100%);
+}
+.industry-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  z-index: 1;
+  color: var(--white);
+}
+.industry-content h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--white);
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+.industry-content p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 12px;
+}
+.industry-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--white);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 10px;
+  transition: gap 0.3s;
+}
+.industry-card:hover .industry-cta { gap: 12px; }
+
+/* ============ Why Us — Editorial Block ============ */
+.why-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  align-items: start;
+}
+.why-image {
+  position: sticky;
+  top: 120px;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4/5;
+}
+.why-image img { width: 100%; height: 100%; object-fit: cover; }
+.why-items { display: grid; gap: 32px; }
+.why-item {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 24px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+}
+.why-item:last-child { border-bottom: none; padding-bottom: 0; }
+.why-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--accent-deep);
+  letter-spacing: 0.1em;
+  padding-top: 4px;
+}
+.why-item h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+.why-item p {
+  font-size: 16px;
+  line-height: 1.65;
+  margin-bottom: 14px;
+  color: var(--ink-muted);
+}
+.why-item-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+.why-item-link:hover { color: var(--accent-deep); border-color: var(--accent-deep); gap: 10px; }
+
+/* ============ Numbers Strip (dark) ============ */
+.numbers-strip {
+  background: var(--ink);
+  color: var(--white);
+  padding: 100px 0;
+}
+.numbers-strip-head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  margin-bottom: 64px;
+  gap: 40px;
+}
+.numbers-strip-head h2 { color: var(--white); max-width: 600px; }
+.numbers-strip-head .eyebrow { color: var(--accent); margin-bottom: 24px; }
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.numbers-item {
+  padding: 32px 24px;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+.numbers-item:last-child { border-right: none; }
+.numbers-item:first-child { padding-left: 0; }
+.numbers-num {
+  font-family: 'Fraunces', serif;
+  font-size: 72px;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.numbers-num small { font-size: 32px; color: var(--accent); }
+.numbers-label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+/* ============ Testimonials ============ */
+.testimonial-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.testimonial-img {
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4/5;
+  position: relative;
+}
+.testimonial-img img { width: 100%; height: 100%; object-fit: cover; }
+.testimonial-img-flag {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 8px 14px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.testimonial-feature blockquote {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(26px, 2.5vw, 34px);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 32px;
+}
+.testimonial-feature blockquote::before {
+  content: '"';
+  font-size: 80px;
+  color: var(--accent);
+  font-family: 'Fraunces', serif;
+  line-height: 0.8;
+  display: block;
+  margin-bottom: 8px;
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  margin-bottom: 32px;
+}
+.testimonial-author-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--paper-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.testimonial-author-info p:first-child {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.testimonial-author-info p:last-child {
+  font-size: 13px;
+  color: var(--ink-muted);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+
+.testimonial-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+.testimonial-mini {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 32px;
+}
+.testimonial-mini p {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--ink);
+  margin-bottom: 24px;
+  font-style: italic;
+}
+.testimonial-mini .testimonial-author { margin-bottom: 0; padding-top: 16px; }
+.testimonial-mini .testimonial-author-avatar { width: 44px; height: 44px; font-size: 14px; }
+
+/* ============ Verify Block ============ */
+.verify-block {
+  background: var(--paper-2);
+  border-radius: 24px;
+  padding: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.verify-block::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  opacity: 0.15;
+}
+.verify-content { position: relative; }
+.verify-content h2 { margin-bottom: 20px; }
+.verify-content p { font-size: 17px; margin-bottom: 32px; }
+.verify-form-wrap {
+  background: var(--white);
+  padding: 36px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  position: relative;
+  box-shadow: 0 20px 60px rgba(10, 14, 26, 0.08);
+}
+.verify-form-wrap h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.verify-form-wrap p { font-size: 14px; margin-bottom: 24px; }
+.verify-input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.verify-input {
+  flex: 1;
+  height: 52px;
+  padding: 0 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: 100px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  background: var(--paper);
+  letter-spacing: 0.04em;
+}
+.verify-input:focus { outline: none; border-color: var(--ink); }
+.verify-btn { height: 52px; padding: 0 22px; }
+.verify-example {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+.verify-example code {
+  background: var(--paper);
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
+/* ============ CTA Banner ============ */
+.cta-banner {
+  background: var(--ink);
+  color: var(--white);
+  padding: 120px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-banner-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.18;
+  filter: grayscale(60%);
+}
+.cta-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--ink) 0%, rgba(10, 14, 26, 0.92) 100%);
+}
+.cta-banner .container { position: relative; z-index: 1; }
+.cta-banner .eyebrow {
+  color: var(--accent);
+  margin-bottom: 24px;
+  justify-content: center;
+}
+.cta-banner h2 {
+  color: var(--white);
+  margin-bottom: 24px;
+  font-weight: 300;
+}
+.cta-banner h2 em { color: var(--accent); }
+.cta-banner > .container > p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 19px;
+  margin: 0 auto 48px;
+  max-width: 580px;
+  line-height: 1.55;
+}
+.cta-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+.cta-banner .btn-light { background: var(--white); color: var(--ink); }
+.cta-banner .btn-outline { color: var(--white); border-color: rgba(255, 255, 255, 0.4); }
+.cta-banner .btn-outline:hover { background: var(--white); color: var(--ink); border-color: var(--white); }
+.cta-quick {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.cta-quick-item { display: flex; align-items: center; gap: 8px; }
+.cta-quick-item i { color: var(--accent); font-size: 14px; }
+
+/* ============ Footer ============ */
+.footer {
+  background: var(--ink);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 80px 0 32px;
+  font-size: 14px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.3fr;
+  gap: 56px;
+  margin-bottom: 64px;
+}
+.footer .logo-mark { background: var(--white); color: var(--ink); }
+.footer .logo-mark::after { border-color: var(--ink); }
+.footer .logo-text p:first-child { color: var(--white); }
+.footer .logo-text p:last-child { color: rgba(255, 255, 255, 0.5); }
+.footer-tag {
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 24px 0;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 320px;
+}
+.footer-newsletter {
+  margin-top: 24px;
+}
+.footer-newsletter label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  margin-bottom: 10px;
+}
+.footer-newsletter-input {
+  display: flex;
+  gap: 8px;
+}
+.footer-newsletter input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 100px;
+  height: 42px;
+  padding: 0 16px;
+  color: var(--white);
+  font-family: inherit;
+  font-size: 13px;
+}
+.footer-newsletter input::placeholder { color: rgba(255, 255, 255, 0.4); }
+.footer-newsletter button {
+  background: var(--accent);
+  color: var(--white);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.footer-newsletter button:hover { background: var(--accent-deep); }
+.footer h4 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--white);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 12px; font-size: 14px; }
+.footer-links a { color: rgba(255, 255, 255, 0.7); transition: color 0.2s; }
+.footer-links a:hover { color: var(--white); }
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+.footer-contact-item i { color: var(--accent); margin-top: 2px; font-size: 16px; }
+.footer-bottom {
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer-social { display: flex; gap: 10px; }
+.footer-social a {
+  width: 36px; height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s;
+}
+.footer-social a:hover { background: var(--accent); border-color: var(--accent); color: var(--white); }
+
+/* ============ Contact Page ============ */
+.page-hero {
+  background: var(--paper);
+  padding: 80px 0 64px;
+}
+.page-hero-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.page-hero h1 { font-size: clamp(40px, 5vw, 64px); margin-bottom: 24px; }
+.page-hero p { font-size: 18px; color: var(--ink-muted); max-width: 540px; line-height: 1.6; }
+.page-hero-img {
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.page-hero-img img { width: 100%; height: 100%; object-fit: cover; }
+
+.quick-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 80px;
+}
+.quick-action {
+  background: var(--white);
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: left;
+}
+.quick-action:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(10, 14, 26, 0.08);
+  border-color: transparent;
+}
+.quick-action-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--paper);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-deep);
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.quick-action h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.quick-action p { font-size: 13px; line-height: 1.5; }
+.quick-action-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 16px;
+  color: var(--ink);
+  font-weight: 500;
+}
+.quick-action:hover .quick-action-link { color: var(--accent-deep); }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+}
+.contact-form-wrap {
+  background: var(--white);
+  padding: 48px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+}
+.contact-form-wrap > h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.contact-form-wrap > p {
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.form-group { margin-bottom: 18px; }
+.form-group label, .form-row > div > label {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+.form-control {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--ink);
+  background: var(--paper);
+  transition: all 0.2s;
+}
+.form-control:focus {
+  outline: none;
+  border-color: var(--ink);
+  background: var(--white);
+}
+textarea.form-control {
+  height: auto;
+  padding: 14px 16px;
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.5;
+}
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+.form-submit {
+  width: 100%;
+  padding: 18px;
+  font-size: 15px;
+  background: var(--ink);
+  color: var(--white);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.form-submit:hover { background: var(--navy); }
+
+.contact-sidebar { display: flex; flex-direction: column; gap: 16px; }
+.contact-card {
+  background: var(--white);
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+}
+.contact-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.contact-card-icon {
+  width: 36px; height: 36px;
+  background: var(--paper-2);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent-deep);
+  font-size: 18px;
+}
+.contact-card-head h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.phone-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.phone-item:last-of-type { border-bottom: none; padding-bottom: 16px; }
+.phone-flag {
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.phone-num {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  display: block;
+  transition: color 0.2s;
+}
+.phone-num:hover { color: var(--accent-deep); }
+.phone-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 2px;
+}
+.hours-box {
+  background: var(--paper);
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  border: 1px solid var(--line);
+}
+.hours-box-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  color: var(--ink);
+  font-weight: 500;
+}
+.hours-box-head i { color: var(--accent-deep); font-size: 14px; }
+.hours-box .tz {
+  color: var(--ink-soft);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-top: 6px;
+}
+.email-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  font-size: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.email-item:last-child { border-bottom: none; }
+.email-item i { color: var(--accent-deep); font-size: 16px; }
+.email-item a { color: var(--ink); font-weight: 500; transition: color 0.2s; }
+.email-item a:hover { color: var(--accent-deep); }
+.email-item-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-left: auto;
+}
+.address-text {
+  font-size: 14px;
+  color: var(--ink-muted);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+.map-embed {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  background: var(--paper);
+  background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&q=80');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.map-embed::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 14, 26, 0.15);
+}
+.map-pin {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -100%);
+  background: var(--ink);
+  color: var(--white);
+  width: 36px; height: 36px;
+  border-radius: 50% 50% 50% 0;
+  rotate: -45deg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.map-pin i { rotate: 45deg; color: var(--accent); }
+
+/* Regions */
+.regions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.region-card {
+  background: var(--white);
+  padding: 0;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.region-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(10, 14, 26, 0.08);
+}
+.region-img {
+  aspect-ratio: 16/10;
+  background: var(--paper-2);
+  overflow: hidden;
+}
+.region-img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.region-card:hover .region-img img { transform: scale(1.06); }
+.region-body { padding: 24px; }
+.region-flag { font-size: 28px; margin-bottom: 12px; display: block; }
+.region-card h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.region-card p { font-size: 13px; line-height: 1.55; margin-bottom: 16px; }
+.region-card .region-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 500;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  width: 100%;
+}
+.region-card:hover .region-cta { color: var(--accent-deep); gap: 10px; }
+
+/* FAQ */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 64px;
+}
+.faq-side h2 { margin-bottom: 20px; }
+.faq-side p { font-size: 16px; margin-bottom: 24px; }
+.faq-list { border-top: 1px solid var(--line); }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 28px 0;
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  gap: 24px;
+  transition: color 0.2s;
+}
+.faq-q:hover { color: var(--accent-deep); }
+.faq-q .icon {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+.faq-item.open .faq-q .icon { background: var(--ink); color: var(--white); border-color: var(--ink); transform: rotate(45deg); }
+.faq-a {
+  font-size: 15px;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  padding: 0 0 28px;
+  max-width: 640px;
+  display: none;
+}
+.faq-item.open .faq-a { display: block; }
+
+/* ============ Page Toggle ============ */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ============ Responsive ============ */
+@media (max-width: 1080px) {
+  .container, .container-narrow { padding: 0 24px; }
+  .section { padding: 80px 0; }
+  .section-head { grid-template-columns: 1fr; gap: 24px; align-items: start; margin-bottom: 48px; }
+  .hero { padding: 60px 0 80px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 64px; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 32px 0; }
+  .hero-stat { border-right: none; padding: 0; }
+  .services-grid, .industries-grid, .regions-grid, .quick-actions-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonial-mini-grid { grid-template-columns: 1fr; }
+  .numbers-grid { grid-template-columns: repeat(2, 1fr); }
+  .numbers-item { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.12); padding: 24px 0; }
+  .process-wrap, .why-wrap, .testimonial-feature, .verify-block, .faq-grid, .contact-grid, .page-hero-grid { grid-template-columns: 1fr; gap: 48px; }
+  .verify-block { padding: 48px 32px; }
+  .why-image { position: relative; top: 0; max-width: 480px; }
+  .nav { display: none; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .contact-form-wrap { padding: 28px; }
+  .numbers-strip-head { grid-template-columns: 1fr; gap: 24px; }
+  h1 { font-size: 48px; }
+  h2 { font-size: 36px; }
+}
+@media (max-width: 600px) {
+  .services-grid, .industries-grid, .regions-grid, .quick-actions-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .hero-stats { grid-template-columns: 1fr; }
+  .topbar-left, .topbar-right { gap: 14px; font-size: 11px; }
+  .hero-cta { flex-direction: column; align-items: stretch; }
+  .hero-cta .btn { justify-content: center; }
+}
+
+/* Entrance */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero > .container > .hero-grid > div:first-child > * { animation: fadeUp 0.7s ease backwards; }
+.hero > .container > .hero-grid > div:first-child > *:nth-child(1) { animation-delay: 0.05s; }
+.hero > .container > .hero-grid > div:first-child > *:nth-child(2) { animation-delay: 0.1s; }
+.hero > .container > .hero-grid > div:first-child > *:nth-child(3) { animation-delay: 0.2s; }
+.hero > .container > .hero-grid > div:first-child > *:nth-child(4) { animation-delay: 0.3s; }
+.hero-visual { animation: fadeUp 0.9s ease 0.2s backwards; }
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span><span class="live-dot"></span>Office hours · 09:00–18:00 IST</span>
+      <a href="mailto:info@abscerts.com"><i class="ti ti-mail"></i>info@abscerts.com</a>
+    </div>
+    <div class="topbar-right">
+      <a href="tel:+919625776771"><i class="ti ti-phone"></i>+91 96257 76771</a>
+      <a href="tel:+919792586202"><i class="ti ti-phone"></i>+91 97925 86202</a>
+      <span><i class="ti ti-world"></i>EN · 40+ countries</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container">
+    <a href="#" class="logo" onclick="showPage('home'); return false;">
+      <div class="logo-mark">A</div>
+      <div class="logo-text">
+        <p>ABS Certifications</p>
+        <p>Independent · Accredited · Global</p>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="#" id="nav-home" class="active" onclick="showPage('home'); return false;">Home</a>
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#process">Process</a>
+      <a href="#verify">Verify</a>
+      <a href="#" id="nav-contact" onclick="showPage('contact'); return false;">Contact</a>
+      <button class="btn btn-dark" onclick="showPage('contact')">Request quote <span class="btn-icon-circle"><i class="ti ti-arrow-up-right"></i></span></button>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================================ -->
+<!-- ============ HOME PAGE ===================== -->
+<!-- ============================================ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-meta">
+            <span class="hero-meta-item">IAS · IAF accredited</span>
+            <span class="hero-meta-item">Est. 2008</span>
+            <span class="hero-meta-item">40+ countries</span>
+          </div>
+          <h1>Certification that <em>opens doors</em> across the world.</h1>
+          <p class="hero-sub">From ISO 9001 to SOC 2, we help organisations across the UK, EU, US and Middle East achieve compliance with rigour and clarity. 1,200+ certificates issued. Audits delivered remotely or on-site in 40+ countries.</p>
+          <div class="hero-cta">
+            <button class="btn btn-dark" onclick="showPage('contact')">Get a free quote <span class="btn-icon-circle"><i class="ti ti-arrow-up-right"></i></span></button>
+            <button class="btn btn-light" onclick="showPage('contact')"><i class="ti ti-calendar-event"></i>Book a 30-min call</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-img-main">
+            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=900&q=80" alt="Global business team in modern boardroom">
+          </div>
+          <div class="hero-badge"><i class="ti ti-shield-check"></i>Audit ready in 11 weeks</div>
+          <div class="hero-img-overlay">
+            <div class="label">Average client outcome</div>
+            <div class="num">98<small>%</small></div>
+            <div class="desc">first-time pass rate across all standards</div>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="num">1,200<small>+</small></div>
+            <div class="label">Certificates issued globally</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">40<small>+</small></div>
+            <div class="label">Countries served on-site</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">18<small>yrs</small></div>
+            <div class="label">In certification & advisory</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">12<small>+</small></div>
+            <div class="label">Lead auditors across regions</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <section class="marquee">
+    <div class="marquee-track">
+      <span class="marquee-item"><i class="ti ti-certificate"></i>IAS accredited</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item">🇬🇧 United Kingdom</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>IAF MLA signatory</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item">🇦🇪 United Arab Emirates</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>EGAC partner</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item">🇩🇪 Germany</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>UKAS-aligned</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item">🇺🇸 United States</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>SOC 2 specialist</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item">🇸🇦 Saudi Arabia</span>
+      <span class="marquee-dot"></span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee-item"><i class="ti ti-certificate"></i>IAS accredited</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item">🇬🇧 United Kingdom</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>IAF MLA signatory</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item">🇦🇪 United Arab Emirates</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>EGAC partner</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item">🇩🇪 Germany</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>UKAS-aligned</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item">🇺🇸 United States</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>SOC 2 specialist</span>
+      <span class="marquee-dot"></span>
+      <span class="marquee-item">🇸🇦 Saudi Arabia</span>
+      <span class="marquee-dot"></span>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section-paper" id="services">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head-left">
+          <p class="eyebrow">01 / Our services</p>
+          <h2>Certifications that <em>matter</em> to the markets you sell into.</h2>
+        </div>
+        <div class="section-head-right">
+          <p>Every certification we issue is recognised internationally under the IAF Multilateral Recognition Arrangement — so your customers in London, Frankfurt, Dubai or Austin can trust what's printed on your certificate.</p>
+          <button class="btn btn-outline" onclick="showPage('contact')">Talk to a specialist <span class="btn-icon-circle" style="background:var(--ink);color:var(--white)"><i class="ti ti-arrow-up-right"></i></span></button>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img">
+            <span class="service-img-tag">Most requested</span>
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=80" alt="ISO management systems">
+          </div>
+          <div class="service-body">
+            <h3>ISO management systems</h3>
+            <p>Globally accepted certifications covering quality, environment, security, safety and energy management.</p>
+            <div class="service-tags">
+              <span class="service-tag">ISO 9001</span>
+              <span class="service-tag">14001</span>
+              <span class="service-tag">27001</span>
+              <span class="service-tag">45001</span>
+              <span class="service-tag">+ more</span>
+            </div>
+            <a href="#" class="service-link" onclick="showPage('contact'); return false;">Get a quote <i class="ti ti-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <span class="service-img-tag">Fast-track in 8 weeks</span>
+            <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=700&q=80" alt="Cyber security SOC 2">
+          </div>
+          <div class="service-body">
+            <h3>Cyber security & SOC 2</h3>
+            <p>End-to-end security assurance from SOC 2 readiness to penetration testing and PCI DSS audit.</p>
+            <div class="service-tags">
+              <span class="service-tag">SOC 2</span>
+              <span class="service-tag">VAPT</span>
+              <span class="service-tag">GDPR</span>
+              <span class="service-tag">NIST</span>
+              <span class="service-tag">PCI DSS</span>
+            </div>
+            <a href="#" class="service-link" onclick="showPage('contact'); return false;">Get a quote <i class="ti ti-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <span class="service-img-tag">IT & software</span>
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=700&q=80" alt="CMMI appraisal">
+          </div>
+          <div class="service-body">
+            <h3>CMMI appraisals</h3>
+            <p>CMMI maturity level 2 and 3 readiness assessments, gap analysis and ATM support for IT services.</p>
+            <div class="service-tags">
+              <span class="service-tag">CMMI ML2</span>
+              <span class="service-tag">CMMI ML3</span>
+              <span class="service-tag">ATM</span>
+            </div>
+            <a href="#" class="service-link" onclick="showPage('contact'); return false;">Get a quote <i class="ti ti-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <span class="service-img-tag">Advisory</span>
+            <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=700&q=80" alt="Data analytics">
+          </div>
+          <div class="service-body">
+            <h3>Data analytics</h3>
+            <p>Data management, process automation, decision analytics and visualisation for compliance-driven teams.</p>
+            <div class="service-tags">
+              <span class="service-tag">Analytics</span>
+              <span class="service-tag">Automation</span>
+              <span class="service-tag">Reporting</span>
+            </div>
+            <a href="#" class="service-link" onclick="showPage('contact'); return false;">Get a quote <i class="ti ti-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <span class="service-img-tag">Training & rollout</span>
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&q=80" alt="Agile transformation">
+          </div>
+          <div class="service-body">
+            <h3>Agile transformation</h3>
+            <p>Scrum, SAFe and Kanban training plus enterprise rollouts. Certified trainers and lead auditors.</p>
+            <div class="service-tags">
+              <span class="service-tag">Scrum</span>
+              <span class="service-tag">SAFe</span>
+              <span class="service-tag">Kanban</span>
+            </div>
+            <a href="#" class="service-link" onclick="showPage('contact'); return false;">Get a quote <i class="ti ti-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <span class="service-img-tag">Inspections</span>
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=700&q=80" alt="Third-party inspection">
+          </div>
+          <div class="service-body">
+            <h3>Third-party inspection</h3>
+            <p>Independent pre-shipment, factory, and supplier inspections to verify quality at source.</p>
+            <div class="service-tags">
+              <span class="service-tag">Pre-shipment</span>
+              <span class="service-tag">Factory</span>
+              <span class="service-tag">Supplier</span>
+            </div>
+            <a href="#" class="service-link" onclick="showPage('contact'); return false;">Get a quote <i class="ti ti-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-cta">
+        <button class="btn btn-dark" onclick="showPage('contact')">See all services & request a tailored proposal <span class="btn-icon-circle"><i class="ti ti-arrow-up-right"></i></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section section-paper-2" id="process">
+    <div class="container">
+      <div class="process-wrap">
+        <div class="process-img">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80" alt="Audit consultation">
+          <div class="process-img-tag">
+            <i class="ti ti-bolt"></i>
+            <span>Average start to certificate: 11 weeks</span>
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow" style="margin-bottom:24px">02 / How we work</p>
+          <h2 style="margin-bottom:24px">A clear path, from <em>first conversation</em> to certificate in hand.</h2>
+          <p style="font-size:16px; margin-bottom:40px; max-width:540px;">No mystery, no surprise charges. Here's exactly what working with ABS looks like — and how soon you can expect your certificate.</p>
+
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="process-step-num">01</div>
+              <div class="process-step-body">
+                <h3>Free quote</h3>
+                <p>Tell us your scope. We send a fixed-price proposal within 24 hours, in your preferred currency.</p>
+                <span class="process-step-meta"><i class="ti ti-clock"></i>Within 1 business day</span>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="process-step-num">02</div>
+              <div class="process-step-body">
+                <h3>Gap assessment</h3>
+                <p>Stage 1 audit identifies what's needed against the standard. Remote or on-site, your choice.</p>
+                <span class="process-step-meta"><i class="ti ti-clock"></i>Week 2–4</span>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="process-step-num">03</div>
+              <div class="process-step-body">
+                <h3>Certification audit</h3>
+                <p>Stage 2 audit performed by qualified lead auditors based in or near your region.</p>
+                <span class="process-step-meta"><i class="ti ti-clock"></i>Week 8–10</span>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="process-step-num">04</div>
+              <div class="process-step-body">
+                <h3>Certificate issued</h3>
+                <p>Globally recognised certificate, verifiable online by your customers in one click.</p>
+                <span class="process-step-meta"><i class="ti ti-clock"></i>Week 11</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:40px;">
+            <button class="btn btn-dark" onclick="showPage('contact')">Start your certification journey <span class="btn-icon-circle"><i class="ti ti-arrow-up-right"></i></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section class="section section-paper" id="industries">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head-left">
+          <p class="eyebrow">03 / Industries</p>
+          <h2>Specialised expertise across your <em>sector</em>.</h2>
+        </div>
+        <div class="section-head-right">
+          <p>Our auditors don't just know the standards — they know your industry. From SaaS startups to global manufacturers, we bring sector context to every engagement.</p>
+        </div>
+      </div>
+
+      <div class="industries-grid">
+        <div class="industry-card">
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&q=80" alt="Technology">
+          <div class="industry-content">
+            <h3>Technology & SaaS</h3>
+            <p>ISO 27001, SOC 2, GDPR for software companies.</p>
+            <span class="industry-cta">Discuss your scope <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+          </div>
+        </div>
+        <div class="industry-card">
+          <img src="https://images.unsplash.com/photo-1565514020179-026b92b2ed33?w=600&q=80" alt="Manufacturing">
+          <div class="industry-content">
+            <h3>Manufacturing</h3>
+            <p>ISO 9001, 14001, 45001 for production sites.</p>
+            <span class="industry-cta">Discuss your scope <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+          </div>
+        </div>
+        <div class="industry-card">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80" alt="Healthcare">
+          <div class="industry-content">
+            <h3>Healthcare & medical</h3>
+            <p>ISO 13485, 27001 for life sciences.</p>
+            <span class="industry-cta">Discuss your scope <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+          </div>
+        </div>
+        <div class="industry-card">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80" alt="Finance">
+          <div class="industry-content">
+            <h3>Financial services</h3>
+            <p>PCI DSS, SOC 2, ISO 27001 for fintech & banks.</p>
+            <span class="industry-cta">Discuss your scope <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:48px;">
+        <button class="btn btn-outline" onclick="showPage('contact')">Don't see your industry? Talk to us <span class="btn-icon-circle" style="background:var(--ink);color:var(--white)"><i class="ti ti-arrow-up-right"></i></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section section-paper-2">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head-left">
+          <p class="eyebrow">04 / Why ABS</p>
+          <h2>Designed for buyers <em>outside India</em>.</h2>
+        </div>
+        <div class="section-head-right">
+          <p>We've built ABS specifically to serve overseas clients. That means time-zone-friendly delivery, fixed-fee transparent pricing in your currency, and lead auditors based near you.</p>
+        </div>
+      </div>
+
+      <div class="why-wrap">
+        <div class="why-image">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Modern office">
+        </div>
+        <div class="why-items">
+          <div class="why-item">
+            <div class="why-num">/ 01</div>
+            <div>
+              <h3>Time-zone friendly delivery</h3>
+              <p>Dedicated coordinators working across GMT, CET, EST and GST hours. You're never waiting overnight for a response.</p>
+              <a href="#" class="why-item-link" onclick="showPage('contact'); return false;">Book a call in your time zone <i class="ti ti-arrow-right" style="font-size:12px"></i></a>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">/ 02</div>
+            <div>
+              <h3>Transparent fixed pricing</h3>
+              <p>Fixed-fee proposals in GBP, EUR, USD or AED. No scope creep, no hidden travel charges, no surprises at invoice time.</p>
+              <a href="#" class="why-item-link" onclick="showPage('contact'); return false;">Request a price guide <i class="ti ti-arrow-right" style="font-size:12px"></i></a>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">/ 03</div>
+            <div>
+              <h3>Lead auditors in 12 countries</h3>
+              <p>On-site audits without expensive international travel. Local language support across English, Arabic, German, French and more.</p>
+              <a href="#" class="why-item-link" onclick="showPage('contact'); return false;">See auditor coverage <i class="ti ti-arrow-right" style="font-size:12px"></i></a>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">/ 04</div>
+            <div>
+              <h3>Online certificate verification</h3>
+              <p>Your customers and partners can verify your ABS-issued certificate instantly via our public verification portal.</p>
+              <a href="#verify" class="why-item-link">Try the verifier now <i class="ti ti-arrow-right" style="font-size:12px"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUMBERS STRIP (dark) -->
+  <section class="numbers-strip">
+    <div class="container">
+      <div class="numbers-strip-head">
+        <div>
+          <p class="eyebrow">05 / By the numbers</p>
+          <h2 style="margin-top:24px">Built on a foundation of <em style="color:var(--accent)">measurable trust</em>.</h2>
+        </div>
+        <button class="btn btn-light" onclick="showPage('contact')">Talk to our team <span class="btn-icon-circle"><i class="ti ti-arrow-up-right"></i></span></button>
+      </div>
+      <div class="numbers-grid">
+        <div class="numbers-item">
+          <div class="numbers-num">1,200<small>+</small></div>
+          <div class="numbers-label">Certificates issued across UK, EU, US, Middle East and APAC since 2008.</div>
+        </div>
+        <div class="numbers-item">
+          <div class="numbers-num">98<small>%</small></div>
+          <div class="numbers-label">First-time pass rate across all certification standards we audit.</div>
+        </div>
+        <div class="numbers-item">
+          <div class="numbers-num">24<small>h</small></div>
+          <div class="numbers-label">Average response time for quote requests — even on weekends.</div>
+        </div>
+        <div class="numbers-item">
+          <div class="numbers-num">11<small>wk</small></div>
+          <div class="numbers-label">Median time from kick-off to issued certificate for ISO standards.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-paper">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head-left">
+          <p class="eyebrow">06 / Client outcomes</p>
+          <h2>What clients say after <em>working with us</em>.</h2>
+        </div>
+      </div>
+
+      <div class="testimonial-feature">
+        <div class="testimonial-img">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Sarah, CISO">
+          <div class="testimonial-img-flag">🇬🇧 London, UK</div>
+        </div>
+        <div>
+          <blockquote>ABS guided our ISO 27001 certification across our UK and Dubai offices in 11 weeks. Their auditors understood the regulatory landscape in both regions — that saved us months of clarification and re-work.</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-author-avatar">SH</div>
+            <div class="testimonial-author-info">
+              <p>Sarah Henderson</p>
+              <p>CISO · fintech · London</p>
+            </div>
+          </div>
+          <button class="btn btn-outline" onclick="showPage('contact')">Read full case study <span class="btn-icon-circle" style="background:var(--ink);color:var(--white)"><i class="ti ti-arrow-up-right"></i></span></button>
+        </div>
+      </div>
+
+      <div class="testimonial-mini-grid">
+        <div class="testimonial-mini">
+          <p>We won a major government tender in KSA because ABS got us ISO 9001 and 45001 certified ahead of the deadline. Fixed price, no scope creep, exactly what was promised.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-author-avatar">AK</div>
+            <div class="testimonial-author-info">
+              <p>Ahmed Khalifa</p>
+              <p>MD · construction · Riyadh</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-mini">
+          <p>Switched to ABS after a poor experience with a larger registrar. Responsive, knowledgeable, and 40% lower fees for the same accredited scope. We've renewed twice.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-author-avatar">MR</div>
+            <div class="testimonial-author-info">
+              <p>Mark Reynolds</p>
+              <p>COO · SaaS · Austin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-cta">
+        <button class="btn btn-dark" onclick="showPage('contact')">Become our next success story <span class="btn-icon-circle"><i class="ti ti-arrow-up-right"></i></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERIFY -->
+  <section class="section section-paper-2" id="verify">
+    <div class="container">
+      <div class="verify-block">
+        <div class="verify-content">
+          <p class="eyebrow" style="margin-bottom:24px">07 / Verify a certificate</p>
+          <h2>Trust, <em>verified instantly</em>.</h2>
+          <p>Every ABS-issued certificate has a unique reference number. Buyers, partners and procurement teams can verify a certificate's authenticity in one click — no email exchange required.</p>
+          <button class="btn btn-dark"><i class="ti ti-shield-check"></i>Learn how verification works</button>
+        </div>
+        <div class="verify-form-wrap">
+          <h3>Verify a certificate</h3>
+          <p>Enter the certificate reference number to confirm its status.</p>
+          <div class="verify-input-row">
+            <input type="text" class="verify-input" placeholder="ABS-2026-XX-00000">
+            <button class="btn btn-dark verify-btn">Verify <i class="ti ti-arrow-right"></i></button>
+          </div>
+          <p class="verify-example">Example: <code>ABS-2026-IS-04821</code></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-banner-bg"></div>
+    <div class="cta-banner-overlay"></div>
+    <div class="container">
+      <p class="eyebrow">Get started</p>
+      <h2>Ready to get <em>certified</em>?</h2>
+      <p>Get a free, fixed-price quote within one business day. No obligation, no sales pressure, no follow-up spam — just a clear path to certification.</p>
+      <div class="cta-buttons">
+        <button class="btn btn-light" onclick="showPage('contact')">Request a quote <span class="btn-icon-circle"><i class="ti ti-arrow-up-right"></i></span></button>
+        <button class="btn btn-outline" onclick="showPage('contact')"><i class="ti ti-calendar-event"></i>Book a 30-min consultation</button>
+      </div>
+      <div class="cta-quick">
+        <span class="cta-quick-item"><i class="ti ti-clock"></i>24-hour response time</span>
+        <span class="cta-quick-item"><i class="ti ti-currency-pound"></i>Fixed price, multi-currency</span>
+        <span class="cta-quick-item"><i class="ti ti-shield-check"></i>IAS / IAF accredited</span>
+        <span class="cta-quick-item"><i class="ti ti-world"></i>40+ countries served</span>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- end home page -->
+
+
+<!-- ============================================ -->
+<!-- ============ CONTACT PAGE ================== -->
+<!-- ============================================ -->
+<div class="page" id="page-contact">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div>
+          <p class="eyebrow" style="margin-bottom:24px">Get in touch</p>
+          <h1>Talk to a <em>certification specialist</em>.</h1>
+          <p>Most enquiries receive a response within 4 business hours. For urgent matters, call the numbers below or schedule a meeting in your time zone.</p>
+        </div>
+        <div class="page-hero-img">
+          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" alt="Team consultation">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-paper" style="padding-top:80px;">
+    <div class="container">
+
+      <div class="quick-actions-grid">
+        <div class="quick-action" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">
+          <div class="quick-action-icon"><i class="ti ti-file-invoice"></i></div>
+          <h3>Request a quote</h3>
+          <p>Fixed price within 24 hours</p>
+          <span class="quick-action-link">Send enquiry <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+        </div>
+        <div class="quick-action">
+          <div class="quick-action-icon"><i class="ti ti-calendar-event"></i></div>
+          <h3>Book a meeting</h3>
+          <p>30-min consultation in your time zone</p>
+          <span class="quick-action-link">Pick a slot <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+        </div>
+        <div class="quick-action" onclick="showPage('home')">
+          <div class="quick-action-icon"><i class="ti ti-shield-check"></i></div>
+          <h3>Verify a certificate</h3>
+          <p>Check ABS-issued documents</p>
+          <span class="quick-action-link">Open verifier <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+        </div>
+        <div class="quick-action">
+          <div class="quick-action-icon"><i class="ti ti-headset"></i></div>
+          <h3>Existing client</h3>
+          <p>Audit & support help</p>
+          <span class="quick-action-link">Contact support <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+        </div>
+      </div>
+
+      <div class="contact-grid" id="contact-form">
+
+        <div class="contact-form-wrap">
+          <p class="eyebrow" style="margin-bottom:20px">Enquiry form</p>
+          <h2>Send us an <em>enquiry</em></h2>
+          <p>We'll respond within 4 business hours. All enquiries are handled confidentially.</p>
+
+          <form onsubmit="event.preventDefault(); alert('This is a mockup — form would submit here.');">
+            <div class="form-row">
+              <div>
+                <label>Full name *</label>
+                <input type="text" class="form-control" placeholder="Jane Smith" required>
+              </div>
+              <div>
+                <label>Work email *</label>
+                <input type="email" class="form-control" placeholder="jane@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label>Company *</label>
+                <input type="text" class="form-control" placeholder="Acme Ltd" required>
+              </div>
+              <div>
+                <label>Country *</label>
+                <select class="form-control" required>
+                  <option value="">Select country</option>
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+                  <option>United Arab Emirates</option>
+                  <option>Germany</option>
+                  <option>Saudi Arabia</option>
+                  <option>France</option>
+                  <option>Netherlands</option>
+                  <option>Qatar</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label>Phone (with country code)</label>
+                <input type="tel" class="form-control" placeholder="+44 20 7946 0958">
+              </div>
+              <div>
+                <label>Company size</label>
+                <select class="form-control">
+                  <option>1–10 employees</option>
+                  <option>11–50 employees</option>
+                  <option>51–200 employees</option>
+                  <option>201–1000 employees</option>
+                  <option>1000+ employees</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Service of interest *</label>
+              <select class="form-control" required>
+                <option value="">Select a service</option>
+                <option>ISO 9001 — Quality Management</option>
+                <option>ISO 27001 — Information Security</option>
+                <option>ISO 14001 — Environmental Management</option>
+                <option>ISO 45001 — Occupational Health & Safety</option>
+                <option>SOC 2 Type I / II</option>
+                <option>PCI DSS</option>
+                <option>CMMI appraisal</option>
+                <option>Cyber security / VAPT</option>
+                <option>Other / not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Tell us about your project</label>
+              <textarea class="form-control" placeholder="Brief on scope, target date, any existing certifications, number of sites, etc."></textarea>
+            </div>
+
+            <div class="checkbox-row">
+              <input type="checkbox" id="agree" required>
+              <label for="agree" style="margin:0;color:var(--ink-muted);font-family:inherit;text-transform:none;letter-spacing:0">I agree to ABS's privacy policy. We never share your details with third parties.</label>
+            </div>
+
+            <button type="submit" class="form-submit">Send enquiry <i class="ti ti-arrow-right"></i></button>
+          </form>
+        </div>
+
+        <div class="contact-sidebar">
+
+          <div class="contact-card">
+            <div class="contact-card-head">
+              <div class="contact-card-icon"><i class="ti ti-phone"></i></div>
+              <h3>Call us directly</h3>
+            </div>
+            <div class="phone-item">
+              <div class="phone-flag">🇮🇳</div>
+              <div>
+                <a href="tel:+919625776771" class="phone-num">+91 96257 76771</a>
+                <span class="phone-meta">Sales · new enquiries</span>
+              </div>
+            </div>
+            <div class="phone-item">
+              <div class="phone-flag">🇮🇳</div>
+              <div>
+                <a href="tel:+919792586202" class="phone-num">+91 97925 86202</a>
+                <span class="phone-meta">Audits · existing clients</span>
+              </div>
+            </div>
+            <div class="hours-box">
+              <div class="hours-box-head"><i class="ti ti-clock"></i>Office hours: Mon–Fri · 9:00–18:00 IST</div>
+              <span class="tz">3:30–12:30 GMT &nbsp;·&nbsp; 6:30–15:30 GST &nbsp;·&nbsp; 23:30–08:30 EST (prev day)</span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-head">
+              <div class="contact-card-icon"><i class="ti ti-mail"></i></div>
+              <h3>Email us</h3>
+            </div>
+            <div class="email-item">
+              <i class="ti ti-mail"></i>
+              <a href="mailto:info@abscerts.com">info@abscerts.com</a>
+              <span class="email-item-meta">General</span>
+            </div>
+            <div class="email-item">
+              <i class="ti ti-mail"></i>
+              <a href="mailto:sales@abscerts.com">sales@abscerts.com</a>
+              <span class="email-item-meta">Sales</span>
+            </div>
+            <div class="email-item">
+              <i class="ti ti-mail"></i>
+              <a href="mailto:audits@abscerts.com">audits@abscerts.com</a>
+              <span class="email-item-meta">Audits</span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-head">
+              <div class="contact-card-icon"><i class="ti ti-map-pin"></i></div>
+              <h3>Head office</h3>
+            </div>
+            <div class="map-embed">
+              <div class="map-pin"><i class="ti ti-building"></i></div>
+            </div>
+            <p class="address-text">
+              Building No. 1, C/O Sriram,<br>
+              Near Railway Phatak, Mangli Purwa,<br>
+              Hardoi 241001, Uttar Pradesh, India
+            </p>
+            <a href="#" class="btn btn-outline" style="width:100%; justify-content:center; padding:12px 22px; font-size:13px;">View on Google Maps <i class="ti ti-external-link" style="font-size:14px"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regional reach -->
+  <section class="section section-paper-2">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head-left">
+          <p class="eyebrow">Regional reach</p>
+          <h2>Audit partners across <em>your region</em>.</h2>
+        </div>
+        <div class="section-head-right">
+          <p>We don't fly auditors halfway around the world to charge you for it. Our lead auditors are based in 12 countries, ready to audit in your time zone, your language, your currency.</p>
+        </div>
+      </div>
+
+      <div class="regions-grid">
+        <div class="region-card">
+          <div class="region-img">
+            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80" alt="London">
+          </div>
+          <div class="region-body">
+            <span class="region-flag">🇬🇧</span>
+            <h3>United Kingdom</h3>
+            <p>Lead auditors in London & Manchester. GBP invoicing. UKAS-aligned methodology.</p>
+            <a href="#" class="region-cta" onclick="showPage('contact'); return false;">Talk to UK team <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+          </div>
+        </div>
+        <div class="region-card">
+          <div class="region-img">
+            <img src="https://images.unsplash.com/photo-1493997181344-712f2f19d87a?w=600&q=80" alt="Europe">
+          </div>
+          <div class="region-body">
+            <span class="region-flag">🇪🇺</span>
+            <h3>Europe</h3>
+            <p>Auditors across DE, FR, NL, ES, PL. EUR invoicing. Multi-language support.</p>
+            <a href="#" class="region-cta" onclick="showPage('contact'); return false;">Talk to EU team <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+          </div>
+        </div>
+        <div class="region-card">
+          <div class="region-img">
+            <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=600&q=80" alt="Dubai">
+          </div>
+          <div class="region-body">
+            <span class="region-flag">🇦🇪</span>
+            <h3>Middle East</h3>
+            <p>Coverage in UAE, KSA, Qatar, Oman. AED & USD invoicing. Arabic-speaking auditors.</p>
+            <a href="#" class="region-cta" onclick="showPage('contact'); return false;">Talk to ME team <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+          </div>
+        </div>
+        <div class="region-card">
+          <div class="region-img">
+            <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?w=600&q=80" alt="New York">
+          </div>
+          <div class="region-body">
+            <span class="region-flag">🇺🇸</span>
+            <h3>North America</h3>
+            <p>SOC 2 and PCI DSS specialists in US & Canada. USD invoicing. AICPA-aligned.</p>
+            <a href="#" class="region-cta" onclick="showPage('contact'); return false;">Talk to US team <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-paper">
+    <div class="container">
+      <div class="faq-grid">
+        <div class="faq-side">
+          <p class="eyebrow" style="margin-bottom:24px">FAQ</p>
+          <h2>Common <em>questions</em> before reaching out.</h2>
+          <p>Don't see your question here? Our team is one click away — and we promise human answers, not chatbot fluff.</p>
+          <button class="btn btn-dark" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Ask us anything <span class="btn-icon-circle"><i class="ti ti-arrow-up-right"></i></span></button>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item open">
+            <button class="faq-q" onclick="toggleFaq(this)">How long does ISO 27001 certification typically take?<span class="icon"><i class="ti ti-plus"></i></span></button>
+            <div class="faq-a">For most organisations under 200 employees, the full path from kick-off to certificate takes 10–14 weeks. Larger or multi-site organisations typically take 4–6 months. We give you a firm timeline with your initial quote.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">Are your certificates recognised internationally?<span class="icon"><i class="ti ti-plus"></i></span></button>
+            <div class="faq-a">Yes. Our certifications are issued under IAS accreditation, which is a signatory of the IAF Multilateral Recognition Arrangement. This means your certificate is recognised by IAF members across the UK, EU, US, Middle East and 70+ other countries.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">Do you charge travel costs for on-site audits abroad?<span class="icon"><i class="ti ti-plus"></i></span></button>
+            <div class="faq-a">No surprise charges. Because we have lead auditors based in 12 countries, on-site audits in the UK, EU, US and Middle East are typically delivered without international travel costs. Any local travel is included in your fixed-fee quote.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">Can audits be conducted remotely?<span class="icon"><i class="ti ti-plus"></i></span></button>
+            <div class="faq-a">Yes. Many of our audits — particularly Stage 1, surveillance audits and ISO 27001 / SOC 2 assessments — can be conducted fully remotely. Some certifications (e.g. ISO 45001 site safety) may require a physical visit, which we'll clarify upfront.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">What does the certification cost?<span class="icon"><i class="ti ti-plus"></i></span></button>
+            <div class="faq-a">Pricing depends on standard, organisation size, number of sites, and complexity of scope. As a guide, ISO 9001 for a 50-person single-site company starts at around GBP 3,500 for the full 3-year cycle. We send a fixed-price proposal within 24 hours of your enquiry.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA on contact page -->
+  <section class="cta-banner">
+    <div class="cta-banner-bg"></div>
+    <div class="cta-banner-overlay"></div>
+    <div class="container">
+      <p class="eyebrow">Still deciding?</p>
+      <h2>Not sure where to <em>start</em>?</h2>
+      <p>Book a free 30-minute consultation. We'll review your goals, recommend the right standard, and outline a realistic timeline — no obligation.</p>
+      <div class="cta-buttons">
+        <button class="btn btn-light"><i class="ti ti-calendar-event"></i>Book free consultation</button>
+        <button class="btn btn-outline" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Send a written enquiry instead</button>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- end contact page -->
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo">
+          <div class="logo-mark">A</div>
+          <div class="logo-text">
+            <p>ABS Certifications</p>
+            <p>Independent · Accredited · Global</p>
+          </div>
+        </div>
+        <p class="footer-tag">Independent certification body serving organisations across UK, EU, US, Middle East and APAC. Accredited audits, transparent pricing, global delivery.</p>
+        <div class="footer-newsletter">
+          <label>Stay in the loop</label>
+          <div class="footer-newsletter-input">
+            <input type="email" placeholder="your@email.com">
+            <button><i class="ti ti-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#">ISO certifications</a></li>
+          <li><a href="#">SOC 2 & cyber security</a></li>
+          <li><a href="#">CMMI appraisals</a></li>
+          <li><a href="#">Training & advisory</a></li>
+          <li><a href="#">Third-party inspection</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Accreditation</a></li>
+          <li><a href="#">Verify certificate</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog & insights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div class="footer-contact-item"><i class="ti ti-phone"></i><span>+91 96257 76771<br>+91 97925 86202</span></div>
+        <div class="footer-contact-item"><i class="ti ti-mail"></i><span>info@abscerts.com</span></div>
+        <div class="footer-contact-item"><i class="ti ti-map-pin"></i><span>Hardoi, Uttar Pradesh, India</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ABS Certifications & Advisory. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="#" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
+        <a href="#" aria-label="X"><i class="ti ti-brand-x"></i></a>
+        <a href="#" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
+      </div>
+      <span>Privacy · Terms · ISMS policy</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
+  const navItem = document.getElementById('nav-' + name);
+  if (navItem) navItem.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+function toggleFaq(btn) {
+  btn.parentElement.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
