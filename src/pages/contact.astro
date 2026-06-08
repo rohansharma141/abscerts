@@ -1,0 +1,377 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Contact ABS Certifications | Talk to a certification specialist';
+const description =
+  'Get in touch with ABS Certifications & Advisory. Request a fixed-price ISO or SOC 2 quote, book a consultation in your time zone, or verify a certificate. Response within 4 business hours.';
+
+// FAQPage node from v7's schema @graph — emitted on the contact page (where the FAQ is shown).
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How long does ISO 27001 certification typically take?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'For most organisations under 200 employees, the full path from kick-off to certificate takes 10-14 weeks. Larger or multi-site organisations typically take 4-6 months. We give you a firm timeline with your initial quote.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are your certificates recognised internationally?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Our certifications are issued under IAS accreditation, which is a signatory of the IAF Multilateral Recognition Arrangement. This means your certificate is recognised by IAF members across the UK, EU, US, Middle East and 70+ other countries.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you charge travel costs for on-site audits abroad?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No surprise charges. Because we have lead auditors based in 12 countries, on-site audits in the UK, EU, US and Middle East are typically delivered without international travel costs. Any local travel is included in your fixed-fee quote.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can audits be conducted remotely?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Yes. Many of our audits — particularly Stage 1, surveillance audits and ISO 27001 / SOC 2 assessments — can be conducted fully remotely. Some certifications (e.g. ISO 45001 site safety) may require a physical visit, which we'll clarify upfront.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What does the certification cost?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Pricing depends on standard, organisation size, number of sites, and complexity of scope. As a guide, ISO 9001 for a 50-person single-site company starts at around GBP 3,500 for the full 3-year cycle. We send a fixed-price proposal within 24 hours of your enquiry.',
+      },
+    },
+  ],
+};
+---
+
+<BaseLayout title={title} description={description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div>
+          <p class="eyebrow" style="margin-bottom:24px">Get in touch</p>
+          <h1>Talk to a <em>certification specialist</em>.</h1>
+          <p>Most enquiries receive a response within 4 business hours. For urgent matters, call the numbers below or schedule a meeting in your time zone.</p>
+        </div>
+        <div class="page-hero-img">
+          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" alt="ABS certification specialist team consultation" loading="lazy" decoding="async" width="800" height="600">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tint" style="padding-top:80px;">
+    <div class="container">
+
+      <div class="quick-actions-grid">
+        <div class="quick-action" onclick="openQuoteModal()">
+          <div class="quick-action-icon"><i class="ti ti-file-invoice"></i></div>
+          <h3>Request a quote</h3>
+          <p>Fixed price within 24 hours</p>
+          <span class="quick-action-link">Send enquiry <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+        </div>
+        <div class="quick-action">
+          <div class="quick-action-icon"><i class="ti ti-calendar-event"></i></div>
+          <h3>Book a meeting</h3>
+          <p>30-min consultation in your time zone</p>
+          <span class="quick-action-link">Pick a slot <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+        </div>
+        <a class="quick-action" href="/verify">
+          <div class="quick-action-icon"><i class="ti ti-shield-check"></i></div>
+          <h3>Verify a certificate</h3>
+          <p>Check ABS-issued documents</p>
+          <span class="quick-action-link">Open verifier <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+        </a>
+        <div class="quick-action">
+          <div class="quick-action-icon"><i class="ti ti-headset"></i></div>
+          <h3>Existing client</h3>
+          <p>Audit & support help</p>
+          <span class="quick-action-link">Contact support <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+        </div>
+      </div>
+
+      <div class="contact-grid" id="contact-form">
+
+        <div class="contact-form-wrap">
+          <p class="eyebrow" style="margin-bottom:20px">Enquiry form</p>
+          <h2>Send us an <em>enquiry</em></h2>
+          <p>We'll respond within 4 business hours. All enquiries are handled confidentially.</p>
+
+          <form onsubmit="event.preventDefault(); alert('This is a mockup — form would submit here.');">
+            <div class="form-row">
+              <div>
+                <label>Full name *</label>
+                <input type="text" class="form-control" placeholder="Jane Smith" required>
+              </div>
+              <div>
+                <label>Work email *</label>
+                <input type="email" class="form-control" placeholder="jane@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label>Company *</label>
+                <input type="text" class="form-control" placeholder="Acme Ltd" required>
+              </div>
+              <div>
+                <label>Country *</label>
+                <select class="form-control" required>
+                  <option value="">Select country</option>
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+                  <option>United Arab Emirates</option>
+                  <option>Germany</option>
+                  <option>Saudi Arabia</option>
+                  <option>France</option>
+                  <option>Netherlands</option>
+                  <option>Qatar</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label>Phone (with country code)</label>
+                <input type="tel" class="form-control" placeholder="+44 20 7946 0958">
+              </div>
+              <div>
+                <label>Company size</label>
+                <select class="form-control">
+                  <option>1–10 employees</option>
+                  <option>11–50 employees</option>
+                  <option>51–200 employees</option>
+                  <option>201–1000 employees</option>
+                  <option>1000+ employees</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Service of interest *</label>
+              <select class="form-control" required>
+                <option value="">Select a service</option>
+                <option>ISO 9001 — Quality Management</option>
+                <option>ISO 27001 — Information Security</option>
+                <option>ISO 14001 — Environmental Management</option>
+                <option>ISO 45001 — Occupational Health & Safety</option>
+                <option>SOC 2 Type I / II</option>
+                <option>PCI DSS</option>
+                <option>CMMI appraisal</option>
+                <option>Cyber security / VAPT</option>
+                <option>Other / not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Tell us about your project</label>
+              <textarea class="form-control" placeholder="Brief on scope, target date, any existing certifications, number of sites, etc."></textarea>
+            </div>
+
+            <div class="checkbox-row">
+              <input type="checkbox" id="agree" required>
+              <label for="agree" style="margin:0;color:var(--gray-text);font-family:inherit;text-transform:none;letter-spacing:0">I agree to ABS's privacy policy. We never share your details with third parties.</label>
+            </div>
+
+            <button type="submit" class="form-submit">Send enquiry <i class="ti ti-arrow-right"></i></button>
+          </form>
+        </div>
+
+        <div class="contact-sidebar">
+
+          <div class="contact-card">
+            <div class="contact-card-head">
+              <div class="contact-card-icon"><i class="ti ti-phone"></i></div>
+              <h3>Call us directly</h3>
+            </div>
+            <div class="phone-item">
+              <div class="phone-flag">🇮🇳</div>
+              <div>
+                <a href="tel:+919625776771" class="phone-num">+91 96257 76771</a>
+                <span class="phone-meta">Sales · new enquiries</span>
+              </div>
+            </div>
+            <div class="phone-item">
+              <div class="phone-flag">🇮🇳</div>
+              <div>
+                <a href="tel:+919792586202" class="phone-num">+91 97925 86202</a>
+                <span class="phone-meta">Audits · existing clients</span>
+              </div>
+            </div>
+            <div class="hours-box">
+              <div class="hours-box-head"><i class="ti ti-clock"></i>Mon–Fri · 9:00–18:00 IST</div>
+              <span class="tz">3:30–12:30 GMT &nbsp;·&nbsp; 6:30–15:30 GST &nbsp;·&nbsp; 23:30–08:30 EST (prev day)</span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-head">
+              <div class="contact-card-icon"><i class="ti ti-mail"></i></div>
+              <h3>Email us</h3>
+            </div>
+            <div class="email-item">
+              <i class="ti ti-mail"></i>
+              <a href="mailto:info@abscerts.com">info@abscerts.com</a>
+              <span class="email-item-meta">General</span>
+            </div>
+            <div class="email-item">
+              <i class="ti ti-mail"></i>
+              <a href="mailto:sales@abscerts.com">sales@abscerts.com</a>
+              <span class="email-item-meta">Sales</span>
+            </div>
+            <div class="email-item">
+              <i class="ti ti-mail"></i>
+              <a href="mailto:audits@abscerts.com">audits@abscerts.com</a>
+              <span class="email-item-meta">Audits</span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-head">
+              <div class="contact-card-icon"><i class="ti ti-map-pin"></i></div>
+              <h3>Head office</h3>
+            </div>
+            <div class="map-embed">
+              <div class="map-pin"><i class="ti ti-building"></i></div>
+            </div>
+            <p class="address-text">
+              Building No. 1, C/O Sriram,<br>
+              Near Railway Phatak, Mangli Purwa,<br>
+              Hardoi 241001, Uttar Pradesh, India
+            </p>
+            <a href="#" class="btn btn-outline-blue" style="width:100%; justify-content:center; padding:12px 22px; font-size:13px;">View on Google Maps <i class="ti ti-external-link" style="font-size:14px"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regional reach -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head-left">
+          <p class="eyebrow">Regional reach</p>
+          <h2>Audit partners across <em>your region</em>.</h2>
+        </div>
+        <div class="section-head-right">
+          <p>We don't fly auditors halfway around the world to charge you for it. Our lead auditors are based in 12 countries, ready to audit in your time zone, your language, your currency.</p>
+        </div>
+      </div>
+
+      <div class="regions-grid">
+        <div class="region-card">
+          <div class="region-img">
+            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80" alt="London — UK certification audits and UKAS-aligned audits" loading="lazy" decoding="async" width="600" height="375">
+          </div>
+          <div class="region-body">
+            <span class="region-flag">🇬🇧</span>
+            <h3>United Kingdom</h3>
+            <p>Lead auditors in London & Manchester. GBP invoicing. UKAS-aligned methodology.</p>
+            <a href="#contact-form" class="region-cta">Talk to UK team <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+          </div>
+        </div>
+        <div class="region-card">
+          <div class="region-img">
+            <img src="https://images.unsplash.com/photo-1493997181344-712f2f19d87a?w=600&q=80" alt="European cities — ISO certification across DE, FR, NL, ES, PL" loading="lazy" decoding="async" width="600" height="375">
+          </div>
+          <div class="region-body">
+            <span class="region-flag">🇪🇺</span>
+            <h3>Europe</h3>
+            <p>Auditors across DE, FR, NL, ES, PL. EUR invoicing. Multi-language support.</p>
+            <a href="#contact-form" class="region-cta">Talk to EU team <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+          </div>
+        </div>
+        <div class="region-card">
+          <div class="region-img">
+            <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=600&q=80" alt="Dubai skyline — Middle East ISO certification UAE, KSA, Qatar, Oman" loading="lazy" decoding="async" width="600" height="375">
+          </div>
+          <div class="region-body">
+            <span class="region-flag">🇦🇪</span>
+            <h3>Middle East</h3>
+            <p>Coverage in UAE, KSA, Qatar, Oman. AED & USD invoicing. Arabic-speaking auditors.</p>
+            <a href="#contact-form" class="region-cta">Talk to ME team <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+          </div>
+        </div>
+        <div class="region-card">
+          <div class="region-img">
+            <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?w=600&q=80" alt="New York skyline — North America SOC 2 and PCI DSS certification" loading="lazy" decoding="async" width="600" height="375">
+          </div>
+          <div class="region-body">
+            <span class="region-flag">🇺🇸</span>
+            <h3>North America</h3>
+            <p>SOC 2 and PCI DSS specialists in US & Canada. USD invoicing. AICPA-aligned.</p>
+            <a href="#contact-form" class="region-cta">Talk to US team <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-tint">
+    <div class="container">
+      <div class="faq-grid">
+        <div class="faq-side">
+          <p class="eyebrow" style="margin-bottom:24px">FAQ</p>
+          <h2>Common <em>questions</em> before reaching out.</h2>
+          <p>Don't see your question here? Our team is one click away — and we promise human answers, not chatbot fluff.</p>
+          <button class="btn btn-primary" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Ask us anything <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item open">
+            <button class="faq-q" onclick="toggleFaq(this)">How long does ISO 27001 certification typically take?<span class="icon"><i class="ti ti-plus"></i></span></button>
+            <div class="faq-a">For most organisations under 200 employees, the full path from kick-off to certificate takes 10–14 weeks. Larger or multi-site organisations typically take 4–6 months. We give you a firm timeline with your initial quote.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">Are your certificates recognised internationally?<span class="icon"><i class="ti ti-plus"></i></span></button>
+            <div class="faq-a">Yes. Our certifications are issued under IAS accreditation, which is a signatory of the IAF Multilateral Recognition Arrangement. This means your certificate is recognised by IAF members across the UK, EU, US, Middle East and 70+ other countries.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">Do you charge travel costs for on-site audits abroad?<span class="icon"><i class="ti ti-plus"></i></span></button>
+            <div class="faq-a">No surprise charges. Because we have lead auditors based in 12 countries, on-site audits in the UK, EU, US and Middle East are typically delivered without international travel costs. Any local travel is included in your fixed-fee quote.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">Can audits be conducted remotely?<span class="icon"><i class="ti ti-plus"></i></span></button>
+            <div class="faq-a">Yes. Many of our audits — particularly Stage 1, surveillance audits and ISO 27001 / SOC 2 assessments — can be conducted fully remotely. Some certifications (e.g. ISO 45001 site safety) may require a physical visit, which we'll clarify upfront.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">What does the certification cost?<span class="icon"><i class="ti ti-plus"></i></span></button>
+            <div class="faq-a">Pricing depends on standard, organisation size, number of sites, and complexity of scope. As a guide, ISO 9001 for a 50-person single-site company starts at around GBP 3,500 for the full 3-year cycle. We send a fixed-price proposal within 24 hours of your enquiry.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA on contact page -->
+  <section class="cta-banner">
+    <div class="cta-banner-bg"></div>
+    <div class="cta-banner-overlay"></div>
+    <div class="container">
+      <p class="eyebrow">Still deciding?</p>
+      <h2>Not sure where to <em>start</em>?</h2>
+      <p>Book a free 30-minute consultation. We'll review your goals, recommend the right standard, and outline a realistic timeline — no obligation.</p>
+      <div class="cta-buttons">
+        <button class="btn btn-glow"><i class="ti ti-calendar-event"></i>Book free consultation</button>
+        <button class="btn btn-outline" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Send a written enquiry instead</button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
