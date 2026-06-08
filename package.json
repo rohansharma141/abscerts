@@ -8,12 +8,16 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "wrangler pages dev dist --compatibility-date=2025-01-01",
+    "deploy": "npm run build && wrangler pages deploy dist",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/mdx": "^6.0.2",
     "@astrojs/sitemap": "^3.7.3",
     "astro": "^6.4.4"
+  },
+  "devDependencies": {
+    "wrangler": "^4.98.0"
   }
 }

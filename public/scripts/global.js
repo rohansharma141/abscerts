@@ -178,3 +178,65 @@ document.addEventListener('keydown', (e) => {
     if (document.getElementById('mobileNav').classList.contains('open')) toggleMobileNav();
   }
 });
+
+/* ===== Form submission (quote / contact / newsletter → Cloudflare Pages Functions) ===== */
+(function () {
+  const forms = document.querySelectorAll('form[data-form]');
+  if (!forms.length) return; // no wired forms on this page — guard (same pattern as the carousel)
+
+  const SUCCESS_MESSAGES = {
+    quote: "Thanks — we'll be in touch within 24 hours.",
+    contact: "Thanks — your enquiry is in. We'll reply within 4 business hours.",
+    newsletter: "Thanks — we'll be in touch shortly.",
+  };
+
+  forms.forEach((form) => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const type = form.getAttribute('data-form'); // quote | contact | newsletter
+      const status = form.querySelector('[data-form-status]');
+      const submitBtn = form.querySelector('[data-submit]');
+
+      // Serialize all named fields (includes the hidden "website" honeypot, which the
+      // Pages Function uses to silently drop bot submissions).
+      const payload = Object.fromEntries(new FormData(form).entries());
+
+      if (status) { status.className = ''; status.textContent = ''; }
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        if (!submitBtn.dataset.originalLabel) submitBtn.dataset.originalLabel = submitBtn.innerHTML;
+        submitBtn.innerHTML = 'Sending…';
+      }
+
+      try {
+        const res = await fetch('/api/' + type, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        if (!res.ok) throw new Error('Request failed: ' + res.status);
+
+        // Success — replace the form with a confirmation state.
+        form.innerHTML =
+          '<div class="form-success">' +
+          '<span class="form-success-icon"><i class="ti ti-circle-check"></i></span>' +
+          '<p>' + (SUCCESS_MESSAGES[type] || 'Thanks — message received.') + '</p>' +
+          '</div>';
+
+        if (type === 'quote') setTimeout(closeQuoteModal, 3000);
+        if (type === 'newsletter') setTimeout(closeExitPopup, 3000);
+      } catch (err) {
+        if (status) {
+          status.className = 'form-status form-status-error';
+          status.innerHTML =
+            'Something went wrong. Please call us at <a href="tel:+919625776771">+91 96257 76771</a> ' +
+            'or email <a href="mailto:info@abscerts.com">info@abscerts.com</a>.';
+        }
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          if (submitBtn.dataset.originalLabel) submitBtn.innerHTML = submitBtn.dataset.originalLabel;
+        }
+      }
+    });
+  });
+})();

@@ -1,10 +1,37 @@
-# Astro Starter Kit: Minimal
+# ABS Certifications & Advisory — website
+
+Astro site deployed to Cloudflare Pages. The four contact/quote/newsletter/verify
+endpoints are **Cloudflare Pages Functions** in [`functions/api/`](functions/api/).
+
+## Forms & email (important)
+
+The forms submit to Pages Functions that relay email via [Resend](https://resend.com).
+**Forms work locally with `npm run preview` but require a real `RESEND_API_KEY` and a
+verified Resend sending domain to actually deliver email.** With the placeholder key in
+`.dev.vars`, submissions reach the function and validate correctly but fail at the
+email-send step (HTTP 500) — that's expected until real secrets are set in the
+Cloudflare dashboard (Pages → Settings → Environment variables).
+
+## Local development
+
+```sh
+npm run dev      # Astro dev server (UI only — does NOT run the Pages Functions)
+npm run build    # build to dist/
+npm run preview  # wrangler: serves dist/ AND runs functions/ + KV binding locally
+npm run deploy   # build + wrangler pages deploy
+```
+
+Local secrets live in a gitignored `.dev.vars` (see `.env.example` for the variable list).
+
+---
+
+<details>
+<summary>Astro starter notes</summary>
 
 ```sh
 npm create astro@latest -- --template minimal
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+</details>
 
 ## 🚀 Project Structure
 
