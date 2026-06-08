@@ -1,0 +1,59 @@
+---
+// Related items strip — used on service detail (related services) and industry
+// detail (related industries). Reuses ServiceCard / IndustryCard for the grid.
+import ServiceCard from '../ui/ServiceCard.astro';
+import IndustryCard from '../ui/IndustryCard.astro';
+
+interface Item {
+  id: string;
+  data: Record<string, any>;
+}
+interface Props {
+  type: 'services' | 'industries';
+  title: string;
+  eyebrow?: string;
+  items: Item[];
+}
+const { type, title, eyebrow = 'Keep exploring', items } = Astro.props;
+const num = (i: number) => `/ ${String(i + 1).padStart(2, '0')}`;
+---
+<section class="section section-tint">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head-left">
+        <p class="eyebrow">{eyebrow}</p>
+        <h2>{title}</h2>
+      </div>
+    </div>
+
+    {type === 'services' ? (
+      <div class="services-grid">
+        {items.map((item, i) => (
+          <ServiceCard
+            tag={item.data.category}
+            num={num(i)}
+            image={item.data.image}
+            imageAlt={item.data.imageAlt}
+            title={item.data.title}
+            description={item.data.description}
+            tags={item.data.tags}
+            detailHref={`/services/${item.id}`}
+          />
+        ))}
+      </div>
+    ) : (
+      <div class="industries-grid">
+        {items.map((item, i) => (
+          <IndustryCard
+            num={num(i)}
+            title={item.data.title}
+            description={item.data.description}
+            image={item.data.image}
+            imageAlt={item.data.imageAlt}
+            href={`/industries/${item.id}`}
+          />
+        ))}
+      </div>
+    )}
+  </div>
+</section>

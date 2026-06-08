@@ -1,9 +1,31 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ServiceCard from '../components/ui/ServiceCard.astro';
+import IndustryCard from '../components/ui/IndustryCard.astro';
+import CTABanner from '../components/sections/CTABanner.astro';
 
 const title = 'ABS Certifications & Advisory | ISO 9001, 27001, SOC 2 certification for global businesses';
 const description =
   'Independent ISO certification body for organisations in UK, EU, US and Middle East. IAS/IAF accredited audits for ISO 9001, 27001, 14001, 45001, SOC 2, PCI DSS, CMMI. Fixed-price quote in 24 hours. 1,200+ certificates issued.';
+
+// Home services grid: v7's 6 generic service *categories* (NOT the ISO-standard
+// collection entries — they don't map 1:1). Kept as literal ServiceCard props so the
+// home grid stays byte-identical to v7. The /services index is the collection-driven one.
+const homeServices = [
+  { tag: 'Most requested', num: '/ 01', image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=80', imageAlt: 'ISO 9001 quality management system documentation', title: 'ISO management systems', description: 'Globally accepted certifications covering quality, environment, security, safety and energy management.', tags: ['ISO 9001', '14001', '27001', '45001', '+ more'] },
+  { tag: 'Fast-track 8 weeks', num: '/ 02', image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=700&q=80', imageAlt: 'SOC 2 cyber security and information security audit', title: 'Cyber security & SOC 2', description: 'End-to-end security assurance from SOC 2 readiness to penetration testing and PCI DSS audit.', tags: ['SOC 2', 'VAPT', 'GDPR', 'NIST', 'PCI DSS'] },
+  { tag: 'IT & software', num: '/ 03', image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=700&q=80', imageAlt: 'CMMI appraisal for IT services and software development', title: 'CMMI appraisals', description: 'CMMI maturity level 2 and 3 readiness assessments, gap analysis and ATM support for IT services.', tags: ['CMMI ML2', 'CMMI ML3', 'ATM'] },
+  { tag: 'Advisory', num: '/ 04', image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?w=700&q=80', imageAlt: 'Data analytics dashboard for compliance reporting', title: 'Data analytics', description: 'Data management, process automation, decision analytics and visualisation for compliance-driven teams.', tags: ['Analytics', 'Automation', 'Reporting'] },
+  { tag: 'Training & rollout', num: '/ 05', image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&q=80', imageAlt: 'Agile transformation team workshop and training', title: 'Agile transformation', description: 'Scrum, SAFe and Kanban training plus enterprise rollouts. Certified trainers and lead auditors.', tags: ['Scrum', 'SAFe', 'Kanban'] },
+  { tag: 'Inspections', num: '/ 06', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=700&q=80', imageAlt: 'Third-party factory inspection and supplier audit', title: 'Third-party inspection', description: 'Independent pre-shipment, factory, and supplier inspections to verify quality at source.', tags: ['Pre-shipment', 'Factory', 'Supplier'] },
+];
+
+// Home industries grid IS collection-driven (the 4 industries map 1:1 to v7's cards).
+const featuredIndustries = (await getCollection('industries'))
+  .filter((i) => i.data.featured)
+  .sort((a, b) => a.data.order - b.data.order);
+const industryNum = (i: number) => `/ ${String(i + 1).padStart(2, '0')}`;
 
 // Service node from v7's schema @graph — emitted on the home page.
 const serviceSchema = {
@@ -241,135 +263,17 @@ const serviceSchema = {
       </div>
 
       <div class="services-grid">
-        <div class="service-card">
-          <div class="service-img">
-            <span class="service-img-tag">Most requested</span>
-            <span class="service-num">/ 01</span>
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=80" alt="ISO 9001 quality management system documentation" loading="lazy" decoding="async" width="700" height="438">
-          </div>
-          <div class="service-body">
-            <h3>ISO management systems</h3>
-            <p>Globally accepted certifications covering quality, environment, security, safety and energy management.</p>
-            <div class="service-tags">
-              <span class="service-tag">ISO 9001</span>
-              <span class="service-tag">14001</span>
-              <span class="service-tag">27001</span>
-              <span class="service-tag">45001</span>
-              <span class="service-tag">+ more</span>
-            </div>
-            <a href="#" class="service-link" onclick="openQuoteModal(); return false;">
-              <span>Get a quote</span>
-              <span class="service-link-arrow"><i class="ti ti-arrow-up-right"></i></span>
-            </a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-img">
-            <span class="service-img-tag">Fast-track 8 weeks</span>
-            <span class="service-num">/ 02</span>
-            <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=700&q=80" alt="SOC 2 cyber security and information security audit" loading="lazy" decoding="async" width="700" height="438">
-          </div>
-          <div class="service-body">
-            <h3>Cyber security & SOC 2</h3>
-            <p>End-to-end security assurance from SOC 2 readiness to penetration testing and PCI DSS audit.</p>
-            <div class="service-tags">
-              <span class="service-tag">SOC 2</span>
-              <span class="service-tag">VAPT</span>
-              <span class="service-tag">GDPR</span>
-              <span class="service-tag">NIST</span>
-              <span class="service-tag">PCI DSS</span>
-            </div>
-            <a href="#" class="service-link" onclick="openQuoteModal(); return false;">
-              <span>Get a quote</span>
-              <span class="service-link-arrow"><i class="ti ti-arrow-up-right"></i></span>
-            </a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-img">
-            <span class="service-img-tag">IT & software</span>
-            <span class="service-num">/ 03</span>
-            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=700&q=80" alt="CMMI appraisal for IT services and software development" loading="lazy" decoding="async" width="700" height="438">
-          </div>
-          <div class="service-body">
-            <h3>CMMI appraisals</h3>
-            <p>CMMI maturity level 2 and 3 readiness assessments, gap analysis and ATM support for IT services.</p>
-            <div class="service-tags">
-              <span class="service-tag">CMMI ML2</span>
-              <span class="service-tag">CMMI ML3</span>
-              <span class="service-tag">ATM</span>
-            </div>
-            <a href="#" class="service-link" onclick="openQuoteModal(); return false;">
-              <span>Get a quote</span>
-              <span class="service-link-arrow"><i class="ti ti-arrow-up-right"></i></span>
-            </a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-img">
-            <span class="service-img-tag">Advisory</span>
-            <span class="service-num">/ 04</span>
-            <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=700&q=80" alt="Data analytics dashboard for compliance reporting" loading="lazy" decoding="async" width="700" height="438">
-          </div>
-          <div class="service-body">
-            <h3>Data analytics</h3>
-            <p>Data management, process automation, decision analytics and visualisation for compliance-driven teams.</p>
-            <div class="service-tags">
-              <span class="service-tag">Analytics</span>
-              <span class="service-tag">Automation</span>
-              <span class="service-tag">Reporting</span>
-            </div>
-            <a href="#" class="service-link" onclick="openQuoteModal(); return false;">
-              <span>Get a quote</span>
-              <span class="service-link-arrow"><i class="ti ti-arrow-up-right"></i></span>
-            </a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-img">
-            <span class="service-img-tag">Training & rollout</span>
-            <span class="service-num">/ 05</span>
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&q=80" alt="Agile transformation team workshop and training" loading="lazy" decoding="async" width="700" height="438">
-          </div>
-          <div class="service-body">
-            <h3>Agile transformation</h3>
-            <p>Scrum, SAFe and Kanban training plus enterprise rollouts. Certified trainers and lead auditors.</p>
-            <div class="service-tags">
-              <span class="service-tag">Scrum</span>
-              <span class="service-tag">SAFe</span>
-              <span class="service-tag">Kanban</span>
-            </div>
-            <a href="#" class="service-link" onclick="openQuoteModal(); return false;">
-              <span>Get a quote</span>
-              <span class="service-link-arrow"><i class="ti ti-arrow-up-right"></i></span>
-            </a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-img">
-            <span class="service-img-tag">Inspections</span>
-            <span class="service-num">/ 06</span>
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=700&q=80" alt="Third-party factory inspection and supplier audit" loading="lazy" decoding="async" width="700" height="438">
-          </div>
-          <div class="service-body">
-            <h3>Third-party inspection</h3>
-            <p>Independent pre-shipment, factory, and supplier inspections to verify quality at source.</p>
-            <div class="service-tags">
-              <span class="service-tag">Pre-shipment</span>
-              <span class="service-tag">Factory</span>
-              <span class="service-tag">Supplier</span>
-            </div>
-            <a href="#" class="service-link" onclick="openQuoteModal(); return false;">
-              <span>Get a quote</span>
-              <span class="service-link-arrow"><i class="ti ti-arrow-up-right"></i></span>
-            </a>
-          </div>
-        </div>
+        {homeServices.map((s) => (
+          <ServiceCard
+            tag={s.tag}
+            num={s.num}
+            image={s.image}
+            imageAlt={s.imageAlt}
+            title={s.title}
+            description={s.description}
+            tags={s.tags}
+          />
+        ))}
       </div>
 
       <div class="section-cta">
@@ -451,42 +355,15 @@ const serviceSchema = {
       </div>
 
       <div class="industries-grid">
-        <div class="industry-card">
-          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&q=80" alt="Technology and SaaS companies — ISO 27001 and SOC 2 certification" loading="lazy" decoding="async" width="600" height="800">
-          <div class="industry-content">
-            <span class="industry-num">/ 01</span>
-            <h3>Technology & SaaS</h3>
-            <p>ISO 27001, SOC 2, GDPR for software companies.</p>
-            <span class="industry-cta">Discuss your scope <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
-          </div>
-        </div>
-        <div class="industry-card">
-          <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80&auto=format&fit=crop" alt="Manufacturing facility — ISO 9001, 14001 and 45001 certification" loading="lazy" decoding="async" width="600" height="800">
-          <div class="industry-content">
-            <span class="industry-num">/ 02</span>
-            <h3>Manufacturing</h3>
-            <p>ISO 9001, 14001, 45001 for production sites.</p>
-            <span class="industry-cta">Discuss your scope <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
-          </div>
-        </div>
-        <div class="industry-card">
-          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80" alt="Healthcare and medical devices — ISO 13485 certification" loading="lazy" decoding="async" width="600" height="800">
-          <div class="industry-content">
-            <span class="industry-num">/ 03</span>
-            <h3>Healthcare & medical</h3>
-            <p>ISO 13485, 27001 for life sciences.</p>
-            <span class="industry-cta">Discuss your scope <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
-          </div>
-        </div>
-        <div class="industry-card">
-          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80" alt="Financial services — PCI DSS and SOC 2 certification" loading="lazy" decoding="async" width="600" height="800">
-          <div class="industry-content">
-            <span class="industry-num">/ 04</span>
-            <h3>Financial services</h3>
-            <p>PCI DSS, SOC 2, ISO 27001 for fintech & banks.</p>
-            <span class="industry-cta">Discuss your scope <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
-          </div>
-        </div>
+        {featuredIndustries.map((ind, i) => (
+          <IndustryCard
+            num={industryNum(i)}
+            title={ind.data.title}
+            description={ind.data.description}
+            image={ind.data.image}
+            imageAlt={ind.data.imageAlt}
+          />
+        ))}
       </div>
 
       <div style="text-align:center; margin-top:48px;">
@@ -663,23 +540,5 @@ const serviceSchema = {
   </section>
 
   <!-- CTA BANNER -->
-  <section class="cta-banner">
-    <div class="cta-banner-bg"></div>
-    <div class="cta-banner-overlay"></div>
-    <div class="container">
-      <p class="eyebrow">Get started</p>
-      <h2>Ready to get <em>certified</em>?</h2>
-      <p>Get a free, fixed-price quote within one business day. No obligation, no sales pressure, no follow-up spam — just a clear path to certification.</p>
-      <div class="cta-buttons">
-        <button class="btn btn-glow" onclick="openQuoteModal()">Request a quote <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
-        <a class="btn btn-outline" href="/contact"><i class="ti ti-calendar-event"></i>Book a 30-min consultation</a>
-      </div>
-      <div class="cta-quick">
-        <span class="cta-quick-item"><i class="ti ti-clock"></i>24-hour response time</span>
-        <span class="cta-quick-item"><i class="ti ti-currency-pound"></i>Fixed price, multi-currency</span>
-        <span class="cta-quick-item"><i class="ti ti-shield-check"></i>IAS / IAF accredited</span>
-        <span class="cta-quick-item"><i class="ti ti-world"></i>40+ countries served</span>
-      </div>
-    </div>
-  </section>
+  <CTABanner />
 </BaseLayout>

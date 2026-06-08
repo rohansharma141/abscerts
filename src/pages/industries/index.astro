@@ -1,0 +1,63 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import IndustryCard from '../../components/ui/IndustryCard.astro';
+import CTABanner from '../../components/sections/CTABanner.astro';
+
+const title = 'Industries We Certify | ISO, SOC 2 & PCI DSS | ABS Certifications';
+const description =
+  'Sector-specialised certification for technology & SaaS, manufacturing, healthcare and financial services. Auditors who know your industry, not just the standard.';
+
+const industries = (await getCollection('industries')).sort((a, b) => a.data.order - b.data.order);
+const num = (i: number) => `/ ${String(i + 1).padStart(2, '0')}`;
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>/</span> <strong>Industries</strong>
+      </nav>
+      <p class="eyebrow" style="margin-bottom:24px">Industries</p>
+      <h1>Specialised expertise across your <em>sector</em>.</h1>
+      <p style="font-size:19px; color:var(--gray-text); max-width:680px; line-height:1.6; margin-top:20px;">
+        Our auditors don't just know the standards — they know your industry. From SaaS startups to global
+        manufacturers, we bring sector context to every engagement.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-tint" style="padding:64px 0 100px;">
+    <div class="container">
+      <div class="industries-grid">
+        {industries.map((ind, i) => (
+          <IndustryCard
+            num={num(i)}
+            title={ind.data.title}
+            description={ind.data.description}
+            image={ind.data.image}
+            imageAlt={ind.data.imageAlt}
+            href={`/industries/${ind.id}`}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTABanner />
+</BaseLayout>
+
+<style>
+  .crumbs {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gray-soft);
+    margin-bottom: 28px;
+  }
+  .crumbs a { color: var(--gray-soft); transition: color 0.2s; }
+  .crumbs a:hover { color: var(--blue); }
+  .crumbs span { margin: 0 8px; color: var(--line-strong); }
+  .crumbs strong { color: var(--blue-ink); font-weight: 500; }
+</style>

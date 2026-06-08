@@ -1,0 +1,42 @@
+---
+// Final CTA banner — exact v7 home `.cta-banner` markup.
+// Props default to the home page's content so `<CTABanner />` renders identically
+// on the home page and can be reused verbatim on service/industry detail pages.
+interface Props {
+  eyebrow?: string;
+  headlineHtml?: string;   // allows the <em> emphasis; rendered with set:html
+  text?: string;
+  primaryLabel?: string;   // gold-glow button → opens the quote modal
+  secondaryLabel?: string;
+  secondaryHref?: string;
+  secondaryIcon?: string;  // Tabler icon class for the secondary button
+}
+const {
+  eyebrow = 'Get started',
+  headlineHtml = 'Ready to get <em>certified</em>?',
+  text = 'Get a free, fixed-price quote within one business day. No obligation, no sales pressure, no follow-up spam — just a clear path to certification.',
+  primaryLabel = 'Request a quote',
+  secondaryLabel = 'Book a 30-min consultation',
+  secondaryHref = '/contact',
+  secondaryIcon = 'ti-calendar-event',
+} = Astro.props;
+---
+<section class="cta-banner">
+  <div class="cta-banner-bg"></div>
+  <div class="cta-banner-overlay"></div>
+  <div class="container">
+    <p class="eyebrow">{eyebrow}</p>
+    <h2 set:html={headlineHtml}></h2>
+    <p>{text}</p>
+    <div class="cta-buttons">
+      <button class="btn btn-glow" onclick="openQuoteModal()">{primaryLabel} <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
+      <a class="btn btn-outline" href={secondaryHref}><i class={`ti ${secondaryIcon}`}></i>{secondaryLabel}</a>
+    </div>
+    <div class="cta-quick">
+      <span class="cta-quick-item"><i class="ti ti-clock"></i>24-hour response time</span>
+      <span class="cta-quick-item"><i class="ti ti-currency-pound"></i>Fixed price, multi-currency</span>
+      <span class="cta-quick-item"><i class="ti ti-shield-check"></i>IAS / IAF accredited</span>
+      <span class="cta-quick-item"><i class="ti ti-world"></i>40+ countries served</span>
+    </div>
+  </div>
+</section>

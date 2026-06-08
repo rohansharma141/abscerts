@@ -1,0 +1,183 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTABanner from '../../components/sections/CTABanner.astro';
+import RelatedItems from '../../components/sections/RelatedItems.astro';
+
+export async function getStaticPaths() {
+  const industries = await getCollection('industries');
+  return industries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+
+const pageTitle = `${d.title} Certification | ABS Certifications`;
+const pageDescription = d.description;
+
+const all = (await getCollection('industries')).sort((a, b) => a.data.order - b.data.order);
+const related = all.filter((s) => s.id !== entry.id).slice(0, 3);
+
+const canonical = new URL(`/industries/${entry.id}`, Astro.site).href;
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Industries', item: new URL('/industries', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: d.title, item: canonical },
+  ],
+};
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} canonical={canonical}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>/</span> <a href="/industries">Industries</a> <span>/</span> <strong>{d.title}</strong>
+      </nav>
+      <div class="page-hero-grid">
+        <div>
+          <p class="eyebrow" style="margin-bottom:24px">Industry</p>
+          <h1>{d.title}</h1>
+          <p>{d.description}</p>
+          <div class="detail-cta">
+            <button class="btn btn-primary" onclick="openQuoteModal()">Get a quote <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
+            <a class="btn btn-outline" href="/contact"><i class="ti ti-calendar-event"></i>Book a consultation</a>
+          </div>
+        </div>
+        <div class="page-hero-img">
+          <img src={d.image} alt={d.imageAlt} loading="eager" decoding="async" width="800" height="600">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STANDARDS FOR THIS SECTOR -->
+  <section class="section section-tint" style="padding:72px 0;">
+    <div class="container">
+      <div class="whatyouget">
+        <div class="whatyouget-item whatyouget-tags">
+          <i class="ti ti-certificate"></i>
+          <div>
+            <span class="whatyouget-label" style="margin-bottom:8px;">Standards commonly certified in this sector</span>
+            <div class="service-tags">
+              {d.standards.map((s) => <span class="service-tag">{s}</span>)}
+            </div>
+          </div>
+        </div>
+        <div class="whatyouget-item">
+          <i class="ti ti-shield-check"></i>
+          <div>
+            <span class="whatyouget-num">IAS / IAF</span>
+            <span class="whatyouget-label">Accredited &amp; globally recognised</span>
+          </div>
+        </div>
+        <div class="whatyouget-item">
+          <i class="ti ti-clock"></i>
+          <div>
+            <span class="whatyouget-num">24 hours</span>
+            <span class="whatyouget-label">Fixed-price quote turnaround</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <section class="section section-white" style="padding:88px 0;">
+    <div class="container">
+      <article class="prose">
+        <Content />
+      </article>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <RelatedItems type="industries" title="Other industries we serve" eyebrow="More sectors" items={related} />
+  )}
+
+  <CTABanner />
+</BaseLayout>
+
+<style>
+  .crumbs {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gray-soft);
+    margin-bottom: 28px;
+  }
+  .crumbs a { color: var(--gray-soft); transition: color 0.2s; }
+  .crumbs a:hover { color: var(--blue); }
+  .crumbs span { margin: 0 8px; color: var(--line-strong); }
+  .crumbs strong { color: var(--blue-ink); font-weight: 500; }
+
+  .detail-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+
+  .whatyouget {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 0;
+    background: var(--white);
+    border: 1px solid var(--line-strong);
+  }
+  .whatyouget-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 28px 26px;
+    border-right: 1px solid var(--line);
+  }
+  .whatyouget-item:last-child { border-right: none; }
+  .whatyouget-item > i { color: var(--blue); font-size: 24px; margin-top: 2px; flex-shrink: 0; }
+  .whatyouget-item > div { display: flex; flex-direction: column; }
+  .whatyouget-num {
+    font-family: 'Fraunces', serif;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--blue-ink);
+    line-height: 1.1;
+  }
+  .whatyouget-label { font-size: 13px; color: var(--gray-text); margin-top: 6px; line-height: 1.4; }
+  .whatyouget-tags .service-tags { margin-bottom: 0; }
+
+  .prose { max-width: 760px; margin: 0 auto; }
+  .prose :global(h2) {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: var(--blue-ink);
+    margin: 48px 0 16px;
+  }
+  .prose :global(h2:first-child) { margin-top: 0; }
+  .prose :global(h3) {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--blue-ink);
+    margin: 32px 0 10px;
+  }
+  .prose :global(p) { font-size: 17px; line-height: 1.7; color: var(--gray-text); margin-bottom: 20px; }
+  .prose :global(ul), .prose :global(ol) { margin: 0 0 20px 22px; }
+  .prose :global(li) { font-size: 17px; line-height: 1.7; color: var(--gray-text); margin-bottom: 8px; }
+  .prose :global(a) { color: var(--blue); border-bottom: 1px solid var(--line-blue); }
+  .prose :global(strong) { color: var(--blue-ink); font-weight: 600; }
+
+  @media (max-width: 1080px) {
+    .whatyouget { grid-template-columns: 1fr; }
+    .whatyouget-item { border-right: none; border-bottom: 1px solid var(--line); }
+    .whatyouget-item:last-child { border-bottom: none; }
+  }
+</style>

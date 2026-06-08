@@ -1,0 +1,39 @@
+---
+// Service card — exact v7 `.service-card` markup.
+// Used on the home services grid (literal props, no detailHref → byte-identical to v7)
+// and on /services + RelatedItems (detailHref set → title links to the detail page).
+interface Props {
+  tag: string;            // service-img-tag (category / v7 label)
+  num: string;            // service-num, e.g. "/ 01"
+  image: string;
+  imageAlt: string;
+  title: string;
+  description: string;
+  tags: string[];         // service-tag chips
+  detailHref?: string;    // when set, the title links to the service detail page
+  imgWidth?: number;
+  imgHeight?: number;
+}
+const {
+  tag, num, image, imageAlt, title, description, tags,
+  detailHref, imgWidth = 700, imgHeight = 438,
+} = Astro.props;
+---
+<div class="service-card">
+  <div class="service-img">
+    <span class="service-img-tag">{tag}</span>
+    <span class="service-num">{num}</span>
+    <img src={image} alt={imageAlt} loading="lazy" decoding="async" width={imgWidth} height={imgHeight}>
+  </div>
+  <div class="service-body">
+    <h3>{detailHref ? <a href={detailHref}>{title}</a> : title}</h3>
+    <p>{description}</p>
+    <div class="service-tags">
+      {tags.map((t) => <span class="service-tag">{t}</span>)}
+    </div>
+    <a href="#" class="service-link" onclick="openQuoteModal(); return false;">
+      <span>Get a quote</span>
+      <span class="service-link-arrow"><i class="ti ti-arrow-up-right"></i></span>
+    </a>
+  </div>
+</div>

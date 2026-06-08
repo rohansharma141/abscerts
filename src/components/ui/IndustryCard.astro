@@ -1,0 +1,30 @@
+---
+// Industry card — exact v7 `.industry-card` markup.
+// On the home grid no `href` is passed → renders a <div>, byte-identical to v7.
+// On /industries + RelatedItems an `href` is passed → the whole card becomes a
+// link to the detail page (inner markup unchanged).
+interface Props {
+  num: string;            // industry-num, e.g. "/ 01"
+  title: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  href?: string;          // when set, the card links to the industry detail page
+  imgWidth?: number;
+  imgHeight?: number;
+}
+const {
+  num, title, description, image, imageAlt,
+  href, imgWidth = 600, imgHeight = 800,
+} = Astro.props;
+const Tag = href ? 'a' : 'div';
+---
+<Tag class="industry-card" {...(href ? { href } : {})}>
+  <img src={image} alt={imageAlt} loading="lazy" decoding="async" width={imgWidth} height={imgHeight}>
+  <div class="industry-content">
+    <span class="industry-num">{num}</span>
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <span class="industry-cta">Discuss your scope <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+  </div>
+</Tag>

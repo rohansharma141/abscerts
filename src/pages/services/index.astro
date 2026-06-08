@@ -1,0 +1,88 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ServiceCard from '../../components/ui/ServiceCard.astro';
+import CTABanner from '../../components/sections/CTABanner.astro';
+
+const title = 'ISO & Compliance Certification Services | ABS Certifications';
+const description =
+  'Independent, IAS/IAF-accredited certification across ISO 9001, ISO 27001, ISO 14001, ISO 45001, SOC 2, PCI DSS and CMMI — for organisations in the UK, EU, US and Middle East.';
+
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+
+// Distinct categories present, for the (visual) filter chip strip.
+const categories = [...new Set(services.map((s) => s.data.category))];
+const num = (i: number) => `/ ${String(i + 1).padStart(2, '0')}`;
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>/</span> <strong>Services</strong>
+      </nav>
+      <p class="eyebrow" style="margin-bottom:24px">Our services</p>
+      <h1>Certifications that <em>matter</em> to the markets you sell into.</h1>
+      <p style="font-size:19px; color:var(--gray-text); max-width:680px; line-height:1.6; margin-top:20px;">
+        Every certification we issue is recognised internationally under the IAF Multilateral Recognition
+        Arrangement — so your customers in London, Frankfurt, Dubai or Austin can trust what's printed on your
+        certificate.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-tint" style="padding:64px 0 100px;">
+    <div class="container">
+      <div class="cat-strip" aria-hidden="true">
+        <span class="cat-chip cat-chip-all">All certifications</span>
+        {categories.map((c) => <span class="cat-chip">{c}</span>)}
+      </div>
+
+      <div class="services-grid">
+        {services.map((s, i) => (
+          <ServiceCard
+            tag={s.data.category}
+            num={num(i)}
+            image={s.data.image}
+            imageAlt={s.data.imageAlt}
+            title={s.data.title}
+            description={s.data.description}
+            tags={s.data.tags}
+            detailHref={`/services/${s.id}`}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTABanner />
+</BaseLayout>
+
+<style>
+  .crumbs {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gray-soft);
+    margin-bottom: 28px;
+  }
+  .crumbs a { color: var(--gray-soft); transition: color 0.2s; }
+  .crumbs a:hover { color: var(--blue); }
+  .crumbs span { margin: 0 8px; color: var(--line-strong); }
+  .crumbs strong { color: var(--blue-ink); font-weight: 500; }
+
+  .cat-strip { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+  .cat-chip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--blue);
+    background: var(--blue-50);
+    padding: 8px 16px;
+    font-weight: 500;
+    border: 1px solid var(--line-blue);
+  }
+  .cat-chip-all { background: var(--blue-ink); color: var(--white); border-color: var(--blue-ink); }
+</style>
