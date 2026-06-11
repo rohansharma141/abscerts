@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+
+// Mobile drawer "Services" accordion (tablet <1080px and mobile <768px).
+// Level 1: Services toggle. Level 2: per-category. Categories with services are
+// collapsible (reveal top services + "View all"); empty categories are a direct
+// link to their landing page.
+const categories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
+const allServices = await getCollection('services');
+
+const cells = categories.map((cat) => {
+  const services = allServices
+    .filter((s) => s.data.category === cat.id)
+    .sort((a, b) => a.data.order - b.data.order);
+  return { slug: cat.id, shortName: cat.data.shortName, top: services.slice(0, 4), count: services.length };
+});
+---
+
+<div class="m-services">
+  <button class="m-services-toggle" type="button" aria-expanded="false">
+    Services <i class="ti ti-chevron-down"></i>
+  </button>
+  <div class="m-services-panel">
+    {cells.map((cell) => (
+      cell.top.length === 0 ? (
+        <a href={`/services/${cell.slug}`} class="m-cat-link" onclick="toggleMobileNav()">{cell.shortName}</a>
+      ) : (
+        <div class="m-cat">
+          <button class="m-cat-toggle" type="button" aria-expanded="false">
+            {cell.shortName} <i class="ti ti-chevron-down"></i>
+          </button>
+          <div class="m-cat-panel">
+            {cell.top.map((s) => (
+              <a href={`/services/${s.id}`} onclick="toggleMobileNav()">{s.data.shortName}</a>
+            ))}
+            <a href={`/services/${cell.slug}`} class="m-cat-all" onclick="toggleMobileNav()">
+              View all{cell.count > 0 ? ` ${cell.count}` : ''} →
+            </a>
+          </div>
+        </div>
+      )
+    ))}
+  </div>
+</div>

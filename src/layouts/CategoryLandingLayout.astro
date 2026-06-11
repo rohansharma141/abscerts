@@ -1,0 +1,99 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import CTABanner from '../components/sections/CTABanner.astro';
+
+// Category landing layout (Phase 4a — structure with placeholders).
+// Phase 4b fills in: search-within-category, the smart-tile grid, the industries
+// section and the FAQ block. The compact hero, breadcrumb, rendered educational
+// body and CTA are real now.
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+
+const pageTitle = d.seo?.title ?? `${d.title} | ABS Certifications`;
+const pageDescription = d.seo?.description ?? d.description;
+const canonical = new URL(`/services/${entry.id}`, Astro.site).href;
+
+// Services contained in this category (for the ItemList schema + future tiles).
+const services = (await getCollection('services'))
+  .filter((s) => s.data.category === entry.id)
+  .sort((a, b) => a.data.order - b.data.order);
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: new URL('/services', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: d.title, item: canonical },
+  ],
+};
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: d.title,
+  description: d.description,
+  url: canonical,
+  ...(services.length > 0 && {
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: services.map((s, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: s.data.shortName,
+        url: new URL(`/services/${s.id}`, Astro.site).href,
+      })),
+    },
+  }),
+};
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} canonical={canonical}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(collectionSchema)} />
+  </Fragment>
+
+  <!-- COMPACT HERO -->
+  <section class="cat-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <strong>{d.title}</strong>
+      </nav>
+      <p class="eyebrow">Services</p>
+      <h1>{d.title}</h1>
+      <p class="cat-hero-sub">{d.description}</p>
+    </div>
+  </section>
+
+  <!-- SEARCH + TILE GRID (Phase 4b) -->
+  <section class="section section-tint" style="padding:48px 0 72px;">
+    <div class="container">
+      <div class="todo">🔍 Search within {d.shortName} — Phase 4b</div>
+      <div class="todo" style="margin-top:16px;">
+        Service tile grid — Phase 4b
+        {services.length > 0 ? ` (${services.length} service${services.length === 1 ? '' : 's'} in this category)` : ' (no services migrated yet)'}
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATIONAL CONTENT (markdown body) -->
+  <section class="section section-white" style="padding:72px 0;">
+    <div class="container">
+      <article class="prose">
+        <Content />
+      </article>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES + FAQ (Phase 4b) -->
+  <section class="section section-tint" style="padding:56px 0;">
+    <div class="container">
+      <div class="todo">Industries we serve in this category — Phase 4b</div>
+      <div class="todo" style="margin-top:16px;">Category FAQs — Phase 4b</div>
+    </div>
+  </section>
+
+  <CTABanner />
+</BaseLayout>

@@ -6,7 +6,10 @@ icon: "ti-cloud-lock"
 tags: ["SOC 2", "Type I", "Type II", "Trust Services"]
 image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&q=80"
 imageAlt: "SOC 2 controls assessment for a cloud service provider"
-category: "Fast-track"
+category: "cyber-security"
+categoryName: "Cyber Security"
+governingBody: "AICPA"
+accreditation: "IAS/IAF"
 order: 5
 timelineWeeks: "6-10"
 featured: true

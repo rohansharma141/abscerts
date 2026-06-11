@@ -6,7 +6,9 @@ icon: "ti-credit-card"
 tags: ["PCI DSS", "Cardholder Data", "Payments Security"]
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80"
 imageAlt: "Payment card data security assessment under PCI DSS"
-category: "Fast-track"
+category: "cyber-security"
+categoryName: "Cyber Security"
+governingBody: "PCI Security Standards Council"
 order: 6
 timelineWeeks: "8-12"
 seo:

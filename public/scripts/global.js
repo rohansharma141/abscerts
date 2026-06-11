@@ -240,3 +240,52 @@ document.addEventListener('keydown', (e) => {
     });
   });
 })();
+
+/* ===== Mega-menu (desktop hover) + mobile Services accordion ===== */
+(function () {
+  // Desktop mega-menu: open on hover of the Services trigger or the panel,
+  // close 300ms after the pointer leaves both.
+  const trigger = document.getElementById('megaTrigger');
+  const panel = document.getElementById('megaMenu');
+  if (trigger && panel) {
+    let closeTimer = null;
+    const open = () => {
+      if (closeTimer) { clearTimeout(closeTimer); closeTimer = null; }
+      panel.classList.add('open');
+      trigger.setAttribute('aria-expanded', 'true');
+    };
+    const close = () => {
+      panel.classList.remove('open');
+      trigger.setAttribute('aria-expanded', 'false');
+    };
+    const scheduleClose = () => {
+      if (closeTimer) clearTimeout(closeTimer);
+      closeTimer = setTimeout(close, 300);
+    };
+    trigger.addEventListener('mouseenter', open);
+    trigger.addEventListener('mouseleave', scheduleClose);
+    panel.addEventListener('mouseenter', open);
+    panel.addEventListener('mouseleave', scheduleClose);
+    trigger.addEventListener('focus', open);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && panel.classList.contains('open')) close();
+    });
+  }
+
+  // Mobile drawer Services accordion (level 1) + per-category sub-accordions (level 2).
+  const servicesToggle = document.querySelector('.m-services-toggle');
+  if (servicesToggle) {
+    servicesToggle.addEventListener('click', () => {
+      const wrap = servicesToggle.closest('.m-services');
+      const isOpen = wrap.classList.toggle('open');
+      servicesToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
+  document.querySelectorAll('.m-cat-toggle').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const cat = btn.closest('.m-cat');
+      const isOpen = cat.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  });
+})();

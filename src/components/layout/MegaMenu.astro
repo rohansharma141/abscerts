@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+
+// Desktop mega-menu (≥1080px). 5×2 grid, one category per cell, positioned by the
+// category's column/row frontmatter. Each cell: clickable category heading → category
+// landing page, top 4 services (by order) → service pages, and a "View all N →" link.
+const categories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
+const allServices = await getCollection('services');
+
+const cells = categories.map((cat) => {
+  const services = allServices
+    .filter((s) => s.data.category === cat.id)
+    .sort((a, b) => a.data.order - b.data.order);
+  return {
+    slug: cat.id,
+    shortName: cat.data.shortName,
+    column: cat.data.column,
+    row: cat.data.row,
+    topServices: services.slice(0, 4),
+    count: services.length,
+  };
+});
+---
+
+<div class="mega-menu" id="megaMenu" role="menu" aria-label="Services categories">
+  <div class="mega-menu-grid">
+    {cells.map((cell) => (
+      <div class="mega-cell" style={`grid-column:${cell.column};grid-row:${cell.row};`}>
+        <a href={`/services/${cell.slug}`} class="mega-cell-head" role="menuitem">{cell.shortName}</a>
+        {cell.topServices.length > 0 && (
+          <ul class="mega-cell-list">
+            {cell.topServices.map((s) => (
+              <li><a href={`/services/${s.id}`} role="menuitem">{s.data.shortName}</a></li>
+            ))}
+          </ul>
+        )}
+        <a href={`/services/${cell.slug}`} class="mega-cell-all" role="menuitem">
+          View all{cell.count > 0 ? ` ${cell.count}` : ''} <i class="ti ti-arrow-right"></i>
+        </a>
+      </div>
+    ))}
+  </div>
+</div>

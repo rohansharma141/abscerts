@@ -6,7 +6,9 @@ icon: "ti-stairs-up"
 tags: ["CMMI", "Maturity Level 2", "Maturity Level 3", "Process Improvement"]
 image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80"
 imageAlt: "Software development team working toward a CMMI appraisal"
-category: "IT & software"
+category: "cmmi"
+categoryName: "CMMi & Process"
+governingBody: "CMMI Institute"
 order: 7
 timelineWeeks: "12-16"
 seo:

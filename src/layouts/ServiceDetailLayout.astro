@@ -1,0 +1,133 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import CTABanner from '../components/sections/CTABanner.astro';
+import RelatedItems from '../components/sections/RelatedItems.astro';
+
+// Service detail layout (extracted from the Phase 2 src/pages/services/[slug].astro).
+// Phase 4a additions: 3-level breadcrumb (Home › Services › Category › Service),
+// a clickable category eyebrow linking to the category landing page, and a
+// 4-item BreadcrumbList JSON-LD.
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+
+const pageTitle = d.seo?.title ?? `${d.title} | ABS Certifications`;
+const pageDescription = d.seo?.description ?? d.description;
+
+// Related services — the other entries, sorted by order, first 3.
+const all = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const related = all.filter((s) => s.id !== entry.id).slice(0, 3);
+
+const canonical = new URL(`/services/${entry.id}`, Astro.site).href;
+const categoryUrl = `/services/${d.category}`;
+
+// Service + BreadcrumbList JSON-LD for this detail page.
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: d.title,
+  serviceType: d.shortName,
+  description: d.description,
+  provider: { '@id': 'https://www.abscerts.com/#organization' },
+  areaServed: ['United Kingdom', 'United States', 'United Arab Emirates', 'Germany', 'Saudi Arabia'],
+  url: canonical,
+};
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: new URL('/services', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: d.categoryName, item: new URL(categoryUrl, Astro.site).href },
+    { '@type': 'ListItem', position: 4, name: d.shortName, item: canonical },
+  ],
+};
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} canonical={canonical}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <a href={categoryUrl}>{d.categoryName}</a> <span>/</span> <strong>{d.shortName}</strong>
+      </nav>
+      <div class="page-hero-grid">
+        <div>
+          <p class="eyebrow" style="margin-bottom:24px"><a href={categoryUrl}>{d.categoryName}</a></p>
+          <h1>{d.title}</h1>
+          <p>{d.description}</p>
+          <div class="detail-cta">
+            <button class="btn btn-primary" onclick="openQuoteModal()">Get a quote <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
+            <a class="btn btn-outline" href="/contact"><i class="ti ti-calendar-event"></i>Book a consultation</a>
+          </div>
+        </div>
+        <div class="page-hero-img">
+          <img src={d.image} alt={d.imageAlt} loading="eager" decoding="async" width="1200" height="900">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU'LL GET -->
+  <section class="section section-tint" style="padding:72px 0;">
+    <div class="container">
+      <div class="whatyouget">
+        {d.timelineWeeks && (
+          <div class="whatyouget-item">
+            <i class="ti ti-clock"></i>
+            <div>
+              <span class="whatyouget-num">{d.timelineWeeks} weeks</span>
+              <span class="whatyouget-label">Typical timeline to certificate</span>
+            </div>
+          </div>
+        )}
+        {d.governingBody && (
+          <div class="whatyouget-item">
+            <i class="ti ti-building-bank"></i>
+            <div>
+              <span class="whatyouget-num">{d.governingBody}</span>
+              <span class="whatyouget-label">Governing body / standard owner</span>
+            </div>
+          </div>
+        )}
+        <div class="whatyouget-item">
+          <i class="ti ti-shield-check"></i>
+          <div>
+            <span class="whatyouget-num">{d.accreditation ?? 'Independent'}</span>
+            <span class="whatyouget-label">Accredited &amp; globally recognised</span>
+          </div>
+        </div>
+        <div class="whatyouget-item whatyouget-tags">
+          <i class="ti ti-tag"></i>
+          <div>
+            <span class="whatyouget-label" style="margin-bottom:8px;">What this covers</span>
+            <div class="service-tags">
+              {d.tags.map((t) => <span class="service-tag">{t}</span>)}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <section class="section section-white" style="padding:88px 0;">
+    <div class="container">
+      <article class="prose">
+        <Content />
+      </article>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <RelatedItems type="services" title="Related certifications" eyebrow="More services" items={related} />
+  )}
+
+  <CTABanner />
+</BaseLayout>

@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import MegaMenu from '../components/layout/MegaMenu.astro';
+import MobileServicesNav from '../components/layout/MobileServicesNav.astro';
 
 interface Props {
   title: string;
@@ -185,7 +187,7 @@ const orgSchema = {
     </a>
     <nav class="nav" aria-label="Primary navigation">
       <a href="/" id="nav-home" class:list={[{ active: path === '/' }]}>Home</a>
-      <a href="/#services">Services</a>
+      <a href="/services" id="megaTrigger" class:list={["mega-trigger", { active: path.startsWith('/services') }]} aria-haspopup="true" aria-expanded="false">Services <i class="ti ti-chevron-down" style="font-size:14px"></i></a>
       <a href="/#industries">Industries</a>
       <a href="/#process">Process</a>
       <a href="/verify">Verify</a>
@@ -198,6 +200,7 @@ const orgSchema = {
       <span></span>
     </button>
   </div>
+  <MegaMenu />
 </header>
 
 <main id="main-content">
@@ -269,7 +272,7 @@ const orgSchema = {
 <aside class="mobile-nav" id="mobileNav" aria-hidden="true">
   <button class="mobile-nav-close" onclick="toggleMobileNav()" aria-label="Close menu"><i class="ti ti-x"></i></button>
   <a href="/" onclick="toggleMobileNav()">Home</a>
-  <a href="/#services" onclick="toggleMobileNav()">Services</a>
+  <MobileServicesNav />
   <a href="/#industries" onclick="toggleMobileNav()">Industries</a>
   <a href="/#process" onclick="toggleMobileNav()">Process</a>
   <a href="/verify" onclick="toggleMobileNav()">Verify</a>

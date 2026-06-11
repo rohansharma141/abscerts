@@ -6,31 +6,53 @@ import { glob } from 'astro/loaders';
 // `glob()` loader and this file lives at src/content.config.ts. The Zod schemas
 // below are copied verbatim from the brief — only the collection wrapper changed.
 
+// NOTE (Phase 4a): `category` changed from the Phase-2 enum to a free string (it now
+// holds a category *slug*, e.g. "cyber-security"). Added categoryName / governingBody /
+// accreditation and seo.keywords per migration brief Section 5. The old
+// `startingPriceGBP` is dropped (was unused; consistent with the no-pricing rule).
 const services = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/services' }),
   schema: z.object({
     title: z.string(),                          // "ISO 27001 — Information Security Management"
     shortName: z.string(),                      // "ISO 27001"
-    description: z.string(),                    // 1-line summary for cards and meta description
+    description: z.string(),                    // 1-2 sentence summary (meta + tile)
     icon: z.string(),                           // Tabler icon class, e.g. "ti-lock"
     tags: z.array(z.string()),                  // ["ISO 27001", "ISMS", "Information Security"]
     image: z.string(),                          // "/images/services/iso-27001.jpg"
     imageAlt: z.string(),
-    category: z.enum([
-      'Most requested',
-      'Fast-track',
-      'Advisory',
-      'Training',
-      'Inspections',
-      'IT & software',
-    ]),
-    order: z.number(),                          // for sorting on the index
-    timelineWeeks: z.string().optional(),       // "10-14" — used in cards and process callouts
-    startingPriceGBP: z.number().optional(),    // for "starts at GBP X" in pricing FAQs
-    featured: z.boolean().default(false),       // shown on home page
+    category: z.string(),                       // slug of the parent category (e.g. "cyber-security")
+    categoryName: z.string(),                   // display name (e.g. "Cyber Security") — for breadcrumb
+    order: z.number(),                          // sort order within category
+    timelineWeeks: z.string().optional(),       // "10-14"
+    governingBody: z.string().optional(),       // "ISO", "AICPA", "PCI Security Standards Council"
+    accreditation: z.string().optional(),       // "IAS/IAF" — used for credibility chips
+    featured: z.boolean().default(false),       // shown on home page services section
     seo: z.object({
-      title: z.string().optional(),             // overrides default if needed
+      title: z.string().optional(),
       description: z.string().optional(),
+      keywords: z.array(z.string()).optional(),
+    }).optional(),
+  }),
+});
+
+const categories = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/categories' }),
+  schema: z.object({
+    title: z.string(),                          // "Cyber Security"
+    shortName: z.string(),                      // "Cyber Security" (for nav/menu)
+    description: z.string(),                    // hero sub (1-2 sentences)
+    icon: z.string(),                           // Tabler icon
+    image: z.string(),                          // hero/OG image (placeholder for now)
+    imageAlt: z.string(),
+    order: z.number(),                          // mega-menu order (1-10)
+    column: z.number().min(1).max(5),           // mega-menu column (1-5)
+    row: z.number().min(1).max(2),              // mega-menu row (1-2)
+    educationalContent: z.string().optional(),  // 300-500 word intro — can also be the .md body (Phase 4b)
+    industries: z.array(z.string()).optional(), // industry slugs relevant to this category
+    seo: z.object({
+      title: z.string().optional(),
+      description: z.string().optional(),
+      keywords: z.array(z.string()).optional(),
     }).optional(),
   }),
 });
@@ -81,4 +103,4 @@ const resources = defineCollection({
   }),
 });
 
-export const collections = { services, industries, testimonials, resources };
+export const collections = { services, categories, industries, testimonials, resources };

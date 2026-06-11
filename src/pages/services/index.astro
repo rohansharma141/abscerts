@@ -6,12 +6,21 @@ import CTABanner from '../../components/sections/CTABanner.astro';
 
 const title = 'ISO & Compliance Certification Services | ABS Certifications';
 const description =
-  'Independent, IAS/IAF-accredited certification across ISO 9001, ISO 27001, ISO 14001, ISO 45001, SOC 2, PCI DSS and CMMI — for organisations in the UK, EU, US and Middle East.';
+  'Independent, IAS/IAF-accredited certification across ISO, cyber security, food & industry, CMMi and more — for organisations in India and worldwide.';
 
-const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const allServices = await getCollection('services');
+const services = [...allServices].sort((a, b) => a.data.order - b.data.order);
 
-// Distinct categories present, for the (visual) filter chip strip.
-const categories = [...new Set(services.map((s) => s.data.category))];
+// Category cards — the master view of all 10 categories (Phase 4a). Each links to its
+// landing page; the full per-category tile grids come in Phase 4b.
+const categories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
+const catCards = categories.map((c) => ({
+  slug: c.id,
+  shortName: c.data.shortName,
+  icon: c.data.icon,
+  count: allServices.filter((s) => s.data.category === c.id).length,
+}));
+
 const num = (i: number) => `/ ${String(i + 1).padStart(2, '0')}`;
 ---
 
@@ -31,17 +40,41 @@ const num = (i: number) => `/ ${String(i + 1).padStart(2, '0')}`;
     </div>
   </section>
 
-  <section class="section section-tint" style="padding:64px 0 100px;">
+  <!-- BROWSE BY CATEGORY -->
+  <section class="section section-white" style="padding:72px 0 24px;">
     <div class="container">
-      <div class="cat-strip" aria-hidden="true">
-        <span class="cat-chip cat-chip-all">All certifications</span>
-        {categories.map((c) => <span class="cat-chip">{c}</span>)}
+      <div class="section-head">
+        <div class="section-head-left">
+          <p class="eyebrow">Browse by category</p>
+          <h2>Explore our <em>certification categories</em>.</h2>
+        </div>
       </div>
+      <div class="cat-cards">
+        {catCards.map((c) => (
+          <a href={`/services/${c.slug}`} class="cat-card">
+            <span class="cat-card-icon"><i class={`ti ${c.icon}`}></i></span>
+            <h3>{c.shortName}</h3>
+            <span class="cat-card-count">{c.count} service{c.count === 1 ? '' : 's'}</span>
+            <span class="cat-card-all">View all <i class="ti ti-arrow-right"></i></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
 
+  <!-- ALL SERVICES -->
+  <section class="section section-tint" style="padding:72px 0 100px;">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head-left">
+          <p class="eyebrow">All services</p>
+          <h2>Every standard we <em>certify</em>.</h2>
+        </div>
+      </div>
       <div class="services-grid">
         {services.map((s, i) => (
           <ServiceCard
-            tag={s.data.category}
+            tag={s.data.categoryName}
             num={num(i)}
             image={s.data.image}
             imageAlt={s.data.imageAlt}
@@ -57,32 +90,3 @@ const num = (i: number) => `/ ${String(i + 1).padStart(2, '0')}`;
 
   <CTABanner />
 </BaseLayout>
-
-<style>
-  .crumbs {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--gray-soft);
-    margin-bottom: 28px;
-  }
-  .crumbs a { color: var(--gray-soft); transition: color 0.2s; }
-  .crumbs a:hover { color: var(--blue); }
-  .crumbs span { margin: 0 8px; color: var(--line-strong); }
-  .crumbs strong { color: var(--blue-ink); font-weight: 500; }
-
-  .cat-strip { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
-  .cat-chip {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--blue);
-    background: var(--blue-50);
-    padding: 8px 16px;
-    font-weight: 500;
-    border: 1px solid var(--line-blue);
-  }
-  .cat-chip-all { background: var(--blue-ink); color: var(--white); border-color: var(--blue-ink); }
-</style>
