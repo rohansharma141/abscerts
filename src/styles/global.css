@@ -8,9 +8,10 @@
   --blue-night: #0A0E1A;     /* deepest ink */
 
   /* Accent (was cobalt blue) → v2's warm gold */
-  --blue: #B8935A;           /* primary accent — gold */
+  --blue: #B8935A;           /* primary accent — gold (decorative: stripes, icons, gradients, dark-section text) */
   --blue-deep: #8B6F3F;      /* hover/pressed gold */
   --blue-bright: #C9A66E;    /* lighter gold for gradient end */
+  --accent-text: #7E6438;    /* darker gold for TEXT on light backgrounds — WCAG AA (~5:1). Use instead of --blue for readable gold text. */
 
   /* Tints (was blue tints) → warm cream tints for hover/bg chips */
   --blue-50: #F5EBD7;        /* lightest gold-tinted bg */
@@ -29,7 +30,7 @@
   --gray-50: #F3EFE7;        /* paper-2 */
   --gray-100: #E8E3D8;       /* paper-3 */
   --gray-text: #4A5165;      /* ink-muted */
-  --gray-soft: #7A8195;      /* ink-soft */
+  --gray-soft: #5C6373;      /* ink-soft — darkened from #7A8195 to pass WCAG AA contrast on light backgrounds */
 
   /* Lines */
   --line: rgba(10, 14, 26, 0.08);
@@ -1354,7 +1355,7 @@ em {
 .cta-banner-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1920&q=80');
+  background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1280&q=70');
   background-size: cover;
   background-position: center;
   opacity: 0.12;
@@ -1490,7 +1491,7 @@ em {
   transition: background 0.2s;
 }
 .footer-newsletter button:hover { background: var(--blue-deep); }
-.footer h4 {
+.footer h3 {
   font-family: 'JetBrains Mono', monospace;
   font-size: 12.5px;
   font-weight: 500;
@@ -1501,7 +1502,7 @@ em {
   position: relative;
   padding-bottom: 12px;
 }
-.footer h4::after {
+.footer h3::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -2696,7 +2697,7 @@ textarea.form-control {
 }
 .crumbs a { color: var(--gray-soft); transition: color 0.2s; }
 .crumbs a:hover { color: var(--blue); }
-.crumbs span { margin: 0 8px; color: var(--line-strong); }
+.crumbs span { margin: 0 8px; color: var(--gray-soft); }
 .crumbs strong { color: var(--blue-ink); font-weight: 500; }
 
 .detail-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
@@ -3107,4 +3108,39 @@ textarea.form-control {
 @media (max-width: 768px) {
   .service-tile-grid { grid-template-columns: 1fr; }
   .services-az-body { columns: 1; }
+}
+
+/* ============ Accessibility utilities ============ */
+/* Visually hidden but available to screen readers (and preserves heading order). */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ============ Gold text on light backgrounds — accessible variant (WCAG AA) ============ */
+/* These selectors render gold as readable TEXT on light surfaces, so they use the darker
+   --accent-text (~5:1). Bright --blue stays for stripes, icon fills, gradients and
+   dark-section text. Dark-section eyebrows/headings keep their higher-specificity --glow
+   override, so this only affects gold text on light. */
+em,
+.eyebrow,
+.service-tag,
+.service-tile-badge,
+.why-num,
+.process-step-num,
+.hero-stat .num small,
+.mega-cell-all,
+.m-cat-all,
+.verify-example code,
+.prose a,
+.category-empty-state a,
+.services-az-letter {
+  color: var(--accent-text);
 }

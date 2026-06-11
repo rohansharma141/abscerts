@@ -221,15 +221,15 @@ const orgSchema = {
         </div>
         <p class="footer-tag">Independent certification body serving organisations across UK, EU, US, Middle East and APAC. Accredited audits, transparent pricing, global delivery.</p>
         <div class="footer-newsletter">
-          <label>Stay in the loop</label>
+          <label for="footer-newsletter-email">Stay in the loop</label>
           <div class="footer-newsletter-input">
-            <input type="email" placeholder="your@email.com">
-            <button><i class="ti ti-arrow-right"></i></button>
+            <input type="email" id="footer-newsletter-email" name="email" placeholder="your@email.com">
+            <button aria-label="Subscribe"><i class="ti ti-arrow-right"></i></button>
           </div>
         </div>
       </div>
       <div>
-        <h4>Services</h4>
+        <h3>Services</h3>
         <ul class="footer-links">
           <li><a href="#">ISO certifications</a></li>
           <li><a href="#">SOC 2 & cyber security</a></li>
@@ -239,7 +239,7 @@ const orgSchema = {
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul class="footer-links">
           <li><a href="#">About us</a></li>
           <li><a href="#">Accreditation</a></li>
@@ -249,7 +249,7 @@ const orgSchema = {
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h3>Contact</h3>
         <div class="footer-contact-item"><i class="ti ti-phone"></i><span>+91 96257 76771<br>+91 97925 86202</span></div>
         <div class="footer-contact-item"><i class="ti ti-mail"></i><span>info@abscerts.com</span></div>
         <div class="footer-contact-item"><i class="ti ti-map-pin"></i><span>Hardoi, Uttar Pradesh, India</span></div>
@@ -269,7 +269,7 @@ const orgSchema = {
 
 <!-- ============ MOBILE NAV ============ -->
 <div class="mobile-nav-backdrop" id="mobileNavBackdrop" onclick="toggleMobileNav()"></div>
-<aside class="mobile-nav" id="mobileNav" aria-hidden="true">
+<aside class="mobile-nav" id="mobileNav" inert>
   <button class="mobile-nav-close" onclick="toggleMobileNav()" aria-label="Close menu"><i class="ti ti-x"></i></button>
   <a href="/" onclick="toggleMobileNav()">Home</a>
   <MobileServicesNav />
@@ -322,7 +322,7 @@ const orgSchema = {
 </div>
 
 <!-- ============ QUOTE MODAL ============ -->
-<div class="modal-backdrop" id="quoteModal" onclick="if(event.target===this) closeQuoteModal()">
+<div class="modal-backdrop" id="quoteModal" inert onclick="if(event.target===this) closeQuoteModal()">
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
     <div class="modal-header">
       <button class="modal-close" onclick="closeQuoteModal()" aria-label="Close"><i class="ti ti-x"></i></button>
@@ -335,22 +335,22 @@ const orgSchema = {
         <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field">
         <div class="form-row">
           <div>
-            <label>Full name *</label>
-            <input type="text" name="name" class="form-control" placeholder="Jane Smith" required>
+            <label for="qm-name">Full name *</label>
+            <input type="text" id="qm-name" name="name" class="form-control" placeholder="Jane Smith" required>
           </div>
           <div>
-            <label>Work email *</label>
-            <input type="email" name="email" class="form-control" placeholder="jane@company.com" required>
+            <label for="qm-email">Work email *</label>
+            <input type="email" id="qm-email" name="email" class="form-control" placeholder="jane@company.com" required>
           </div>
         </div>
         <div class="form-row">
           <div>
-            <label>Company *</label>
-            <input type="text" name="company" class="form-control" placeholder="Acme Ltd" required>
+            <label for="qm-company">Company *</label>
+            <input type="text" id="qm-company" name="company" class="form-control" placeholder="Acme Ltd" required>
           </div>
           <div>
-            <label>Country *</label>
-            <select name="country" class="form-control" required>
+            <label for="qm-country">Country *</label>
+            <select id="qm-country" name="country" class="form-control" required>
               <option value="">Select country</option>
               <option>United Kingdom</option>
               <option>United States</option>
@@ -362,8 +362,8 @@ const orgSchema = {
           </div>
         </div>
         <div class="form-group">
-          <label>Service of interest *</label>
-          <select name="service" class="form-control" required>
+          <label for="qm-service">Service of interest *</label>
+          <select id="qm-service" name="service" class="form-control" required>
             <option value="">Select a service</option>
             <option>ISO 9001 — Quality</option>
             <option>ISO 27001 — Information Security</option>
@@ -387,7 +387,7 @@ const orgSchema = {
 </div>
 
 <!-- ============ EXIT-INTENT POPUP ============ -->
-<div class="exit-popup" id="exitPopup" onclick="if(event.target===this) closeExitPopup()">
+<div class="exit-popup" id="exitPopup" inert onclick="if(event.target===this) closeExitPopup()">
   <div class="exit-popup-card">
     <div class="exit-popup-banner">
       <button class="exit-popup-close" onclick="closeExitPopup()" aria-label="Close"><i class="ti ti-x"></i></button>
@@ -404,7 +404,7 @@ const orgSchema = {
         <input type="hidden" name="type" value="email">
         <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field">
         <div class="exit-popup-input-row">
-          <input type="email" name="email" class="exit-popup-input" placeholder="your@email.com" required>
+          <input type="email" name="email" class="exit-popup-input" placeholder="your@email.com" aria-label="Your email address" required>
           <button type="submit" class="exit-popup-submit" data-submit>Send <i class="ti ti-arrow-right"></i></button>
         </div>
         <div data-form-status></div>
@@ -413,7 +413,7 @@ const orgSchema = {
         <input type="hidden" name="type" value="phone">
         <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field">
         <div class="exit-popup-input-row">
-          <input type="tel" name="phone" class="exit-popup-input" placeholder="+44 20 7946 0958" required>
+          <input type="tel" name="phone" class="exit-popup-input" placeholder="+44 20 7946 0958" aria-label="Your phone number" required>
           <button type="submit" class="exit-popup-submit" data-submit>Call me <i class="ti ti-arrow-right"></i></button>
         </div>
         <div data-form-status></div>

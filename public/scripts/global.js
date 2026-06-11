@@ -82,16 +82,21 @@ function toggleMobileNav() {
   const isOpen = nav.classList.toggle('open');
   backdrop.classList.toggle('open', isOpen);
   hamburger.classList.toggle('open', isOpen);
+  nav.toggleAttribute('inert', !isOpen); // only focusable/exposed to AT when open
   document.body.style.overflow = isOpen ? 'hidden' : '';
 }
 
 /* ===== Quote Modal ===== */
 function openQuoteModal() {
-  document.getElementById('quoteModal').classList.add('open');
+  const m = document.getElementById('quoteModal');
+  m.classList.add('open');
+  m.removeAttribute('inert');
   document.body.style.overflow = 'hidden';
 }
 function closeQuoteModal() {
-  document.getElementById('quoteModal').classList.remove('open');
+  const m = document.getElementById('quoteModal');
+  m.classList.remove('open');
+  m.setAttribute('inert', '');
   document.body.style.overflow = '';
 }
 
@@ -129,12 +134,16 @@ let exitShown = false;
 function showExitPopup() {
   if (exitShown) return;
   exitShown = true;
-  document.getElementById('exitPopup').classList.add('open');
+  const p = document.getElementById('exitPopup');
+  p.classList.add('open');
+  p.removeAttribute('inert');
   document.body.style.overflow = 'hidden';
   try { sessionStorage.setItem('absExitShown', '1'); } catch(e) {}
 }
 function closeExitPopup() {
-  document.getElementById('exitPopup').classList.remove('open');
+  const p = document.getElementById('exitPopup');
+  p.classList.remove('open');
+  p.setAttribute('inert', '');
   document.body.style.overflow = '';
 }
 function switchExitTab(btn, type) {

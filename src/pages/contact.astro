@@ -115,23 +115,23 @@ const faqSchema = {
             <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field">
             <div class="form-row">
               <div>
-                <label>Full name *</label>
-                <input type="text" name="name" class="form-control" placeholder="Jane Smith" required>
+                <label for="ct-name">Full name *</label>
+                <input type="text" id="ct-name" name="name" class="form-control" placeholder="Jane Smith" required>
               </div>
               <div>
-                <label>Work email *</label>
-                <input type="email" name="email" class="form-control" placeholder="jane@company.com" required>
+                <label for="ct-email">Work email *</label>
+                <input type="email" id="ct-email" name="email" class="form-control" placeholder="jane@company.com" required>
               </div>
             </div>
 
             <div class="form-row">
               <div>
-                <label>Company *</label>
-                <input type="text" name="company" class="form-control" placeholder="Acme Ltd" required>
+                <label for="ct-company">Company *</label>
+                <input type="text" id="ct-company" name="company" class="form-control" placeholder="Acme Ltd" required>
               </div>
               <div>
-                <label>Country *</label>
-                <select name="country" class="form-control" required>
+                <label for="ct-country">Country *</label>
+                <select id="ct-country" name="country" class="form-control" required>
                   <option value="">Select country</option>
                   <option>United Kingdom</option>
                   <option>United States</option>
@@ -148,12 +148,12 @@ const faqSchema = {
 
             <div class="form-row">
               <div>
-                <label>Phone (with country code)</label>
-                <input type="tel" name="phone" class="form-control" placeholder="+44 20 7946 0958">
+                <label for="ct-phone">Phone (with country code)</label>
+                <input type="tel" id="ct-phone" name="phone" class="form-control" placeholder="+44 20 7946 0958">
               </div>
               <div>
-                <label>Company size</label>
-                <select name="companySize" class="form-control">
+                <label for="ct-companySize">Company size</label>
+                <select id="ct-companySize" name="companySize" class="form-control">
                   <option>1–10 employees</option>
                   <option>11–50 employees</option>
                   <option>51–200 employees</option>
@@ -164,8 +164,8 @@ const faqSchema = {
             </div>
 
             <div class="form-group">
-              <label>Service of interest *</label>
-              <select name="service" class="form-control" required>
+              <label for="ct-service">Service of interest *</label>
+              <select id="ct-service" name="service" class="form-control" required>
                 <option value="">Select a service</option>
                 <option>ISO 9001 — Quality Management</option>
                 <option>ISO 27001 — Information Security</option>
@@ -180,8 +180,8 @@ const faqSchema = {
             </div>
 
             <div class="form-group">
-              <label>Tell us about your project</label>
-              <textarea name="message" class="form-control" placeholder="Brief on scope, target date, any existing certifications, number of sites, etc."></textarea>
+              <label for="ct-message">Tell us about your project</label>
+              <textarea id="ct-message" name="message" class="form-control" placeholder="Brief on scope, target date, any existing certifications, number of sites, etc."></textarea>
             </div>
 
             <div class="checkbox-row">
