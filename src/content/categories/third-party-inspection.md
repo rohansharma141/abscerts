@@ -3,7 +3,7 @@ title: "Third Party Inspection"
 shortName: "Third Party Inspection"
 description: "Independent vendor, supplier and quality-assurance inspections that verify quality at source — before goods ship and problems travel."
 icon: "ti-clipboard-check"
-image: "/images/categories/third-party-inspection.jpg"
+image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=640&q=80"
 imageAlt: "Independent third-party factory and supplier inspection"
 order: 10
 column: 5

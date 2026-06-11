@@ -2756,15 +2756,44 @@ textarea.form-control {
 .prose a { color: var(--blue); border-bottom: 1px solid var(--line-blue); }
 .prose strong { color: var(--blue-ink); font-weight: 600; }
 
-/* Category landing — compact hero */
+/* Category landing — compact hero (soft tint background) */
 .cat-hero {
-  background: var(--white);
+  background: var(--off-white);
   padding: 52px 0 40px;
   border-bottom: 1px solid var(--line);
 }
 .cat-hero .eyebrow { margin-bottom: 18px; }
 .cat-hero h1 { font-size: clamp(36px, 4.5vw, 56px); margin-bottom: 16px; }
 .cat-hero-sub { font-size: 19px; color: var(--gray-text); max-width: 680px; line-height: 1.6; }
+
+/* Category hero with media — small framed photo or icon beside the text */
+.cat-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 56px;
+  align-items: center;
+}
+.cat-hero-grid .cat-hero-sub { margin-bottom: 0; }
+.cat-hero-grid .eyebrow { margin-bottom: 18px; }
+.cat-hero-grid h1 { margin-bottom: 16px; }
+.cat-hero-media {
+  aspect-ratio: 4 / 3;
+  border: 1.5px solid var(--blue-ink);
+  overflow: hidden;
+  position: relative;
+}
+.cat-hero-media img { width: 100%; height: 100%; object-fit: cover; }
+.cat-hero-media::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%; height: 4px;
+  background: var(--blue);
+}
+@media (max-width: 768px) {
+  .cat-hero-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cat-hero-media { max-width: 300px; }
+}
 
 /* Placeholder boxes (Phase 4b stubs) */
 .todo {
@@ -2945,6 +2974,10 @@ textarea.form-control {
 /* ============ Phase 4b — service tiles, category search, A-Z index ============ */
 
 .container.narrow { max-width: 800px; }
+
+/* Category educational prose — wider than the default narrow column (~900px text) */
+.container.narrow.cat-prose { max-width: 980px; }
+.cat-prose .prose { max-width: 900px; }
 
 .cat-card-desc {
   font-size: 13.5px;

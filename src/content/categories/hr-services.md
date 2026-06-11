@@ -3,7 +3,7 @@ title: "HR Services"
 shortName: "HR Services"
 description: "Recruitment and HR consulting — helping organisations find the right people and build the HR practices to support them."
 icon: "ti-users-group"
-image: "/images/categories/hr-services.jpg"
+image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=640&q=80"
 imageAlt: "HR consulting and recruitment services"
 order: 9
 column: 4

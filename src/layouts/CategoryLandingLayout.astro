@@ -54,15 +54,24 @@ const collectionSchema = {
     <script type="application/ld+json" is:inline set:html={JSON.stringify(collectionSchema)} />
   </Fragment>
 
-  <!-- COMPACT HERO -->
-  <section class="cat-hero">
+  <!-- COMPACT HERO — text + small framed photo -->
+  <section class="cat-hero cat-hero--media">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb">
         <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <strong>{d.title}</strong>
       </nav>
-      <p class="eyebrow">Services</p>
-      <h1>{d.title}</h1>
-      <p class="cat-hero-sub">{d.description}</p>
+      <div class="cat-hero-grid">
+        <div class="cat-hero-text">
+          <p class="eyebrow">Services</p>
+          <h1>{d.title}</h1>
+          <p class="cat-hero-sub">{d.description}</p>
+        </div>
+        {d.image && (
+          <div class="cat-hero-media">
+            <img src={d.image} alt={d.imageAlt ?? d.title} width="640" height="480" loading="eager" />
+          </div>
+        )}
+      </div>
     </div>
   </section>
 
@@ -98,7 +107,7 @@ const collectionSchema = {
 
   <!-- EDUCATIONAL CONTENT -->
   <section class="section section-white" style="padding:72px 0;">
-    <div class="container narrow">
+    <div class="container narrow cat-prose">
       <article class="prose">
         <Content />
       </article>

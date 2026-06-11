@@ -3,7 +3,7 @@ title: "Management System Training"
 shortName: "Management System Training"
 description: "Lead auditor, internal auditor and awareness training across ISO management system standards — delivered by practising lead auditors."
 icon: "ti-presentation"
-image: "/images/categories/management-system-training.jpg"
+image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=640&q=80"
 imageAlt: "ISO management system lead auditor training course"
 order: 7
 column: 2

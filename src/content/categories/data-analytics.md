@@ -3,7 +3,7 @@ title: "Data Analytics"
 shortName: "Data Analytics"
 description: "Data management, process automation, decision analytics, visualisation and cloud management for compliance-driven and data-led teams."
 icon: "ti-chart-dots"
-image: "/images/categories/data-analytics.jpg"
+image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=640&q=80"
 imageAlt: "Data analytics and decision dashboards for compliance teams"
 order: 5
 column: 5

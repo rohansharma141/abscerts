@@ -3,7 +3,7 @@ title: "Personnel Certifications"
 shortName: "Personnel Certifications"
 description: "Independent certification of individuals — lead auditors and other professionals — against recognised competence schemes."
 icon: "ti-user-check"
-image: "/images/categories/personnel-certifications.jpg"
+image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=640&q=80"
 imageAlt: "Personnel competence certification for auditors and professionals"
 order: 8
 column: 3
