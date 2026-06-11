@@ -15,6 +15,16 @@ seo:
   keywords: ["agile transformation India", "Scrum training", "Lean Six Sigma", "agile coaching"]
 ---
 
-<!-- TODO Phase 4b: Replace with full 300-500 word educational content -->
+## Why agile transformation matters
 
-Adopting agile is rarely about a single training course — it's about changing how teams plan, deliver and improve, and making that change stick. ABS provides agile coaching, accredited Scrum and Kanban training, and Lean Six Sigma, working alongside teams and leadership to embed agile delivery rather than impose a framework.
+Adopting agile is rarely solved by a single training course. It is a change in how teams plan, build and improve — and making that change stick is what separates a genuine transformation from a rebranded process. Organisations usually come to it because something is hurting: products arriving late and missing expectations, unpredictable development cycles, developer burnout, slow time to market, or simply falling behind more responsive competitors.
+
+## What's included, and who needs it
+
+ABS provides agile coaching and training in established methodologies including Scrum, Kanban and Lean. The work is aimed at teams and the leaders around them — the people who set priorities and the people who deliver — because agile only holds when both change together. It suits software and product organisations under delivery pressure, as well as broader teams that want more predictable, iterative ways of working.
+
+Rather than a one-off workshop, ABS follows a phased approach. It begins with an assessment of your current processes, culture and challenges to shape a strategy that fits you. That is followed by comprehensive training and coaching, with experienced coaches working directly alongside teams; practical implementation of agile practices and tooling; and an ongoing focus on continuously refining what is in place.
+
+## How ABS approaches agile transformation
+
+The emphasis throughout is on embedding new ways of working, not imposing a framework and leaving. Coaches work with your teams in their real context, so practices are adapted to how you actually deliver rather than applied from a template. Each engagement starts with a scoping conversation and a clear plan for the phases ahead.

@@ -1,90 +1,77 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ServiceCard from '../../components/ui/ServiceCard.astro';
 import CTABanner from '../../components/sections/CTABanner.astro';
 
-const title = 'ISO & Compliance Certification Services | ABS Certifications';
+const title = 'Certification & Audit Services | ABS Certifications';
 const description =
-  'Independent, IAS/IAF-accredited certification across ISO, cyber security, food & industry, CMMi and more — for organisations in India and worldwide.';
+  'Independent, accredited audits across ISO, cyber security, food & industry, CMMi, data analytics, training, inspection and more — for organisations operating across regulated markets.';
 
 const allServices = await getCollection('services');
-const services = [...allServices].sort((a, b) => a.data.order - b.data.order);
 
-// Category cards — the master view of all 10 categories (Phase 4a). Each links to its
-// landing page; the full per-category tile grids come in Phase 4b.
+// Category cards — the primary way to browse (Phase 4b).
 const categories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
 const catCards = categories.map((c) => ({
   slug: c.id,
   shortName: c.data.shortName,
   icon: c.data.icon,
+  description: c.data.description,
   count: allServices.filter((s) => s.data.category === c.id).length,
 }));
 
-const num = (i: number) => `/ ${String(i + 1).padStart(2, '0')}`;
+// A–Z power-user view — every service, grouped by first letter of shortName.
+const azServices = [...allServices].sort((a, b) => a.data.shortName.localeCompare(b.data.shortName));
+const azGroups: Record<string, typeof azServices> = {};
+for (const s of azServices) {
+  const letter = s.data.shortName.charAt(0).toUpperCase();
+  (azGroups[letter] ??= []).push(s);
+}
+const azLetters = Object.keys(azGroups).sort();
 ---
 
 <BaseLayout title={title} description={description}>
-  <section class="page-hero">
+  <!-- COMPACT HERO -->
+  <section class="cat-hero">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb">
         <a href="/">Home</a> <span>/</span> <strong>Services</strong>
       </nav>
-      <p class="eyebrow" style="margin-bottom:24px">Our services</p>
-      <h1>Certifications that <em>matter</em> to the markets you sell into.</h1>
-      <p style="font-size:19px; color:var(--gray-text); max-width:680px; line-height:1.6; margin-top:20px;">
-        Every certification we issue is recognised internationally under the IAF Multilateral Recognition
-        Arrangement — so your customers in London, Frankfurt, Dubai or Austin can trust what's printed on your
-        certificate.
-      </p>
+      <p class="eyebrow">Services</p>
+      <h1>Our services</h1>
+      <p class="cat-hero-sub">Independent audits for organisations operating across regulated markets — browse by category below.</p>
     </div>
   </section>
 
-  <!-- BROWSE BY CATEGORY -->
-  <section class="section section-white" style="padding:72px 0 24px;">
+  <!-- CATEGORY CARDS -->
+  <section class="section section-tint" style="padding:56px 0 72px;">
     <div class="container">
-      <div class="section-head">
-        <div class="section-head-left">
-          <p class="eyebrow">Browse by category</p>
-          <h2>Explore our <em>certification categories</em>.</h2>
-        </div>
-      </div>
       <div class="cat-cards">
         {catCards.map((c) => (
           <a href={`/services/${c.slug}`} class="cat-card">
             <span class="cat-card-icon"><i class={`ti ${c.icon}`}></i></span>
             <h3>{c.shortName}</h3>
-            <span class="cat-card-count">{c.count} service{c.count === 1 ? '' : 's'}</span>
-            <span class="cat-card-all">View all <i class="ti ti-arrow-right"></i></span>
+            <p class="cat-card-desc">{c.description}</p>
+            <span class="cat-card-all">View all{c.count > 0 ? ` ${c.count}` : ''} <i class="ti ti-arrow-right"></i></span>
           </a>
         ))}
       </div>
-    </div>
-  </section>
 
-  <!-- ALL SERVICES -->
-  <section class="section section-tint" style="padding:72px 0 100px;">
-    <div class="container">
-      <div class="section-head">
-        <div class="section-head-left">
-          <p class="eyebrow">All services</p>
-          <h2>Every standard we <em>certify</em>.</h2>
+      <!-- A–Z power-user view -->
+      <details class="services-az">
+        <summary>Browse all services A–Z</summary>
+        <div class="services-az-body">
+          {azLetters.map((letter) => (
+            <div class="services-az-group">
+              <span class="services-az-letter">{letter}</span>
+              <ul>
+                {azGroups[letter].map((s) => (
+                  <li><a href={`/services/${s.id}`}>{s.data.shortName} — {s.data.title}</a></li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
-      </div>
-      <div class="services-grid">
-        {services.map((s, i) => (
-          <ServiceCard
-            tag={s.data.categoryName}
-            num={num(i)}
-            image={s.data.image}
-            imageAlt={s.data.imageAlt}
-            title={s.data.title}
-            description={s.data.description}
-            tags={s.data.tags}
-            detailHref={`/services/${s.id}`}
-          />
-        ))}
-      </div>
+      </details>
     </div>
   </section>
 

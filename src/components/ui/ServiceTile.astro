@@ -1,0 +1,33 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  service: CollectionEntry<'services'>;
+}
+
+const { service } = Astro.props;
+const { title, shortName, description, icon, tags, timelineWeeks, governingBody, accreditation } = service.data;
+const slug = service.id.replace(/\.md$/, '');
+---
+
+<a href={`/services/${slug}`} class="service-tile" data-search-target>
+  <div class="service-tile-top">
+    <div class="service-tile-icon">
+      <i class={`ti ${icon}`}></i>
+    </div>
+    {accreditation && <span class="service-tile-badge">{accreditation}</span>}
+  </div>
+  <h3>{shortName}</h3>
+  <p>{description}</p>
+  <div class="service-tile-meta">
+    {timelineWeeks && <span>{timelineWeeks} weeks</span>}
+    {timelineWeeks && governingBody && <span aria-hidden="true">·</span>}
+    {governingBody && <span>{governingBody}</span>}
+  </div>
+  <span class="service-tile-arrow" aria-hidden="true">
+    <i class="ti ti-arrow-right"></i>
+  </span>
+  <span class="service-tile-search-text" hidden>
+    {shortName} {title} {tags.join(' ')} {description}
+  </span>
+</a>

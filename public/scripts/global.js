@@ -289,3 +289,25 @@ document.addEventListener('keydown', (e) => {
     });
   });
 })();
+
+/* ===== Search-within-category (vanilla, client-side substring match) ===== */
+(function () {
+  const input = document.querySelector('[data-category-search]');
+  if (!input) return; // only on category pages that render the search box
+
+  const tiles = Array.from(document.querySelectorAll('[data-search-target]'));
+  const emptyState = document.querySelector('[data-search-empty-state]');
+
+  input.addEventListener('input', () => {
+    const q = input.value.toLowerCase().trim();
+    let visible = 0;
+    tiles.forEach((tile) => {
+      const textEl = tile.querySelector('.service-tile-search-text');
+      const text = (textEl ? textEl.textContent : tile.textContent || '').toLowerCase();
+      const match = q === '' || text.indexOf(q) !== -1;
+      tile.style.display = match ? '' : 'none';
+      if (match) visible++;
+    });
+    if (emptyState) emptyState.hidden = visible !== 0;
+  });
+})();

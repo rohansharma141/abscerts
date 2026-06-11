@@ -2,11 +2,10 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import CTABanner from '../components/sections/CTABanner.astro';
+import ServiceTile from '../components/ui/ServiceTile.astro';
 
-// Category landing layout (Phase 4a — structure with placeholders).
-// Phase 4b fills in: search-within-category, the smart-tile grid, the industries
-// section and the FAQ block. The compact hero, breadcrumb, rendered educational
-// body and CTA are real now.
+// Category landing layout. Phase 4b: real educational body, smart-tile grid and
+// search-within-category. Industries + FAQ sections remain deferred (TODO markers).
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const d = entry.data;
@@ -15,7 +14,7 @@ const pageTitle = d.seo?.title ?? `${d.title} | ABS Certifications`;
 const pageDescription = d.seo?.description ?? d.description;
 const canonical = new URL(`/services/${entry.id}`, Astro.site).href;
 
-// Services contained in this category (for the ItemList schema + future tiles).
+// Services contained in this category, sorted by order.
 const services = (await getCollection('services'))
   .filter((s) => s.data.category === entry.id)
   .sort((a, b) => a.data.order - b.data.order);
@@ -67,33 +66,46 @@ const collectionSchema = {
     </div>
   </section>
 
-  <!-- SEARCH + TILE GRID (Phase 4b) -->
-  <section class="section section-tint" style="padding:48px 0 72px;">
+  <!-- SEARCH + TILE GRID -->
+  <section class="section section-tint" style="padding:40px 0 72px;">
     <div class="container">
-      <div class="todo">🔍 Search within {d.shortName} — Phase 4b</div>
-      <div class="todo" style="margin-top:16px;">
-        Service tile grid — Phase 4b
-        {services.length > 0 ? ` (${services.length} service${services.length === 1 ? '' : 's'} in this category)` : ' (no services migrated yet)'}
-      </div>
+      {services.length > 0 ? (
+        <Fragment>
+          <div class="category-search">
+            <i class="ti ti-search"></i>
+            <input
+              type="search"
+              data-category-search
+              placeholder={`Search ${d.shortName.toLowerCase()} services...`}
+              aria-label={`Search within ${d.shortName}`}
+            />
+          </div>
+          <div class="service-tile-grid">
+            {services.map((s) => <ServiceTile service={s} />)}
+          </div>
+          <div class="search-empty-state" data-search-empty-state hidden>
+            <p>No services match your search.</p>
+          </div>
+        </Fragment>
+      ) : (
+        <div class="category-empty-state">
+          <p>Services in this category are being added. <a href="/contact">Contact us</a> to discuss your specific requirement.</p>
+        </div>
+      )}
     </div>
   </section>
 
-  <!-- EDUCATIONAL CONTENT (markdown body) -->
+  <!-- EDUCATIONAL CONTENT -->
   <section class="section section-white" style="padding:72px 0;">
-    <div class="container">
+    <div class="container narrow">
       <article class="prose">
         <Content />
       </article>
     </div>
   </section>
 
-  <!-- INDUSTRIES + FAQ (Phase 4b) -->
-  <section class="section section-tint" style="padding:56px 0;">
-    <div class="container">
-      <div class="todo">Industries we serve in this category — Phase 4b</div>
-      <div class="todo" style="margin-top:16px;">Category FAQs — Phase 4b</div>
-    </div>
-  </section>
+  <!-- TODO Phase 4f or later: "Industries we serve in this category" section -->
+  <!-- TODO Phase 4f or later: Category-level FAQ section -->
 
   <CTABanner />
 </BaseLayout>

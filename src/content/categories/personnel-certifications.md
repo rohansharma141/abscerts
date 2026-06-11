@@ -15,6 +15,19 @@ seo:
   keywords: ["personnel certification India", "lead auditor certification", "competence certification"]
 ---
 
-<!-- TODO Phase 4b: Replace with full 300-500 word educational content -->
+<!-- TODO Phase 4b / stakeholder: the live abscerts.com personnel-certifications page has
+     no detailed source content (just a generic "independent certification body" line).
+     The copy below is general, honest framing only — expand with real scheme names,
+     roles and requirements once the stakeholder confirms them. Do not invent specifics. -->
 
-Personnel certification verifies the competence of an individual — not an organisation — against a defined scheme, giving professionals a credible, portable credential and giving employers confidence in the people they rely on. ABS certifies individuals, including lead auditors, against recognised competence requirements through an impartial assessment process.
+## What personnel certification is
+
+Personnel certification assesses and certifies the competence of an individual — a specific person against a defined scheme — rather than an organisation against a management system. Where a management-system certificate says "this company runs a compliant process," a personnel certificate says "this individual has demonstrated the knowledge and skill the role requires." For professionals, it is a credible, portable credential; for employers, it is independent assurance about the people they rely on.
+
+## Who it's for
+
+Personnel certification matters most in roles where competence has to be proven rather than assumed — auditors, assessors and other specialists whose judgement organisations depend on. A certified individual can move between employers and engagements carrying a recognised, verifiable credential rather than relying on a CV alone.
+
+## How ABS approaches it
+
+ABS is an independent certification body, and that impartiality is what gives a personnel certificate its value: the assessment is conducted at arm's length, against defined requirements, by a body with no stake in the result. To discuss a specific scheme or role, contact our team for current details.

@@ -15,6 +15,16 @@ seo:
   keywords: ["HACCP certification", "food safety certification India", "BRCGS", "IATF 16949 certification"]
 ---
 
-<!-- TODO Phase 4b: Replace with full 300-500 word educational content -->
+## Why industry and food certification matters
 
-Food producers, manufacturers and suppliers face certification requirements that are specific to their sector and their markets — retailer schemes like BRCGS, automotive standards like IATF 16949, food safety systems like HACCP and FSSC 22000, and faith-based or regional marks. ABS certifies against these sector standards with auditors who understand both the requirement and the operation behind it.
+Food producers, manufacturers and suppliers face certification requirements that are specific to their sector and to the markets and customers they serve. A food retailer may require BRCGS or FSSC 22000; an automotive supplier needs IATF 16949; a laboratory needs NABL accreditation; and products entering certain markets need CE marking or faith-based certification such as Halal or Kosher. These are not generic management-system certificates — they are the specific marks that let you onto an approved supplier list or onto a shelf.
+
+## What's included, and who needs it
+
+ABS works across the major industry and food schemes, including HACCP, Halal, Kosher, FSSC 22000, BRCGS, IATF 16949, VDA 6, SMETA, NABL, NABH and CE marking. FSSC 22000, for example, combines the ISO 22000 food-safety management standard with additional food-industry requirements; it applies to organisations of any size across the food industry and helps them identify and manage food-safety hazards more effectively, with recognition that supports access to global markets.
+
+These certifications are for organisations whose customers audit their supply chains: food and beverage producers, contract manufacturers, automotive parts suppliers, testing laboratories and healthcare providers. The relevant scheme is usually dictated by the buyer or the destination market rather than chosen freely.
+
+## How ABS approaches industry and food certification
+
+ABS is an independent certification body, and that independence is the point — an impartial audit gives buyers a credible basis to trust what your certificate says. Engagements begin with a fixed-price scope tailored to the standard and your operation, with audits delivered on-site where the scheme requires direct observation of production, or remotely where appropriate, across India and international markets.

@@ -15,6 +15,16 @@ seo:
   keywords: ["cyber security certification", "SOC 2 audit India", "PCI DSS compliance", "GDPR audit"]
 ---
 
-<!-- TODO Phase 4b: Replace with full 300-500 word educational content -->
+## Why cyber security certification matters
 
-Cyber security certifications have become the price of entry for any organisation that handles customer data, processes payments, or sells into regulated markets. ABS delivers independent audits across the full spectrum — from foundational frameworks to specialised attestations like SOC 2 Type II — with auditors experienced in fintech, SaaS, healthcare and government, on-site or remotely.
+Cyber security is the practice of protecting systems, networks and data from digital attacks — and it depends as much on process and people as on technology. In 2026, that protection has to be demonstrable: every enterprise buyer runs a security questionnaire, banks require evidence from anyone touching payment data, and regulators across jurisdictions are tightening their expectations. An independent cyber security audit turns "trust us" into something a customer's security team can actually verify.
+
+## What's included, and who needs it
+
+ABS covers the full cyber security spectrum. That includes attestation and compliance frameworks such as SOC 1 and SOC 2, ISAE 3402 and SSAE 18, PCI DSS, and data-protection regimes including GDPR, UK GDPR, CCPA and HIPAA, alongside frameworks like NIST, TISAX, DORA and Cyber Essentials. It also includes hands-on security work such as VAPT — vulnerability assessment and penetration testing.
+
+These services matter most to organisations that store or process customer data: SaaS and cloud providers facing enterprise security reviews, fintechs handling payments, healthcare businesses holding patient data, and any company selling into regulated markets. The right combination depends on who your buyers are and which regimes apply to you.
+
+## How ABS approaches cyber security
+
+ABS delivers tailored engagements rather than off-the-shelf checklists, with a comprehensive methodology and support that continues beyond the initial assessment. Our penetration-testing practitioners bring more than a decade of cumulative experience. SOC 2 reporting follows the AICPA Trust Services Criteria; where a framework requires a specific qualified assessor, we are clear about how that is delivered through our network. Every engagement starts with a fixed-price scope and a proposal, on-site or remote.
