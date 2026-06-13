@@ -14,9 +14,11 @@ const pageTitle = d.seo?.title ?? `${d.title} | ABS Certifications`;
 const pageDescription = d.seo?.description ?? d.description;
 const canonical = new URL(`/services/${entry.id}`, Astro.site).href;
 
-// Services contained in this category, sorted by order.
+// Services contained in this category, sorted by order. Exclude any service whose
+// slug equals the category slug (e.g. the legacy `cmmi` service) — it would render a
+// tile that links back to this same category page.
 const services = (await getCollection('services'))
-  .filter((s) => s.data.category === entry.id)
+  .filter((s) => s.data.category === entry.id && s.id !== entry.id)
   .sort((a, b) => a.data.order - b.data.order);
 
 const breadcrumbSchema = {
