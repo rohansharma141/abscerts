@@ -5,6 +5,7 @@ description: "PCI DSS, SOC 2, ISO 27001 for fintech & banks."
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80"
 imageAlt: "Financial services — PCI DSS and SOC 2 certification"
 standards: ["PCI DSS", "SOC 2", "ISO 27001"]
+services: ["soc-2", "pci-dss", "iso-27001", "soc-1", "isae-3402", "ssae-18", "iso-27701", "gdpr", "iso-22301", "iso-37001", "nist", "iso-9001"]
 order: 4
 featured: true
 ---

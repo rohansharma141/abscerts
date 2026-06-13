@@ -68,7 +68,8 @@ const industries = defineCollection({
     description: z.string(),
     image: z.string(),
     imageAlt: z.string(),
-    standards: z.array(z.string()),             // ["ISO 27001", "SOC 2", "GDPR"]
+    standards: z.array(z.string()),             // ["ISO 27001", "SOC 2", "GDPR"] — headline pills
+    services: z.array(z.string()).optional(),   // service slugs relevant to this sector — clickable cert list
     order: z.number(),
     featured: z.boolean().default(false),
   }),

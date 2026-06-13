@@ -13,12 +13,12 @@ const description =
 // collection entries — they don't map 1:1). Kept as literal ServiceCard props so the
 // home grid stays byte-identical to v7. The /services index is the collection-driven one.
 const homeServices = [
-  { tag: 'Most requested', num: '/ 01', image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=80', imageAlt: 'ISO 9001 quality management system documentation', title: 'ISO management systems', description: 'Globally accepted certifications covering quality, environment, security, safety and energy management.', tags: ['ISO 9001', '14001', '27001', '45001', '+ more'] },
-  { tag: 'Fast-track 8 weeks', num: '/ 02', image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=700&q=80', imageAlt: 'SOC 2 cyber security and information security audit', title: 'Cyber security & SOC 2', description: 'End-to-end security assurance from SOC 2 readiness to penetration testing and PCI DSS audit.', tags: ['SOC 2', 'VAPT', 'GDPR', 'NIST', 'PCI DSS'] },
-  { tag: 'IT & software', num: '/ 03', image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=700&q=80', imageAlt: 'CMMI appraisal for IT services and software development', title: 'CMMI appraisals', description: 'CMMI maturity level 2 and 3 readiness assessments, gap analysis and ATM support for IT services.', tags: ['CMMI ML2', 'CMMI ML3', 'ATM'] },
-  { tag: 'Advisory', num: '/ 04', image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?w=700&q=80', imageAlt: 'Data analytics dashboard for compliance reporting', title: 'Data analytics', description: 'Data management, process automation, decision analytics and visualisation for compliance-driven teams.', tags: ['Analytics', 'Automation', 'Reporting'] },
-  { tag: 'Training & rollout', num: '/ 05', image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&q=80', imageAlt: 'Agile transformation team workshop and training', title: 'Agile transformation', description: 'Scrum, SAFe and Kanban training plus enterprise rollouts. Certified trainers and lead auditors.', tags: ['Scrum', 'SAFe', 'Kanban'] },
-  { tag: 'Inspections', num: '/ 06', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=700&q=80', imageAlt: 'Third-party factory inspection and supplier audit', title: 'Third-party inspection', description: 'Independent pre-shipment, factory, and supplier inspections to verify quality at source.', tags: ['Pre-shipment', 'Factory', 'Supplier'] },
+  { tag: 'Most requested', num: '/ 01', href: '/services/iso-certifications', image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=80', imageAlt: 'ISO 9001 quality management system documentation', title: 'ISO management systems', description: 'Globally accepted certifications covering quality, environment, security, safety and energy management.', tags: ['ISO 9001', '14001', '27001', '45001', '+ more'] },
+  { tag: 'Fast-track 8 weeks', num: '/ 02', href: '/services/cyber-security', image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=700&q=80', imageAlt: 'SOC 2 cyber security and information security audit', title: 'Cyber security & SOC 2', description: 'End-to-end security assurance from SOC 2 readiness to penetration testing and PCI DSS audit.', tags: ['SOC 2', 'VAPT', 'GDPR', 'NIST', 'PCI DSS'] },
+  { tag: 'IT & software', num: '/ 03', href: '/services/cmmi', image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=700&q=80', imageAlt: 'CMMI appraisal for IT services and software development', title: 'CMMI appraisals', description: 'CMMI maturity level 2 and 3 readiness assessments, gap analysis and ATM support for IT services.', tags: ['CMMI ML2', 'CMMI ML3', 'ATM'] },
+  { tag: 'Advisory', num: '/ 04', href: '/services/data-analytics', image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?w=700&q=80', imageAlt: 'Data analytics dashboard for compliance reporting', title: 'Data analytics', description: 'Data management, process automation, decision analytics and visualisation for compliance-driven teams.', tags: ['Analytics', 'Automation', 'Reporting'] },
+  { tag: 'Training & rollout', num: '/ 05', href: '/services/agile-transformation', image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&q=80', imageAlt: 'Agile transformation team workshop and training', title: 'Agile transformation', description: 'Scrum, Kanban and Lean training plus enterprise rollouts. Certified trainers and lead auditors.', tags: ['Scrum', 'Kanban', 'Lean'] },
+  { tag: 'Inspections', num: '/ 06', href: '/services/third-party-inspection', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=700&q=80', imageAlt: 'Third-party factory inspection and supplier audit', title: 'Third-party inspection', description: 'Independent pre-shipment, factory, and supplier inspections to verify quality at source.', tags: ['Pre-shipment', 'Factory', 'Supplier'] },
 ];
 
 // Home industries grid IS collection-driven (the 4 industries map 1:1 to v7's cards).
@@ -247,12 +247,13 @@ const serviceSchema = {
             title={s.title}
             description={s.description}
             tags={s.tags}
+            detailHref={s.href}
           />
         ))}
       </div>
 
       <div class="section-cta">
-        <a class="btn btn-primary" href="/contact#contact-form">See all services & request a tailored proposal <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></a>
+        <a class="btn btn-primary" href="/services">See all services <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></a>
       </div>
     </div>
   </section>
@@ -308,8 +309,9 @@ const serviceSchema = {
             </div>
           </div>
 
-          <div style="margin-top:40px;">
+          <div style="margin-top:40px; display:flex; gap:14px; flex-wrap:wrap;">
             <button class="btn btn-primary" onclick="openQuoteModal()">Start your certification journey <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
+            <a class="btn btn-outline" href="/process">See the full process <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></a>
           </div>
         </div>
       </div>
@@ -337,6 +339,7 @@ const serviceSchema = {
             description={ind.data.description}
             image={ind.data.image}
             imageAlt={ind.data.imageAlt}
+            href={`/industries/${ind.id}`}
           />
         ))}
       </div>

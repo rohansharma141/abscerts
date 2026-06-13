@@ -5,6 +5,7 @@ description: "ISO 13485, 27001 for life sciences."
 image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80"
 imageAlt: "Healthcare and medical devices — ISO 13485 certification"
 standards: ["ISO 13485", "ISO 27001", "ISO 9001"]
+services: ["iso-13485", "iso-9001", "iso-27001", "iso-27701", "hipaa", "gdpr", "soc-2", "nabh", "nabl", "iso-22301"]
 order: 3
 featured: true
 ---
