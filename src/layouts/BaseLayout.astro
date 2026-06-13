@@ -191,6 +191,7 @@ const orgSchema = {
       <a href="/services" id="megaTrigger" class:list={["mega-trigger", { active: path.startsWith('/services') }]} aria-haspopup="true" aria-expanded="false">Services <i class="ti ti-chevron-down" style="font-size:14px"></i></a>
       <a href="/#industries">Industries</a>
       <a href="/process" class:list={[{ active: path === '/process' }]}>Process</a>
+      <a href="/blog" class:list={[{ active: path.startsWith('/blog') }]}>Blog</a>
       <a href="/contact" id="nav-contact" class:list={[{ active: path === '/contact' }]}>Contact</a>
       <button class="btn btn-primary" onclick="openQuoteModal()">Request quote <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
     </nav>
@@ -244,7 +245,7 @@ const orgSchema = {
           <li><a href="/about">About us</a></li>
           <li><a href="/process">Our process</a></li>
           <li><a href="#">Careers</a></li>
-          <li><a href="#">Blog & insights</a></li>
+          <li><a href="/blog">Blog & insights</a></li>
         </ul>
       </div>
       <div>
@@ -275,6 +276,7 @@ const orgSchema = {
   <MobileServicesNav />
   <a href="/#industries" onclick="toggleMobileNav()">Industries</a>
   <a href="/process" onclick="toggleMobileNav()">Process</a>
+  <a href="/blog" onclick="toggleMobileNav()">Blog</a>
   <a href="/contact" onclick="toggleMobileNav()">Contact</a>
   <div class="mobile-nav-cta">
     <button class="btn btn-primary" onclick="openQuoteModal(); toggleMobileNav();">Request a quote <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>

@@ -1,0 +1,149 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTABanner from '../../components/sections/CTABanner.astro';
+
+export async function getStaticPaths() {
+  const posts = (await getCollection('resources')).filter((p) => !p.data.draft);
+  return posts.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+
+const canonical = new URL(`/blog/${entry.id}`, Astro.site).href;
+const pageTitle = `${d.title} | ABS Certifications`;
+
+const fmt = (dt: Date) => dt.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+const iso = (dt: Date) => dt.toISOString().slice(0, 10);
+
+// Up to 3 other posts to keep reading.
+const more = (await getCollection('resources'))
+  .filter((p) => !p.data.draft && p.id !== entry.id)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, 3);
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: d.title,
+  description: d.description,
+  image: d.image,
+  datePublished: iso(d.publishDate),
+  ...(d.updatedDate && { dateModified: iso(d.updatedDate) }),
+  author: { '@type': 'Organization', name: d.author },
+  publisher: { '@id': 'https://www.abscerts.com/#organization' },
+  mainEntityOfPage: canonical,
+  keywords: d.tags.join(', '),
+};
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: new URL('/blog', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: d.title, item: canonical },
+  ],
+};
+---
+
+<BaseLayout title={pageTitle} description={d.description} canonical={canonical} ogImage={d.image}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <!-- HERO -->
+  <section class="cat-hero">
+    <div class="container narrow">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>/</span> <a href="/blog">Blog</a> <span>/</span> <strong>{d.title}</strong>
+      </nav>
+      <div class="blog-post-tags">
+        {d.tags.map((t) => <span class="service-tag">{t}</span>)}
+      </div>
+      <h1>{d.title}</h1>
+      <p class="blog-post-meta">
+        <span>{d.author}</span><span aria-hidden="true">·</span>
+        <time datetime={iso(d.publishDate)}>{fmt(d.publishDate)}</time>
+        {d.readingMinutes && <><span aria-hidden="true">·</span><span>{d.readingMinutes} min read</span></>}
+      </p>
+    </div>
+  </section>
+
+  <!-- COVER IMAGE -->
+  <section class="section section-white" style="padding:40px 0 0;">
+    <div class="container narrow">
+      <div class="blog-post-cover">
+        <img src={d.image} alt={d.imageAlt} loading="eager" decoding="async" width="1200" height="600">
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <section class="section section-white" style="padding:48px 0 72px;">
+    <div class="container narrow">
+      <article class="prose">
+        <Content />
+      </article>
+    </div>
+  </section>
+
+  {more.length > 0 && (
+    <section class="section section-tint" style="padding:64px 0;">
+      <div class="container">
+        <p class="eyebrow">Keep reading</p>
+        <h2 class="blog-more-head">More from the blog</h2>
+        <div class="blog-more-grid">
+          {more.map((p) => (
+            <a class="blog-more-card" href={`/blog/${p.id}`}>
+              <span class="blog-more-date">{fmt(p.data.publishDate)}</span>
+              <span class="blog-more-title">{p.data.title}</span>
+              <i class="ti ti-arrow-right" aria-hidden="true"></i>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <CTABanner />
+</BaseLayout>
+
+<style>
+  .blog-post-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+  .cat-hero .blog-post-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    color: var(--gray-soft);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .blog-post-cover { overflow: hidden; border: 1px solid var(--line-strong); aspect-ratio: 2 / 1; }
+  .blog-post-cover img { width: 100%; height: 100%; object-fit: cover; }
+
+  .blog-more-head {
+    font-family: 'Fraunces', serif; font-size: 28px; font-weight: 500;
+    letter-spacing: -0.02em; color: var(--blue-ink); margin-top: 8px;
+  }
+  .blog-more-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 12px; margin-top: 28px;
+  }
+  .blog-more-card {
+    display: flex; align-items: center; gap: 12px; padding: 18px 20px;
+    background: var(--white); border: 1px solid var(--line-strong);
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .blog-more-card:hover { border-color: var(--blue); transform: translateY(-2px); }
+  .blog-more-date {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    color: var(--gray-soft); white-space: nowrap;
+  }
+  .blog-more-title { font-weight: 600; font-size: 14.5px; color: var(--blue-ink); line-height: 1.35; }
+  .blog-more-card i { color: var(--blue); margin-left: auto; flex-shrink: 0; }
+</style>
