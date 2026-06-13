@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTABanner from '../components/sections/CTABanner.astro';
+
+const title = 'About ABS Certifications | Independent, Accredited Certification Body';
+const description =
+  'ABS Certifications & Advisory — an independent, IAS/IAF-accredited certification body and advisory partner with more than 16 years of combined experience, serving clients worldwide.';
+const canonical = new URL('/about', Astro.site).href;
+
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'About ABS Certifications & Advisory',
+  url: canonical,
+  description,
+  mainEntity: { '@id': 'https://www.abscerts.com/#organization' },
+};
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'About', item: canonical },
+  ],
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(aboutSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb" style="margin-bottom:24px">
+        <a href="/">Home</a> <span>/</span> <strong>About</strong>
+      </nav>
+      <div class="page-hero-grid">
+        <div>
+          <p class="eyebrow" style="margin-bottom:24px">About</p>
+          <h1>Independent certification, delivered with <em>rigour</em>.</h1>
+          <p>ABS Certifications &amp; Advisory is an independent certification body and advisory partner, helping organisations worldwide meet — and exceed — the standards their customers expect.</p>
+        </div>
+        <div class="page-hero-img">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="ABS Certifications team and audit professionals" loading="lazy" decoding="async" width="800" height="600">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section class="section section-white" style="padding:72px 0;">
+    <div class="container narrow">
+      <article class="prose">
+        <h2>Who we are</h2>
+        <p>ABS Certifications &amp; Advisory is an independent certification body and advisory partner. As a team, we bring more than 16 years of combined industrial experience to the organisations we work with — across quality, information security, process maturity, food safety and beyond.</p>
+        <p>Our approach is built around a simple idea: quality and cost efficiency are not opposing goals. We offer a comprehensive approach to quality improvement that resolves the twin challenges of meeting customer expectations and managing cost, so that certification and improvement deliver real commercial value rather than just a certificate on the wall.</p>
+        <p>That approach suits organisations of every size. Our clients range from large multinationals to small and large businesses across the globe, and include clients from Indian government sectors. Whatever the scale, the goal is the same — better-run organisations that can prove it to the customers, regulators and partners who ask.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="section section-tint" style="padding:72px 0;">
+    <div class="container narrow">
+      <article class="prose">
+        <h2>What we do</h2>
+        <p>We work across ten service areas, spanning accredited certification, audit and advisory:</p>
+        <ul>
+          <li><a href="/services/iso-certifications">ISO Certifications</a> — quality, information security, environment, safety and the full range of ISO management system standards</li>
+          <li><a href="/services/cyber-security">Cyber Security</a> — SOC 2, PCI DSS, GDPR, NIST, HIPAA, ISO 22301 and VAPT</li>
+          <li><a href="/services/industry-food-certifications">Industry &amp; Food Certifications</a> — HACCP, FSSC 22000, BRCGS, Halal, Kosher, IATF 16949, SMETA and more</li>
+          <li><a href="/services/cmmi">CMMi &amp; Process</a> — CMMI appraisal and process-maturity improvement</li>
+          <li><a href="/services/data-analytics">Data Analytics</a> — from data warehousing and dashboards to process automation</li>
+          <li><a href="/services/agile-transformation">Agile Transformation</a> — coaching and training in Scrum, Kanban and Lean</li>
+          <li><a href="/services/management-system-training">Management System Training</a> — awareness, internal auditor and lead auditor courses</li>
+          <li><a href="/services/personnel-certifications">Personnel Certifications</a> — recognising individual auditor competence</li>
+          <li><a href="/services/hr-services">HR Services</a> — recruitment and HR consulting</li>
+          <li><a href="/services/third-party-inspection">Third Party Inspection</a> — vendor, supplier and quality assurance inspection</li>
+        </ul>
+        <p>Some of these are certifications we issue as an accredited body; others are advisory, training or inspection services. Each is delivered by people who have done the work, not just read the standard.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ACCREDITATION -->
+  <section class="section section-white" style="padding:72px 0;">
+    <div class="container narrow">
+      <article class="prose">
+        <h2>Our accreditation</h2>
+        <p>For the ISO management system standards we certify, ABS is an IAS-accredited certification body and a participant in the IAF Multilateral Recognition Arrangement (IAF MLA). In practical terms, that means a certificate we issue is recognised by IAF members in more than 70 countries — so it carries weight with the customers, regulators and partners who ask to see it, wherever they are.</p>
+        <p>Accreditation matters because it is independent assurance of the assurance: it confirms that we operate to international requirements for impartiality, competence and consistency. It is the difference between a certificate that opens doors and one that prompts questions.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- WHY ABS -->
+  <section class="section section-tint" style="padding:72px 0;">
+    <div class="container narrow">
+      <article class="prose">
+        <h2>Why ABS</h2>
+        <p>Organisations choose ABS for a combination of reasons:</p>
+        <ul>
+          <li><strong>Independent and accredited.</strong> Our certification work is built on impartiality and international accreditation — the foundation of a credible certificate.</li>
+          <li><strong>Global delivery.</strong> We serve organisations across the UK, EU, US, Middle East and India, working in the regions, time zones and currencies our clients operate in.</li>
+          <li><strong>Transparent pricing.</strong> Every engagement starts with a fixed-price scoping call and a proposal within 24 hours — no open-ended fees or surprises.</li>
+          <li><strong>Breadth and depth.</strong> From a single ISO standard to a multi-standard programme spanning quality, security, food safety and process maturity, we cover it under one roof.</li>
+          <li><strong>Experienced people.</strong> Our team's combined industrial experience means we understand your operation, not just the clause numbers.</li>
+        </ul>
+        <p>The result is certification and advisory that does real work for the business — removing procurement blockers, reducing risk, and signalling trust to the people who matter.</p>
+      </article>
+    </div>
+  </section>
+
+  <CTABanner />
+</BaseLayout>

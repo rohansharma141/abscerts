@@ -1,0 +1,137 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTABanner from '../components/sections/CTABanner.astro';
+
+const title = 'Our Certification Process | ABS Certifications';
+const description =
+  'How ABS certifies organisations — from initial scoping to certificate issuance and ongoing surveillance. Transparent timelines and fixed-price quotes within 24 hours.';
+const canonical = new URL('/process', Astro.site).href;
+
+const faqs = [
+  {
+    question: 'Can audits be conducted remotely?',
+    answer:
+      'Many can. Stage 1 reviews, surveillance audits and assessments such as ISO 27001 and SOC 2 are frequently delivered fully remotely. Some certifications — for example ISO 45001, where site safety must be observed — may require an on-site visit. We confirm the approach for your scope upfront, so there are no surprises.',
+  },
+  {
+    question: 'What documentation do we need to prepare?',
+    answer:
+      "It depends on the standard, but typically your policies, key procedures, records that show the system operating (for example management review and internal audit results), and evidence relevant to the standard's requirements. We tell you exactly what is in scope at the scoping stage, and the Stage 1 audit is designed to surface any gaps before the main assessment.",
+  },
+  {
+    question: 'What happens if we have a non-conformity?',
+    answer:
+      'A non-conformity is not a failure — it is a finding to be addressed. You implement corrective action within an agreed timeframe, and we verify it (often remotely). Certification proceeds once findings are satisfactorily closed. Our approach is to surface gaps early, during Stage 1, so material issues rarely appear for the first time at Stage 2.',
+  },
+  {
+    question: 'How quickly can we get the certificate after Stage 2?',
+    answer:
+      'Once any Stage 2 findings are closed and the independent certification decision is made, the certificate is issued. For most organisations under 200 employees the full path from kick-off to certificate is around 10–14 weeks; larger or multi-site organisations typically take longer. We give you a firm timeline with your initial quote.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+};
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Our Process', item: canonical },
+  ],
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb" style="margin-bottom:24px">
+        <a href="/">Home</a> <span>/</span> <strong>Our Process</strong>
+      </nav>
+      <div class="page-hero-grid">
+        <div>
+          <p class="eyebrow" style="margin-bottom:24px">How we work</p>
+          <h1>Our certification <em>process</em>.</h1>
+          <p>Independent, rigorous and transparent — from the first scoping call to certificate and beyond. Here is exactly what to expect at each stage.</p>
+        </div>
+        <div class="page-hero-img">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" alt="ABS certification process planning and audit" loading="lazy" decoding="async" width="800" height="600">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="section section-white" style="padding:72px 0;">
+    <div class="container narrow">
+      <article class="prose">
+        <h2>What to expect, from kick-off to certificate</h2>
+        <p>Certification follows a well-established route, defined by the international rules for certification bodies (ISO/IEC 17021-1). It runs in four phases — scoping, a Stage 1 audit, a Stage 2 audit, and certification followed by ongoing surveillance. The aim at every step is the same: an honest, evidence-based assessment that earns a certificate worth having.</p>
+        <p>For most organisations under 200 employees, the full path from kick-off to certificate takes around 10–14 weeks; larger or multi-site organisations typically take longer. Every engagement begins with a fixed-price scoping call and a proposal within 24 hours, so you know the timeline and cost before you commit.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- THE FOUR PHASES -->
+  <section class="section section-tint" style="padding:72px 0;">
+    <div class="container narrow">
+      <article class="prose">
+        <h2>The four phases</h2>
+
+        <h3>1. Scoping &amp; quote</h3>
+        <p>We start with a scoping call to understand your organisation, the standard you are pursuing, the number of sites, and the complexity of your operations. From that, we send a fixed-price proposal within 24 hours with a firm timeline. Nothing else begins until you are comfortable with the scope and cost. <strong>You'll prepare:</strong> a basic picture of your business, sites and any existing certifications.</p>
+
+        <h3>2. Stage 1 audit — documentation &amp; readiness review</h3>
+        <p>The Stage 1 audit reviews whether your management system is documented and ready for assessment. The auditor checks your policies, procedures and scope, confirms that the key elements of the standard are in place, and identifies anything that needs attention before Stage 2. This stage is deliberately designed to surface gaps early, so there are no surprises later. It can often be conducted remotely. <strong>You'll prepare:</strong> your documented system and evidence that it has started operating.</p>
+
+        <h3>3. Stage 2 audit — implementation assessment</h3>
+        <p>The Stage 2 audit assesses whether your system is genuinely implemented and effective — not just written down. The auditor gathers evidence across your operations: interviewing staff, reviewing records, and observing the system in practice. Any findings are documented clearly. Depending on the standard, Stage 2 may be on-site, remote or a mix. <strong>You'll prepare:</strong> records and people who can show the system working day to day.</p>
+
+        <h3>4. Certification &amp; surveillance</h3>
+        <p>Once any findings are closed, an independent certification decision is made and your certificate is issued — recognised internationally through our accreditation. Certification is not a one-off event: it is maintained through regular surveillance audits and renewed on a recertification cycle, which keeps it credible over time. <strong>You'll prepare:</strong> to keep the system live, because the next audit confirms it is still working.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- MAINTAINING -->
+  <section class="section section-white" style="padding:72px 0;">
+    <div class="container narrow">
+      <article class="prose">
+        <h2>Maintaining your certification</h2>
+        <p>A certificate is a living thing. Under the ISO/IEC 17021-1 framework that governs management system certification, certification runs on a three-year cycle for most ISO standards, with <strong>surveillance audits</strong> — typically annual — in between. These are lighter than the original assessment, but they confirm that your system is still operating and improving rather than drifting after the certificate is on the wall.</p>
+        <p>At the end of the cycle, a <strong>recertification audit</strong> renews the certificate for the next period. If your organisation changes materially — new sites, new activities, a wider scope — that can be assessed and added at the appropriate point rather than waiting. The principle throughout is continuity: certification should reflect how your organisation actually runs, today and over time.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-tint" style="padding:72px 0;">
+    <div class="container narrow">
+      <article class="prose">
+        <h2>Common questions about our process</h2>
+        {faqs.map((f) => (
+          <Fragment>
+            <h3>{f.question}</h3>
+            <p>{f.answer}</p>
+          </Fragment>
+        ))}
+        <p>Looking for a specific standard? See, for example, <a href="/services/iso-27001">ISO 27001</a> or <a href="/services/iso-9001">ISO 9001</a> — or <a href="/contact">contact us</a> to talk through your scope.</p>
+      </article>
+    </div>
+  </section>
+
+  <CTABanner />
+</BaseLayout>

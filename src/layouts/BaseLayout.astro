@@ -187,9 +187,10 @@ const orgSchema = {
     </a>
     <nav class="nav" aria-label="Primary navigation">
       <a href="/" id="nav-home" class:list={[{ active: path === '/' }]}>Home</a>
+      <a href="/about" class:list={[{ active: path === '/about' }]}>About</a>
       <a href="/services" id="megaTrigger" class:list={["mega-trigger", { active: path.startsWith('/services') }]} aria-haspopup="true" aria-expanded="false">Services <i class="ti ti-chevron-down" style="font-size:14px"></i></a>
       <a href="/#industries">Industries</a>
-      <a href="/#process">Process</a>
+      <a href="/process" class:list={[{ active: path === '/process' }]}>Process</a>
       <a href="/verify">Verify</a>
       <a href="/contact" id="nav-contact" class:list={[{ active: path === '/contact' }]}>Contact</a>
       <button class="btn btn-primary" onclick="openQuoteModal()">Request quote <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
@@ -241,8 +242,8 @@ const orgSchema = {
       <div>
         <h3>Company</h3>
         <ul class="footer-links">
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Accreditation</a></li>
+          <li><a href="/about">About us</a></li>
+          <li><a href="/process">Our process</a></li>
           <li><a href="/verify">Verify certificate</a></li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">Blog & insights</a></li>
@@ -262,7 +263,7 @@ const orgSchema = {
         <a href="#" aria-label="X"><i class="ti ti-brand-x"></i></a>
         <a href="#" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
       </div>
-      <span>Privacy · Terms · ISMS policy</span>
+      <span><a href="/privacy">Privacy</a> · Terms · ISMS policy</span>
     </div>
   </div>
 </footer>
@@ -272,9 +273,10 @@ const orgSchema = {
 <aside class="mobile-nav" id="mobileNav" inert>
   <button class="mobile-nav-close" onclick="toggleMobileNav()" aria-label="Close menu"><i class="ti ti-x"></i></button>
   <a href="/" onclick="toggleMobileNav()">Home</a>
+  <a href="/about" onclick="toggleMobileNav()">About</a>
   <MobileServicesNav />
   <a href="/#industries" onclick="toggleMobileNav()">Industries</a>
-  <a href="/#process" onclick="toggleMobileNav()">Process</a>
+  <a href="/process" onclick="toggleMobileNav()">Process</a>
   <a href="/verify" onclick="toggleMobileNav()">Verify</a>
   <a href="/contact" onclick="toggleMobileNav()">Contact</a>
   <div class="mobile-nav-cta">

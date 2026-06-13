@@ -32,6 +32,12 @@ not lost. Nothing here is actioned without the stakeholder's say-so.
 
 ---
 
+- [ ] **Optional in-content cross-links to /about and /process.** Phase 4f wired both
+  pages into the header nav, footer and mobile drawer (fully discoverable). As optional
+  polish, the home page's "Why us" block could link to `/about` and its Process section
+  to `/process`, and service-detail pages that discuss timeline could link to `/process`.
+  Deferred to avoid editing the locked v7 home page unprompted.
+
 ## Pre-launch must-do (placeholders that must be resolved before going live)
 
 - [ ] **Replace or remove placeholder testimonials.** The 3 testimonial entries
