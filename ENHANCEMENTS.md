@@ -58,6 +58,14 @@ not lost. Nothing here is actioned without the stakeholder's say-so.
 
 ## Deferred / parked (tracked elsewhere, listed for completeness)
 
-- `/verify` page UI + Cloudflare KV namespace seeding (original Phase 4, parked).
+- **Verify feature — parked (Phase 4g).** All user-visible verify references were removed
+  from the public site (hero slide, nav, footer, home section, in-body links, contact card).
+  The backend is intact for future reintroduction: `functions/api/verify.ts` and the
+  `CERTIFICATES` KV binding in `wrangler.toml` remain. To revive: rebuild a `/verify` page,
+  seed a KV namespace, and re-add the nav/footer/home entry points.
+- **Category-page "Industries we serve" + "Category FAQ" sections** — deferred feature stubs
+  marked in `CategoryLandingLayout.astro` (TODO comments). Optional future enhancement.
+- `cmmi.md` service file is orphaned (no route — `/services/cmmi` is the category page; the
+  4e-1 self-slug filter drops its tile). Body isn't user-visible; frontmatter feeds related
+  strips. Fine as-is; only matters if a dedicated CMMI overview route is ever wanted.
 - Resources / blog migration (Phase 5).
-- Phase 4f: About / Privacy / Process pages (real content from the live site).

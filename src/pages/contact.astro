@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const title = 'Contact ABS Certifications | Talk to a certification specialist';
 const description =
-  'Get in touch with ABS Certifications & Advisory. Request a fixed-price ISO or SOC 2 quote, book a consultation in your time zone, or verify a certificate. Response within 4 business hours.';
+  'Get in touch with ABS Certifications & Advisory. Request a fixed-price ISO or SOC 2 quote or book a consultation in your time zone. Response within 4 business hours.';
 
 // FAQPage node from v7's schema @graph — emitted on the contact page (where the FAQ is shown).
 const faqSchema = {
@@ -77,7 +77,7 @@ const faqSchema = {
   <section class="section section-tint" style="padding-top:80px;">
     <div class="container">
 
-      <div class="quick-actions-grid">
+      <div class="quick-actions-grid" style="grid-template-columns:repeat(3,1fr)">
         <div class="quick-action" onclick="openQuoteModal()">
           <div class="quick-action-icon"><i class="ti ti-file-invoice"></i></div>
           <h3>Request a quote</h3>
@@ -90,12 +90,6 @@ const faqSchema = {
           <p>30-min consultation in your time zone</p>
           <span class="quick-action-link">Pick a slot <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
         </div>
-        <a class="quick-action" href="/verify">
-          <div class="quick-action-icon"><i class="ti ti-shield-check"></i></div>
-          <h3>Verify a certificate</h3>
-          <p>Check ABS-issued documents</p>
-          <span class="quick-action-link">Open verifier <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
-        </a>
         <div class="quick-action">
           <div class="quick-action-icon"><i class="ti ti-headset"></i></div>
           <h3>Existing client</h3>

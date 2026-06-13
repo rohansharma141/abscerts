@@ -61,7 +61,7 @@ const serviceSchema = {
     <div class="hero-carousel" id="heroCarousel" role="region" aria-roledescription="carousel">
 
       <!-- Slide 1 -->
-      <article class="hero-slide active" aria-roledescription="slide" aria-label="Slide 1 of 4">
+      <article class="hero-slide active" aria-roledescription="slide" aria-label="Slide 1 of 3">
         <div class="hero-slide-img">
           <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1920&q=80" alt="ABS Certifications consultants in client boardroom delivering ISO audit"
                fetchpriority="high" decoding="async" width="1920" height="1080">
@@ -86,7 +86,7 @@ const serviceSchema = {
       </article>
 
       <!-- Slide 2 -->
-      <article class="hero-slide" aria-roledescription="slide" aria-label="Slide 2 of 4">
+      <article class="hero-slide" aria-roledescription="slide" aria-label="Slide 2 of 3">
         <div class="hero-slide-img">
           <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1920&q=80" alt="ISO management system documentation and quality audit"
                loading="lazy" decoding="async" width="1920" height="1080">
@@ -110,7 +110,7 @@ const serviceSchema = {
       </article>
 
       <!-- Slide 3 -->
-      <article class="hero-slide" aria-roledescription="slide" aria-label="Slide 3 of 4">
+      <article class="hero-slide" aria-roledescription="slide" aria-label="Slide 3 of 3">
         <div class="hero-slide-img">
           <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1920&q=80" alt="Dubai skyline representing Middle East ISO certification reach"
                loading="lazy" decoding="async" width="1920" height="1080">
@@ -133,30 +133,6 @@ const serviceSchema = {
         </div>
       </article>
 
-      <!-- Slide 4 -->
-      <article class="hero-slide" aria-roledescription="slide" aria-label="Slide 4 of 4">
-        <div class="hero-slide-img">
-          <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1920&q=80" alt="SOC 2 and information security certificate verification"
-               loading="lazy" decoding="async" width="1920" height="1080">
-        </div>
-        <div class="hero-slide-content">
-          <div class="container">
-            <div class="hero-slide-inner">
-              <div class="hero-slide-meta">
-                <span class="hero-slide-meta-item">Online certificate verification</span>
-                <span class="hero-slide-meta-item">One-click validation</span>
-              </div>
-              <h1>Trust, <em>verified</em> in one click by anyone, anywhere.</h1>
-              <p class="hero-slide-sub">Every ABS-issued certificate has a unique reference number. Buyers, partners and procurement teams can confirm validity instantly — no email back-and-forth required.</p>
-              <div class="hero-slide-cta">
-                <a class="btn btn-primary" href="/verify">Try the verifier <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></a>
-                <button class="btn btn-outline" onclick="openQuoteModal()"><i class="ti ti-shield-check"></i>Become certified</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
       <!-- Controls -->
       <div class="hero-controls">
         <div class="container">
@@ -164,10 +140,9 @@ const serviceSchema = {
             <button class="hero-dot active" onclick="goToSlide(0)" aria-label="Go to slide 1" role="tab"></button>
             <button class="hero-dot" onclick="goToSlide(1)" aria-label="Go to slide 2" role="tab"></button>
             <button class="hero-dot" onclick="goToSlide(2)" aria-label="Go to slide 3" role="tab"></button>
-            <button class="hero-dot" onclick="goToSlide(3)" aria-label="Go to slide 4" role="tab"></button>
           </div>
           <div class="hero-counter" aria-live="polite">
-            <strong id="heroCurrent">01</strong><span>/</span>04
+            <strong id="heroCurrent">01</strong><span>/</span>03
           </div>
           <div class="hero-arrows">
             <button class="hero-arrow" onclick="prevSlide()" aria-label="Previous slide"><i class="ti ti-arrow-left"></i></button>
@@ -414,14 +389,6 @@ const serviceSchema = {
               <a href="/contact" class="why-item-link">See auditor coverage <i class="ti ti-arrow-right" style="font-size:12px"></i></a>
             </div>
           </div>
-          <div class="why-item">
-            <div class="why-num">/ 04</div>
-            <div>
-              <h3>Online certificate verification</h3>
-              <p>Your customers and partners can verify your ABS-issued certificate instantly via our public verification portal.</p>
-              <a href="/verify" class="why-item-link">Try the verifier now <i class="ti ti-arrow-right" style="font-size:12px"></i></a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -512,29 +479,6 @@ const serviceSchema = {
 
       <div class="section-cta">
         <button class="btn btn-primary" onclick="openQuoteModal()">Become our next success story <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
-      </div>
-    </div>
-  </section>
-
-  <!-- VERIFY -->
-  <section class="section section-tint" id="verify" style="padding: 60px 0;">
-    <div class="container">
-      <div class="verify-block">
-        <div class="verify-content">
-          <p class="eyebrow" style="margin-bottom:24px">07 / Verify a certificate</p>
-          <h2>Trust, <em style="color:var(--glow)">verified instantly</em>.</h2>
-          <p>Every ABS-issued certificate has a unique reference number. Buyers, partners and procurement teams can verify a certificate's authenticity in one click — no email exchange required.</p>
-          <button class="btn btn-light"><i class="ti ti-shield-check"></i>Learn how verification works</button>
-        </div>
-        <div class="verify-form-wrap">
-          <h3>Verify a certificate</h3>
-          <p>Enter the certificate reference number to confirm its status.</p>
-          <div class="verify-input-row">
-            <input type="text" class="verify-input" placeholder="ABS-2026-XX-00000" aria-label="Certificate reference number">
-            <button class="btn btn-primary verify-btn">Verify <i class="ti ti-arrow-right"></i></button>
-          </div>
-          <p class="verify-example">Example: <code>ABS-2026-IS-04821</code></p>
-        </div>
       </div>
     </div>
   </section>
