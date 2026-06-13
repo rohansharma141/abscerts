@@ -45,8 +45,8 @@ not lost. Nothing here is actioned without the stakeholder's say-so.
   service-body rewrites and the Personnel Certifications depth, and are prerequisites
   for Phase 4e-2 (Industry & Food certs accreditation framing).
 
-- [ ] **Wire the FSSC 22000 cross-link.** `src/content/services/iso-22000.md` has a
-  `<!-- TODO -->` marker to link FSSC 22000 once that page exists (Phase 4e-2).
+- [x] **Wire the FSSC 22000 cross-link.** Done in Phase 4e-2 — `iso-22000.md` now links
+  to both FSSC 22000 and HACCP; the TODO marker is removed.
 
 ---
 
