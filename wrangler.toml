@@ -2,6 +2,10 @@ name = "abscerts"
 compatibility_date = "2025-01-01"
 pages_build_output_dir = "dist"
 
-[[kv_namespaces]]
-binding = "CERTIFICATES"
-id = "placeholder-id-set-via-dashboard"
+# KV namespace for the parked Verify feature — commented out for launch so deploys don't
+# fail on the placeholder id (nothing on the live site calls it yet). To revive Verify:
+# create a KV namespace, set its real id below (or bind `CERTIFICATES` in the Pages
+# dashboard), then uncomment.
+# [[kv_namespaces]]
+# binding = "CERTIFICATES"
+# id = "placeholder-id-set-via-dashboard"
