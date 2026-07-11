@@ -277,6 +277,9 @@ em {
   height: 84px;
 }
 .logo { display: flex; align-items: center; gap: 14px; }
+.logo-img { height: 42px; width: auto; display: block; }
+.footer .logo-img-footer { filter: brightness(0) invert(1); }  /* white logo on the dark footer */
+@media (max-width: 768px) { .logo-img { height: 34px; } }
 .logo-mark {
   width: 46px;
   height: 46px;
