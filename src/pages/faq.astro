@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTABanner from '../components/sections/CTABanner.astro';
+
+const title = 'Frequently Asked Questions | ABS Certifications & Advisory';
+const description =
+  'Answers to common questions about certification with ABS — timelines, remote audits, the Stage 1/Stage 2 process, international recognition, cost and the standards we work with.';
+const canonical = new URL('/faq', Astro.site).href;
+
+const groups = [
+  {
+    title: 'Getting started',
+    items: [
+      { q: 'How do I get a quote?', a: 'Tell us your scope — the standard you want, your organisation size, number of sites and any existing certifications — and we send a fixed-price proposal within 24 hours. You can use the Request-a-quote form or the contact page.' },
+      { q: 'How long does certification take?', a: 'For most organisations under 200 employees, the full path from kick-off to certificate is around 10–14 weeks, assuming the management system is already operating. Larger or multi-site organisations typically take 4–6 months. You receive a firm timeline with your quote.' },
+      { q: 'Can audits be conducted remotely?', a: 'Many can. Stage 1 reviews, surveillance audits and assessments such as ISO 27001 and SOC 2 are frequently delivered fully remotely. Some certifications — for example ISO 45001, where site safety must be observed — may need an on-site visit. We confirm the approach for your scope upfront.' },
+      { q: 'Do we need to build our system from scratch first?', a: 'No. If you already have policies and controls in place, the audit assesses what exists against the standard. Where there are gaps, the Stage 1 report tells you exactly what to close before Stage 2 — you are never left guessing.' },
+    ],
+  },
+  {
+    title: 'The certification process',
+    items: [
+      { q: 'What are Stage 1 and Stage 2 audits?', a: 'Stage 1 reviews whether your management system is documented and ready — checking policies, scope and readiness, and surfacing any gaps early. Stage 2 assesses whether the system is genuinely implemented and effective, through interviews, records and observation. See our full process page for the four phases.' },
+      { q: 'What happens if we have a non-conformity?', a: 'A non-conformity is a finding to be addressed, not a failure. You implement corrective action within an agreed timeframe and we verify it (often remotely). Certification proceeds once findings are closed. Our approach is to surface gaps at Stage 1 so material issues rarely appear for the first time at Stage 2.' },
+      { q: 'What happens after we are certified?', a: 'Certification is maintained through regular surveillance audits — typically annual — and renewed through a recertification audit at the end of the three-year cycle for most ISO standards. If your organisation changes materially, scope changes can be assessed and added at the appropriate point.' },
+      { q: 'How quickly can we get the certificate after Stage 2?', a: 'Once any Stage 2 findings are closed and the independent certification decision is made, the certificate is issued. For most organisations under 200 employees the full journey is around 10–14 weeks.' },
+    ],
+  },
+  {
+    title: 'Recognition, cost & scope',
+    items: [
+      { q: 'Are your certificates recognised internationally?', a: 'Yes. Our ISO certifications are issued under IAS accreditation, a signatory of the IAF Multilateral Recognition Arrangement — so a certificate issued in one country is recognised by IAF members in 70+ countries.' },
+      { q: 'What does certification cost?', a: 'Pricing depends on the standard, organisation size, number of sites and complexity of scope. Every engagement starts with a fixed-price scoping call and a proposal within 24 hours — no open-ended fees or surprise travel charges.' },
+      { q: 'Can we certify more than one standard together?', a: 'Yes. Many organisations pursue integrated management systems — for example ISO 9001, ISO 14001 and ISO 45001 together, or ISO 27001 with ISO 27701. Shared structure means evidence can be reused across standards, reducing effort and cost.' },
+    ],
+  },
+  {
+    title: 'About the standards',
+    items: [
+      { q: 'How is ISO 27001 different from SOC 2?', a: 'ISO 27001 is the international standard for an information security management system and is prescriptive about controls; SOC 2 is an AICPA attestation focused on whether your controls meet specific trust criteria. ISO 27001 is more widely recognised internationally; SOC 2 is the default in US enterprise and SaaS. Many organisations hold both.' },
+      { q: 'What is the difference between HACCP and ISO 22000?', a: 'HACCP is the method for identifying and controlling food safety hazards; ISO 22000 wraps those principles inside a full, certifiable management system. FSSC 22000 builds further on ISO 22000 to become GFSI-recognised.' },
+      { q: 'Is CMMi a certification?', a: 'No — CMMI maturity is confirmed through an appraisal (the SCAMPI method) led by a Certified Lead Appraiser, not a certificate. Organisations are "appraised at" a maturity level, and the result is typically valid for three years.' },
+      { q: 'Is SMETA a certification?', a: 'No. SMETA is an ethical audit developed by Sedex; the deliverable is an audit report shared on the Sedex platform, not a certificate. Buyers request it for responsible-sourcing due diligence.' },
+    ],
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: groups.flatMap((g) => g.items).map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'FAQ', item: canonical },
+  ],
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="cat-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>/</span> <strong>FAQ</strong>
+      </nav>
+      <p class="eyebrow">Frequently asked questions</p>
+      <h1>Answers before you ask</h1>
+      <p class="cat-hero-sub">Common questions about certification with ABS — the process, timelines, recognition and the standards we work with. Don't see yours? <a href="/contact">Ask us</a>.</p>
+    </div>
+  </section>
+
+  <section class="section section-white" style="padding:64px 0 80px;">
+    <div class="container narrow">
+      {groups.map((g) => (
+        <div class="faq-group">
+          <h2 class="faq-group-head">{g.title}</h2>
+          <div class="faq-list">
+            {g.items.map((f) => (
+              <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">{f.q}<span class="icon"><i class="ti ti-plus"></i></span></button>
+                <div class="faq-a">{f.a}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CTABanner />
+</BaseLayout>
+
+<style>
+  .faq-group { margin-bottom: 48px; }
+  .faq-group:last-child { margin-bottom: 0; }
+  .faq-group-head {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--blue-ink);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+  }
+</style>

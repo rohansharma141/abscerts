@@ -1,0 +1,81 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTABanner from '../../components/sections/CTABanner.astro';
+
+const title = 'Case Studies | ABS Certifications & Advisory';
+const description =
+  'Real certification outcomes — how organisations achieved ISO, SOC 2 and other standards with ABS Certifications & Advisory.';
+const canonical = new URL('/case-studies', Astro.site).href;
+
+const studies = (await getCollection('caseStudies'))
+  .filter((c) => !c.data.draft)
+  .sort((a, b) => a.data.order - b.data.order);
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Case studies', item: canonical },
+  ],
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="cat-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>/</span> <strong>Case studies</strong>
+      </nav>
+      <p class="eyebrow">Case studies</p>
+      <h1>Certification, in the real world</h1>
+      <p class="cat-hero-sub">How organisations achieved their standards with ABS — the challenge, the approach and the result.</p>
+    </div>
+  </section>
+
+  <section class="section section-tint" style="padding:56px 0 88px;">
+    <div class="container">
+      {studies.length > 0 ? (
+        <div class="cs-grid">
+          {studies.map((c) => (
+            <a class="cs-card" href={`/case-studies/${c.id}`}>
+              <div class="cs-card-img"><img src={c.data.image} alt={c.data.imageAlt} loading="lazy" decoding="async" width="600" height="360"></div>
+              <div class="cs-card-body">
+                <div class="cs-card-tags">
+                  {c.data.standards.slice(0, 3).map((s) => <span class="service-tag">{s}</span>)}
+                </div>
+                <h2>{c.data.title}</h2>
+                <p>{c.data.summary}</p>
+                <span class="cs-card-meta">{c.data.industry}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      ) : (
+        <div class="category-empty-state">
+          <p>Our case studies are being prepared. In the meantime, <a href="/contact">talk to us</a> about how we've helped organisations like yours.</p>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <CTABanner />
+</BaseLayout>
+
+<style>
+  .cs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 28px; }
+  .cs-card { background: var(--white); border: 1px solid var(--line-strong); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+  .cs-card:hover { transform: translateY(-4px); box-shadow: 0 14px 40px rgba(8,31,77,0.08); border-color: var(--blue); }
+  .cs-card-img { aspect-ratio: 5/3; overflow: hidden; }
+  .cs-card-img img { width: 100%; height: 100%; object-fit: cover; }
+  .cs-card-body { padding: 22px 24px 24px; display: flex; flex-direction: column; flex: 1; }
+  .cs-card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+  .cs-card-body h2 { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 500; line-height: 1.25; color: var(--blue-ink); margin-bottom: 10px; }
+  .cs-card-body p { font-size: 14.5px; line-height: 1.6; color: var(--gray-text); margin-bottom: 14px; }
+  .cs-card-meta { margin-top: auto; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--gray-soft); }
+</style>

@@ -27,6 +27,13 @@ const featuredIndustries = (await getCollection('industries'))
   .sort((a, b) => a.data.order - b.data.order);
 const industryNum = (i: number) => `/ ${String(i + 1).padStart(2, '0')}`;
 
+// "Trusted by" client logos — add real, PERMISSIONED client logos here (drop files in
+// public/images/clients/). The strip stays hidden until at least one entry exists, so
+// no placeholder/fake logos ever show. Requires written client permission before use.
+const clientLogos: { name: string; logo: string }[] = [
+  // { name: 'Acme Ltd', logo: '/images/clients/acme.svg' },
+];
+
 // Service node from v7's schema @graph — emitted on the home page.
 const serviceSchema = {
   '@context': 'https://schema.org',
@@ -179,6 +186,18 @@ const serviceSchema = {
       </div>
     </div>
   </section>
+
+  <!-- TRUSTED BY (client logos) — hidden until real, permissioned logos are added to clientLogos[] -->
+  {clientLogos.length > 0 && (
+    <section class="trusted-strip">
+      <div class="container">
+        <p class="trusted-label">Trusted by teams at</p>
+        <div class="trusted-logos">
+          {clientLogos.map((c) => <img src={c.logo} alt={c.name} height="34" loading="lazy" decoding="async">)}
+        </div>
+      </div>
+    </section>
+  )}
 
   <!-- MARQUEE -->
   <section class="marquee">
@@ -492,3 +511,15 @@ const serviceSchema = {
   <!-- CTA BANNER -->
   <CTABanner />
 </BaseLayout>
+
+<style>
+  /* "Trusted by" client-logo strip (renders only when clientLogos[] is populated) */
+  .trusted-strip { background: var(--white); padding: 30px 0; border-bottom: 1px solid var(--line); }
+  .trusted-label {
+    text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-soft); margin-bottom: 18px;
+  }
+  .trusted-logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px; }
+  .trusted-logos img { height: 34px; width: auto; opacity: 0.7; filter: grayscale(1); transition: opacity 0.2s, filter 0.2s; }
+  .trusted-logos img:hover { opacity: 1; filter: none; }
+</style>

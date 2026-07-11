@@ -197,6 +197,7 @@ document.addEventListener('keydown', (e) => {
     quote: "Thanks — we'll be in touch within 24 hours.",
     contact: "Thanks — your enquiry is in. We'll reply within 4 business hours.",
     newsletter: "Thanks — we'll be in touch shortly.",
+    download: "Thanks — we've emailed you the guide. You can also download it now:",
   };
 
   forms.forEach((form) => {
@@ -226,10 +227,17 @@ document.addEventListener('keydown', (e) => {
         if (!res.ok) throw new Error('Request failed: ' + res.status);
 
         // Success — replace the form with a confirmation state.
+        var downloadHtml = '';
+        if (type === 'download' && form.dataset.download) {
+          downloadHtml =
+            '<a class="btn btn-primary" href="' + form.dataset.download + '" download style="margin-top:14px;">' +
+            'Download now <span class="btn-icon-square"><i class="ti ti-download"></i></span></a>';
+        }
         form.innerHTML =
           '<div class="form-success">' +
           '<span class="form-success-icon"><i class="ti ti-circle-check"></i></span>' +
           '<p>' + (SUCCESS_MESSAGES[type] || 'Thanks — message received.') + '</p>' +
+          downloadHtml +
           '</div>';
 
         if (type === 'quote') setTimeout(closeQuoteModal, 3000);

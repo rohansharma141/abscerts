@@ -107,4 +107,20 @@ const resources = defineCollection({
   }),
 });
 
-export const collections = { services, categories, industries, testimonials, resources };
+const caseStudies = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/case-studies' }),
+  schema: z.object({
+    title: z.string(),
+    client: z.string(),               // real client name, or "Anonymised — <sector> company"
+    industry: z.string(),
+    standards: z.array(z.string()),   // e.g. ["ISO 27001", "ISO 9001"]
+    summary: z.string(),
+    image: z.string(),
+    imageAlt: z.string(),
+    order: z.number().default(0),
+    featured: z.boolean().default(false),
+    draft: z.boolean().default(true), // stays out of the build until a real, approved study sets draft:false
+  }),
+});
+
+export const collections = { services, categories, industries, testimonials, resources, caseStudies };

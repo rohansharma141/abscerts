@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTABanner from '../../components/sections/CTABanner.astro';
+
+const title = 'Free Resources & Checklists | ISO 27001, SOC 2 & more | ABS';
+const description =
+  'Free certification checklists and guides from ABS — ISO 27001, SOC 2 readiness, Stage 1 readiness, the certification process and audit preparation. Get them by email.';
+const canonical = new URL('/resources', Astro.site).href;
+
+const resources = [
+  { file: '/downloads/iso-27001-checklist.pdf', title: 'ISO 27001 Implementation Checklist', desc: 'A step-by-step checklist for standing up an ISMS — from scope and risk assessment to Annex A controls.', icon: 'ti-lock' },
+  { file: '/downloads/soc-2-readiness-checklist.pdf', title: 'SOC 2 Readiness Checklist', desc: 'What to have in place before a SOC 2 examination, across the AICPA Trust Services Criteria.', icon: 'ti-shield-check' },
+  { file: '/downloads/stage-1-readiness-checklist.pdf', title: 'Stage 1 Audit Readiness Checklist', desc: "Make sure you're ready for the Stage 1 documentation review — no surprises when the auditor arrives.", icon: 'ti-checklist' },
+  { file: '/downloads/certification-process.pdf', title: 'The Certification Process', desc: 'How certification works end to end — scoping, Stage 1, Stage 2, certificate and surveillance.', icon: 'ti-route' },
+  { file: '/downloads/audit-preparation-guide.pdf', title: 'Audit Preparation Guide', desc: 'Practical tips to prepare your organisation and your team for a smooth certification audit.', icon: 'ti-clipboard-check' },
+];
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: canonical },
+  ],
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="cat-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>/</span> <strong>Resources</strong>
+      </nav>
+      <p class="eyebrow">Free resources</p>
+      <h1>Checklists &amp; guides to get you audit-ready</h1>
+      <p class="cat-hero-sub">Practical, no-cost checklists and guides from our auditors. Pop in your email and we'll send the PDF straight over — and let you download it right away.</p>
+    </div>
+  </section>
+
+  <section class="section section-tint" style="padding:56px 0 88px;">
+    <div class="container">
+      <div class="dl-grid">
+        {resources.map((r) => (
+          <div class="dl-card">
+            <div class="dl-card-icon"><i class={`ti ${r.icon}`} aria-hidden="true"></i></div>
+            <h2>{r.title}</h2>
+            <p class="dl-card-desc">{r.desc}</p>
+            <form data-form="download" data-download={r.file}>
+              <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field">
+              <input type="hidden" name="resource" value={r.title}>
+              <input type="hidden" name="file" value={r.file}>
+              <div class="dl-form-row">
+                <input type="email" name="email" class="form-control" placeholder="you@company.com" aria-label={`Email to receive the ${r.title}`} required>
+                <button type="submit" class="btn btn-primary" data-submit>Get it <i class="ti ti-arrow-right"></i></button>
+              </div>
+              <div data-form-status></div>
+            </form>
+          </div>
+        ))}
+      </div>
+      <p class="dl-note">We'll only use your email to send the guide and the occasional useful update. No spam — unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <CTABanner />
+</BaseLayout>
+
+<style>
+  .dl-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+  }
+  .dl-card {
+    background: var(--white);
+    border: 1px solid var(--line-strong);
+    padding: 28px 26px 26px;
+    display: flex;
+    flex-direction: column;
+  }
+  .dl-card-icon {
+    width: 46px; height: 46px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--off-white);
+    border: 1px solid var(--line);
+    color: var(--blue);
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+  .dl-card h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--blue-ink);
+    margin-bottom: 10px;
+  }
+  .dl-card-desc { font-size: 14.5px; line-height: 1.6; color: var(--gray-text); margin-bottom: 20px; flex: 1; }
+  .dl-form-row { display: flex; gap: 8px; }
+  .dl-form-row .form-control { flex: 1; }
+  .dl-form-row .btn { white-space: nowrap; flex-shrink: 0; }
+  .dl-note { font-size: 13px; color: var(--gray-soft); margin-top: 28px; text-align: center; }
+  @media (max-width: 600px) {
+    .dl-form-row { flex-direction: column; }
+    .dl-form-row .btn { justify-content: center; }
+  }
+</style>
