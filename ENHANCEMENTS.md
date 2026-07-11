@@ -38,6 +38,20 @@ not lost. Nothing here is actioned without the stakeholder's say-so.
   to `/process`, and service-detail pages that discuss timeline could link to `/process`.
   Deferred to avoid editing the locked v7 home page unprompted.
 
+## Parked — pending direction (client froze "ABS is a consulting firm", 2026-06-15)
+
+- [ ] **Positioning content pass (parked).** The site is written as an accredited *certification
+  body*; the client froze positioning as a **consulting firm**. Reframe to **lead with
+  consulting/advisory** while keeping certification as a real service. ~15 spots to fix — the
+  outright contradictions first: the **10 category "How we work"** lines that say *"we don't sell
+  consultancy alongside our audits (ISO/IEC 17021-1 impartiality)"*, the **footer tagline**
+  ("Independent certification body serving…"), **About** (accreditation/Why-ABS), **home**
+  hero + "Why ABS", and the **Organization schema `description`**. Keep the IAS/IAF facts (live
+  site = source of truth). See [[open-stakeholder-questions]].
+- [ ] **Impartiality statement (parked).** Client earlier asked for one, but a cert-body
+  impartiality clause conflicts with the consulting positioning. Decide: drop it, replace with a
+  general "objectivity & independence" note, or clarify with the client.
+
 ## Pre-launch must-do (placeholders that must be resolved before going live)
 
 - [ ] **Replace or remove placeholder testimonials.** The 3 testimonial entries
