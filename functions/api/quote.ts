@@ -14,6 +14,11 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       service: string;
       phone?: string;
       message?: string;
+      employeeCount?: string;
+      sites?: string;
+      industry?: string;
+      existingCert?: string;
+      targetDate?: string;
       website?: string; // honeypot — must stay empty
     }>();
 
@@ -60,6 +65,11 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
           <p><strong>Company:</strong> ${escape(data.company)}</p>
           <p><strong>Country:</strong> ${escape(data.country)}</p>
           <p><strong>Service:</strong> ${escape(data.service)}</p>
+          ${data.industry ? `<p><strong>Industry:</strong> ${escape(data.industry)}</p>` : ''}
+          ${data.employeeCount ? `<p><strong>Employee count:</strong> ${escape(data.employeeCount)}</p>` : ''}
+          ${data.sites ? `<p><strong>Number of sites:</strong> ${escape(data.sites)}</p>` : ''}
+          ${data.existingCert ? `<p><strong>Existing certification:</strong> ${escape(data.existingCert)}</p>` : ''}
+          ${data.targetDate ? `<p><strong>Target certification date:</strong> ${escape(data.targetDate)}</p>` : ''}
           ${data.phone ? `<p><strong>Phone:</strong> ${escape(data.phone)}</p>` : ''}
           ${data.message ? `<p><strong>Message:</strong><br>${escape(data.message)}</p>` : ''}
         `,

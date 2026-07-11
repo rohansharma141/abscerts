@@ -38,7 +38,7 @@ const orgSchema = {
       foundingDate: '2008',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Building No. 1, C/O Sriram, Near Railway Phatak, Mangli Purwa',
+        streetAddress: 'Building No. 1, C/O Sriram, Near Railway Phatak, Mangli Purwa, Hardoi Gramin, District Hardoi',
         addressLocality: 'Hardoi',
         addressRegion: 'Uttar Pradesh',
         postalCode: '241001',
@@ -165,7 +165,6 @@ const orgSchema = {
 <div class="topbar">
   <div class="container">
     <div class="topbar-left">
-      <span class="topbar-hide-mobile"><span class="live-dot"></span>Office hours · 09:00–18:00 IST</span>
       <a href="mailto:info@abscerts.com"><i class="ti ti-mail"></i>info@abscerts.com</a>
     </div>
     <div class="topbar-right">
@@ -217,7 +216,7 @@ const orgSchema = {
         <div class="logo">
           <div class="logo-mark">A</div>
           <div class="logo-text">
-            <p>ABS Certifications</p>
+            <p>ABS Certifications &amp; Advisory</p>
             <p>Independent · Accredited · Global</p>
           </div>
         </div>
@@ -253,7 +252,7 @@ const orgSchema = {
         <h3>Contact</h3>
         <div class="footer-contact-item"><i class="ti ti-phone"></i><span>+91 96257 76771<br>+91 97925 86202</span></div>
         <div class="footer-contact-item"><i class="ti ti-mail"></i><span>info@abscerts.com</span></div>
-        <div class="footer-contact-item"><i class="ti ti-map-pin"></i><span>Hardoi, Uttar Pradesh, India</span></div>
+        <div class="footer-contact-item"><i class="ti ti-map-pin"></i><span>Mangli Purwa, Hardoi Gramin,<br>District Hardoi, Uttar Pradesh 241001, India</span></div>
       </div>
     </div>
     <div class="footer-bottom">
@@ -376,6 +375,50 @@ const orgSchema = {
             <option>CMMI appraisal</option>
             <option>Other / not sure</option>
           </select>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="qm-employees">Employee count</label>
+            <select id="qm-employees" name="employeeCount" class="form-control">
+              <option value="">Select…</option>
+              <option>1–10</option>
+              <option>11–50</option>
+              <option>51–200</option>
+              <option>201–1000</option>
+              <option>1000+</option>
+            </select>
+          </div>
+          <div>
+            <label for="qm-sites">Number of sites</label>
+            <select id="qm-sites" name="sites" class="form-control">
+              <option value="">Select…</option>
+              <option>1</option>
+              <option>2–5</option>
+              <option>6–20</option>
+              <option>20+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="qm-industry">Industry</label>
+            <select id="qm-industry" name="industry" class="form-control">
+              <option value="">Select…</option>
+              <option>Technology &amp; SaaS</option>
+              <option>Manufacturing</option>
+              <option>Healthcare &amp; medical</option>
+              <option>Financial services</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="qm-existing">Existing certification</label>
+            <input type="text" id="qm-existing" name="existingCert" class="form-control" placeholder="e.g. ISO 9001, or None">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="qm-target">Target certification date</label>
+          <input type="text" id="qm-target" name="targetDate" class="form-control" placeholder="e.g. Q4 2026, or a specific date">
         </div>
         <button type="submit" class="form-submit" data-submit>Send request <i class="ti ti-arrow-right"></i></button>
         <div data-form-status></div>
