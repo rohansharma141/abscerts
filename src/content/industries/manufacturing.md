@@ -2,7 +2,7 @@
 title: "Manufacturing"
 shortName: "Manufacturing"
 description: "ISO 9001, 14001, 45001 for production sites."
-image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80&auto=format&fit=crop"
+image: "/images/industry-manufacturing.jpg"
 imageAlt: "Manufacturing facility — ISO 9001, 14001 and 45001 certification"
 standards: ["ISO 9001", "ISO 14001", "ISO 45001"]
 services: ["iso-9001", "iso-14001", "iso-45001", "iso-50001", "iso-55001", "iatf-16949", "vda-6", "iso-29001", "ce-marking", "iso-28000", "smeta", "haccp", "fssc-22000", "brcgs"]

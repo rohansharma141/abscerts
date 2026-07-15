@@ -3,7 +3,7 @@ title: "CMMi & Process"
 shortName: "CMMi & Process"
 description: "CMMi Maturity Level 2 and 3 readiness and appraisal support for software, IT services and supplier organisations bidding into enterprise and government work."
 icon: "ti-stairs-up"
-image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=640&q=80"
+image: "/images/cat-cmmi.jpg"
 imageAlt: "CMMi process maturity appraisal for software organisations"
 order: 4
 column: 4

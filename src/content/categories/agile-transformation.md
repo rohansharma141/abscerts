@@ -3,7 +3,7 @@ title: "Agile Transformation"
 shortName: "Agile Transformation"
 description: "Agile coaching and training in Scrum, Kanban and Lean — helping teams adopt agile ways of working and sustain them across the organisation."
 icon: "ti-refresh"
-image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=640&q=80"
+image: "/images/cat-agile-transformation.jpg"
 imageAlt: "Agile transformation coaching and team training workshop"
 order: 6
 column: 1

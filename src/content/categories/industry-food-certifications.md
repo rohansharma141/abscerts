@@ -3,7 +3,7 @@ title: "Industry & Food Certifications"
 shortName: "Industry & Food"
 description: "Sector-specific certification and accreditation — HACCP, Halal, Kosher, FSSC 22000, BRCGS, IATF 16949, CE marking and more — for food, manufacturing and supply chains."
 icon: "ti-building-factory-2"
-image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=640&q=80"
+image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "Food safety and industrial product certification"
 order: 3
 column: 3

@@ -2,7 +2,7 @@
 title: "Technology & SaaS"
 shortName: "Technology & SaaS"
 description: "ISO 27001, SOC 2, GDPR for software companies."
-image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&q=80"
+image: "/images/industry-saas.jpg"
 imageAlt: "Technology and SaaS companies — ISO 27001 and SOC 2 certification"
 standards: ["ISO 27001", "SOC 2", "GDPR"]
 services: ["iso-27001", "soc-2", "iso-27701", "iso-27017", "iso-27018", "gdpr", "iso-42001", "iso-22301", "nist", "vapt", "soc-1", "iso-9001", "cmmi-dev"]
