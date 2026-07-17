@@ -3,7 +3,7 @@ title: "Phishing Simulation — A Simple Yet Powerful Tool Against Cyberthreats"
 description: "Phishing simulation tests employees with safe, realistic mock attacks to build awareness and cut click rates. What it is, how it works, and why it's become essential."
 publishDate: 2024-07-31
 author: "ABS Certifications"
-image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&q=80"
+image: "/images/blog-phishing.jpg"
 imageAlt: "Phishing simulation and security awareness training"
 tags: ["Phishing", "Cyber Security", "Security Awareness"]
 readingMinutes: 7

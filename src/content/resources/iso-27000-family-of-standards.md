@@ -3,7 +3,7 @@ title: "The ISO 27000 Family of Standards"
 description: "The ISO 27000 series is the international framework for information security management — dozens of standards, with ISO 27001 the one you certify against. Here's how it fits together."
 publishDate: 2024-06-17
 author: "ABS Certifications"
-image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&q=80"
+image: "/images/blog-iso-27001.jpg"
 imageAlt: "ISO 27000 information security management framework"
 tags: ["ISO 27001", "Information Security", "ISMS"]
 readingMinutes: 6

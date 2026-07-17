@@ -3,7 +3,7 @@ title: "ISO 14001:2026: What Has Actually Changed (and Why It Matters Now)"
 description: "The 2026 revision of ISO 14001 keeps the familiar framework but raises the bar — shifting the emphasis from documented intent to measurable environmental performance."
 publishDate: 2026-04-29
 author: "ABS Certifications"
-image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1200&q=80"
+image: "/images/blog-iso-14001.jpg"
 imageAlt: "Environmental management in an industrial operation under ISO 14001"
 tags: ["ISO 14001", "Environmental Management", "Standards Update"]
 readingMinutes: 5

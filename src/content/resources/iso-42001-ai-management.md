@@ -3,7 +3,7 @@ title: "ISO 42001:2023 — Artificial Intelligence Management System"
 description: "ISO 42001:2023 is the world's first AI management system standard — a framework for governing AI responsibly, built on the familiar ISO 27001 structure."
 publishDate: 2024-04-21
 author: "ABS Certifications"
-image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&q=80"
+image: "/images/blog-iso-42001.jpg"
 imageAlt: "ISO 42001 artificial intelligence management system"
 tags: ["ISO 42001", "AI Governance", "Responsible AI"]
 readingMinutes: 5
