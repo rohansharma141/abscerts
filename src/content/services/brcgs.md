@@ -4,7 +4,7 @@ shortName: "BRCGS"
 description: "Certification against the BRCGS Global Standard — a GFSI-recognised benchmark for food safety, quality and operational criteria, widely required by retailers."
 icon: "ti-building-store"
 tags: ["BRCGS", "Food Safety", "GFSI", "Industry & Food"]
-image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=640&q=80"
+image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "BRCGS Global Standard for Food Safety certification"
 category: "industry-food-certifications"
 categoryName: "Industry & Food Certifications"

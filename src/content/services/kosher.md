@@ -4,7 +4,7 @@ shortName: "Kosher"
 description: "Certification that products and processes comply with Jewish dietary law (kashrut) — opening kosher markets and signalling quality to a wider consumer base."
 icon: "ti-star"
 tags: ["Kosher", "Food Certification", "Market Access", "Industry & Food"]
-image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=640&q=80"
+image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "Kosher food certification"
 category: "industry-food-certifications"
 categoryName: "Industry & Food Certifications"

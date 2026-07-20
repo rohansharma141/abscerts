@@ -4,7 +4,7 @@ shortName: "CMMi for Services"
 description: "Process maturity improvement for organisations that establish, manage and deliver services — benchmarked against the CMMI Services view."
 icon: "ti-settings-cog"
 tags: ["CMMi", "CMMi-SVC", "Process Improvement", "IT Services"]
-image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=640&q=80"
+image: "/images/cat-cmmi.jpg"
 imageAlt: "CMMi for Services process maturity improvement"
 category: "cmmi"
 categoryName: "CMMi & Process"

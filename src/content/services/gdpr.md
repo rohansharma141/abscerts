@@ -4,7 +4,7 @@ shortName: "GDPR"
 description: "Independent GDPR readiness and gap assessments for organisations that process the personal data of individuals in the EU and UK."
 icon: "ti-shield-lock"
 tags: ["GDPR", "Data Privacy", "EU Regulation", "Compliance"]
-image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&q=80"
+image: "/images/cat-cyber-security.jpg"
 imageAlt: "GDPR data protection and privacy compliance assessment"
 category: "cyber-security"
 categoryName: "Cyber Security"

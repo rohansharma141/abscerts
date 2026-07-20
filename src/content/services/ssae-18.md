@@ -4,7 +4,7 @@ shortName: "SSAE 18"
 description: "Independent SOC reporting under SSAE 18 — the AICPA attestation standard governing service organisation control reports in the United States."
 icon: "ti-clipboard-check"
 tags: ["SSAE 18", "AICPA", "Attestation", "Service Organization"]
-image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80"
+image: "/images/cat-cyber-security.jpg"
 imageAlt: "SSAE 18 attestation engagement for a service organisation"
 category: "cyber-security"
 categoryName: "Cyber Security"

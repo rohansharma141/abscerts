@@ -4,7 +4,7 @@ shortName: "Process Automation"
 description: "Using technology to perform repetitive tasks, streamline communication and manage data with minimal manual intervention — freeing people for higher-value work."
 icon: "ti-robot"
 tags: ["Process Automation", "Workflow", "Data Analytics", "Efficiency"]
-image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=640&q=80"
+image: "/images/cat-data-analytics.jpg"
 imageAlt: "Process automation and workflow technology"
 category: "data-analytics"
 categoryName: "Data Analytics"

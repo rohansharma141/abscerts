@@ -4,7 +4,7 @@ shortName: "SOC 1"
 description: "Independent SOC 1 Type I and Type II audits for service organisations whose controls affect their clients' financial reporting."
 icon: "ti-report-money"
 tags: ["SOC 1", "AICPA", "Financial Controls", "Service Organization"]
-image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80"
+image: "/images/cat-cyber-security.jpg"
 imageAlt: "SOC 1 audit of financial reporting controls at a service organisation"
 category: "cyber-security"
 categoryName: "Cyber Security"

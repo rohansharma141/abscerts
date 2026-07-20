@@ -6,7 +6,7 @@ client: "Anonymised — example manufacturer"
 industry: "Manufacturing"
 standards: ["ISO 9001"]
 summary: "One or two sentences summarising the outcome — what the client achieved and the headline result."
-image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1200&q=80"
+image: "/images/cat-iso-certifications.jpg"
 imageAlt: "Example case study image"
 order: 1
 featured: false

@@ -4,7 +4,7 @@ shortName: "Survey Management"
 description: "Systematic administration, analysis and interpretation of surveys to gather reliable insights from customers, employees and other stakeholders."
 icon: "ti-clipboard-data"
 tags: ["Survey Management", "Feedback", "Research", "Data Analytics"]
-image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=640&q=80"
+image: "/images/cat-data-analytics.jpg"
 imageAlt: "Survey management and stakeholder insight"
 category: "data-analytics"
 categoryName: "Data Analytics"

@@ -4,7 +4,7 @@ shortName: "Lean"
 description: "Training and support in Lean — the discipline of maximising value and eliminating waste so work flows more smoothly and predictably."
 icon: "ti-recycle"
 tags: ["Lean", "Continuous Improvement", "Agile", "Agile Transformation"]
-image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=640&q=80"
+image: "/images/cat-agile-transformation.jpg"
 imageAlt: "Lean continuous improvement and waste elimination"
 category: "agile-transformation"
 categoryName: "Agile Transformation"

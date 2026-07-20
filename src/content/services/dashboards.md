@@ -4,7 +4,7 @@ shortName: "Dashboards"
 description: "Visual interfaces that consolidate diverse datasets into a single view, making it quick to monitor performance and make informed decisions."
 icon: "ti-dashboard"
 tags: ["Dashboards", "Business Intelligence", "Data Visualization", "Data Analytics"]
-image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=640&q=80"
+image: "/images/cat-data-analytics.jpg"
 imageAlt: "Business intelligence dashboards consolidating data"
 category: "data-analytics"
 categoryName: "Data Analytics"

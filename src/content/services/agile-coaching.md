@@ -5,7 +5,7 @@ description: "Experienced coaches working alongside your teams and leaders to ad
 icon: "ti-users"
 tags: ["Agile Coaching", "Agile Transformation", "Scrum", "Kanban"]
 image: "/images/service-agile-coaching.jpg"
-imageAlt: "Agile coaching with a delivery team"
+imageAlt: "Agile coaching kanban board tracking a team's delivery work"
 category: "agile-transformation"
 categoryName: "Agile Transformation"
 order: 1

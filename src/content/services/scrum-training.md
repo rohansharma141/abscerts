@@ -4,7 +4,7 @@ shortName: "Scrum Training"
 description: "Practical training in Scrum and Kanban — the agile frameworks teams use to plan, deliver and improve work in short, iterative cycles."
 icon: "ti-refresh"
 tags: ["Scrum Training", "Kanban", "Agile", "Agile Transformation"]
-image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=640&q=80"
+image: "/images/cat-agile-transformation.jpg"
 imageAlt: "Scrum and Kanban agile framework training"
 category: "agile-transformation"
 categoryName: "Agile Transformation"

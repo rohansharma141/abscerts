@@ -4,7 +4,7 @@ shortName: "HIPAA"
 description: "Independent HIPAA readiness and gap assessments for organisations that handle the protected health information of US individuals."
 icon: "ti-stethoscope"
 tags: ["HIPAA", "PHI", "Healthcare", "US Privacy"]
-image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80"
+image: "/images/cat-cyber-security.jpg"
 imageAlt: "HIPAA protected health information compliance assessment"
 category: "cyber-security"
 categoryName: "Cyber Security"

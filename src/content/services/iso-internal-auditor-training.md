@@ -4,7 +4,7 @@ shortName: "Internal Auditor Training"
 description: "Training that equips staff to plan and conduct internal audits of their own organisation's management system against an ISO standard."
 icon: "ti-clipboard-check"
 tags: ["Internal Auditor Training", "ISO Training", "Internal Audit", "Management System Training"]
-image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=640&q=80"
+image: "/images/cat-management-system-training.jpg"
 imageAlt: "ISO Internal Auditor training course"
 category: "management-system-training"
 categoryName: "Management System Training"

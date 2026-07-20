@@ -1,15 +1,22 @@
 # Tier-3 Image Spec — for Ojas
 
-**Goal:** Replace the remaining Unsplash images that are *actually visible* on the site.
-Only **13 images** render anywhere (as few as **~10** with reuse). The other 66 service
-covers never appear on any page — **leave them untouched**, they cost nothing.
+> ## ✅ STATUS: COMPLETE — no action needed
+> Ojas delivered all 10 images below (commit `66517de`). The site now loads **zero**
+> images from Unsplash.
+>
+> ### ⚠️ Correction to this spec (the "only 13 images" claim was wrong)
+> This spec originally said only 4 of the 70 service covers were visible. **That was an
+> analysis error.** `src/layouts/ServiceDetailLayout.astro:83` renders
+> `<img src={d.image} …>` as a full **1200×900 eager hero on every service detail page** —
+> so all 70 service covers *are* visible, one per page. (The original check missed that
+> line because it filtered out anything matching `imageAlt`, and that line contains both.)
+>
+> **Resolved without generating 66 more images:** each remaining service now points at its
+> own **category image** (`/images/cat-<category>.jpg`, already localised in Tier-1), so every
+> service page shows a coherent on-brand hero. If a bespoke per-service image is ever wanted,
+> just swap that one `image:` value — no other change needed.
 
-## Why only 13?
-The `image:` field on a service page only ever renders inside the **"Related certifications"**
-strip, which is hardcoded to show the same 3–4 services site-wide (see
-`src/layouts/ServiceDetailLayout.astro:18-20`). A service's cover image is **never shown on
-its own detail page**, and the category tile grid uses **icons**, not photos. So 66 of the 70
-service images are dead weight and can stay as-is.
+**Original goal:** Replace the remaining Unsplash images that are *actually visible* on the site.
 
 ## Brand / style (applies to every image)
 - Palette: navy `#081F4D` + mint/teal `#34E0C4`; match the existing hero/category set.

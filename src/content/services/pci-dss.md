@@ -4,7 +4,7 @@ shortName: "PCI DSS"
 description: "Readiness, scoping and assessment support for the Payment Card Industry Data Security Standard — for any organisation that stores, processes or transmits cardholder data."
 icon: "ti-credit-card"
 tags: ["PCI DSS", "Cardholder Data", "Payments Security", "Cyber Security"]
-image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80"
+image: "/images/cat-cyber-security.jpg"
 imageAlt: "Payment card data security assessment under PCI DSS"
 category: "cyber-security"
 categoryName: "Cyber Security"

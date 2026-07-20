@@ -4,7 +4,7 @@ shortName: "Awareness Training"
 description: "Short orientation training that helps staff understand an ISO standard's requirements and their own role in meeting them."
 icon: "ti-bulb"
 tags: ["Awareness Training", "ISO Training", "Staff Orientation", "Management System Training"]
-image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=640&q=80"
+image: "/images/cat-management-system-training.jpg"
 imageAlt: "ISO awareness training session for staff"
 category: "management-system-training"
 categoryName: "Management System Training"

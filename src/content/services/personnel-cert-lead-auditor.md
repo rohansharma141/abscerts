@@ -4,7 +4,7 @@ shortName: "Lead Auditor Certification"
 description: "Certification of an individual auditor's competence — a personal credential, distinct from the certification of an organisation's management system."
 icon: "ti-user-check"
 tags: ["Personnel Certification", "Lead Auditor", "Auditor Competence"]
-image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=640&q=80"
+image: "/images/cat-personnel-certifications.jpg"
 imageAlt: "Lead auditor personnel certification"
 category: "personnel-certifications"
 categoryName: "Personnel Certifications"

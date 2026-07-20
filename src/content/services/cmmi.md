@@ -4,7 +4,7 @@ shortName: "CMMI"
 description: "CMMI appraisal and process-improvement services — gap analysis, implementation and SCAMPI appraisals conducted by Certified Lead Appraisers, across all maturity levels."
 icon: "ti-stairs-up"
 tags: ["CMMI", "Process Improvement", "SCAMPI", "Maturity Levels"]
-image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80"
+image: "/images/cat-cmmi.jpg"
 imageAlt: "Software development team working toward a CMMI appraisal"
 category: "cmmi"
 categoryName: "CMMi & Process"

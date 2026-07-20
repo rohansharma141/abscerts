@@ -4,7 +4,7 @@ shortName: "Vendor Inspection"
 description: "Independent verification of suppliers and goods — factory audits, OEM development, raw material inspection and loading supervision across the supply relationship."
 icon: "ti-building-factory-2"
 tags: ["Vendor Inspection", "Supplier Audit", "Third Party Inspection", "Supply Chain"]
-image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=640&q=80"
+image: "/images/cat-third-party-inspection.jpg"
 imageAlt: "Vendor and supplier factory inspection"
 category: "third-party-inspection"
 categoryName: "Third Party Inspection"

@@ -4,7 +4,7 @@ shortName: "SMETA"
 description: "The most widely used ethical audit format — assessing labour, health & safety, environment and business ethics. SMETA is an audit that produces a report, not a certificate."
 icon: "ti-scale"
 tags: ["SMETA", "Ethical Audit", "Sedex", "Industry & Food"]
-image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=640&q=80"
+image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "SMETA ethical trade audit of a workplace"
 category: "industry-food-certifications"
 categoryName: "Industry & Food Certifications"

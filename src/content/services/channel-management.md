@@ -4,7 +4,7 @@ shortName: "Channel Management"
 description: "Strategic planning, development and optimisation of distribution channels so products and services reach end-users efficiently."
 icon: "ti-route"
 tags: ["Channel Management", "Distribution", "Data Analytics", "Go-to-Market"]
-image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=640&q=80"
+image: "/images/cat-data-analytics.jpg"
 imageAlt: "Channel management and distribution strategy"
 category: "data-analytics"
 categoryName: "Data Analytics"

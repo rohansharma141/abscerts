@@ -4,7 +4,7 @@ shortName: "SOC 2"
 description: "Independent assurance over security, availability and confidentiality controls for SaaS and cloud providers."
 icon: "ti-cloud-lock"
 tags: ["SOC 2", "Type I", "Type II", "Trust Services"]
-image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&q=80"
+image: "/images/cat-cyber-security.jpg"
 imageAlt: "SOC 2 controls assessment for a cloud service provider"
 category: "cyber-security"
 categoryName: "Cyber Security"

@@ -4,7 +4,7 @@ shortName: "Lead Auditor Training"
 description: "Intensive training that equips participants to plan, lead, report and follow up audits of a management system against an ISO standard."
 icon: "ti-user-shield"
 tags: ["Lead Auditor Training", "ISO Training", "Auditing", "Management System Training"]
-image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=640&q=80"
+image: "/images/cat-management-system-training.jpg"
 imageAlt: "ISO Lead Auditor training course"
 category: "management-system-training"
 categoryName: "Management System Training"

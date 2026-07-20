@@ -4,7 +4,7 @@ shortName: "Social Media Analytics"
 description: "Systematically analysing data from social platforms to distil meaningful insights from user interactions and engagement."
 icon: "ti-chart-bubble"
 tags: ["Social Media Analytics", "Marketing Analytics", "Engagement", "Data Analytics"]
-image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=640&q=80"
+image: "/images/cat-data-analytics.jpg"
 imageAlt: "Social media analytics and engagement insights"
 category: "data-analytics"
 categoryName: "Data Analytics"

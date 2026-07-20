@@ -4,7 +4,7 @@ shortName: "CMMi for Acquisition"
 description: "Process maturity improvement for organisations that acquire products and services from suppliers — strengthening acquisition and supplier-management processes."
 icon: "ti-truck-delivery"
 tags: ["CMMi", "CMMi-ACQ", "Acquisition", "Supplier Management"]
-image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=640&q=80"
+image: "/images/cat-cmmi.jpg"
 imageAlt: "CMMi for Acquisition supplier and procurement process maturity"
 category: "cmmi"
 categoryName: "CMMi & Process"

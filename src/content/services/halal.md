@@ -4,7 +4,7 @@ shortName: "Halal"
 description: "Certification that products and processes comply with Islamic dietary law — opening access to Muslim-majority markets and consumers worldwide."
 icon: "ti-moon"
 tags: ["Halal", "Food Certification", "Market Access", "Industry & Food"]
-image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=640&q=80"
+image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "Halal food certification"
 category: "industry-food-certifications"
 categoryName: "Industry & Food Certifications"

@@ -4,7 +4,7 @@ shortName: "QA Inspection"
 description: "Independent inspection across production — initial production checks, in-production checks and random inspection — to verify quality before goods are accepted."
 icon: "ti-clipboard-check"
 tags: ["Quality Assurance", "Production Inspection", "Third Party Inspection", "QA"]
-image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=640&q=80"
+image: "/images/cat-third-party-inspection.jpg"
 imageAlt: "Quality assurance inspection during production"
 category: "third-party-inspection"
 categoryName: "Third Party Inspection"

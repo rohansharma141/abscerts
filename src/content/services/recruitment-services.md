@@ -4,7 +4,7 @@ shortName: "Recruitment"
 description: "Talent scouting at all levels, behavioural and leadership assessment, offer management, and support across the employee lifecycle from onboarding to exit."
 icon: "ti-user-search"
 tags: ["Recruitment", "Talent Acquisition", "Hiring", "HR Services"]
-image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=640&q=80"
+image: "/images/cat-hr-services.jpg"
 imageAlt: "Recruitment and talent acquisition services"
 category: "hr-services"
 categoryName: "HR Services"

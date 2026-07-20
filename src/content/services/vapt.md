@@ -4,7 +4,7 @@ shortName: "VAPT"
 description: "Security testing that finds and helps you fix weaknesses before attackers do. VAPT is a service that produces a report — not a certification."
 icon: "ti-bug"
 tags: ["VAPT", "Penetration Testing", "Vulnerability Assessment", "Security Testing"]
-image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&q=80"
+image: "/images/cat-cyber-security.jpg"
 imageAlt: "Vulnerability assessment and penetration testing of IT systems"
 category: "cyber-security"
 categoryName: "Cyber Security"

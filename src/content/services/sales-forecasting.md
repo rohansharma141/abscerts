@@ -4,7 +4,7 @@ shortName: "Sales Forecasting"
 description: "Systematic analysis of past sales, market trends and influencing factors to predict future sales and support better planning."
 icon: "ti-trending-up"
 tags: ["Sales Forecasting", "Predictive Analytics", "Demand Planning", "Data Analytics"]
-image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=640&q=80"
+image: "/images/cat-data-analytics.jpg"
 imageAlt: "Sales forecasting and predictive analytics"
 category: "data-analytics"
 categoryName: "Data Analytics"

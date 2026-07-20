@@ -4,7 +4,7 @@ shortName: "Data Warehousing"
 description: "A centralised repository that brings an organisation's data together so it can extract actionable insights and make informed decisions."
 icon: "ti-database"
 tags: ["Data Warehousing", "Data Management", "Analytics Infrastructure", "Data Analytics"]
-image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=640&q=80"
+image: "/images/cat-data-analytics.jpg"
 imageAlt: "Data warehousing and centralised data repository"
 category: "data-analytics"
 categoryName: "Data Analytics"

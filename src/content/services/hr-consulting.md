@@ -4,7 +4,7 @@ shortName: "HR Consulting"
 description: "HR policy and process development, learning and development, performance management, employee wellness, and HR compliance and audits — across the people function."
 icon: "ti-briefcase"
 tags: ["HR Consulting", "HR Policy", "Performance Management", "HR Services"]
-image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=640&q=80"
+image: "/images/cat-hr-services.jpg"
 imageAlt: "HR consulting and people strategy"
 category: "hr-services"
 categoryName: "HR Services"

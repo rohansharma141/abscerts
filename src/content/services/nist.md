@@ -4,7 +4,7 @@ shortName: "NIST CSF"
 description: "Independent assessment of your security programme against the NIST Cybersecurity Framework — a widely used voluntary framework for managing cyber risk."
 icon: "ti-shield-cog"
 tags: ["NIST", "NIST CSF", "Cyber Risk", "Framework"]
-image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&q=80"
+image: "/images/cat-cyber-security.jpg"
 imageAlt: "NIST Cybersecurity Framework assessment and cyber risk management"
 category: "cyber-security"
 categoryName: "Cyber Security"

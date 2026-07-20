@@ -4,7 +4,7 @@ shortName: "NABL"
 description: "Readiness and advisory support to help testing, calibration and medical laboratories achieve NABL accreditation against ISO/IEC 17025 and ISO 15189."
 icon: "ti-flask"
 tags: ["NABL", "Laboratory Accreditation", "ISO 17025", "Industry & Food"]
-image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=640&q=80"
+image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "NABL laboratory accreditation support"
 category: "industry-food-certifications"
 categoryName: "Industry & Food Certifications"
