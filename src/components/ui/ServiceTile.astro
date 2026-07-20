@@ -6,7 +6,7 @@ export interface Props {
 }
 
 const { service } = Astro.props;
-const { title, shortName, description, icon, tags, timelineWeeks, governingBody, accreditation } = service.data;
+const { title, shortName, description, icon, tags, timelineWeeks, governingBody } = service.data;
 const slug = service.id.replace(/\.md$/, '');
 ---
 
@@ -15,7 +15,6 @@ const slug = service.id.replace(/\.md$/, '');
     <div class="service-tile-icon">
       <i class={`ti ${icon}`}></i>
     </div>
-    {accreditation && <span class="service-tile-badge">{accreditation}</span>}
   </div>
   <h3>{shortName}</h3>
   <p>{description}</p>

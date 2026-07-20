@@ -9,7 +9,6 @@ imageAlt: "SOC 2 controls assessment for a cloud service provider"
 category: "cyber-security"
 categoryName: "Cyber Security"
 governingBody: "AICPA"
-accreditation: "IAS/IAF"
 order: 5
 timelineWeeks: "6-10"
 featured: true

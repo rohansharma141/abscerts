@@ -11,7 +11,7 @@ row: 1
 industries: ["manufacturing", "healthcare"]
 seo:
   title: "Industry & Food Certifications | HACCP, Halal, BRCGS | ABS"
-  description: "Food safety and industry certification — HACCP, Halal, Kosher, FSSC 22000, BRCGS, IATF 16949, CE marking, NABL, NABH. Independent and accredited."
+  description: "Food safety and industry certification — HACCP, Halal, Kosher, FSSC 22000, BRCGS, IATF 16949, CE marking, NABL, NABH."
   keywords: ["HACCP certification", "food safety certification India", "BRCGS", "IATF 16949 certification"]
 ---
 
@@ -27,4 +27,4 @@ These certifications are for organisations whose customers audit their supply ch
 
 ## How ABS approaches industry and food certification
 
-ABS is an independent certification body, and that independence is the point — an impartial audit gives buyers a credible basis to trust what your certificate says. Engagements begin with a fixed-price scope tailored to the standard and your operation, with audits delivered on-site where the scheme requires direct observation of production, or remotely where appropriate, across India and international markets.
+ABS is a consulting and advisory firm: we prepare you for the certification audit rather than conduct it, so the impartial assessment that follows gives buyers a credible basis to trust what your certificate says. Engagements begin with a fixed-price scope tailored to the standard and your operation, with audits delivered on-site where the scheme requires direct observation of production, or remotely where appropriate, across India and international markets.

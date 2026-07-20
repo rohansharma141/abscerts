@@ -7,7 +7,7 @@ import CTABanner from '../components/sections/CTABanner.astro';
 
 const title = 'ABS Certifications & Advisory | ISO 9001, 27001, SOC 2 certification for global businesses';
 const description =
-  'Independent ISO certification body for organisations in UK, EU, US and Middle East. IAS/IAF accredited audits for ISO 9001, 27001, 14001, 45001, SOC 2, PCI DSS, CMMI. Fixed-price quote in 24 hours. 1,200+ certificates issued.';
+  'Certification consulting and advisory for organisations in UK, EU, US and Middle East. We help you achieve ISO 9001, 27001, 14001, 45001, SOC 2, PCI DSS and CMMi. Fixed-price quote in 24 hours.';
 
 // Home services grid: v7's 6 generic service *categories* (NOT the ISO-standard
 // collection entries — they don't map 1:1). Kept as literal ServiceCard props so the
@@ -17,7 +17,7 @@ const homeServices = [
   { tag: 'Fast-track 8 weeks', num: '/ 02', href: '/services/cyber-security', image: '/images/home-cyber-security.jpg', imageAlt: 'SOC 2 cyber security and information security audit', title: 'Cyber security & SOC 2', description: 'End-to-end security assurance from SOC 2 readiness to penetration testing and PCI DSS audit.', tags: ['SOC 2', 'VAPT', 'GDPR', 'NIST', 'PCI DSS'] },
   { tag: 'IT & software', num: '/ 03', href: '/services/cmmi', image: '/images/service-cmmi-dev.jpg', imageAlt: 'CMMI appraisal for IT services and software development', title: 'CMMI appraisals', description: 'CMMI maturity level 2 and 3 readiness assessments, gap analysis and ATM support for IT services.', tags: ['CMMI ML2', 'CMMI ML3', 'ATM'] },
   { tag: 'Advisory', num: '/ 04', href: '/services/data-analytics', image: '/images/home-data-analytics.jpg', imageAlt: 'Data analytics dashboard for compliance reporting', title: 'Data analytics', description: 'Data management, process automation, decision analytics and visualisation for compliance-driven teams.', tags: ['Analytics', 'Automation', 'Reporting'] },
-  { tag: 'Training & rollout', num: '/ 05', href: '/services/agile-transformation', image: '/images/service-agile-coaching.jpg', imageAlt: 'Agile planning board tracking sprint work across columns', title: 'Agile transformation', description: 'Scrum, Kanban and Lean training plus enterprise rollouts. Certified trainers and lead auditors.', tags: ['Scrum', 'Kanban', 'Lean'] },
+  { tag: 'Training & rollout', num: '/ 05', href: '/services/agile-transformation', image: '/images/service-agile-coaching.jpg', imageAlt: 'Agile planning board tracking sprint work across columns', title: 'Agile transformation', description: 'Scrum, Kanban and Lean training plus enterprise rollouts. Certified trainers and experienced practitioners.', tags: ['Scrum', 'Kanban', 'Lean'] },
   { tag: 'Inspections', num: '/ 06', href: '/services/third-party-inspection', image: '/images/home-third-party-inspection.jpg', imageAlt: 'Third-party factory inspection and supplier audit', title: 'Third-party inspection', description: 'Independent pre-shipment, factory, and supplier inspections to verify quality at source.', tags: ['Pre-shipment', 'Factory', 'Supplier'] },
 ];
 
@@ -78,7 +78,7 @@ const serviceSchema = {
           <div class="container">
             <div class="hero-slide-inner">
               <div class="hero-slide-meta">
-                <span class="hero-slide-meta-item">IAS · IAF accredited</span>
+                <span class="hero-slide-meta-item">ISO · SOC 2 · CMMi</span>
                 <span class="hero-slide-meta-item">Est. 2008</span>
                 <span class="hero-slide-meta-item">40+ countries</span>
               </div>
@@ -129,11 +129,11 @@ const serviceSchema = {
           <div class="container">
             <div class="hero-slide-inner">
               <div class="hero-slide-meta">
-                <span class="hero-slide-meta-item">Lead auditors in 12 countries</span>
+                <span class="hero-slide-meta-item">Consultants in 12 countries</span>
                 <span class="hero-slide-meta-item">On-site or remote</span>
               </div>
               <h1>Auditors based <em>near you</em>, audits delivered in your time zone.</h1>
-              <p class="hero-slide-sub">Local lead auditors across the UK, EU, Middle East and North America. No expensive international travel charges. Multi-language support in English, Arabic, German and French.</p>
+              <p class="hero-slide-sub">Local consultants across the UK, EU, Middle East and North America. No expensive international travel charges. Multi-language support in English, Arabic, German and French.</p>
               <div class="hero-slide-cta">
                 <a class="btn btn-primary" href="/contact">Find auditors in your region <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></a>
                 <button class="btn btn-outline" onclick="openQuoteModal()"><i class="ti ti-world"></i>Get a regional quote</button>
@@ -181,7 +181,7 @@ const serviceSchema = {
         </div>
         <div class="hero-stat">
           <div class="num">12<small>+</small></div>
-          <div class="label">Lead auditors across regions</div>
+          <div class="label">Consultants across regions</div>
         </div>
       </div>
     </div>
@@ -202,19 +202,19 @@ const serviceSchema = {
   <!-- MARQUEE -->
   <section class="marquee">
     <div class="marquee-track">
-      <span class="marquee-item"><i class="ti ti-certificate"></i>IAS accredited</span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>ISO consulting</span>
       <span class="marquee-dot"></span>
       <span class="marquee-item">🇬🇧 United Kingdom</span>
       <span class="marquee-dot"></span>
-      <span class="marquee-item"><i class="ti ti-certificate"></i>IAF MLA signatory</span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>Audit readiness</span>
       <span class="marquee-dot"></span>
       <span class="marquee-item">🇦🇪 United Arab Emirates</span>
       <span class="marquee-dot"></span>
-      <span class="marquee-item"><i class="ti ti-certificate"></i>EGAC partner</span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>Gap analysis</span>
       <span class="marquee-dot"></span>
       <span class="marquee-item">🇩🇪 Germany</span>
       <span class="marquee-dot"></span>
-      <span class="marquee-item"><i class="ti ti-certificate"></i>UKAS-aligned</span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>Training & advisory</span>
       <span class="marquee-dot"></span>
       <span class="marquee-item">🇺🇸 United States</span>
       <span class="marquee-dot"></span>
@@ -222,19 +222,19 @@ const serviceSchema = {
       <span class="marquee-dot"></span>
       <span class="marquee-item">🇸🇦 Saudi Arabia</span>
       <span class="marquee-dot"></span>
-      <span class="marquee-item"><i class="ti ti-certificate"></i>IAS accredited</span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>ISO consulting</span>
       <span class="marquee-dot"></span>
       <span class="marquee-item">🇬🇧 United Kingdom</span>
       <span class="marquee-dot"></span>
-      <span class="marquee-item"><i class="ti ti-certificate"></i>IAF MLA signatory</span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>Audit readiness</span>
       <span class="marquee-dot"></span>
       <span class="marquee-item">🇦🇪 United Arab Emirates</span>
       <span class="marquee-dot"></span>
-      <span class="marquee-item"><i class="ti ti-certificate"></i>EGAC partner</span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>Gap analysis</span>
       <span class="marquee-dot"></span>
       <span class="marquee-item">🇩🇪 Germany</span>
       <span class="marquee-dot"></span>
-      <span class="marquee-item"><i class="ti ti-certificate"></i>UKAS-aligned</span>
+      <span class="marquee-item"><i class="ti ti-certificate"></i>Training & advisory</span>
       <span class="marquee-dot"></span>
       <span class="marquee-item">🇺🇸 United States</span>
       <span class="marquee-dot"></span>
@@ -254,7 +254,7 @@ const serviceSchema = {
           <h2>Certifications that <em>matter</em> to the markets you sell into.</h2>
         </div>
         <div class="section-head-right">
-          <p>Every certification we issue is recognised internationally under the IAF Multilateral Recognition Arrangement — so your customers in London, Frankfurt, Dubai or Austin can trust what's printed on your certificate.</p>
+          <p>We prepare you for certification against internationally recognised standards — so your customers in London, Frankfurt, Dubai or Austin can trust what's printed on your certificate.</p>
           <button class="btn btn-outline" onclick="openQuoteModal()">Talk to a specialist <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
         </div>
       </div>
@@ -285,7 +285,7 @@ const serviceSchema = {
     <div class="container">
       <div class="process-wrap">
         <div class="process-img">
-          <img src="/images/home-process.jpg" alt="ABS lead auditor consultation with client team" loading="lazy" decoding="async" width="900" height="1125">
+          <img src="/images/home-process.jpg" alt="ABS consultant in discussion with a client team" loading="lazy" decoding="async" width="900" height="1125">
           <div class="process-img-tag">
             <i class="ti ti-bolt"></i>
             <span>Average start to certificate: 11 weeks</span>
@@ -309,7 +309,7 @@ const serviceSchema = {
               <div class="process-step-num">/ 02</div>
               <div class="process-step-body">
                 <h3>Gap assessment</h3>
-                <p>Stage 1 audit identifies what's needed against the standard. Remote or on-site, your choice.</p>
+                <p>We assess your current position against the standard and map every gap. Remote or on-site, your choice.</p>
                 <span class="process-step-meta"><i class="ti ti-clock"></i>Week 2–4</span>
               </div>
             </div>
@@ -317,7 +317,7 @@ const serviceSchema = {
               <div class="process-step-num">/ 03</div>
               <div class="process-step-body">
                 <h3>Certification audit</h3>
-                <p>Stage 2 audit performed by qualified lead auditors based in or near your region.</p>
+                <p>Your certification body carries out the audit. We prepare your team and evidence, and support you throughout.</p>
                 <span class="process-step-meta"><i class="ti ti-clock"></i>Week 8–10</span>
               </div>
             </div>
@@ -325,7 +325,7 @@ const serviceSchema = {
               <div class="process-step-num">/ 04</div>
               <div class="process-step-body">
                 <h3>Certificate issued</h3>
-                <p>Globally recognised certificate, verifiable online by your customers in one click.</p>
+                <p>Your certification body issues the certificate — recognised by customers worldwide.</p>
                 <span class="process-step-meta"><i class="ti ti-clock"></i>Week 11</span>
               </div>
             </div>
@@ -349,7 +349,7 @@ const serviceSchema = {
           <h2>Specialised expertise across your <em>sector</em>.</h2>
         </div>
         <div class="section-head-right">
-          <p>Our auditors don't just know the standards — they know your industry. From SaaS startups to global manufacturers, we bring sector context to every engagement.</p>
+          <p>Our consultants don't just know the standards — they know your industry. From SaaS startups to global manufacturers, we bring sector context to every engagement.</p>
         </div>
       </div>
 
@@ -381,7 +381,7 @@ const serviceSchema = {
           <h2>Designed for buyers <em>outside India</em>.</h2>
         </div>
         <div class="section-head-right">
-          <p>We've built ABS specifically to serve overseas clients. That means time-zone-friendly delivery, fixed-fee transparent pricing in your currency, and lead auditors based near you.</p>
+          <p>We've built ABS specifically to serve overseas clients. That means time-zone-friendly delivery, fixed-fee transparent pricing in your currency, and consultants based near you.</p>
         </div>
       </div>
 
@@ -409,7 +409,7 @@ const serviceSchema = {
           <div class="why-item">
             <div class="why-num">/ 03</div>
             <div>
-              <h3>Lead auditors in 12 countries</h3>
+              <h3>Consultants in 12 countries</h3>
               <p>On-site audits without expensive international travel. Local language support across English, Arabic, German, French and more.</p>
               <a href="/contact" class="why-item-link">See auditor coverage <i class="ti ti-arrow-right" style="font-size:12px"></i></a>
             </div>
@@ -436,7 +436,7 @@ const serviceSchema = {
         </div>
         <div class="numbers-item">
           <div class="numbers-num">98<small>%</small></div>
-          <div class="numbers-label">First-time pass rate across all certification standards we audit.</div>
+          <div class="numbers-label">First-time pass rate across the certification standards we support.</div>
         </div>
         <div class="numbers-item">
           <div class="numbers-num">24<small>h</small></div>

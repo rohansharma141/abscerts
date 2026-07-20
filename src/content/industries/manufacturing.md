@@ -24,11 +24,11 @@ Manufacturing audits are grounded in the physical operation. Auditors spend time
 
 ## Common questions
 
-### Can we certify all three standards in one audit?
+### Can we pursue all three standards in one programme?
 Yes. An integrated audit across ISO 9001, 14001 and 45001 is common for manufacturers and reduces total audit time, because the shared management-system elements are assessed once rather than three times.
 
 ### Do you charge travel for on-site audits?
-Because our lead auditors are based in 12 countries, on-site audits across the UK, EU and Middle East are typically delivered without international travel costs. Any local travel is included in your fixed-fee quote.
+Because our consultants are based in 12 countries, on-site work across the UK, EU and Middle East is typically delivered without international travel costs. Any local travel is included in your fixed-fee quote.
 
 ### We run multiple sites — how does that work?
 Multi-site organisations can often be certified under a sampling approach, where a representative set of sites is audited each cycle rather than every location every year. We confirm the sampling plan as part of your quote.

@@ -27,4 +27,4 @@ The services apply broadly to organisations that source from third parties and n
 
 ## How ABS approaches inspection
 
-ABS is an independent certification body, and that independence is the whole point of a third-party inspection: because the assessment is impartial, it provides a credible basis for verification that neither buyer nor supplier can dispute. Inspections are delivered where the goods are, with a fixed-price scope agreed up front so there are no surprises in the report or the bill.
+ABS acts as an independent third party, and that independence is the whole point of a third-party inspection: because the assessment is impartial, it provides a credible basis for verification that neither buyer nor supplier can dispute. Inspections are delivered where the goods are, with a fixed-price scope agreed up front so there are no surprises in the report or the bill.

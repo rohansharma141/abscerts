@@ -11,7 +11,6 @@ categoryName: "Cyber Security"
 order: 9
 timelineWeeks: "10-14"
 governingBody: "AICPA"
-accreditation: "AICPA"
 featured: false
 seo:
   title: "SSAE 18 Attestation & SOC Reporting | AICPA | ABS Certifications"

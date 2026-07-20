@@ -11,7 +11,7 @@ row: 1
 industries: ["saas", "finance", "healthcare"]
 seo:
   title: "Cyber Security Certifications | SOC 2, PCI DSS, GDPR | ABS"
-  description: "Independent cyber security audits — SOC 2 Type I/II, PCI DSS, GDPR, NIST, HIPAA, ISO 22301. IAS-accredited. Fixed-price quote in 24 hours."
+  description: "Cyber security consulting and audit readiness — SOC 2 Type I/II, PCI DSS, GDPR, NIST, HIPAA, ISO 22301. Fixed-price quote in 24 hours."
   keywords: ["cyber security certification", "SOC 2 audit India", "PCI DSS compliance", "GDPR audit"]
 ---
 

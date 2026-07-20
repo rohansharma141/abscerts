@@ -30,4 +30,4 @@ Personnel certification matters most in roles where competence has to be proven 
 
 ## How ABS approaches it
 
-ABS is an independent certification body, and that impartiality is what gives a personnel certificate its value: the assessment is conducted at arm's length, against defined requirements, by a body with no stake in the result. To discuss a specific scheme or role, contact our team for current details.
+ABS is a consulting and advisory firm. A personnel certificate earns its value from impartiality: the assessment is conducted at arm's length, against defined requirements, by a body with no stake in the result. To discuss a specific scheme or role, contact our team for current details.

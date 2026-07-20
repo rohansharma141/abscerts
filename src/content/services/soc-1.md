@@ -11,7 +11,6 @@ categoryName: "Cyber Security"
 order: 7
 timelineWeeks: "10-14"
 governingBody: "AICPA"
-accreditation: "AICPA"
 featured: false
 seo:
   title: "SOC 1 Audit (Type I & Type II) | Financial Controls | ABS"

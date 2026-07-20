@@ -2,31 +2,31 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CTABanner from '../components/sections/CTABanner.astro';
 
-const title = 'Our Certification Process | ABS Certifications';
+const title = 'How We Work | Certification Consulting Process | ABS Certifications';
 const description =
-  'How ABS certifies organisations — from initial scoping to certificate issuance and ongoing surveillance. Transparent timelines and fixed-price quotes within 24 hours.';
+  'How ABS gets organisations certification-ready — from scoping and gap analysis through implementation, training and support during the certification audit. Fixed-price quotes within 24 hours.';
 const canonical = new URL('/process', Astro.site).href;
 
 const faqs = [
   {
-    question: 'Can audits be conducted remotely?',
+    question: 'Can you support us remotely?',
     answer:
-      'Many can. Stage 1 reviews, surveillance audits and assessments such as ISO 27001 and SOC 2 are frequently delivered fully remotely. Some certifications — for example ISO 45001, where site safety must be observed — may require an on-site visit. We confirm the approach for your scope upfront, so there are no surprises.',
+      'Most of it, yes. Gap analysis, documentation review, training and audit preparation are routinely delivered fully remotely. Some standards — for example ISO 45001, where site safety must be observed — involve an on-site element, and your certification body may require an on-site audit. We confirm the approach for your scope upfront, so there are no surprises.',
   },
   {
     question: 'What documentation do we need to prepare?',
     answer:
-      "It depends on the standard, but typically your policies, key procedures, records that show the system operating (for example management review and internal audit results), and evidence relevant to the standard's requirements. We tell you exactly what is in scope at the scoping stage, and the Stage 1 audit is designed to surface any gaps before the main assessment.",
+      "It depends on the standard, but typically your policies, key procedures, records that show the system operating (for example management review and internal audit results), and evidence relevant to the standard's requirements. We tell you exactly what is in scope at the gap-analysis stage and help you build whatever is missing, so nothing is discovered for the first time during the audit.",
   },
   {
     question: 'What happens if we have a non-conformity?',
     answer:
-      'A non-conformity is not a failure — it is a finding to be addressed. You implement corrective action within an agreed timeframe, and we verify it (often remotely). Certification proceeds once findings are satisfactorily closed. Our approach is to surface gaps early, during Stage 1, so material issues rarely appear for the first time at Stage 2.',
+      'A non-conformity is not a failure — it is a finding to be addressed. You implement corrective action within an agreed timeframe and your certification body verifies it. Certification proceeds once findings are closed. We help you plan and evidence the corrective action, and our approach is to surface gaps during our own gap analysis so material issues rarely appear for the first time at the audit.',
   },
   {
     question: 'How quickly can we get the certificate after Stage 2?',
     answer:
-      'Once any Stage 2 findings are closed and the independent certification decision is made, the certificate is issued. For most organisations under 200 employees the full path from kick-off to certificate is around 10–14 weeks; larger or multi-site organisations typically take longer. We give you a firm timeline with your initial quote.',
+      'Once any Stage 2 findings are closed, your certification body makes its certification decision and issues the certificate. For most organisations under 200 employees the full path from kick-off to certificate is around 10–14 weeks; larger or multi-site organisations typically take longer. We give you a firm timeline with your initial quote.',
   },
 ];
 
@@ -44,7 +44,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
-    { '@type': 'ListItem', position: 2, name: 'Our Process', item: canonical },
+    { '@type': 'ListItem', position: 2, name: 'How We Work', item: canonical },
   ],
 };
 ---
@@ -59,28 +59,28 @@ const breadcrumbSchema = {
   <section class="page-hero">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb" style="margin-bottom:24px">
-        <a href="/">Home</a> <span>/</span> <strong>Our Process</strong>
+        <a href="/">Home</a> <span>/</span> <strong>How We Work</strong>
       </nav>
       <div class="page-hero-grid">
         <div>
           <p class="eyebrow" style="margin-bottom:24px">How we work</p>
-          <h1>Our certification <em>process</em>.</h1>
-          <p>Independent, rigorous and transparent — from the first scoping call to certificate and beyond. Here is exactly what to expect at each stage.</p>
+          <h1>How we get you <em>certification-ready</em>.</h1>
+          <p>Rigorous, transparent and practical — from the first scoping call to the certification audit and beyond. Here is exactly what to expect at each stage.</p>
         </div>
         <div class="page-hero-img">
-          <img src="/images/process.jpg" alt="ABS certification process planning and audit" loading="lazy" decoding="async" width="800" height="600">
+          <img src="/images/process.jpg" alt="ABS certification process planning and audit preparation" loading="lazy" decoding="async" width="800" height="600">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- OVERVIEW -->
+  <!-- WHO DOES WHAT -->
   <section class="section section-white" style="padding:72px 0;">
     <div class="container narrow">
       <article class="prose">
-        <h2>What to expect, from kick-off to certificate</h2>
-        <p>Certification follows a well-established route, defined by the international rules for certification bodies (ISO/IEC 17021-1). It runs in four phases — scoping, a Stage 1 audit, a Stage 2 audit, and certification followed by ongoing surveillance. The aim at every step is the same: an honest, evidence-based assessment that earns a certificate worth having.</p>
-        <p>For most organisations under 200 employees, the full path from kick-off to certificate takes around 10–14 weeks; larger or multi-site organisations typically take longer. Every engagement begins with a fixed-price scoping call and a proposal within 24 hours, so you know the timeline and cost before you commit.</p>
+        <h2>Who does what</h2>
+        <p>It is worth being clear about roles from the outset. <strong>ABS is a consulting and advisory firm.</strong> We prepare your organisation for certification and support you through it. The certificate itself is awarded by an <strong>independent certification body</strong> — a separate organisation that audits you and makes the certification decision. That separation is deliberate: the international rules governing certification bodies (ISO/IEC 17021-1) require the assessment to be impartial and independent of the people who helped build the system.</p>
+        <p>In practice that means our job is to make sure the audit holds no surprises. For most organisations under 200 employees, the full path from kick-off to certificate takes around 10–14 weeks; larger or multi-site organisations typically take longer. Every engagement begins with a fixed-price scoping call and a proposal within 24 hours, so you know the timeline and cost before you commit.</p>
       </article>
     </div>
   </section>
@@ -92,16 +92,16 @@ const breadcrumbSchema = {
         <h2>The four phases</h2>
 
         <h3>1. Scoping &amp; quote</h3>
-        <p>We start with a scoping call to understand your organisation, the standard you are pursuing, the number of sites, and the complexity of your operations. From that, we send a fixed-price proposal within 24 hours with a firm timeline. Nothing else begins until you are comfortable with the scope and cost. <strong>You'll prepare:</strong> a basic picture of your business, sites and any existing certifications.</p>
+        <p>We start with a scoping call to understand your organisation, the standard you are pursuing, the number of sites, and the complexity of your operations. From that, we send a fixed-price proposal within 24 hours with a firm timeline. Nothing else begins until you are comfortable with the scope and cost. <strong>You'll provide:</strong> a basic picture of your business, sites and any existing certifications.</p>
 
-        <h3>2. Stage 1 audit — documentation &amp; readiness review</h3>
-        <p>The Stage 1 audit reviews whether your management system is documented and ready for assessment. The auditor checks your policies, procedures and scope, confirms that the key elements of the standard are in place, and identifies anything that needs attention before Stage 2. This stage is deliberately designed to surface gaps early, so there are no surprises later. It can often be conducted remotely. <strong>You'll prepare:</strong> your documented system and evidence that it has started operating.</p>
+        <h3>2. Gap analysis</h3>
+        <p>We assess your current position against the standard, clause by clause, and produce a clear picture of what already works, what needs strengthening, and what is missing entirely. You get a prioritised plan rather than a list of complaints. This stage is deliberately thorough, because everything found here is something the certification body will not find later. It can usually be conducted remotely. <strong>You'll provide:</strong> access to existing policies, procedures and the people who run the processes.</p>
 
-        <h3>3. Stage 2 audit — implementation assessment</h3>
-        <p>The Stage 2 audit assesses whether your system is genuinely implemented and effective — not just written down. The auditor gathers evidence across your operations: interviewing staff, reviewing records, and observing the system in practice. Any findings are documented clearly. Depending on the standard, Stage 2 may be on-site, remote or a mix. <strong>You'll prepare:</strong> records and people who can show the system working day to day.</p>
+        <h3>3. Implementation &amp; training</h3>
+        <p>We work alongside your team to close the gaps — building or reshaping the management system, drafting the policies and procedures that are genuinely missing, and training the people who have to operate it day to day. We also help you run internal audits and a management review, so the system has a track record of actually working before anyone assesses it. <strong>You'll provide:</strong> the people who own the processes, and the time for them to embed the changes.</p>
 
-        <h3>4. Certification &amp; surveillance</h3>
-        <p>Once any findings are closed, an independent certification decision is made and your certificate is issued — recognised internationally through our accreditation. Certification is not a one-off event: it is maintained through regular surveillance audits and renewed on a recertification cycle, which keeps it credible over time. <strong>You'll prepare:</strong> to keep the system live, because the next audit confirms it is still working.</p>
+        <h3>4. Certification audit &amp; beyond</h3>
+        <p>Your certification body then carries out its assessment, normally in two parts. <strong>Stage 1</strong> reviews whether the management system is documented and ready — checking policies, scope and readiness. <strong>Stage 2</strong> assesses whether it is genuinely implemented and effective, through interviews, records and observation. We prepare your team and your evidence for both and stay available throughout; if findings are raised, we help you plan and evidence the corrective action. Once findings are closed, the certification body makes its decision and issues the certificate. <strong>You'll provide:</strong> records and people who can show the system working day to day.</p>
       </article>
     </div>
   </section>
@@ -111,8 +111,8 @@ const breadcrumbSchema = {
     <div class="container narrow">
       <article class="prose">
         <h2>Maintaining your certification</h2>
-        <p>A certificate is a living thing. Under the ISO/IEC 17021-1 framework that governs management system certification, certification runs on a three-year cycle for most ISO standards, with <strong>surveillance audits</strong> — typically annual — in between. These are lighter than the original assessment, but they confirm that your system is still operating and improving rather than drifting after the certificate is on the wall.</p>
-        <p>At the end of the cycle, a <strong>recertification audit</strong> renews the certificate for the next period. If your organisation changes materially — new sites, new activities, a wider scope — that can be assessed and added at the appropriate point rather than waiting. The principle throughout is continuity: certification should reflect how your organisation actually runs, today and over time.</p>
+        <p>A certificate is a living thing. For most ISO standards, certification runs on a three-year cycle, with <strong>surveillance audits</strong> — typically annual — carried out by your certification body in between. These are lighter than the original assessment, but they confirm that your system is still operating and improving rather than drifting after the certificate is on the wall.</p>
+        <p>At the end of the cycle, a <strong>recertification audit</strong> renews the certificate for the next period. We can stay involved across that cycle — keeping the system current, helping run internal audits, training new staff, and preparing you for each surveillance visit. If your organisation changes materially — new sites, new activities, a wider scope — we help you work out what that means for your certification and when to raise it. The principle throughout is continuity: certification should reflect how your organisation actually runs, today and over time.</p>
       </article>
     </div>
   </section>
@@ -121,7 +121,7 @@ const breadcrumbSchema = {
   <section class="section section-tint" style="padding:72px 0;">
     <div class="container narrow">
       <article class="prose">
-        <h2>Common questions about our process</h2>
+        <h2>Common questions about how we work</h2>
         {faqs.map((f) => (
           <Fragment>
             <h3>{f.question}</h3>
