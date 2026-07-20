@@ -4,7 +4,7 @@ shortName: "Agile Coaching"
 description: "Experienced coaches working alongside your teams and leaders to adopt agile ways of working — and to sustain them across the organisation."
 icon: "ti-users"
 tags: ["Agile Coaching", "Agile Transformation", "Scrum", "Kanban"]
-image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=640&q=80"
+image: "/images/service-agile-coaching.jpg"
 imageAlt: "Agile coaching with a delivery team"
 category: "agile-transformation"
 categoryName: "Agile Transformation"
