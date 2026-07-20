@@ -4,7 +4,7 @@ shortName: "CMMi for Development"
 description: "Process maturity improvement for organisations that design and build products, software and systems — benchmarked against the CMMI Development view."
 icon: "ti-code"
 tags: ["CMMi", "CMMi-DEV", "Process Improvement", "Software Development"]
-image: "/images/service-cmmi-dev.jpg"
+image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=640&q=80"
 imageAlt: "CMMi for Development process maturity improvement"
 category: "cmmi"
 categoryName: "CMMi & Process"

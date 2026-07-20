@@ -1358,7 +1358,7 @@ em {
 .cta-banner-bg {
   position: absolute;
   inset: 0;
-  background-image: url('/images/section-bg.jpg');
+  background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1280&q=70');
   background-size: cover;
   background-position: center;
   opacity: 0.12;

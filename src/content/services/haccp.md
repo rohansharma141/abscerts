@@ -4,7 +4,7 @@ shortName: "HACCP"
 description: "Certification of a HACCP food safety system — the internationally recognised approach to identifying and controlling hazards across the food chain."
 icon: "ti-meat"
 tags: ["HACCP", "Food Safety", "Hazard Analysis", "Industry & Food"]
-image: "/images/service-haccp.jpg"
+image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=640&q=80"
 imageAlt: "HACCP food safety hazard analysis certification"
 category: "industry-food-certifications"
 categoryName: "Industry & Food Certifications"
