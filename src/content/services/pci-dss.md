@@ -44,7 +44,7 @@ PCI DSS is organised around twelve requirements, grouped under six goals:
 - **Monitor and test networks** — log and monitor all access, and test security regularly
 - **Maintain an information security policy**
 
-The right validation route depends on how you handle card data and your transaction volume — from a Self-Assessment Questionnaire (SAQ) through to a full on-site assessment by a Qualified Security Assessor (QSA). Scoping is the highest-leverage step: reducing and segmenting the environment that touches cardholder data is usually the single biggest way to lower both risk and cost. ABS begins with a readiness and scoping review so the formal validation targets only what it needs to.
+The right validation route depends on how you handle card data and your transaction volume, and produces a Self-Assessment Questionnaire (SAQ), an Attestation of Compliance (AoC) or a Report on Compliance (RoC) — not a certificate. Where a formal QSA assessment is required, it is conducted independently by an authorised Qualified Security Assessor; ABS provides the readiness, scoping and remediation support to get you there. Scoping is the highest-leverage step: reducing and segmenting the environment that touches cardholder data is usually the single biggest way to lower both risk and cost.
 
 ## Typical timeline
 

@@ -27,7 +27,9 @@ Unlike ISO certification, SOC 2 results in an attestation report rather than a c
 
 A **Type I** report assesses whether your controls are suitably designed at a single point in time — the fastest route to having something to show a prospect. A **Type II** report goes further, testing whether those controls operated effectively over a period (commonly 3–12 months), and is what most enterprise buyers ultimately want.
 
-The assessment examines access control, change management, system monitoring, incident response, vendor management and the supporting governance around them. We also offer a readiness phase first, which maps your current controls against the criteria and tells you exactly what to remediate before the formal assessment begins.
+We help you scope the report, select the applicable Trust Services Criteria, document the system, map and implement controls, close gaps and organise the evidence. The formal SOC 2 examination and attestation report are performed and issued independently by a licensed CPA firm — ABS provides the readiness and implementation support, not the report itself.
+
+The controls in scope typically include access control, change management, system monitoring, incident response, vendor management and the supporting governance around them. We also offer a readiness phase first, which maps your current controls against the criteria and tells you exactly what to remediate before the formal assessment begins.
 
 ## Typical timeline
 

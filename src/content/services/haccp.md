@@ -1,7 +1,7 @@
 ---
-title: "HACCP Certification"
+title: "HACCP Implementation & Certification Readiness"
 shortName: "HACCP"
-description: "Certification of a HACCP food safety system — the internationally recognised approach to identifying and controlling hazards across the food chain."
+description: "Implementation and certification-readiness support for a HACCP food safety system — the internationally recognised approach to identifying and controlling hazards across the food chain."
 icon: "ti-meat"
 tags: ["HACCP", "Food Safety", "Hazard Analysis", "Industry & Food"]
 image: "/images/service-haccp.jpg"
@@ -13,8 +13,8 @@ timelineWeeks: "8-12"
 governingBody: "Codex Alimentarius"
 featured: false
 seo:
-  title: "HACCP Certification | Food Safety Hazard Analysis | ABS"
-  description: "HACCP certification — the internationally recognised system for identifying and controlling food safety hazards. Independent assessment from ABS. Quote in 24 hours."
+  title: "HACCP Implementation & Certification Readiness | ABS"
+  description: "Implementation and certification-readiness support for HACCP — the internationally recognised system for identifying and controlling food safety hazards. Quote in 24 hours."
   keywords: ["HACCP certification", "hazard analysis critical control points", "food safety certification", "HACCP food"]
 faqs:
   - question: "What is the difference between HACCP and ISO 22000?"
@@ -29,9 +29,9 @@ HACCP — Hazard Analysis and Critical Control Points — is the internationally
 
 For food and beverage businesses, HACCP is often the baseline that buyers expect. Retailers and manufacturers want assurance that their suppliers manage food safety systematically, and in many markets a HACCP-based approach is also a regulatory expectation. Independent HACCP certification provides that assurance credibly.
 
-## What certification covers
+## What a HACCP system covers
 
-Certification assesses your food safety system against the seven HACCP principles, including:
+We help you build and document a food safety system against the seven HACCP principles, including:
 
 - **Hazard analysis** — identifying significant biological, chemical and physical hazards
 - **Critical Control Points (CCPs)** — the steps where control is essential
@@ -42,7 +42,7 @@ It also looks at the prerequisite programmes — hygiene, pest control, training
 
 ## Typical timeline
 
-For most food businesses, HACCP certification takes around 8–12 weeks from kick-off, depending on the size and complexity of the operation. Each engagement begins with a fixed-price scoping call and a proposal within 24 hours.
+For most food businesses, implementing a HACCP system takes around 8–12 weeks from kick-off, depending on the size and complexity of the operation. Where independent HACCP certification is required, the assessment and certificate are provided by the appointed certification body — we get you ready for it. Each engagement begins with a fixed-price scoping call and a proposal within 24 hours.
 
 ## Common questions
 

@@ -1,0 +1,512 @@
+? I reviewed the principal non-blog pages and representative service pages. The website currently has mixed positioning: some sections correctly describe ABS as a consultant, while the About page, selected ISO/SOC 2 pages, statistics, testimonials and footer still describe ABS as an accredited certification body that conducts audits or issues certificates. (ABS Certifications & Advisory) For a consulting organisation, the central statement should be: ABS provides consulting, implementation, training, internal audit and certification-readiness support. Certification audits, certification decisions and certificate issuance are performed independently by the client's selected accredited certification body. This separation is important because ISO/IEC 17021-1 places competence, consistency and impartiality requirements on management-system certification bodies, including management of conflicts between certification and consultancy. (ISO) 1. Site-wide and homepage content Section
+   Current content/positioning
+   Improved consulting-organisation content
+? Website title
+   Positions ABS around ISO and SOC 2 "certification for global businesses."
+   ABS Certifications & Advisory | ISO, Cybersecurity and Compliance Consulting
+? Meta description
+   Presents ABS as a provider of certification and assurance.
+   ABS provides ISO implementation, cybersecurity compliance, SOC readiness, training, internal audits and certification-readiness support to organisations worldwide.
+? Top accreditation badge
+   Displays wording such as "IAS ? IAF accredited."
+   Replace with: ISO Consulting ? Compliance Advisory ? Audit Readiness. Remove accreditation badges unless they belong to a separately identified certification partner and their use is formally authorised.
+? Main navigation: "ISO Certifications"
+   Suggests ABS directly provides ISO certification.
+   ISO Management System Consulting
+? Main navigation: "Cyber Security"
+   Includes SOC 2 and PCI DSS as though ABS conducts all formal assessments.
+   Cybersecurity & Compliance Advisory
+? Main navigation: "Industry & Food"
+   Uses "certifications" broadly.
+   Food Safety & Industry Compliance
+? Main navigation: "Personnel Certifications"
+   Suggests ABS certifies individuals.
+   Remove this category unless ABS operates an appropriately authorised personnel-certification scheme. Otherwise rename it Professional Competence Development.
+? Hero heading
+   "Certification that opens doors across the world."
+   Compliance systems that strengthen your business and prepare you for certification.
+? Hero description
+   Says ABS helps organisations achieve compliance, but certification wording dominates.
+   From ISO management systems and SOC 2 readiness to cybersecurity, food safety and process improvement, we help organisations build effective compliance systems and prepare confidently for independent assessment.
+? Hero CTA
+   "Get a free quote."
+   Request a consulting proposal
+? Secondary CTA
+   "Book a 30-min call."
+   Book a 30-minute consultation
+? Commercial proposition
+   "A clear quote in 24 hours, never an open invoice."
+   A clear consulting proposal within 24 hours.
+? Commercial description
+   Refers generally to scope, fixed fees and certification.
+   Tell us your objectives, current compliance status, locations and target standard. We will provide a clearly defined proposal covering deliverables, responsibilities, timeline and professional fees.
+? Regional heading
+   Uses "Auditors based near you."
+   Consultants available across your operating regions.
+? Regional description
+   Refers to auditors, audits and local delivery.
+   Our consulting network supports remote and on-site implementation, internal audits, training and certification preparation across multiple time zones and languages.
+? Regional CTA
+   "Find auditors in your region."
+   Discuss regional support
+? Statistics: certificates issued
+   "1,200+ certificates issued globally."
+   [Verified number]+ organisations supported. Do not count certificates as issued by ABS when they were issued by certification bodies.
+? Statistics: pass rate
+   "98% first-time pass rate."
+   Replace with a verified consulting outcome such as [Verified percentage]% of projects completed within the agreed implementation plan. Otherwise remove it. A consultant should not guarantee or imply control over the certification decision.
+? Statistics: lead auditors
+   "Lead auditors across regions."
+   Consultants and subject-matter specialists across regions
+? Statistics: years
+   "18 years in certification and advisory."
+   18 years of consulting, training and compliance experience, provided the figure can be substantiated.
+? Service-section heading
+   "Certifications that matter to the markets you sell into."
+   Compliance and management systems built for the markets you serve.
+? Service-section introduction
+   Says ABS prepares clients, but individual service cards still describe certifications.
+   We help organisations implement recognised standards, strengthen controls, prepare evidence and coordinate effectively with independent auditors and certification bodies.
+? ISO service card
+   "Globally accepted certifications covering?"
+   Consulting and implementation support for quality, environment, information security, occupational health and safety, energy and other ISO management systems.
+? Cybersecurity card
+   "End-to-end security assurance?PCI DSS audit."
+   Cybersecurity compliance support covering SOC 2 readiness, PCI DSS scoping, GDPR, NIST, security assessments, control implementation and VAPT coordination.
+? CMMI card
+   Refers to maturity-level readiness and ATM support.
+   CMMI process assessment, implementation and appraisal-readiness support for organisations seeking measurable process improvement and a formal appraisal.
+? Data analytics card
+   Generally suitable.
+   Data management, dashboards, workflow automation and decision analytics designed to improve operational visibility and compliance reporting.
+? Agile card
+   Generally suitable but mentions certified trainers.
+   Agile coaching and practical training in Scrum, Kanban and Lean, supported by experienced practitioners. Use "certified trainers" only where credentials can be verified.
+? Inspection card
+   Uses "independent inspections."
+   Vendor, supplier, pre-shipment and quality inspections that help clients verify contractual and technical requirements at source. Add "accredited" only when applicable to the specific inspection activity.
+? Homepage process heading
+   "A clear path?to certificate in hand."
+   A structured path from initial assessment to certification readiness.
+? Process step 1
+   "Free quote."
+   Scoping and proposal - We understand your organisation, objectives, locations, target standard and current level of implementation.
+? Process step 2
+   "Gap assessment."
+   Gap assessment and implementation plan - We evaluate existing arrangements against applicable requirements and prioritise the actions needed.
+? Process step 3
+   "Certification audit."
+   Implementation and audit preparation - We help develop documentation, implement controls, train employees, conduct internal audits and prepare evidence.
+? Process step 4
+   "Certificate issued."
+   Independent audit and ongoing support - Your selected certification or assurance provider conducts the formal assessment and independently issues its report or certificate.
+? "Why ABS" heading
+   "Designed for buyers outside India."
+   Designed for organisations operating across multiple markets.
+? "Why ABS" description
+   Refers to consultants but also local audits.
+   We provide time-zone-friendly delivery, clearly defined fees and practical support for organisations working across the UK, Europe, Middle East, North America and Asia-Pacific.
+? Consultant coverage
+   "On-site audits without expensive international travel."
+   Remote and on-site consulting support without unnecessary international travel. Local specialists may support implementation, internal audits and training where required.
+? Client testimonial wording
+   Includes "ABS auditors," "certification provider" and "certification services."
+   Use client-approved wording such as: "ABS helped us implement and strengthen our management system, prepare the required evidence and approach the independent certification audit with confidence."
+? Final CTA heading
+   "Ready to get certified?"
+   Ready to strengthen your compliance programme?
+? Final CTA description
+   Promises a clear path to certification.
+   Request a fixed-scope proposal for implementation, documentation, training, internal audit or certification-readiness support.
+? Footer descriptor
+   "Independent certification body?Accredited audits?"
+   Management-system and compliance consulting organisation supporting businesses with implementation, training, internal audits, cybersecurity, process improvement and certification readiness.
+? The homepage presently includes both consultant wording and residual certification-body claims, including certificate statistics and auditor-related language. (ABS Certifications & Advisory) 2. About page Section
+   Current content/positioning
+   Improved content
+? Page title
+   "Independent, Accredited Certification Body."
+   About ABS | Compliance Consulting, Training and Audit Readiness
+? H1
+   "Independent certification, delivered with rigour."
+   Practical compliance consulting, delivered with rigour.
+? Introductory paragraph
+   Calls ABS an independent certification body and advisory partner.
+   ABS Certifications & Advisory is a management-system, cybersecurity and compliance consulting organisation. We help organisations design, implement, maintain and improve systems that meet recognised standards and prepare them for independent certification or assurance.
+? Who we are
+   Again describes ABS as a certification body.
+   Our team combines management-system, technology, cybersecurity, process improvement, food-safety and training experience. We focus on practical implementation that fits the client's operations rather than creating documentation only for an audit.
+? Business-value paragraph
+   Mixes certification and quality improvement.
+   Our objective is to help clients improve operational consistency, manage risk, meet contractual and regulatory expectations and demonstrate that their controls work in practice.
+? Client profile
+   Says clients include global businesses and government sectors.
+   We support start-ups, SMEs, large enterprises, public-sector organisations and international groups. Engagements are tailored to organisational size, complexity, locations and compliance objectives. Use only sectors that can be evidenced.
+? "What we do" introduction
+   Says services span accredited certification, audit and advisory.
+   We work across consulting, implementation, training, internal audit, inspection, technology advisory and certification-readiness services.
+? ISO service description
+   Describes the "full range" of ISO certifications.
+   ISO management-system consulting covering gap assessment, documentation, implementation, training, internal audit, management review and certification preparation.
+? Cybersecurity description
+   Lists SOC 2, PCI DSS and other frameworks without clearly separating readiness from attestation.
+   Cybersecurity and privacy consulting covering SOC 1 and SOC 2 readiness, PCI DSS scoping, GDPR, DPDPA, HIPAA, NIST, business continuity, security testing and control implementation.
+? Food and industry description
+   Describes industry and food "certifications."
+   Food-safety and industry compliance support covering HACCP, ISO 22000, FSSC 22000, BRCGS, Halal, Kosher, automotive and supply-chain requirements, subject to the applicable scheme rules.
+? CMMI description
+   Generally appropriate.
+   CMMI implementation, process-improvement and appraisal-readiness support, delivered in coordination with authorised appraisal professionals where a formal appraisal is required.
+? Training description
+   Says courses are delivered by practising lead auditors.
+   Awareness, implementation and internal-auditor training delivered by experienced management-system professionals. Lead-auditor course accreditation or recognition should be stated only where formally applicable.
+? Personnel certification description
+   Says ABS independently certifies individuals.
+   Replace with Professional development and guidance for individuals seeking external auditor registration or personnel certification. Remove the service entirely when ABS has no approved scheme.
+? Accreditation section
+   States that ABS is IAS-accredited and issues IAF-recognised certificates.
+   Replace the entire section with Our role and independence:ABS is a consulting and advisory organisation. We do not make certification decisions or issue accredited management-system certificates. Where certification is required, the client appoints an independent certification body. We can support certification-body selection and audit coordination without influencing the independent audit or certification decision.
+? Why ABS: independent and accredited
+   Claims certification work and accreditation.
+   Clear role separation. We distinguish consulting and implementation support from the independent certification or attestation process.
+? Why ABS: global delivery
+   Mostly suitable.
+   Global delivery. We support remote and on-site projects across multiple countries, time zones and currencies through consultants and specialist partners.
+? Why ABS: breadth
+   "Cover it under one roof" could imply formal certification delivery.
+   Integrated support. We can coordinate management systems, cybersecurity, training and readiness work through one project plan while formal third-party assessments remain independent.
+? CTA
+   "Ready to get certified?"
+   Ready to begin your implementation or readiness project?
+? The existing About page is the most important page to revise because it repeatedly identifies ABS as a certification body and attributes IAS/IAF accreditation directly to ABS. (ABS Certifications & Advisory) 3. Services directory and navigation Section
+   Current content/positioning
+   Improved content
+? Services-page H1
+   "Our services."
+   Consulting, implementation and assurance-readiness services
+? Services-page introduction
+   "Independent audits for organisations?"
+   Practical consulting and implementation support for organisations working with ISO standards, cybersecurity frameworks, food-safety schemes and process-improvement models.
+? ISO category
+   "ISO Certifications."
+   ISO Management System Consulting
+? ISO category description
+   Mentions consulting and training but says it helps clients achieve certification recognised worldwide.
+   Gap assessment, documentation, implementation, training, internal audit and certification-readiness support across ISO management-system standards.
+? Cybersecurity category
+   Says "Independent audits for SOC 2, PCI DSS, GDPR and NIST."
+   Cybersecurity readiness, control implementation, privacy compliance, security assessment coordination and evidence preparation for SOC, PCI DSS, GDPR, NIST and related frameworks.
+? Industry and food category
+   Says "sector-specific certification and accreditation."
+   Implementation and assessment-readiness support for food-safety, product, automotive, ethical-trade and industry-specific requirements.
+? CMMI category
+   Generally consultancy-oriented.
+   CMMI gap assessment, process implementation, evidence development and formal-appraisal coordination.
+? Management-system training
+   Says training is delivered by practising lead auditors.
+   Awareness, implementation and internal-auditor training delivered by experienced management-system professionals.
+? Personnel certification
+   Offers independent certification of individuals.
+   Remove or rename External Personnel Certification Support. Describe it as guidance on experience requirements, training, applications and external registration.
+? Third-party inspection
+   Generally acceptable.
+   Retain, but distinguish supplier/vendor inspection from an accredited certification audit.
+? Service buttons
+   "Get a quote."
+   Request a proposal or Discuss your requirements
+? Footer service category
+   "ISO certifications."
+   ISO consulting
+? Footer cyber category
+   "SOC 2 & cyber security."
+   Cybersecurity & SOC readiness
+? Footer training category
+   "Training & advisory."
+   Training & implementation support
+? The Services page already contains some consulting language, but still labels categories as certifications and describes cybersecurity work as independent auditing. (ABS Certifications & Advisory) 4. Process page The Process page is currently the strongest page because it clearly states that ABS is a consulting firm and that an independent certification body awards the certificate. That wording should become the model for the rest of the website. (ABS Certifications & Advisory) Section
+   Current content
+   Improved content
+? H1
+   "How we get you certification-ready."
+   Retain: How we get you certification-ready.
+? Role clarification
+   Correctly separates ABS from the certification body.
+   Retain, with this shorter version: ABS provides consulting and implementation support. The independent certification body conducts the certification audit, makes the certification decision and issues the certificate.
+? Gap-analysis wording
+   Says everything found at gap assessment is something the certification body will not find later.
+   Our gap assessment is designed to identify significant weaknesses early and reduce avoidable surprises during the formal audit. It does not guarantee that the certification body will raise no additional findings.
+? Implementation phase
+   Suitable.
+   We help close identified gaps, develop required documentation, implement controls, train responsible personnel and support internal audit and management review activities.
+? Certification-audit phase
+   Mostly suitable.
+   The independently appointed certification body conducts Stage 1 and Stage 2. ABS can help organise evidence, prepare personnel for interviews and support corrective-action planning without participating in the certification decision.
+? Timeline
+   Provides a general 10-14-week journey.
+   Implementation commonly takes approximately 10-14 weeks for a smaller organisation, but the actual period depends on readiness, scope, resources, locations and certification-body availability. No certificate date can be guaranteed.
+? Ongoing support
+   Suitable.
+   Ongoing support may include internal audits, management reviews, KPI monitoring, corrective actions, training, documentation updates and surveillance-audit preparation.
+? 5. Contact page Section
+   Current content/positioning
+   Improved content
+? Page title
+   "Talk to a certification specialist."
+   Talk to a compliance and certification-readiness consultant.
+? Intro
+   Refers generally to urgent certification enquiries.
+   Discuss your implementation, documentation, training, cybersecurity, internal-audit or certification-readiness requirements with our consulting team.
+? Quote card
+   "Fixed price within 24 hours."
+   Defined consulting proposal within 24 hours.
+? Existing-client card
+   "Audit & support help."
+   Implementation and ongoing compliance support.
+? Existing-client telephone label
+   "Audits ? existing clients."
+   Client projects ? ongoing support
+? Audit email label
+   "Audits."
+   Audit readiness and internal audit support. The email address may remain unchanged if operationally required.
+? Regional heading
+   "Audit partners across your region."
+   Consulting support across your region.
+? Regional description
+   Mixes consultants and audits.
+   Our network supports remote and on-site consulting, training, internal audit and implementation activities across key markets and time zones.
+? UK and Europe cards
+   Generally suitable after removing audit implications.
+   Management-system, cybersecurity and certification-readiness consultants available for remote and on-site delivery.
+? North America card
+   Says "SOC 2 and PCI DSS specialists" and "AICPA-aligned."
+   SOC 2 readiness and PCI DSS advisory specialists supporting control design, evidence preparation and coordination with the client's independent CPA firm or QSA.
+? Recognition FAQ
+   Correctly says the certificate is issued independently.
+   Retain, adding: Recognition depends on the accreditation and scope of the selected certification body.
+? Pricing FAQ
+   Gives an ISO 9001 price for the complete three-year cycle.
+   Consulting fees and certification-body fees are separate. Our proposal identifies the consulting scope and professional fees. The independent certification body provides its own audit, surveillance and recertification charges.
+? The Contact page has already corrected several areas, but headings, contact labels and regional wording still use audit-provider terminology. (ABS Certifications & Advisory) 6. FAQ page FAQ section
+   Current content/issue
+   Improved content
+? How long does certification take?
+   Gives a general certificate timeline without clearly separating implementation and CB scheduling.
+   Consulting and implementation commonly take 8-14 weeks for a smaller organisation. The complete certification timeline also depends on management-system maturity, closure of gaps and the independent certification body's audit availability.
+? Do we need to build from scratch?
+   Says the "Stage 1 report" identifies gaps.
+   No. ABS first conducts a consulting gap assessment of your existing policies, processes and records. We then provide an implementation plan for identified gaps before the formal Stage 1 audit.
+? What are Stage 1 and Stage 2?
+   Reasonably accurate but could imply ABS carries them out.
+   Stage 1 and Stage 2 are conducted by the appointed certification body. ABS prepares the organisation for these audits but does not make the certification decision.
+? What happens after certification?
+   Suitable.
+   Add: ABS may provide ongoing maintenance and surveillance-readiness support under a separate consulting arrangement.
+? International recognition
+   Says ABS helps select an appropriately accredited body.
+   Recognition depends on the certification body, its accreditation, the relevant accreditation scope and customer or regulatory requirements. ABS can assist the client in evaluating suitable options.
+? Certification cost
+   Refers to one combined fixed price.
+   Separate the consulting proposal from certification-body audit charges. Where a combined commercial estimate is provided, clearly identify the independent third-party fees.
+? ISO 27001 vs SOC 2
+   Broadly suitable.
+   ISO/IEC 27001 leads to management-system certification by an independent certification body. SOC 2 leads to an attestation report following an examination performed by an appropriately licensed CPA firm. AICPA describes SOC services as services that CPAs provide in relation to system-level controls. (AICPA & CIMA)
+? CMMI question
+   Refers to SCAMPI as the current appraisal method.
+   CMMI maturity is demonstrated through a formal CMMI Appraisal conducted under the current CMMI Appraisal Method by authorised appraisal professionals. Depending on the objective, this may include a Benchmark, Sustainment or Evaluation Appraisal. Current CMMI materials describe the CMMI Appraisal Method and Benchmark/Sustainment appraisal results rather than treating SCAMPI as the current method. (CMMI Institute)
+? "Is CMMI a certification?"
+   Says organisations are appraised at a maturity level.
+   CMMI is principally a performance- and process-improvement model. Organisations undergo a formal appraisal and may achieve a benchmark maturity or capability level under the applicable CMMI rules.
+? HACCP question
+   Generally suitable.
+   Retain, but avoid implying that ABS itself issues the HACCP certificate.
+? The FAQ page is largely aligned with consulting, but the "Stage 1 report" wording and the SCAMPI reference should be corrected. (ABS Certifications & Advisory) 7. Resources page Section
+   Current content
+   Improved content
+? Main heading
+   "Checklists & guides to get you audit-ready."
+   Retain.
+? Intro
+   Says resources come from consultants.
+   Retain: Practical checklists and guides developed by our consultants to support implementation and audit readiness.
+? ISO 27001 checklist
+   Implementation-focused.
+   Retain.
+? SOC 2 checklist
+   "Before a SOC 2 examination."
+   Retain, adding formal examination by the appointed CPA firm where relevant.
+? Stage 1 checklist
+   "No surprises when the auditor arrives."
+   Prepare the required documented information and readiness evidence before the certification body's Stage 1 audit.
+? Certification-process guide
+   Describes scoping, Stage 1, Stage 2 and certificate.
+   How the complete journey works: consulting scope, gap assessment, implementation, internal audit, independent Stage 1 and Stage 2 audits, certification decision and surveillance.
+? Audit-preparation guide
+   Suitable.
+   Retain.
+? Footer/contact label
+   "Audits ? existing clients."
+   Client projects ? ongoing support
+? The Resources page is already substantially consultant-oriented and needs only minor clarification about who performs the formal audits. (ABS Certifications & Advisory) 8. Standard template for all ISO service pages Use the following structure on ISO 9001, ISO 14001, ISO 45001, ISO 27001, ISO 22000, ISO 42001 and other ISO pages. Page element
+   Current style
+   Improved standard wording
+? Page title
+   "ISO 9001 Certification."
+   ISO 9001 Consulting & Certification Readiness
+? Subtitle
+   Describes the standard or certificate.
+   Practical support to design, implement and maintain a quality management system aligned with ISO 9001 requirements.
+? Timeline badge
+   "8-12 weeks to certificate."
+   Typical implementation period: 8-12 weeks
+? Service classification
+   Sometimes says IAS/IAF accredited.
+   Consulting ? Implementation ? Training ? Internal Audit ? Certification Readiness
+? Introductory section
+   "Why certification matters."
+   Why the standard matters and how ABS supports implementation
+? Audit section
+   "What the audit covers."
+   What the standard covers and how we prepare you for assessment
+? Process explanation
+   May imply ABS conducts Stage 1 and Stage 2.
+   The appointed certification body conducts Stage 1 and Stage 2 independently. ABS supports preparation, evidence organisation and corrective-action planning.
+? Timeline paragraph
+   Gives a firm certificate timeframe.
+   The implementation period depends on existing maturity, organisation size, scope and availability of internal resources. Formal audit scheduling is controlled by the appointed certification body.
+? Related-services heading
+   "Related certifications."
+   Related consulting services
+? Closing CTA
+   "Ready to get certified?"
+   Ready to begin implementation?
+? Closing text
+   Promises a path to certification.
+   Request a proposal for gap assessment, implementation, training, internal audit or certification-readiness support.
+? 9. Specific service-page corrections ISO 9001 The current page is partly consultant-oriented, but its headings still centre on certification and the certification audit. (ABS Certifications & Advisory) Section
+   Improved content
+? H1
+   ISO 9001 Quality Management Consulting
+? Subtitle
+   Build a practical quality management system that improves consistency, customer satisfaction and operational control while preparing your organisation for independent ISO 9001 certification.
+? Main service paragraph
+   ABS supports gap assessment, process mapping, QMS documentation, risk-based planning, quality objectives, supplier controls, internal audits, management reviews, corrective actions and certification preparation.
+? Certification clarification
+   ISO 9001 certification is conducted and awarded by an independent certification body. ABS provides implementation and readiness support and does not make the certification decision.
+? ISO 27001 The current page still carries "IAS/IAF accredited" wording, says certificates are issued under IAS accreditation, and uses "we routinely run" for formal audits. These statements should be removed from a consulting website. (ABS Certifications & Advisory) Section
+   Improved content
+? H1
+   ISO/IEC 27001 Information Security Consulting
+? Subtitle
+   Implement and maintain an effective information security management system and prepare for independent ISO/IEC 27001 certification.
+? Main paragraph
+   We support ISMS scoping, asset and risk assessment, treatment planning, Statement of Applicability development, policies, Annex A control implementation, security metrics, internal audit and management review.
+? Audit paragraph
+   The selected certification body independently performs Stage 1 and Stage 2. ABS helps your team prepare documentation, records, evidence and personnel for both stages.
+? Remote-work FAQ
+   Consulting can generally be delivered remotely. Whether the formal certification audit may be remote, on-site or hybrid is determined by the certification body under applicable accreditation requirements.
+? Badge
+   Replace "IAS/IAF accredited" with Implementation and audit-readiness support.
+? SOC 2 The existing page incorrectly uses "timeline to certificate" and an "IAS/IAF accredited" badge even though SOC 2 produces an attestation report rather than an ISO certificate. (ABS Certifications & Advisory) Section
+   Improved content
+? H1
+   SOC 2 Readiness & Implementation Support
+? Subtitle
+   Prepare your controls, evidence and system description for an independent SOC 2 Type I or Type II examination.
+? Timeline badge
+   Typical readiness period: 6-12 weeks
+? Accreditation badge
+   Remove "IAS/IAF accredited." Replace with AICPA Trust Services Criteria readiness.
+? Main paragraph
+   ABS helps define the SOC 2 scope, select applicable Trust Services Criteria, document the system, map controls, identify gaps, organise evidence and prepare management for the independent examination.
+? Independence statement
+   The formal SOC 2 examination and attestation report are performed and issued by an appropriately licensed independent CPA firm. ABS provides readiness and implementation support and does not issue the SOC 2 report.
+? CTA
+   Request a SOC 2 readiness proposal
+? PCI DSS The PCI DSS page is mainly positioned as readiness support, but "timeline to certificate" should be removed because PCI DSS validation may result in an SAQ, Attestation of Compliance or Report on Compliance depending on the applicable route. (ABS Certifications & Advisory) Section
+   Improved content
+? H1
+   PCI DSS Readiness, Scoping & Compliance Support
+? Timeline badge
+   Typical readiness period: 8-12 weeks
+? Service paragraph
+   ABS supports cardholder-data-environment scoping, data-flow mapping, segmentation review, requirement mapping, policy development, evidence preparation and remediation planning.
+? Validation statement
+   The applicable validation route is determined by the organisation's merchant or service-provider status, transaction profile, acquiring bank and payment-brand requirements. Formal QSA assessments are conducted independently by an authorised QSA.
+? CTA
+   Discuss your PCI DSS scope
+? HACCP The current page is titled "HACCP Certification" and describes certification of the client's HACCP system, although its badge says advisory. (ABS Certifications & Advisory) Section
+   Improved content
+? H1
+   HACCP Implementation & Certification Readiness
+? Subtitle
+   Develop and implement a practical HACCP system based on hazard analysis, prerequisite programmes and effective control of critical points.
+? Main paragraph
+   ABS supports process-flow analysis, hazard identification, CCP determination, critical limits, monitoring procedures, corrective actions, verification, record controls and employee training.
+? Certification statement
+   Where independent HACCP certification is required, the assessment and certificate are provided by the appointed certification organisation.
+? Timeline
+   Typical implementation period: 8-12 weeks, depending on the food operation and existing prerequisite programmes.
+? CMMI The general CMMI page is reasonably positioned as consulting and appraisal support. "CMMi" should be standardised to CMMI throughout the website. (ABS Certifications & Advisory) Section
+   Improved content
+? H1
+   CMMI Process Improvement & Appraisal Readiness
+? Description
+   ABS supports organisations in assessing current capabilities, implementing CMMI practices, developing process assets, institutionalising processes, measuring performance and preparing for a formal appraisal.
+? Formal appraisal clarification
+   Formal appraisals must be conducted under applicable CMMI requirements through authorised CMMI appraisal professionals or partner arrangements.
+? Terminology
+   Replace outdated references to SCAMPI with the current CMMI Appraisal Method, unless discussing a historical appraisal.
+? Lead Auditor training The page correctly says that formal personal certification is awarded externally, not by ABS. Retain this distinction. (ABS Certifications & Advisory) Section
+   Improved content
+? H1
+   ISO Lead Auditor Training
+? Credential clarification
+   Participants who successfully complete the programme receive an ABS Academy course-completion certificate. This does not itself constitute accredited auditor registration or external personnel certification unless the specific course is formally approved under a recognised scheme.
+? Experience claim
+   Retain "training since 2004" only when documentary evidence is available.
+? Trainer claim
+   Use experienced trainers and auditors rather than "certified trainers" unless specific credentials are listed.
+? Personnel certification page The present page says ABS certifies individual auditor competence while also admitting that the schemes are still being confirmed. It should not remain live in this form. (ABS Certifications & Advisory) Section
+   Improved action/content
+? Recommended action
+   Temporarily remove the page from navigation and search indexing.
+? Alternative H1
+   Lead Auditor Registration & Career Guidance
+? Alternative description
+   We help auditors understand external training, experience, audit-log and application requirements for recognised personnel-certification and auditor-registration schemes.
+? Disclaimer
+   ABS does not issue accredited personnel certification unless explicitly stated for a named, approved scheme. Final registration or certification is awarded by the applicable external scheme owner.
+? 10. Mandatory site-wide wording replacements Avoid using
+   Use instead
+? We issue ISO certificates
+   We prepare organisations for independent ISO certification
+? Our certification auditors
+   The appointed certification body's auditors
+? ABS conducts Stage 1 and Stage 2
+   The independent certification body conducts Stage 1 and Stage 2
+? IAS/IAF accredited ABS
+   Independent accredited certification body selected by the client
+? Accredited audits by ABS
+   Certification-readiness, internal audit and implementation support
+? Timeline to certificate
+   Estimated implementation or readiness period
+? Certificates issued by ABS
+   Organisations or projects supported
+? First-time pass rate
+   Verified project-completion or client-satisfaction metric
+? Certification provider
+   Consulting and certification-readiness partner
+? Related certifications
+   Related consulting services
+? SOC 2 certificate
+   SOC 2 attestation report
+? SOC 2 accredited by IAF
+   SOC 2 readiness aligned with the AICPA Trust Services Criteria
+? PCI DSS certificate
+   Applicable PCI DSS validation document or compliance outcome
+? Certified Lead Auditor after training
+   Lead Auditor course-completion certificate, unless externally registered
+? Personnel certification by ABS
+   External personnel-certification guidance, unless an approved scheme exists
+
+### Recommended footer disclaimer ABS Certifications & Advisory is a consulting, training, inspection and compliance-support organisation. ABS does not issue accredited management-system certificates or SOC attestation reports unless expressly identified as an authorised provider for a specific scheme. Formal certification, accreditation, attestation and appraisal decisions are made independently by the applicable authorised third-party organisation.

@@ -1,21 +1,21 @@
 ---
-title: "CMMi & Process"
-shortName: "CMMi & Process"
-description: "CMMi Maturity Level 2 and 3 readiness and appraisal support for software, IT services and supplier organisations bidding into enterprise and government work."
+title: "CMMI & Process"
+shortName: "CMMI & Process"
+description: "CMMI Maturity Level 2 and 3 readiness and appraisal support for software, IT services and supplier organisations bidding into enterprise and government work."
 icon: "ti-stairs-up"
 image: "/images/cat-cmmi.jpg"
-imageAlt: "CMMi process maturity appraisal for software organisations"
+imageAlt: "CMMI process maturity appraisal for software organisations"
 order: 4
 column: 4
 row: 1
 industries: ["saas"]
 seo:
-  title: "CMMi Appraisals | Maturity Level 2 & 3 | ABS Certifications"
-  description: "CMMi for Development, Services and Suppliers — Maturity Level 2 and 3 readiness, gap analysis and appraisal support. Recognised for enterprise and government tenders."
-  keywords: ["CMMi appraisal India", "CMMi Level 3", "CMMi for development", "process maturity"]
+  title: "CMMI Appraisals | Maturity Level 2 & 3 | ABS Certifications"
+  description: "CMMI for Development, Services and Suppliers — Maturity Level 2 and 3 readiness, gap analysis and appraisal support. Recognised for enterprise and government tenders."
+  keywords: ["CMMI appraisal India", "CMMI Level 3", "CMMI for development", "process maturity"]
 ---
 
-## What CMMi is
+## What CMMI is
 
 Capability Maturity Model Integration (CMMI) is a process-improvement framework, administered by the CMMI Institute — a subsidiary of ISACA — and originally developed at Carnegie Mellon University. It gives organisations a structured way to assess and improve how they deliver, across development, services and acquisition, against five maturity levels that run from ad-hoc and unpredictable (Level 1) through managed and defined to quantitatively managed and optimising (Level 5).
 
@@ -25,6 +25,6 @@ For software, IT services and engineering organisations, a CMMI maturity rating 
 
 Reaching a maturity level typically involves a gap assessment against your target level, the work to close those gaps and build the evidence base, and a formal appraisal. Level 2 establishes managed processes at the project level; Level 3 raises that to standardised, organisation-wide processes that are tailored per project.
 
-## How ABS approaches CMMi
+## How ABS approaches CMMI
 
 ABS provides CMMI consulting and appraisal support, working with highly experienced certified lead appraisers recognised by the CMMI Institute and consultants who have spent years implementing the model. Formal appraisals are conducted through ISACA-recognised appraisal arrangements. Each engagement starts with a fixed-price scope and a realistic target level, so you know what the path looks like before you commit.
