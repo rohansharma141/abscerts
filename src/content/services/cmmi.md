@@ -1,7 +1,7 @@
 ---
 title: "CMMI — Capability Maturity Model Appraisals"
 shortName: "CMMI"
-description: "CMMI appraisal and process-improvement services — gap analysis, implementation and formal CMMI appraisals conducted by Certified Lead Appraisers, across all maturity levels."
+description: "CMMI implementation and appraisal-readiness consulting — gap analysis, process improvement and preparation for a formal CMMI appraisal, across all maturity levels."
 icon: "ti-stairs-up"
 tags: ["CMMI", "Process Improvement", "CMMI Appraisal", "Maturity Levels"]
 image: "/images/cat-cmmi.jpg"
@@ -14,15 +14,15 @@ timelineWeeks: "12-16"
 featured: false
 seo:
   title: "CMMI Appraisals | Process Improvement & Appraisal | ABS"
-  description: "CMMI appraisal and process-improvement services — gap analysis to a formal CMMI appraisal, conducted by Certified Lead Appraisers across all maturity levels. Quote in 24 hours."
+  description: "CMMI implementation and appraisal-readiness consulting — gap analysis, process improvement and preparation for a formal CMMI appraisal across all maturity levels. Quote in 24 hours."
   keywords: ["CMMI appraisal", "CMMI maturity level", "CMMI appraisal method", "CMMI consulting"]
 faqs:
   - question: "Is CMMI a certification or an appraisal?"
-    answer: "An appraisal. CMMI maturity is confirmed through a formal CMMI appraisal, led by a Certified Lead Appraiser under the current CMMI Appraisal Method,, not a certificate — organisations are 'appraised at' a maturity level. The result is typically valid for three years. (The word 'certification' is sometimes used loosely, but appraisal is the correct, formal term.)"
+    answer: "An appraisal. CMMI maturity is confirmed through a formal CMMI appraisal, led by an authorised Lead Appraiser under the current CMMI Appraisal Method, not a certificate — organisations are 'appraised at' a maturity level. The result is typically valid for three years. (The word 'certification' is sometimes used loosely, but appraisal is the correct, formal term.)"
   - question: "Which maturity level should we target?"
     answer: "It depends on what your customers and contracts require, and on your current maturity. Maturity Level 2 is the right first milestone for many organisations; Level 3 is frequently specified in larger government and enterprise tenders. ABS recommends a realistic target during the gap analysis."
-  - question: "Does ABS conduct the appraisal?"
-    answer: "Yes. ABS's Certified Lead Appraisers — among the most experienced worldwide, providing CMMI appraisal services since 1991 and recognised as certified lead assessors by the CMMI Institute to lead High Maturity Appraisals — conduct appraisals across all maturity levels, supported by consultants with a minimum of 8-10 years' experience implementing CMMI."
+  - question: "Does ABS conduct the formal appraisal?"
+    answer: "No. ABS provides CMMI implementation and appraisal-readiness consulting. Formal Benchmark or Sustainment Appraisals must be performed through appropriately authorised CMMI appraisal professionals in accordance with current ISACA CMMI requirements. Our consultants bring a minimum of 8-10 years' experience implementing CMMI, so your organisation is genuinely ready when the formal appraisal takes place."
   - question: "How long does a CMMI appraisal result last?"
     answer: "A CMMI appraisal result is valid for a defined period — commonly three years — after which a re-appraisal is needed to maintain the maturity rating."
 ---
@@ -45,7 +45,7 @@ CMMI uses five maturity levels:
 - **Level 4 — Quantitatively Managed:** performance is controlled using statistical and quantitative techniques
 - **Level 5 — Optimizing:** the organisation continually improves process performance
 
-Maturity is confirmed through an **appraisal**, not a certification. The formal method is the **CMMI Appraisal Method**, conducted by an appraisal team led by a Certified Lead Appraiser. ABS's Certified Lead Appraisers are among the most experienced worldwide, have been providing CMMI appraisal services since 1991, and are recognised as certified lead assessors by the CMMI Institute to lead High Maturity Appraisals. Our consultants bring a minimum of 8-10 years' experience implementing CMMI, so the work focuses on processes your teams will actually use — not documentation written purely to pass.
+Maturity is confirmed through an **appraisal**, not a certification. The formal method is the **CMMI Appraisal Method**, conducted by an appraisal team led by an authorised Lead Appraiser. ABS provides CMMI implementation and appraisal-readiness consulting; formal Benchmark or Sustainment Appraisals are performed through appropriately authorised CMMI appraisal professionals in accordance with current ISACA CMMI requirements. Our consultants bring a minimum of 8-10 years' experience implementing CMMI, so the work focuses on processes your teams will actually use — not documentation written purely to pass.
 
 ## Typical timeline
 
@@ -61,9 +61,9 @@ An appraisal. CMMI maturity is confirmed through a formal CMMI appraisal, led by
 
 It depends on what your buyers require and your current maturity. Level 2 is the right first milestone for many organisations; Level 3 is often specified in larger government and enterprise tenders. We recommend a realistic target during the gap analysis.
 
-### Does ABS conduct the appraisal?
+### Does ABS conduct the formal appraisal?
 
-Yes. ABS's Certified Lead Appraisers — among the most experienced worldwide, providing CMMI appraisal services since 1991 and recognised as certified lead assessors by the CMMI Institute — conduct appraisals across all maturity levels, supported by consultants with a minimum of 8-10 years' experience implementing CMMI.
+No. ABS provides CMMI implementation and appraisal-readiness consulting. Formal Benchmark or Sustainment Appraisals must be performed through appropriately authorised CMMI appraisal professionals in accordance with current ISACA CMMI requirements. Our consultants — with a minimum of 8-10 years' experience implementing CMMI — get your organisation genuinely ready so the formal appraisal goes smoothly.
 
 ### How long does a CMMI appraisal result last?
 

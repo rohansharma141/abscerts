@@ -15,6 +15,7 @@ const { title, description, canonical, ogImage } = Astro.props;
 const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site).href;
 const ogImageURL = new URL(ogImage ?? '/og-image.jpg', Astro.site).href;
 const path = Astro.url.pathname;
+const year = new Date().getFullYear();
 
 // Organization + WebSite JSON-LD — emitted on every page (extracted from v7 head).
 // Service + FAQPage nodes from v7 are emitted per-page (home / contact) via the "head" slot.
@@ -247,9 +248,9 @@ const orgSchema = {
         <div class="footer-contact-item"><i class="ti ti-map-pin"></i><span>Mangli Purwa, Hardoi Gramin,<br>District Hardoi, Uttar Pradesh 241001, India</span></div>
       </div>
     </div>
-    <p class="footer-disclaimer" style="max-width:100%;margin:32px 0 0;padding-top:20px;border-top:1px solid rgba(255,255,255,0.12);font-size:12px;line-height:1.6;opacity:0.6;">ABS Certifications &amp; Advisory is a consulting, training, inspection and compliance-support organisation. ABS does not issue accredited management-system certificates or SOC attestation reports unless expressly identified as an authorised provider for a specific scheme. Formal certification, accreditation, attestation and appraisal decisions are made independently by the applicable authorised third-party organisation.</p>
+    <p class="footer-disclaimer" style="max-width:100%;margin:32px 0 0;padding-top:20px;border-top:1px solid rgba(255,255,255,0.12);font-size:12px;line-height:1.6;opacity:0.6;">ABS Certifications &amp; Advisory provides management-system, cybersecurity, compliance, implementation and audit-readiness consulting services. ABS does not make accreditation or certification decisions unless a specific service is expressly delivered through a separately identified and appropriately authorised legal entity. ISO certificates, SOC reports and other independent conformity-assessment outcomes are issued by the respective accredited certification body, licensed CPA firm, authorised assessment organisation or regulatory body following successful completion of its independent process. Engagement of ABS does not guarantee certification, accreditation, regulatory approval or a particular audit outcome — final decisions remain with the independent assessment, certification, accreditation or regulatory organisation.</p>
     <div class="footer-bottom">
-      <span>© 2026 ABS Certifications & Advisory. All rights reserved.</span>
+      <span>© 2008–{year} ABS Certifications & Advisory. All rights reserved.</span>
       <div class="footer-social">
         <a href="#" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
         <a href="#" aria-label="X"><i class="ti ti-brand-x"></i></a>

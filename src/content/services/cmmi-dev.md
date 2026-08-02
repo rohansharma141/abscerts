@@ -44,7 +44,7 @@ An important distinction: CMMI maturity is confirmed through an **appraisal**, n
 
 ## How ABS supports CMMI-DEV
 
-ABS has supported organisations with CMMI since 1991, and our Certified Lead Appraisers are among the most experienced worldwide — certified lead assessors recognised by the CMMI Institute. Our consultants bring a minimum of 8–10 years' hands-on experience implementing CMMI.
+ABS provides CMMI implementation and appraisal-readiness consulting; formal Benchmark or Sustainment Appraisals are performed through appropriately authorised CMMI appraisal professionals in accordance with current ISACA CMMI requirements. Our consultants bring a minimum of 8–10 years' hands-on experience implementing CMMI.
 
 We support development organisations end to end on the journey to their target maturity level: gap analysis and current-state assessment, CMMI overview training, a process-improvement strategy and roadmap, process definition and documentation, establishing a measurement framework, software quality assurance (SQA) support, CMMI appraisal facilitation, and appraisals conducted by our Lead Appraisers. The emphasis is on building processes that genuinely improve delivery — not paperwork for an appraisal alone.
 
