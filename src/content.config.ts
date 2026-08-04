@@ -13,7 +13,8 @@ import { glob } from 'astro/loaders';
 const services = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/services' }),
   schema: z.object({
-    title: z.string(),                          // "ISO 27001 — Information Security Management"
+    title: z.string(),
+    seoTitle: z.string().optional(),        // shorter <title> for SEO (falls back to title)                          // "ISO 27001 — Information Security Management"
     shortName: z.string(),                      // "ISO 27001"
     description: z.string(),                    // 1-2 sentence summary (meta + tile)
     icon: z.string(),                           // Tabler icon class, e.g. "ti-lock"
@@ -41,7 +42,8 @@ const services = defineCollection({
 const categories = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/categories' }),
   schema: z.object({
-    title: z.string(),                          // "Cyber Security"
+    title: z.string(),
+    seoTitle: z.string().optional(),        // shorter <title> for SEO (falls back to title)                          // "Cyber Security"
     shortName: z.string(),                      // "Cyber Security" (for nav/menu)
     description: z.string(),                    // hero sub (1-2 sentences)
     icon: z.string(),                           // Tabler icon
@@ -63,9 +65,11 @@ const categories = defineCollection({
 const industries = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/industries' }),
   schema: z.object({
-    title: z.string(),                          // "Technology & SaaS"
+    title: z.string(),
+    seoTitle: z.string().optional(),        // shorter <title> for SEO (falls back to title)                          // "Technology & SaaS"
     shortName: z.string().optional(),           // for cards
-    description: z.string(),
+    description: z.string(),                     // short — used on cards and the hero line
+    seoDescription: z.string().optional(),      // longer 120-160 char meta description (falls back to description)
     image: z.string(),
     imageAlt: z.string(),
     standards: z.array(z.string()),             // ["ISO 27001", "SOC 2", "GDPR"] — headline pills
@@ -95,6 +99,7 @@ const resources = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/resources' }),
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),        // shorter <title> for SEO (falls back to title)
     description: z.string(),
     publishDate: z.date(),
     updatedDate: z.date().optional(),
@@ -111,6 +116,7 @@ const caseStudies = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/case-studies' }),
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),        // shorter <title> for SEO (falls back to title)
     client: z.string(),               // real client name, or "Anonymised — <sector> company"
     industry: z.string(),
     standards: z.array(z.string()),   // e.g. ["ISO 27001", "ISO 9001"]

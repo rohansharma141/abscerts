@@ -4,15 +4,36 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import IndustryCard from '../../components/ui/IndustryCard.astro';
 import CTABanner from '../../components/sections/CTABanner.astro';
 
-const title = 'Industries We Serve | ISO, SOC 2 & PCI DSS | ABS Certifications';
+const title = 'Industries We Serve | ISO, SOC 2 & PCI DSS | ABS';
 const description =
-  'Sector-specialised certification for technology & SaaS, manufacturing, healthcare and financial services. Auditors who know your industry, not just the standard.';
+  'Sector-specialised certification consulting for SaaS, manufacturing, healthcare and finance — consultants who know your industry, not just the standard.';
+const canonical = new URL('/industries', Astro.site).href;
 
 const industries = (await getCollection('industries')).sort((a, b) => a.data.order - b.data.order);
 const num = (i: number) => `/ ${String(i + 1).padStart(2, '0')}`;
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <Fragment slot="head">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+        { '@type': 'ListItem', position: 2, name: 'Industries', item: canonical },
+      ],
+    })} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      '@context': 'https://schema.org', '@type': 'CollectionPage',
+      name: 'Industries We Serve', url: canonical,
+      mainEntity: {
+        '@type': 'ItemList',
+        itemListElement: industries.map((ind, i) => ({
+          '@type': 'ListItem', position: i + 1, name: ind.data.shortName ?? ind.data.title,
+          url: new URL(`/industries/${ind.id}`, Astro.site).href,
+        })),
+      },
+    })} />
+  </Fragment>
   <section class="page-hero">
     <div class="container">
       <nav class="crumbs" aria-label="Breadcrumb">

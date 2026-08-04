@@ -2,6 +2,7 @@
 title: "Manufacturing"
 shortName: "Manufacturing"
 description: "ISO 9001, 14001, 45001 for production sites."
+seoDescription: "Certification consulting for manufacturers and production sites — ISO 9001, 14001, 45001 and IATF 16949 implementation and audit-readiness support."
 image: "/images/industry-manufacturing.jpg"
 imageAlt: "Manufacturing facility — ISO 9001, 14001 and 45001 certification"
 standards: ["ISO 9001", "ISO 14001", "ISO 45001"]
@@ -20,7 +21,7 @@ Most production sites build an integrated management system from three standards
 
 ## What makes a manufacturing audit different
 
-Manufacturing audits are grounded in the physical operation. Auditors spend time on the production floor, looking at how process controls work in practice, how non-conforming product is contained, how environmental aspects such as waste, emissions and resource use are managed, and how safety controls hold up around machinery and material handling. Because so much depends on direct observation, the Stage 2 audit normally includes a site visit — and with lead auditors based across the UK, EU and Middle East, that visit usually happens without international travel charges.
+Manufacturing audits are grounded in the physical operation. Auditors spend time on the production floor, looking at how process controls work in practice, how non-conforming product is contained, how environmental aspects such as waste, emissions and resource use are managed, and how safety controls hold up around machinery and material handling. Because so much depends on direct observation, the Stage 2 audit normally includes a site visit — and with our consultants based across the UK, EU and Middle East, we can prepare you for it without international travel charges.
 
 ## Common questions
 

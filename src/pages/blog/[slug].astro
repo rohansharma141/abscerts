@@ -13,7 +13,7 @@ const { Content } = await render(entry);
 const d = entry.data;
 
 const canonical = new URL(`/blog/${entry.id}`, Astro.site).href;
-const pageTitle = `${d.title} | ABS Certifications`;
+const pageTitle = `${d.seoTitle ?? d.title} | ABS`;
 
 const fmt = (dt: Date) => dt.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 const iso = (dt: Date) => dt.toISOString().slice(0, 10);

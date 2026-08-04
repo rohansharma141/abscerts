@@ -13,8 +13,15 @@ order: 5
 timelineWeeks: "6-10"
 featured: true
 seo:
-  title: "SOC 2 Type I & Type II | Audit & Readiness | ABS Certifications"
+  title: "SOC 2 Type I & Type II | Audit & Readiness | ABS"
   description: "Independent SOC 2 Type I and Type II readiness and assessment for SaaS and cloud providers selling into the US and UK. Fixed-price quote in 24 hours."
+faqs:
+  - question: "Should we start with Type I or Type II?"
+    answer: "Many companies start with Type I to have a report in hand quickly for active deals, then move to Type II to cover an operating period. If your buyers are already asking specifically for Type II, we can plan directly toward it."
+  - question: "Can SOC 2 be done remotely?"
+    answer: "Yes. SOC 2 assessments are almost always conducted remotely through secure evidence collection and interviews, which suits distributed engineering teams well."
+  - question: "How does SOC 2 relate to ISO 27001?"
+    answer: "They overlap heavily. If you already hold ISO 27001, much of the control evidence is reusable for SOC 2, and vice versa — we can scope an efficient path when you need both."
 ---
 
 ## Why SOC 2 matters for global businesses

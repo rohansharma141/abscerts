@@ -1,6 +1,7 @@
 ---
 title: "ISO 7101:2023 — Healthcare Organization Management"
-description: "ISO 7101:2023 is the first international standard for healthcare quality management — a systematic, people-centred approach to delivering high-quality care for organisations of any size."
+seoTitle: "ISO 7101: Healthcare Quality Management"
+description: "ISO 7101:2023 is the first international standard for healthcare quality management — a systematic, people-centred approach to high-quality care."
 publishDate: 2024-04-21
 author: "ABS Certifications"
 image: "/images/blog-iso-9001.jpg"

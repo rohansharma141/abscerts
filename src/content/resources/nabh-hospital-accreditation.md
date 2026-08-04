@@ -1,6 +1,6 @@
 ---
 title: "National Accreditation Board for Hospitals (NABH)"
-description: "NABH sets the accreditation standards for hospitals and healthcare providers in India. What it covers, how it's structured, and what accreditation means for patients and organisations."
+description: "NABH sets the accreditation standards for hospitals and healthcare providers in India — what it covers, how it's structured, and why it matters."
 publishDate: 2024-04-21
 author: "ABS Certifications"
 image: "/images/blog-nabh.jpg"

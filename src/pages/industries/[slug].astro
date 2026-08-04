@@ -23,7 +23,7 @@ const industryServices = (d.services ?? [])
   .filter(Boolean);
 
 const pageTitle = `${d.title} Certification | ABS Certifications`;
-const pageDescription = d.description;
+const pageDescription = d.seoDescription ?? d.description;
 
 const all = (await getCollection('industries')).sort((a, b) => a.data.order - b.data.order);
 const related = all.filter((s) => s.id !== entry.id).slice(0, 3);
