@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Generate the ABS follow-up questions & confirmations Word doc."""
+"""Generate the ABS follow-up questions & confirmations Word doc (plain-language version)."""
 from docx import Document
 from docx.shared import Pt, RGBColor, Inches
 from docx.enum.section import WD_ORIENT
@@ -16,117 +16,117 @@ sec.top_margin = sec.bottom_margin = Inches(0.55)
 doc.styles['Normal'].font.name = 'Calibri'
 doc.styles['Normal'].font.size = Pt(9)
 
-t = doc.add_paragraph(); r = t.add_run('ABS Website — Follow-up Questions & Confirmations')
+t = doc.add_paragraph(); r = t.add_run('ABS Website — Questions and Confirmations We Need From You')
 r.bold = True; r.font.size = Pt(16); r.font.color.rgb = NAVY
-s = doc.add_paragraph(); r = s.add_run('For ABS Certifications & Advisory — to finalise the content-review implementation')
-r.italic = True; r.font.size = Pt(10.5); r.font.color.rgb = RGBColor(0x55,0x55,0x55)
 
 intro = doc.add_paragraph()
 intro.add_run(
- 'Status: the positioning correction (ABS presented as a consulting & advisory firm, not a certification body) and the '
- 'verified ISO edition updates from your review are DONE and live on the test site. The items below are the remaining '
- 'questions, confirmations and assets we need from ABS to complete the rest. Grouped by type; please add answers in the '
- 'right-hand column. Items marked ').font.size = Pt(9)
-b=intro.add_run('[BLOCKS BUILD]'); b.bold=True; b.font.size=Pt(9)
-intro.add_run(' cannot be finished without your input.').font.size = Pt(9)
+ 'What this is: We have already made the main changes from your review. The website now describes ABS as a '
+ 'consulting and advisory firm (not a certification body), and we have updated the ISO standards to their latest '
+ 'versions. To finish the rest of the work, we need a few answers, confirmations and materials from you.\n'
+).font.size = Pt(9.5)
+intro.add_run(
+ 'How to use this: go through the list below and write your answer in the last column. Each row explains what we '
+ 'are asking and why. A few rows are marked ').font.size = Pt(9.5)
+b = intro.add_run('“needed before we can build this”'); b.bold = True; b.font.size = Pt(9.5)
+intro.add_run(' — we cannot finish those parts until you reply.').font.size = Pt(9.5)
 
-# (section, [ (topic, need, context) ... ])
 SECTIONS = [
- ("A. Confirmations — please verify our changes", [
-  ("CMMI positioning",
-   "Confirm ABS does NOT itself conduct formal CMMI appraisals (no in-house authorised Lead Appraiser). If ABS DOES hold that status, tell us and we'll restore an accurate version.",
-   "We removed the old “since 1991 / our Certified Lead Appraisers conduct appraisals / High Maturity Appraisals” claims and reframed CMMI as implementation + appraisal-readiness consulting, with formal appraisals via authorised professionals — per your review."),
-  ("Statistics are substantiated",
-   "Confirm each figure is real and documented (we now show them with “Figures updated July 2026”): 1,200+ engagements supported; first-time success rate; 40+ countries; since 2008. If any is not substantiated, give the correct figure or we remove it.",
-   "Dating figures makes them read as audited — more exposure if unverified. We currently retain the numbers with reworded labels."),
-  ("Experience timeline",
-   "Please confirm ONE coherent public timeline so we present it consistently (e.g. “ABS Academy training since 2004; ABS Certifications & Advisory since 2008”).",
-   "The site implies 2008 (company); the Lead Auditor page says “since 2004” (Academy); the old CMMI text said 1991. These need reconciling."),
-  ("“1,200+ engagements supported” wording",
-   "Confirm this reworded phrasing (from “1,200+ certificates issued”) is acceptable.",
-   "Reworded so it doesn't imply ABS issues certificates."),
+ ("A.  Please confirm we got these right", [
+  ("CMMI — who runs the appraisal",
+   "Please confirm: ABS helps clients get ready for a CMMI appraisal, but does not carry out the official appraisal itself. Is that correct? If ABS does have its own qualified CMMI appraiser and can run official appraisals, please tell us and we will word it that way instead.",
+   "The old site said ABS had run CMMI appraisals “since 1991” with its own lead appraisers. Your review said to describe ABS as helping clients prepare, with the official appraisal done by an authorised appraiser. We made that change and want to be sure it is accurate."),
+  ("Are the numbers on the site true?",
+   "Please confirm each of these figures is true and you have records to back it up: “1,200+ engagements supported”, the first-time success rate, “40+ countries”, and “since 2008”. If any figure is wrong or cannot be backed up, tell us the correct number or ask us to remove it.",
+   "The site now shows these figures with a note, “Figures updated July 2026”. Adding a date makes them look officially checked, so we want to be sure they are correct before the site goes public."),
+  ("Which start year should we show?",
+   "Please tell us the single, correct history to show. For example: “Training since 2004; ABS Certifications & Advisory since 2008.”",
+   "Different pages currently suggest different start years — 2008 (the company), 2004 (the training academy) and 1991 (old CMMI text). We want one consistent story across the whole site."),
+  ("Wording of the “1,200+” figure",
+   "We changed “1,200+ certificates issued” to “1,200+ certification and compliance engagements supported”. Please confirm this wording is fine.",
+   "The old wording made it sound like ABS issues the certificates itself. The new wording says ABS supported the projects, which fits the consulting positioning."),
  ]),
- ("B. Standard / claim confirmations", [
-  ("ISO/IEC 27017:2026 [BLOCKS BUILD]",
-   "Has ISO formally PUBLISHED ISO/IEC 27017:2026 yet? If yes, we update the page from :2015 to :2026.",
-   "We held 27017 at :2015 because the 2026 edition was still at FDIS (final-draft) stage as of Apr 2026. All other editions were verified published and are updated."),
-  ("Personnel certification scheme [BLOCKS BUILD]",
-   "Does ABS operate an approved/accredited personnel-certification scheme? If NO → we reframe the Personnel Certifications pages to competence/registration guidance with a disclaimer (course-completion ≠ accredited certification). If YES → name the scheme(s) so we state them accurately.",
-   "Current pages still say ABS “certifies the competence of an individual” — not yet reframed, pending your answer."),
-  ("Third-party inspection accreditation",
-   "Is ABS an accredited inspection body, or are inspections delivered through qualified/accredited partners? We'll add the accreditation-status caveat accordingly.",
-   "Your review asked to confirm accreditation status in the proposal and note partner delivery where required."),
-  ("PCI DSS role",
-   "Confirm ABS is advisory/readiness (not a QSA); the formal QSA assessment is by an authorised QSA.",
-   "We've framed it this way; confirming."),
-  ("HIPAA / GDPR framing",
-   "Confirm the framing: no official HIPAA certification scheme; no single universal GDPR certificate — ABS provides assessment/readiness.",
-   "Matches your review; already on the pages."),
+ ("B.  Questions about specific standards and claims", [
+  ("ISO 27017 — which year to show  (needed before we can build this)",
+   "Has ISO officially published the 2026 version of ISO/IEC 27017 yet? If yes, we will update the page to “2026”. If it is not published yet, we will keep it as “2015”.",
+   "As of April 2026 the 2026 version was still a final draft, not officially published. We updated every other standard to its new version but held this one until we know it is official."),
+  ("Does ABS certify individual people?  (needed before we can build this)",
+   "Does ABS run an official, approved scheme that certifies individual people (for example, certifying someone as a qualified lead auditor)? Please answer Yes or No. If Yes, please name the scheme. If No, we will change these pages to say ABS provides training and guidance, and that a training certificate is not the same as official personnel certification.",
+   "The “Personnel Certifications” pages currently say ABS certifies a person’s competence. Your review said to only claim this where there is an approved scheme. We have not changed these pages yet because it depends on your answer."),
+  ("Inspection services — accreditation",
+   "For third-party inspection work, is ABS itself accredited to do it, or does ABS use accredited partner inspectors? We will add a short line to match.",
+   "Your review asked us to be clear about accreditation status for inspections, and to mention partners where they are used."),
+  ("PCI DSS — ABS’s role",
+   "Please confirm: ABS helps clients get ready for PCI DSS, and the official assessment (where one is needed) is carried out by an authorised assessor (a “QSA”), not by ABS.",
+   "This matches your review; we have written it this way and want to confirm."),
+  ("HIPAA and GDPR wording",
+   "Please confirm this is right: there is no official HIPAA “certificate” and no single GDPR “certificate” — ABS provides assessments and readiness support instead.",
+   "This matches your review and is already on the pages."),
  ]),
- ("C. Data & assets we need [each BLOCKS its page]", [
-  ("Legal-entity details",
-   "Registered legal name, registered office address, company registration number, GST number, official email, privacy contact, governing-law jurisdiction.",
-   "Needed for the footer, Privacy Policy and Terms. (Privacy Policy currently still contains placeholder text incl. the wrong “hmlcerts.com” domain.)"),
-  ("Scheduling tool",
-   "Which tool for “Book a Call” — Calendly / Zoho Bookings / MS Bookings — and the booking link/account.",
-   "“Book a call” currently routes to the contact page; you asked for a real scheduler."),
-  ("Leadership & Experts",
-   "For each key consultant/leader: name, role, years of experience, qualifications, ISO lead-auditor credentials, LinkedIn URL.",
-   "For the new About “Leadership & Experts” section (E-E-A-T / trust)."),
-  ("Customer logos",
-   "Which clients have given WRITTEN permission to display their logo? Please send the logo files.",
-   "The “trusted by” strip stays hidden until real, permissioned logos exist."),
+ ("C.  Information and materials we need from you", [
+  ("Company legal details  (needed before we can build this)",
+   "Please send: the full registered company name, registered office address, company registration number, GST number, an official email address, a contact for privacy questions, and the country whose laws apply.",
+   "We need these for the website footer, the Privacy Policy and the Terms page. The Privacy Policy currently still has placeholder text — and even shows the wrong website name, “hmlcerts.com”, which must be replaced."),
+  ("Which online booking tool?",
+   "For the “Book a call” button, which tool would you like — Calendly, Zoho Bookings, or Microsoft Bookings? Please share the account or booking link.",
+   "Right now the button just opens the contact page. Your review asked for a real booking calendar so visitors can pick a time slot themselves."),
+  ("Team profiles for the About page",
+   "For each senior consultant or leader you want featured, please send: name, role, years of experience, qualifications, any lead-auditor credentials, and a LinkedIn link.",
+   "Your review asked for a “Leadership & Experts” section on the About page. Real, named experts build trust with buyers and help the site rank on Google."),
+  ("Client logos",
+   "Which clients have given written permission to show their logo on the site? Please send those logo files.",
+   "We only show client logos where there is written permission. Until then, the logo strip stays hidden."),
   ("Case studies",
-   "2–3 real, approved stories: Client profile → Challenge → Scope → Approach → Deliverables → Timeline → Outcome → Client feedback.",
-   "Case-study section is scaffolded but empty (draft)."),
-  ("Testimonials attribution",
-   "May we show name / designation / company / country / service (with written permission)? Where confidential, confirm a labelled role (e.g. “CISO, UK-based SaaS company”).",
-   "We hold 3 real testimonials with minimal attribution."),
-  ("Blog authorship",
-   "A real author name + professional designation, and a reviewer name. Also: which articles have ACTUALLY been reviewed/updated, so we add a truthful “reviewed/updated” notice only where true.",
-   "Articles currently show author “ABS Certifications”; real named authors/reviewers are needed for credibility."),
+   "Please provide 2–3 real, approved client stories. For each: the client, the challenge, what was in scope, what ABS did, what was delivered, how long it took, the outcome, and a short client quote.",
+   "The case-studies section is built but empty. Real stories are strong proof for prospects."),
+  ("Names on testimonials",
+   "For the client testimonials, may we show the person’s name, job title, company, country and service (with their written permission)? Where a client must stay anonymous, is a description such as “CISO, UK-based SaaS company” acceptable?",
+   "We have three real testimonials but with very little detail. Adding names (with permission) makes them far more believable."),
+  ("Blog authors and review dates",
+   "Please give a real author name and job title (and a reviewer name) to show on articles. Also, please tell us which articles have actually been checked or updated recently, so we only add an “updated” note where it is true.",
+   "Articles currently show “ABS Certifications” as the author. Real, named authors improve credibility and Google trust. We do not want to claim an article was updated if it was not."),
   ("Third phone number",
-   "Add the third number shown on the live site: +91 99116 02258?",
-   "Contact page currently lists two numbers."),
-  ("Verified social profiles",
-   "Official LinkedIn / X / YouTube URLs.",
-   "Footer social icons are placeholders (#)."),
-  ("ISMS policy",
-   "Publish the approved ISMS / Information Security Policy statement, or remove the footer link until available?",
-   "Footer shows an “ISMS policy” label with no page behind it."),
+   "Should we add the third phone number shown on your current website: +91 99116 02258?",
+   "The contact page currently lists two numbers."),
+  ("Social media links",
+   "Please send the official links for LinkedIn, X (Twitter) and YouTube.",
+   "The footer social icons are placeholders at the moment and do not link anywhere."),
+  ("Information security (ISMS) policy",
+   "Do you have an approved Information Security policy statement we can publish? If not, we will remove the “ISMS policy” link for now.",
+   "The footer shows an “ISMS policy” link, but there is no page behind it yet."),
  ]),
- ("D. Scope & structure decisions", [
-  ("Navigation restructure",
-   "Adopt “Services · Industries · Standards · Resources · About · Contact” with a Standards mega-menu? Your list omits Process and Blog — you praised the Process page, so confirm we keep it reachable, and where Blog belongs.",
-   "Current nav: Home · About · Services · Process · Blog · Contact."),
-  ("“Business Advisory” grouping",
-   "Move HR / Data Analytics / Agile under a separate Business Advisory category?",
-   "Currently all 10 areas sit as flat service categories."),
-  ("Service-label renames",
-   "Rename headings to “ISO 9001 Certification Consulting”, “ISO 27001 Implementation & Certification Support”, etc.? Confirm the pattern.",
-   "Bulk change across ~70 service pages."),
-  ("URL scheme",
-   "Your review suggests short URLs like /iso-27001-consulting. Current is /services/iso-27001. As the site isn't live at abscerts.com yet, we can set final URLs now — do you want the /...-consulting scheme (we add redirects), or keep /services/...?",
-   "URL changes need redirects and affect SEO; best decided pre-launch."),
-  ("Country landing pages",
-   "Which countries (UAE, USA, UK, …)? These need GENUINELY local content — can ABS supply local specifics per country? (Thin/duplicated per-country pages are penalised by Google.)",
-   "None exist yet."),
-  ("Industry landing pages",
-   "Expand from the current 4 (finance, healthcare, manufacturing, SaaS) to 8 (add construction, logistics, education, IT services…)? Please supply sector specifics.",
-   "4 industry pages exist."),
-  ("Contact form redesign",
-   "Implement the two-step form + file upload (existing certificate / RFP / scope)? Any constraints on accepted file types / size / storage?",
-   "Current form is single-step, no upload."),
+ ("D.  Decisions about the site’s structure", [
+  ("Top menu layout",
+   "Would you like the top menu changed to: Services · Industries · Standards · Resources · About · Contact (with a drop-down for the standards)? Your suggested list did not include “Process” or “Blog” — since you praised the Process page, where would you like Process and Blog to sit?",
+   "The current menu is: Home · About · Services · Process · Blog · Contact."),
+  ("Grouping HR, Data and Agile",
+   "Should we group the HR, Data Analytics and Agile services under a separate “Business Advisory” heading, as your review suggested?",
+   "Right now all ten service areas sit at the same level in the menu."),
+  ("Service page titles",
+   "Would you like service pages renamed to the consulting style — for example “ISO 9001 Certification Consulting”, “ISO 27001 Implementation & Certification Support”? Please confirm you want this pattern.",
+   "This is a rename across roughly 70 service pages, so we want to confirm before doing it."),
+  ("Web addresses of pages",
+   "Your review suggested short web addresses like /iso-27001-consulting. Ours are currently /services/iso-27001. Because the new site is not live yet, we can set the final addresses now. Which do you prefer? (We will set up redirects either way.)",
+   "Changing web addresses after launch needs redirects and can affect Google ranking, so it is best decided before the site goes live."),
+  ("Country pages",
+   "Which countries should get their own page (for example UAE, USA, UK)? To do these well we will need genuinely local details from you for each country — thin or copy-pasted country pages can actually hurt Google ranking.",
+   "There are no country-specific pages yet."),
+  ("Industry pages",
+   "We have 4 industry pages (finance, healthcare, manufacturing, and software/SaaS). Would you like more — for example construction, logistics, education, IT services? If so, please share the key points for each new sector.",
+   "Your review suggested covering more industries."),
+  ("Contact form",
+   "Would you like a shorter, two-step enquiry form, and the option for visitors to upload a file (such as an existing certificate or a tender document)? Any limits on file type or size we should set?",
+   "The current form is a single page with no file upload."),
  ]),
- ("E. Legal / compliance sign-off", [
-  ("Legal review of policy pages [BLOCKS PUBLISH]",
-   "Will ABS's legal team provide or sign off the final Privacy Policy, Cookie Policy and Terms text before publish? Confirm the retention period (you suggested “up to 3 years”) is legally approved.",
-   "We will draft structured content per your guidance, but AI-drafted legal text must not go live unreviewed."),
+ ("E.  Legal review", [
+  ("Legal sign-off on policy pages  (needed before we can publish)",
+   "Will your legal team write or approve the final Privacy Policy, Cookie Policy and Terms? Also, is a data-retention period of “up to 3 years” acceptable to you?",
+   "We will draft these pages in a clear structure based on your notes, but the exact legal wording should be checked by a lawyer before it goes public."),
  ]),
 ]
 
-headers = ["No.", "Topic", "What we need from ABS", "Why / current status", "ABS response"]
-widths = [Inches(0.4), Inches(1.9), Inches(3.4), Inches(2.9), Inches(2.4)]
+headers = ["No.", "Topic", "What we are asking", "Why we are asking / where things stand", "Your answer"]
+widths = [Inches(0.4), Inches(2.0), Inches(3.5), Inches(2.9), Inches(2.2)]
 table = doc.add_table(rows=1, cols=5); table.style = 'Table Grid'; table.autofit = False
 
 def shade(cell, hexc):
@@ -146,9 +146,8 @@ trPr = table.rows[0]._tr.get_or_add_trPr(); th=OxmlElement('w:tblHeader'); th.se
 n = 0
 for section, items in SECTIONS:
     row = table.add_row().cells
-    # merge across the row for section header
     merged = row[0].merge(row[1]).merge(row[2]).merge(row[3]).merge(row[4])
-    setc(merged, section, widths[0], bold=True, size=10.5)
+    setc(merged, section, widths[0], bold=True, size=11)
     shade(merged, 'D8E0EE')
     for topic, need, ctx in items:
         n += 1
@@ -158,8 +157,8 @@ for section, items in SECTIONS:
 
 doc.add_paragraph()
 f = doc.add_paragraph(); fr = f.add_run(
- 'Once we have A–C answered we can complete the remaining copy; D sets the build scope; E gates the legal pages. '
- 'Prepared from the ABS Website Gap Correction Table review. Positioning correction + ISO edition updates already implemented and live.')
-fr.italic = True; fr.font.size = Pt(8); fr.font.color.rgb = RGBColor(0x77,0x77,0x77)
+ 'Thank you. Once we have your answers to sections A–C we can finish the website text. Section D decides how much '
+ 'work the next stage involves, and Section E is about the legal pages.')
+fr.italic = True; fr.font.size = Pt(8.5); fr.font.color.rgb = RGBColor(0x66,0x66,0x66)
 
 doc.save('ABS_followup_questions.docx'); print('SAVED ABS_followup_questions.docx  | items:', n)
