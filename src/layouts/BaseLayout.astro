@@ -182,7 +182,7 @@ const orgSchema = {
 <header class="header" role="banner">
   <div class="container">
     <a href="/" class="logo" aria-label="ABS Certifications & Advisory — home">
-      <img src="/logo.png" class="logo-img" alt="ABS Certifications & Advisory" width="278" height="45">
+      <img src="/logo-mark.png" class="logo-img" alt="ABS Certifications & Advisory" width="95" height="43">
     </a>
     <nav class="nav" aria-label="Primary navigation">
       <a href="/" id="nav-home" class:list={[{ active: path === '/' }]}>Home</a>
@@ -191,8 +191,12 @@ const orgSchema = {
       <a href="/#industries">Industries</a>
       <a href="/process" class:list={[{ active: path === '/process' }]}>Process</a>
       <a href="/blog" class:list={[{ active: path.startsWith('/blog') }]}>Blog</a>
+      <a href="/faq" class:list={[{ active: path === '/faq' }]}>FAQ</a>
       <a href="/contact" id="nav-contact" class:list={[{ active: path === '/contact' }]}>Contact</a>
-      <button class="btn btn-primary" onclick="openQuoteModal()">Request quote <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
+      <div class="nav-ctas">
+        <button class="btn btn-primary" onclick="openQuoteModal()">Request quote <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
+        <button class="btn btn-partner" onclick="openPartnerModal()">Become a Partner <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
+      </div>
     </nav>
     <button class="hamburger" onclick="toggleMobileNav()" aria-label="Open menu">
       <span></span>
@@ -213,7 +217,7 @@ const orgSchema = {
     <div class="footer-grid">
       <div>
         <div class="logo">
-          <img src="/logo.png" class="logo-img logo-img-footer" alt="ABS Certifications & Advisory" width="278" height="45">
+          <img src="/logo-mark.png" class="logo-img" alt="ABS Certifications & Advisory" width="95" height="43" loading="lazy" decoding="async">
         </div>
         <p class="footer-tag">Consulting and advisory firm helping organisations across UK, EU, US, Middle East and APAC achieve certification. Transparent pricing, global delivery.</p>
         <div class="footer-newsletter">
@@ -249,7 +253,7 @@ const orgSchema = {
         <div class="footer-contact-item"><i class="ti ti-map-pin"></i><span>Mangli Purwa, Hardoi Gramin,<br>District Hardoi, Uttar Pradesh 241001, India</span></div>
       </div>
     </div>
-    <p class="footer-disclaimer" style="max-width:100%;margin:32px 0 0;padding-top:20px;border-top:1px solid rgba(255,255,255,0.12);font-size:12px;line-height:1.6;opacity:0.6;">ABS Certifications &amp; Advisory is a consulting and advisory firm, working alongside independent certification bodies and audit firms to help organisations achieve and maintain certification.</p>
+    <p class="footer-disclaimer" style="max-width:100%;margin:32px 0 0;padding-top:20px;border-top:1px solid rgba(255,255,255,0.12);font-size:12.5px;line-height:1.6;color:rgba(255,255,255,0.66);">ABS Certifications &amp; Advisory is a consulting and advisory firm, working alongside independent certification bodies and audit firms to help organisations achieve and maintain certification.</p>
     <div class="footer-bottom">
       <span>© 2008–{year} ABS Certifications & Advisory. All rights reserved.</span>
       <div class="footer-social">
@@ -272,9 +276,11 @@ const orgSchema = {
   <a href="/#industries" onclick="toggleMobileNav()">Industries</a>
   <a href="/process" onclick="toggleMobileNav()">Process</a>
   <a href="/blog" onclick="toggleMobileNav()">Blog</a>
+  <a href="/faq" onclick="toggleMobileNav()">FAQ</a>
   <a href="/contact" onclick="toggleMobileNav()">Contact</a>
   <div class="mobile-nav-cta">
     <button class="btn btn-primary" onclick="openQuoteModal(); toggleMobileNav();">Request a quote <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
+    <button class="btn btn-partner" onclick="openPartnerModal(); toggleMobileNav();">Become a Partner <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
     <a class="btn btn-outline" href="/contact" onclick="toggleMobileNav()"><i class="ti ti-calendar-event"></i>Book a meeting</a>
   </div>
   <div class="mobile-nav-contact">
@@ -422,6 +428,54 @@ const orgSchema = {
           <span><i class="ti ti-shield-check"></i>Confidential</span>
           <span><i class="ti ti-currency-pound"></i>Multi-currency</span>
         </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PARTNER MODAL ============ -->
+<div class="modal-backdrop" id="partnerModal" inert onclick="if(event.target===this) closePartnerModal()">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="partnerModalTitle">
+    <div class="modal-header">
+      <button class="modal-close" onclick="closePartnerModal()" aria-label="Close"><i class="ti ti-x"></i></button>
+      <p class="eyebrow">Partnerships</p>
+      <h2 id="partnerModalTitle">Become a Partner</h2>
+      <p>Interested in working with ABS? Tell us a little about yourself and how you would like to work together, and our team will be in touch.</p>
+    </div>
+    <div class="modal-body">
+      <form data-form="partner">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field">
+        <div class="form-row">
+          <div>
+            <label for="pm-name">Full name *</label>
+            <input type="text" id="pm-name" name="name" class="form-control" placeholder="Jane Smith" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="pm-email">Email *</label>
+            <input type="email" id="pm-email" name="email" class="form-control" placeholder="jane@company.com" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="pm-phone">Phone (with country code) *</label>
+            <input type="tel" id="pm-phone" name="phone" class="form-control" placeholder="+44 20 7946 0958" autocomplete="tel" required>
+          </div>
+          <div>
+            <label for="pm-company">Company name</label>
+            <input type="text" id="pm-company" name="company" class="form-control" placeholder="Optional" autocomplete="organization">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="pm-country">Country *</label>
+          <input type="text" id="pm-country" name="country" class="form-control" placeholder="e.g. United Kingdom" autocomplete="country-name" required>
+        </div>
+        <div class="form-group">
+          <label for="pm-message">Message *</label>
+          <textarea id="pm-message" name="message" class="form-control" placeholder="Tell us about yourself and the partnership you have in mind." required></textarea>
+        </div>
+        <button type="submit" class="form-submit" data-submit>Send enquiry <i class="ti ti-arrow-right"></i></button>
+        <div data-form-status></div>
+        <p class="modal-privacy">We use your details only to respond to your enquiry — see our <a href="/privacy">Privacy Policy</a>.</p>
       </form>
     </div>
   </div>

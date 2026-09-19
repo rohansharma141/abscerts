@@ -100,6 +100,20 @@ function closeQuoteModal() {
   document.body.style.overflow = '';
 }
 
+/* ===== Partner Modal ("Become a Partner" — header + mobile menu) ===== */
+function openPartnerModal() {
+  const m = document.getElementById('partnerModal');
+  m.classList.add('open');
+  m.removeAttribute('inert');
+  document.body.style.overflow = 'hidden';
+}
+function closePartnerModal() {
+  const m = document.getElementById('partnerModal');
+  m.classList.remove('open');
+  m.setAttribute('inert', '');
+  document.body.style.overflow = '';
+}
+
 /* ===== Scroll to contact form on contact page ===== */
 function jumpToContactForm() {
   showPage('contact');
@@ -183,6 +197,7 @@ try {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeQuoteModal();
+    closePartnerModal();
     closeExitPopup();
     if (document.getElementById('mobileNav').classList.contains('open')) toggleMobileNav();
   }
@@ -198,6 +213,7 @@ document.addEventListener('keydown', (e) => {
     contact: "Thanks — your enquiry is in. We'll reply within 4 business hours.",
     newsletter: "Thanks — we'll be in touch shortly.",
     download: "Thanks — we've emailed you the guide. You can also download it now:",
+    partner: "Thanks — your partner enquiry is in. Our team will be in touch.",
   };
 
   forms.forEach((form) => {
@@ -241,6 +257,7 @@ document.addEventListener('keydown', (e) => {
           '</div>';
 
         if (type === 'quote') setTimeout(closeQuoteModal, 3000);
+        if (type === 'partner') setTimeout(closePartnerModal, 3000);
         if (type === 'newsletter') setTimeout(closeExitPopup, 3000);
       } catch (err) {
         if (status) {

@@ -278,7 +278,7 @@ em {
 }
 .logo { display: flex; align-items: center; gap: 14px; }
 .logo-img { height: 42px; width: auto; display: block; }
-.footer .logo-img-footer { filter: brightness(0) invert(1); }  /* white logo on the dark footer */
+/* The ABS mark keeps its own colours in the footer (a white filter would blank out the letters). */
 @media (max-width: 768px) { .logo-img { height: 34px; } }
 .logo-mark {
   width: 46px;
@@ -340,6 +340,34 @@ em {
   transition: width 0.3s;
 }
 .nav a:hover::after, .nav a.active::after { width: 100%; }
+
+/* Header CTA pair — "Request quote" + "Become a Partner": the grid makes both equal width */
+.nav-ctas { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 10px; }
+.nav-ctas .btn { justify-content: center; padding: 12px 20px; font-size: 14px; }
+.btn-partner {
+  background: var(--glow);
+  color: var(--blue-ink);
+  border: 1.5px solid var(--glow);
+  box-shadow: 0 4px 14px rgba(52, 224, 196, 0.25);
+}
+.btn-partner:hover {
+  background: #2BC9AF;
+  border-color: #2BC9AF;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(52, 224, 196, 0.35);
+}
+.btn-partner .btn-icon-square { background: var(--blue-ink); color: var(--white); }
+/* 8 nav links + 2 buttons: tighten progressively so the header fits down to 1081px */
+@media (max-width: 1366px) and (min-width: 1081px) {
+  .nav { gap: 22px; font-size: 16px; }
+  .nav-ctas .btn { padding: 10px 16px; font-size: 13.5px; gap: 8px; }
+}
+@media (max-width: 1200px) and (min-width: 1081px) {
+  .nav { gap: 16px; font-size: 15px; }
+  .nav-ctas { gap: 8px; }
+  .nav-ctas .btn { padding: 10px 14px; }
+  .nav-ctas .btn-icon-square { display: none; }
+}
 
 /* ============ HERO CAROUSEL ============ */
 .hero {
@@ -2342,6 +2370,8 @@ textarea.form-control {
   flex-wrap: wrap;
 }
 .modal-trust span { display: flex; align-items: center; gap: 6px; }
+.modal-privacy { margin-top: 14px; font-size: 12.5px; color: var(--gray-text); text-align: center; }
+.modal-privacy a { color: var(--accent-text); text-decoration: underline; }
 .modal-trust i { color: var(--blue); }
 
 /* ============ Exit-Intent Popup ============ */
