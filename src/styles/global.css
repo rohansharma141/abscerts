@@ -470,6 +470,11 @@ em {
   margin-bottom: 28px;
   color: var(--white);
 }
+/* Hero headline helpers: .nw keeps a phrase such as "Be Customer-Ready." on one line
+   (no break at the hyphen); .hero-br breaks between phrases on wider screens only. */
+.hero-slide-inner .nw { white-space: nowrap; }
+@media (max-width: 768px) { .hero-slide-inner .hero-br { display: none; } }
+@media (max-width: 420px) { .hero .hero-slide-inner h1, .hero .hero-slide-inner h2 { font-size: 34px; } } /* beats the later 768px rule */
 .hero-slide-inner h1 em, .hero-slide-inner h2 em {
   font-family: 'Fraunces', serif;
   font-style: italic;

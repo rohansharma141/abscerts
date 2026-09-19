@@ -25,6 +25,74 @@ const homeServices = [
   { tag: 'People', num: '/ 09', href: '/services/hr-services', image: '/images/cat-hr-services.jpg', imageAlt: 'HR consulting and recruitment services', title: 'HR Services', description: 'Recruitment and HR consulting — helping organisations find the right people and build the HR practices to support them.', tags: ['Recruitment', 'HR consulting'] },
 ];
 
+// Hero carousel. Only `show: true` slides are rendered; hidden slides are left out of the
+// HTML entirely (not display:none), so their copy is never published or crawled.
+// The first shown slide gets the <h1>, the LCP preload and fetchpriority=high.
+type HeroImage = 'hero-1' | 'hero-2' | 'hero-3';
+type HeroAction = { label: string; href?: string; icon?: string }; // no href → opens the quote modal
+type HeroSlide = { show: boolean; image: HeroImage; meta?: string[]; headline: string; sub: string; primary: HeroAction; secondary: HeroAction };
+
+const heroImageAlt: Record<HeroImage, string> = {
+  'hero-1': 'Consultants and client team reviewing compliance documents in a meeting room',
+  'hero-2': 'Compliance dashboards on dual monitors',
+  'hero-3': 'Audit preparation desk with laptop, checklist and documents',
+};
+
+const heroSlides: HeroSlide[] = [
+  // Client copy, Sep 2026 — headlines and sub-lines verbatim.
+  {
+    show: true, image: 'hero-2',
+    headline: 'Smarter Compliance.<br class="hero-br"> <em>Powered by Automation.</em>',
+    sub: 'Streamline compliance workflows, reduce manual effort, and accelerate readiness across ISO, SOC 2, cybersecurity, and regulatory frameworks.',
+    primary: { label: 'Request a fixed-price proposal' },
+    secondary: { label: 'Explore our services', icon: 'ti-layout-grid', href: '/services' },
+  },
+  {
+    show: true, image: 'hero-1',
+    headline: '<span class="nw">Be Tender-Ready.</span><br class="hero-br"> <span class="nw">Be Customer-Ready.</span><br class="hero-br"> <em class="nw">Be Growth-Ready.</em>',
+    sub: 'Strengthen your organisation with recognised certifications that demonstrate capability, compliance and trust when customers and evaluators are making critical supplier decisions.',
+    primary: { label: 'Request your quote' },
+    secondary: { label: 'Talk to a specialist', icon: 'ti-message-circle', href: '/contact' },
+  },
+  {
+    show: true, image: 'hero-3',
+    headline: 'Affordable Compliance.<br class="hero-br"> Faster Certification.<br class="hero-br"> <em>Smarter Investment.</em>',
+    sub: 'Achieve certification through a practical, streamlined approach that reduces unnecessary cost, shortens timelines and delivers greater value from your compliance investment.',
+    primary: { label: 'Get a fixed-price quote' },
+    secondary: { label: 'See how we work', icon: 'ti-route', href: '/process' },
+  },
+
+  // Retired slides (before Sep 2026) — kept for reference, NOT rendered.
+  // ⚠ Rewrite before re-enabling: the second says "no surprise travel charges" and the third
+  // claims local consultants abroad plus Arabic/German/French support — both contradict the
+  // India-based delivery model (travel is charged; English only). The client also asked for
+  // the small `meta` chips to be removed.
+  {
+    show: false, image: 'hero-1', meta: ['ISO · SOC 2 · CMMI', 'Est. 2008'],
+    headline: 'Global ISO, SOC 2 and <em>compliance advisory</em> services.',
+    sub: 'We help organisations implement effective management systems, close compliance gaps and prepare for independent certification, attestation and regulatory assessments.',
+    primary: { label: 'Request a fixed-price proposal' },
+    secondary: { label: 'Book a 30-min call', icon: 'ti-calendar-event', href: '/contact' },
+  },
+  {
+    show: false, image: 'hero-2', meta: ['Fixed-price proposals', '24-hour response'],
+    headline: 'A clear quote in <em>24 hours</em>, never an open invoice.',
+    sub: 'Tell us your scope. We send a transparent, fixed-fee proposal in your preferred currency — GBP, EUR, USD or AED. No scope creep, no surprise travel charges.',
+    primary: { label: 'Request your quote' },
+    secondary: { label: 'Talk to a specialist', icon: 'ti-message-circle', href: '/contact' },
+  },
+  {
+    show: false, image: 'hero-3', meta: ['Consultants in 12 countries', 'On-site or remote'],
+    headline: 'Consultants <em>near you</em>, support delivered in your time zone.',
+    sub: 'Local consultants across the UK, EU, Middle East and North America. No expensive international travel charges. Multi-language support in English, Arabic, German and French.',
+    primary: { label: 'Find auditors in your region', href: '/contact' },
+    secondary: { label: 'Get a regional quote', icon: 'ti-world' },
+  },
+];
+const liveSlides = heroSlides.filter((s) => s.show);
+const pad2 = (n: number) => String(n).padStart(2, '0');
+const heroSrcset = (img: HeroImage) => `/images/${img}-768.jpg 768w, /images/${img}-1280.jpg 1280w, /images/${img}.jpg 1920w`;
+
 // Home industries grid IS collection-driven (the 4 industries map 1:1 to v7's cards).
 const featuredIndustries = (await getCollection('industries'))
   .filter((i) => i.data.featured)
@@ -63,7 +131,7 @@ const serviceSchema = {
 
 <BaseLayout title={title} description={description}>
   <Fragment slot="head">
-    <link rel="preload" as="image" href="/images/hero-1.jpg" imagesrcset="/images/hero-1-768.jpg 768w, /images/hero-1-1280.jpg 1280w, /images/hero-1.jpg 1920w" imagesizes="100vw" fetchpriority="high">
+    <link rel="preload" as="image" href={`/images/${liveSlides[0].image}.jpg`} imagesrcset={heroSrcset(liveSlides[0].image)} imagesizes="100vw" fetchpriority="high">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(serviceSchema)} />
   </Fragment>
 
@@ -71,91 +139,50 @@ const serviceSchema = {
   <section class="hero" aria-label="Hero carousel">
     <div class="hero-carousel" id="heroCarousel" role="region" aria-roledescription="carousel">
 
-      <!-- Slide 1 -->
-      <article class="hero-slide active" aria-roledescription="slide" aria-label="Slide 1 of 3">
-        <div class="hero-slide-img">
-          <img src="/images/hero-1.jpg" alt="ABS Certifications consultants in client boardroom delivering ISO audit"
-               srcset="/images/hero-1-768.jpg 768w, /images/hero-1-1280.jpg 1280w, /images/hero-1.jpg 1920w" sizes="100vw"
-               fetchpriority="high" decoding="async" width="1920" height="1080">
-        </div>
-        <div class="hero-slide-content">
-          <div class="container">
-            <div class="hero-slide-inner">
-              <div class="hero-slide-meta">
-                <span class="hero-slide-meta-item">ISO · SOC 2 · CMMI</span>
-                <span class="hero-slide-meta-item">Est. 2008</span>
-              </div>
-              <h1>Global ISO, SOC 2 and <em>compliance advisory</em> services.</h1>
-              <p class="hero-slide-sub">We help organisations implement effective management systems, close compliance gaps and prepare for independent certification, attestation and regulatory assessments.</p>
-              <div class="hero-slide-cta">
-                <button class="btn btn-primary" onclick="openQuoteModal()">Request a fixed-price proposal <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
-                <a class="btn btn-outline" href="/contact"><i class="ti ti-calendar-event"></i>Book a 30-min call</a>
+      {liveSlides.map((s, i) => {
+        const Heading = i === 0 ? 'h1' : 'h2';
+        return (
+          <article class:list={['hero-slide', { active: i === 0 }]} aria-roledescription="slide" aria-label={`Slide ${i + 1} of ${liveSlides.length}`}>
+            <div class="hero-slide-img">
+              <img src={`/images/${s.image}.jpg`} alt={heroImageAlt[s.image]}
+                   srcset={heroSrcset(s.image)} sizes="100vw"
+                   fetchpriority={i === 0 ? 'high' : undefined} loading={i === 0 ? undefined : 'lazy'} decoding="async" width="1920" height="1080">
+            </div>
+            <div class="hero-slide-content">
+              <div class="container">
+                <div class="hero-slide-inner">
+                  {s.meta && s.meta.length > 0 && (
+                    <div class="hero-slide-meta">
+                      {s.meta.map((m) => <span class="hero-slide-meta-item">{m}</span>)}
+                    </div>
+                  )}
+                  <Heading set:html={s.headline} />
+                  <p class="hero-slide-sub">{s.sub}</p>
+                  <div class="hero-slide-cta">
+                    {s.primary.href
+                      ? <a class="btn btn-primary" href={s.primary.href}>{s.primary.label} <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></a>
+                      : <button class="btn btn-primary" onclick="openQuoteModal()">{s.primary.label} <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>}
+                    {s.secondary.href
+                      ? <a class="btn btn-outline" href={s.secondary.href}><i class={`ti ${s.secondary.icon}`}></i>{s.secondary.label}</a>
+                      : <button class="btn btn-outline" onclick="openQuoteModal()"><i class={`ti ${s.secondary.icon}`}></i>{s.secondary.label}</button>}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Slide 2 -->
-      <article class="hero-slide" aria-roledescription="slide" aria-label="Slide 2 of 3">
-        <div class="hero-slide-img">
-          <img src="/images/hero-2.jpg" alt="ISO management system documentation and quality audit"
-               srcset="/images/hero-2-768.jpg 768w, /images/hero-2-1280.jpg 1280w, /images/hero-2.jpg 1920w" sizes="100vw"
-               loading="lazy" decoding="async" width="1920" height="1080">
-        </div>
-        <div class="hero-slide-content">
-          <div class="container">
-            <div class="hero-slide-inner">
-              <div class="hero-slide-meta">
-                <span class="hero-slide-meta-item">Fixed-price proposals</span>
-                <span class="hero-slide-meta-item">24-hour response</span>
-              </div>
-              <h2>A clear quote in <em>24 hours</em>, never an open invoice.</h2>
-              <p class="hero-slide-sub">Tell us your scope. We send a transparent, fixed-fee proposal in your preferred currency — GBP, EUR, USD or AED. No scope creep, no surprise travel charges.</p>
-              <div class="hero-slide-cta">
-                <button class="btn btn-primary" onclick="openQuoteModal()">Request your quote <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></button>
-                <a class="btn btn-outline" href="/contact"><i class="ti ti-message-circle"></i>Talk to a specialist</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Slide 3 -->
-      <article class="hero-slide" aria-roledescription="slide" aria-label="Slide 3 of 3">
-        <div class="hero-slide-img">
-          <img src="/images/hero-3.jpg" alt="Audit preparation desk with laptop, checklist and documents"
-               srcset="/images/hero-3-768.jpg 768w, /images/hero-3-1280.jpg 1280w, /images/hero-3.jpg 1920w" sizes="100vw"
-               loading="lazy" decoding="async" width="1920" height="1080">
-        </div>
-        <div class="hero-slide-content">
-          <div class="container">
-            <div class="hero-slide-inner">
-              <div class="hero-slide-meta">
-                <span class="hero-slide-meta-item">Consultants in 12 countries</span>
-                <span class="hero-slide-meta-item">On-site or remote</span>
-              </div>
-              <h2>Consultants <em>near you</em>, support delivered in your time zone.</h2>
-              <p class="hero-slide-sub">Local consultants across the UK, EU, Middle East and North America. No expensive international travel charges. Multi-language support in English, Arabic, German and French.</p>
-              <div class="hero-slide-cta">
-                <a class="btn btn-primary" href="/contact">Find auditors in your region <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></a>
-                <button class="btn btn-outline" onclick="openQuoteModal()"><i class="ti ti-world"></i>Get a regional quote</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+          </article>
+        );
+      })}
 
       <!-- Controls -->
       <div class="hero-controls">
         <div class="container">
           <div class="hero-dots" role="tablist" aria-label="Choose hero slide">
-            <button class="hero-dot active" onclick="goToSlide(0)" aria-label="Go to slide 1" role="tab"></button>
-            <button class="hero-dot" onclick="goToSlide(1)" aria-label="Go to slide 2" role="tab"></button>
-            <button class="hero-dot" onclick="goToSlide(2)" aria-label="Go to slide 3" role="tab"></button>
+            {liveSlides.map((_, i) => (
+              <button class:list={['hero-dot', { active: i === 0 }]} onclick={`goToSlide(${i})`} aria-label={`Go to slide ${i + 1}`} role="tab"></button>
+            ))}
           </div>
           <div class="hero-counter" aria-live="polite">
-            <strong id="heroCurrent">01</strong><span>/</span>03
+            <strong id="heroCurrent">01</strong><span>/</span>{pad2(liveSlides.length)}
           </div>
           <div class="hero-arrows">
             <button class="hero-arrow" onclick="prevSlide()" aria-label="Previous slide"><i class="ti ti-arrow-left"></i></button>
