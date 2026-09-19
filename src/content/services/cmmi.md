@@ -21,8 +21,8 @@ faqs:
     answer: "An appraisal. CMMI maturity is confirmed through a formal CMMI appraisal, led by an authorised Lead Appraiser under the current CMMI Appraisal Method, not a certificate — organisations are 'appraised at' a maturity level. The result is typically valid for three years. (The word 'certification' is sometimes used loosely, but appraisal is the correct, formal term.)"
   - question: "Which maturity level should we target?"
     answer: "It depends on what your customers and contracts require, and on your current maturity. Maturity Level 2 is the right first milestone for many organisations; Level 3 is frequently specified in larger government and enterprise tenders. ABS recommends a realistic target during the gap analysis."
-  - question: "Does ABS conduct the formal appraisal?"
-    answer: "No. ABS provides CMMI implementation and appraisal-readiness consulting. Formal Benchmark or Sustainment Appraisals must be performed through appropriately authorised CMMI appraisal professionals in accordance with current ISACA CMMI requirements. Our consultants bring a minimum of 8-10 years' experience implementing CMMI, so your organisation is genuinely ready when the formal appraisal takes place."
+  - question: "Who leads the formal appraisal, and how does ABS support it?"
+    answer: "Formal Benchmark or Sustainment Appraisals are led by an authorised CMMI Lead Appraiser in accordance with current ISACA CMMI requirements. ABS provides the implementation and appraisal-readiness consulting that gets you there — our consultants bring a minimum of 8-10 years' experience implementing CMMI, so your organisation is genuinely ready when the formal appraisal takes place."
   - question: "How long does a CMMI appraisal result last?"
     answer: "A CMMI appraisal result is valid for a defined period — commonly three years — after which a re-appraisal is needed to maintain the maturity rating."
 ---
@@ -45,7 +45,7 @@ CMMI uses five maturity levels:
 - **Level 4 — Quantitatively Managed:** performance is controlled using statistical and quantitative techniques
 - **Level 5 — Optimizing:** the organisation continually improves process performance
 
-Maturity is confirmed through an **appraisal**, not a certification. The formal method is the **CMMI Appraisal Method**, conducted by an appraisal team led by an authorised Lead Appraiser. ABS provides CMMI implementation and appraisal-readiness consulting; formal Benchmark or Sustainment Appraisals are performed through appropriately authorised CMMI appraisal professionals in accordance with current ISACA CMMI requirements. Our consultants bring a minimum of 8-10 years' experience implementing CMMI, so the work focuses on processes your teams will actually use — not documentation written purely to pass.
+Maturity is confirmed through an **appraisal**, not a certification. The formal method is the **CMMI Appraisal Method**, conducted by an appraisal team led by an authorised Lead Appraiser. ABS provides CMMI implementation and appraisal-readiness consulting, taking you through to a formal Benchmark or Sustainment Appraisal led by an authorised Lead Appraiser in line with current ISACA CMMI requirements. Our consultants bring a minimum of 8-10 years' experience implementing CMMI, so the work focuses on processes your teams will actually use — not documentation written purely to pass.
 
 ## Typical timeline
 
@@ -55,15 +55,15 @@ Reaching appraisal readiness depends heavily on your starting maturity. For an o
 
 ### Is CMMI a certification or an appraisal?
 
-An appraisal. CMMI maturity is confirmed through a formal CMMI appraisal, led by a Certified Lead Appraiser under the current CMMI Appraisal Method,, not a certificate — organisations are "appraised at" a maturity level, and the result is typically valid for three years.
+An appraisal. CMMI maturity is confirmed through a formal CMMI appraisal, led by an authorised Lead Appraiser under the current CMMI Appraisal Method, not a certificate — organisations are "appraised at" a maturity level, and the result is typically valid for three years.
 
 ### Which maturity level should we target?
 
 It depends on what your buyers require and your current maturity. Level 2 is the right first milestone for many organisations; Level 3 is often specified in larger government and enterprise tenders. We recommend a realistic target during the gap analysis.
 
-### Does ABS conduct the formal appraisal?
+### Who leads the formal appraisal, and how does ABS support it?
 
-No. ABS provides CMMI implementation and appraisal-readiness consulting. Formal Benchmark or Sustainment Appraisals must be performed through appropriately authorised CMMI appraisal professionals in accordance with current ISACA CMMI requirements. Our consultants — with a minimum of 8-10 years' experience implementing CMMI — get your organisation genuinely ready so the formal appraisal goes smoothly.
+Formal Benchmark or Sustainment Appraisals are led by an authorised CMMI Lead Appraiser in accordance with current ISACA CMMI requirements. ABS provides the implementation and appraisal-readiness consulting that gets you there — our consultants, with a minimum of 8-10 years' experience implementing CMMI, get your organisation genuinely ready so the formal appraisal goes smoothly.
 
 ### How long does a CMMI appraisal result last?
 

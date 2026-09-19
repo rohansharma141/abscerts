@@ -21,15 +21,15 @@ Most production sites build an integrated management system from three standards
 
 ## What makes a manufacturing audit different
 
-Manufacturing audits are grounded in the physical operation. Auditors spend time on the production floor, looking at how process controls work in practice, how non-conforming product is contained, how environmental aspects such as waste, emissions and resource use are managed, and how safety controls hold up around machinery and material handling. Because so much depends on direct observation, the Stage 2 audit normally includes a site visit — and with our consultants based across the UK, EU and Middle East, we can prepare you for it without international travel charges.
+Manufacturing audits are grounded in the physical operation. Auditors spend time on the production floor, looking at how process controls work in practice, how non-conforming product is contained, how environmental aspects such as waste, emissions and resource use are managed, and how safety controls hold up around machinery and material handling. Because so much depends on direct observation, the Stage 2 audit normally includes a site visit — so our consultants can also work with you on-site to prepare for it, with any travel agreed upfront in your proposal.
 
 ## Common questions
 
 ### Can we pursue all three standards in one programme?
 Yes. An integrated audit across ISO 9001, 14001 and 45001 is common for manufacturers and reduces total audit time, because the shared management-system elements are assessed once rather than three times.
 
-### Do you charge travel for on-site audits?
-Because our consultants are based in 12 countries, on-site work across the UK, EU and Middle East is typically delivered without international travel costs. Any local travel is included in your fixed-fee quote.
+### Do you charge travel for on-site work?
+Much of the preparation can be done remotely. Where on-site work is needed, our consultants travel to you and the travel costs are set out upfront in your proposal — so there are no surprises.
 
 ### We run multiple sites — how does that work?
 Multi-site organisations can often be certified under a sampling approach, where a representative set of sites is audited each cycle rather than every location every year. We confirm the sampling plan as part of your quote.
