@@ -3,11 +3,11 @@ title: "Kosher Certification"
 shortName: "Kosher"
 description: "Certification that products and processes comply with Jewish dietary law (kashrut) — opening kosher markets and signalling quality to a wider consumer base."
 icon: "ti-star"
-tags: ["Kosher", "Food Certification", "Market Access", "Industry & Food"]
+tags: ["Kosher", "Food Certification", "Market Access", "Food Industry"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "Kosher food certification"
 category: "industry-food-certifications"
-categoryName: "Industry & Food Certifications"
+categoryName: "Food Industry Certifications"
 order: 5
 timelineWeeks: "6-10"
 featured: false
@@ -49,4 +49,4 @@ It confirms that a product and how it is produced comply with Jewish dietary law
 
 ### Who benefits from Kosher certification?
 
-Beyond kosher-observant consumers, many buyers treat the kosher mark as a signal of careful ingredient control and production discipline. It opens kosher markets and can broaden appeal — and is often pursued alongside other [Industry & Food](/services/industry-food-certifications) certifications such as [Halal](/services/halal) and [HACCP](/services/haccp) by food [manufacturers](/industries/manufacturing).
+Beyond kosher-observant consumers, many buyers treat the kosher mark as a signal of careful ingredient control and production discipline. It opens kosher markets and can broaden appeal — and is often pursued alongside other [Food Industry](/services/industry-food-certifications) certifications such as [Halal](/services/halal) and [HACCP](/services/haccp) by food [manufacturers](/industries/manufacturing).

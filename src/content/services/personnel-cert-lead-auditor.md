@@ -6,13 +6,13 @@ icon: "ti-user-check"
 tags: ["Personnel Certification", "Lead Auditor", "Auditor Competence"]
 image: "/images/cat-personnel-certifications.jpg"
 imageAlt: "Lead auditor personnel certification"
-category: "personnel-certifications"
-categoryName: "Personnel Certifications"
-order: 1
+category: "management-system-training"
+categoryName: "Training & Professional Development"
+order: 4
 featured: false
 seo:
   title: "Lead Auditor Personnel Certification | Auditor Competence | ABS"
-  description: "Personnel certification recognises an individual auditor's competence — a personal credential, distinct from an organisation's management system certification. From ABS."
+  description: "Personnel certification recognises an individual auditor's competence — a personal credential, distinct from an organisation's management system certification."
   keywords: ["personnel certification", "lead auditor certification", "auditor competence", "certified auditor"]
 faqs:
   - question: "What is the difference between personnel certification and management system certification?"
@@ -33,7 +33,7 @@ A Lead Auditor personnel credential is relevant to individuals who audit managem
 
 Competence is built through training and experience, then recognised through certification. [Lead Auditor training](/services/iso-lead-auditor-training) develops the skills to plan, lead and report management system audits; [Internal Auditor training](/services/iso-internal-auditor-training) develops the skills to audit within one's own organisation. Personnel certification sits at the end of that path, recognising demonstrated competence.
 
-This service is part of the [Personnel Certifications](/services/personnel-certifications) area. The specific schemes and standards ABS offers personnel certification against are being confirmed — [contact us](/contact) to discuss your requirement.
+This page sits within [Training & Professional Development](/services/management-system-training), alongside the auditor courses that build the competence a personnel credential recognises. [Contact us](/contact) to discuss the scheme that fits your role.
 
 ## Common questions
 

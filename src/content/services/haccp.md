@@ -3,11 +3,11 @@ title: "HACCP Implementation & Certification Readiness"
 shortName: "HACCP"
 description: "Implementation and certification-readiness support for a HACCP food safety system — the internationally recognised approach to identifying and controlling hazards across the food chain."
 icon: "ti-meat"
-tags: ["HACCP", "Food Safety", "Hazard Analysis", "Industry & Food"]
+tags: ["HACCP", "Food Safety", "Hazard Analysis", "Food Industry"]
 image: "/images/service-haccp.jpg"
 imageAlt: "HACCP food safety hazard analysis certification"
 category: "industry-food-certifications"
-categoryName: "Industry & Food Certifications"
+categoryName: "Food Industry Certifications"
 order: 1
 timelineWeeks: "8-12"
 governingBody: "Codex Alimentarius"

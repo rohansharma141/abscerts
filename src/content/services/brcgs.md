@@ -3,11 +3,11 @@ title: "BRCGS — Global Standard for Food Safety"
 shortName: "BRCGS"
 description: "Certification against the BRCGS Global Standard — a GFSI-recognised benchmark for food safety, quality and operational criteria, widely required by retailers."
 icon: "ti-building-store"
-tags: ["BRCGS", "Food Safety", "GFSI", "Industry & Food"]
+tags: ["BRCGS", "Food Safety", "GFSI", "Food Industry"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "BRCGS Global Standard for Food Safety certification"
 category: "industry-food-certifications"
-categoryName: "Industry & Food Certifications"
+categoryName: "Food Industry Certifications"
 order: 3
 timelineWeeks: "12-16"
 governingBody: "BRCGS"
@@ -52,4 +52,4 @@ BRCGS is a GFSI-recognised certification scheme for food safety and quality, wid
 
 ### How does BRCGS relate to FSSC 22000?
 
-Both are GFSI-recognised food safety schemes, so both satisfy a retailer's requirement for a GFSI-benchmarked certification. Which you need depends on what your customers ask for; some manufacturers hold both. Many build from a [HACCP](/services/haccp) foundation. It sits alongside [FSSC 22000](/services/fssc-22000) in the [Industry & Food Certifications](/services/industry-food-certifications) portfolio for [manufacturers](/industries/manufacturing).
+Both are GFSI-recognised food safety schemes, so both satisfy a retailer's requirement for a GFSI-benchmarked certification. Which you need depends on what your customers ask for; some manufacturers hold both. Many build from a [HACCP](/services/haccp) foundation. It sits alongside [FSSC 22000](/services/fssc-22000) in the [Food Industry Certifications](/services/industry-food-certifications) portfolio for [manufacturers](/industries/manufacturing).

@@ -5,8 +5,8 @@ description: "Independent audits for SOC 2, PCI DSS, GDPR, NIST and other cyber 
 icon: "ti-shield-lock"
 image: "/images/cat-cyber-security.jpg"
 imageAlt: "Cyber security audit and information security controls"
-order: 2
-column: 2
+order: 1
+column: 1
 row: 1
 industries: ["saas", "finance", "healthcare"]
 seo:

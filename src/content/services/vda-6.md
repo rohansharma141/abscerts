@@ -3,11 +3,11 @@ title: "VDA 6 — Automotive Process & System Audits"
 shortName: "VDA 6"
 description: "Audits against the German automotive industry's VDA 6 standards — including the VDA 6.3 process audit relied on by German OEMs and their suppliers."
 icon: "ti-engine"
-tags: ["VDA 6", "VDA 6.3", "Automotive", "Industry & Food"]
+tags: ["VDA 6", "VDA 6.3", "Automotive", "Food Industry"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "VDA 6 automotive process audit"
 category: "industry-food-certifications"
-categoryName: "Industry & Food Certifications"
+categoryName: "Food Industry Certifications"
 order: 7
 timelineWeeks: "12-16"
 governingBody: "VDA"

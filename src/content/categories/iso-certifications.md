@@ -5,8 +5,8 @@ description: "Consulting and training across the full range of ISO management sy
 icon: "ti-certificate"
 image: "/images/cat-iso-certifications.jpg"
 imageAlt: "ISO management system certification audit"
-order: 1
-column: 1
+order: 2
+column: 2
 row: 1
 industries: ["saas", "manufacturing", "healthcare", "finance"]
 seo:

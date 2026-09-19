@@ -3,11 +3,11 @@ title: "Halal Certification"
 shortName: "Halal"
 description: "Certification that products and processes comply with Islamic dietary law â€” opening access to Muslim-majority markets and consumers worldwide."
 icon: "ti-moon"
-tags: ["Halal", "Food Certification", "Market Access", "Industry & Food"]
+tags: ["Halal", "Food Certification", "Market Access", "Food Industry"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "Halal food certification"
 category: "industry-food-certifications"
-categoryName: "Industry & Food Certifications"
+categoryName: "Food Industry Certifications"
 order: 4
 timelineWeeks: "6-10"
 featured: false
@@ -49,4 +49,4 @@ It confirms that a product and how it is made comply with Islamic dietary law â€
 
 ### Why do businesses seek Halal certification?
 
-Mainly market access: many Muslim-majority countries require it for imported products, and Muslim consumers worldwide look for it. It is often pursued alongside other [Industry & Food](/services/industry-food-certifications) certifications such as [HACCP](/services/haccp), and is especially relevant to food [manufacturers](/industries/manufacturing).
+Mainly market access: many Muslim-majority countries require it for imported products, and Muslim consumers worldwide look for it. It is often pursued alongside other [Food Industry](/services/industry-food-certifications) certifications such as [HACCP](/services/haccp), and is especially relevant to food [manufacturers](/industries/manufacturing).

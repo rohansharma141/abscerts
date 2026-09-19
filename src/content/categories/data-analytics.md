@@ -5,9 +5,9 @@ description: "Data management, process automation, decision analytics, visualisa
 icon: "ti-chart-dots"
 image: "/images/cat-data-analytics.jpg"
 imageAlt: "Data analytics and decision dashboards for compliance teams"
-order: 5
-column: 5
-row: 1
+order: 6
+column: 1
+row: 2
 industries: ["saas", "finance"]
 seo:
   title: "Data Analytics Services | Management, Automation & Insight | ABS"

@@ -5,8 +5,8 @@ description: "Agile coaching and training in Scrum, Kanban and Lean — helping 
 icon: "ti-refresh"
 image: "/images/cat-agile-transformation.jpg"
 imageAlt: "Agile transformation coaching and team training workshop"
-order: 6
-column: 1
+order: 7
+column: 2
 row: 2
 industries: ["saas"]
 seo:

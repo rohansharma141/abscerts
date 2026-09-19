@@ -5,8 +5,8 @@ description: "Independent vendor, supplier and quality-assurance inspections tha
 icon: "ti-clipboard-check"
 image: "/images/cat-third-party-inspection.jpg"
 imageAlt: "Independent third-party factory and supplier inspection"
-order: 10
-column: 5
+order: 8
+column: 3
 row: 2
 industries: ["manufacturing"]
 seo:

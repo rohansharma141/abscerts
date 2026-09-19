@@ -3,11 +3,11 @@ title: "CE Marking Support"
 shortName: "CE Marking"
 description: "Advisory and conformity support to help manufacturers achieve CE marking and place products on the European market in line with applicable EU requirements."
 icon: "ti-stamp"
-tags: ["CE Marking", "EU Conformity", "Product Compliance", "Industry & Food"]
+tags: ["CE Marking", "EU Conformity", "Product Compliance", "Food Industry"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "CE marking conformity support for products"
 category: "industry-food-certifications"
-categoryName: "Industry & Food Certifications"
+categoryName: "Food Industry Certifications"
 order: 11
 governingBody: "European Commission"
 featured: false
@@ -51,4 +51,4 @@ Not in the usual sense. It is a manufacturer's declaration that a product confor
 
 ### How does ABS help with CE marking?
 
-ABS provides advisory and conformity support — identifying which EU directives or regulations apply, the correct conformity-assessment route, and the technical documentation and declaration of conformity required. It is one of the [Industry & Food Certifications](/services/industry-food-certifications) services and is especially relevant to [manufacturers](/industries/manufacturing) exporting to Europe.
+ABS provides advisory and conformity support — identifying which EU directives or regulations apply, the correct conformity-assessment route, and the technical documentation and declaration of conformity required. It is one of the [Food Industry Certifications](/services/industry-food-certifications) services and is especially relevant to [manufacturers](/industries/manufacturing) exporting to Europe.

@@ -5,8 +5,8 @@ description: "CMMI Maturity Level 2 and 3 readiness and appraisal support for so
 icon: "ti-stairs-up"
 image: "/images/cat-cmmi.jpg"
 imageAlt: "CMMI process maturity appraisal for software organisations"
-order: 4
-column: 4
+order: 3
+column: 3
 row: 1
 industries: ["saas"]
 seo:

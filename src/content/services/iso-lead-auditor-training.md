@@ -3,11 +3,11 @@ title: "ISO Lead Auditor Training"
 shortName: "Lead Auditor Training"
 description: "Intensive training that equips participants to plan, lead, report and follow up audits of a management system against an ISO standard."
 icon: "ti-user-shield"
-tags: ["Lead Auditor Training", "ISO Training", "Auditing", "Management System Training"]
+tags: ["Lead Auditor Training", "ISO Training", "Auditing", "Training & Professional Development"]
 image: "/images/cat-management-system-training.jpg"
 imageAlt: "ISO Lead Auditor training course"
 category: "management-system-training"
-categoryName: "Management System Training"
+categoryName: "Training & Professional Development"
 order: 1
 featured: false
 seo:
@@ -33,7 +33,7 @@ The course suits people who want to lead audits rather than just take part in th
 
 Lead Auditor programmes are intensive, multi-day courses that combine instruction with practical exercises and assessment — more demanding than the [Internal Auditor](/services/iso-internal-auditor-training) and [Awareness](/services/iso-awareness-training) courses, and built for those taking on the lead auditing role.
 
-It sits within the [Management System Training](/services/management-system-training) portfolio, which spans awareness, internal auditor, lead implementer and lead auditor levels.
+It sits within the [Training & Professional Development](/services/management-system-training) portfolio, which spans awareness, internal auditor, lead implementer and lead auditor levels.
 
 ## Common questions
 

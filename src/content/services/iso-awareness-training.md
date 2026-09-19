@@ -3,11 +3,11 @@ title: "ISO Awareness Training"
 shortName: "Awareness Training"
 description: "Short orientation training that helps staff understand an ISO standard's requirements and their own role in meeting them."
 icon: "ti-bulb"
-tags: ["Awareness Training", "ISO Training", "Staff Orientation", "Management System Training"]
+tags: ["Awareness Training", "ISO Training", "Staff Orientation", "Training & Professional Development"]
 image: "/images/cat-management-system-training.jpg"
 imageAlt: "ISO awareness training session for staff"
 category: "management-system-training"
-categoryName: "Management System Training"
+categoryName: "Training & Professional Development"
 order: 3
 featured: false
 seo:
@@ -33,7 +33,7 @@ Awareness training is aimed at all staff whose work is touched by the management
 
 Awareness courses are the shortest of the management-system courses — a half-day or single-day orientation — compared with the more involved [Internal Auditor](/services/iso-internal-auditor-training) and [Lead Auditor](/services/iso-lead-auditor-training) programmes.
 
-It sits within the [Management System Training](/services/management-system-training) portfolio, which spans awareness, internal auditor, lead implementer and lead auditor levels.
+It sits within the [Training & Professional Development](/services/management-system-training) portfolio, which spans awareness, internal auditor, lead implementer and lead auditor levels.
 
 ## Common questions
 

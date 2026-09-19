@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { getCollection } from 'astro:content';
 import MegaMenu from '../components/layout/MegaMenu.astro';
 import MobileServicesNav from '../components/layout/MobileServicesNav.astro';
 
@@ -16,6 +17,9 @@ const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site).href;
 const ogImageURL = new URL(ogImage ?? '/og-image.jpg', Astro.site).href;
 const path = Astro.url.pathname;
 const year = new Date().getFullYear();
+
+// Footer "Services" column — every category, in the same order as the mega-menu.
+const footerCategories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
 
 // Organization + WebSite JSON-LD — emitted on every page (extracted from v7 head).
 // Service + FAQPage nodes from v7 are emitted per-page (home / contact) via the "head" slot.
@@ -223,11 +227,9 @@ const orgSchema = {
       <div>
         <h3>Services</h3>
         <ul class="footer-links">
-          <li><a href="/services/iso-certifications">ISO certifications</a></li>
-          <li><a href="/services/cyber-security">SOC 2 & cyber security</a></li>
-          <li><a href="/services/cmmi">CMMI appraisals</a></li>
-          <li><a href="/services/management-system-training">Training & advisory</a></li>
-          <li><a href="/services/third-party-inspection">Third-party inspection</a></li>
+          {footerCategories.map((cat) => (
+            <li><a href={`/services/${cat.id}`}>{cat.data.shortName}</a></li>
+          ))}
         </ul>
       </div>
       <div>

@@ -3,11 +3,11 @@ title: "NABL Accreditation Support"
 shortName: "NABL"
 description: "Readiness and advisory support to help testing, calibration and medical laboratories achieve NABL accreditation against ISO/IEC 17025 and ISO 15189."
 icon: "ti-flask"
-tags: ["NABL", "Laboratory Accreditation", "ISO 17025", "Industry & Food"]
+tags: ["NABL", "Laboratory Accreditation", "ISO 17025", "Food Industry"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "NABL laboratory accreditation support"
 category: "industry-food-certifications"
-categoryName: "Industry & Food Certifications"
+categoryName: "Food Industry Certifications"
 order: 9
 governingBody: "NABL (Quality Council of India)"
 featured: false
@@ -19,7 +19,7 @@ faqs:
   - question: "What is NABL accreditation?"
     answer: "NABL — the National Accreditation Board for Testing and Calibration Laboratories, a body under the Quality Council of India — accredits laboratories for their technical competence. Testing and calibration labs are assessed against ISO/IEC 17025 and medical labs against ISO 15189. The accreditation is granted by NABL itself; it gives clients and regulators confidence in a lab's results."
   - question: "How does ABS help with NABL accreditation?"
-    answer: "ABS provides readiness and advisory support — assessing the laboratory against the relevant standard, helping build the quality system and documentation, and preparing the lab for assessment. The accreditation decision rests with NABL; ABS's role is to get the laboratory ready to meet the requirements with confidence."
+    answer: "ABS provides readiness and advisory support — assessing the laboratory against the relevant standard, helping build the quality system and documentation, and preparing the lab for its NABL assessment, so it meets the requirements with confidence."
 ---
 
 ## What NABL accreditation is
@@ -51,4 +51,4 @@ NABL, a body under the Quality Council of India, accredits laboratories for tech
 
 ### How does ABS help with NABL accreditation?
 
-ABS provides readiness and advisory support — gap assessment, building the quality system and documentation, and assessment preparation. The accreditation decision rests with NABL. It is one of the [Industry & Food Certifications](/services/industry-food-certifications) services, and complements [NABH](/services/nabh) support for healthcare organisations.
+ABS provides readiness and advisory support — gap assessment, building the quality system and documentation, and preparation for the NABL assessment. It is one of the [Food Industry Certifications](/services/industry-food-certifications) services, and complements [NABH](/services/nabh) support for healthcare organisations.

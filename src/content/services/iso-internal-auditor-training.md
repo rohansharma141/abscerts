@@ -3,11 +3,11 @@ title: "ISO Internal Auditor Training"
 shortName: "Internal Auditor Training"
 description: "Training that equips staff to plan and conduct internal audits of their own organisation's management system against an ISO standard."
 icon: "ti-clipboard-check"
-tags: ["Internal Auditor Training", "ISO Training", "Internal Audit", "Management System Training"]
+tags: ["Internal Auditor Training", "ISO Training", "Internal Audit", "Training & Professional Development"]
 image: "/images/cat-management-system-training.jpg"
 imageAlt: "ISO Internal Auditor training course"
 category: "management-system-training"
-categoryName: "Management System Training"
+categoryName: "Training & Professional Development"
 order: 2
 featured: false
 seo:
@@ -33,7 +33,7 @@ The course is aimed at employees who will run internal audits — quality, safet
 
 Internal Auditor courses are shorter and more focused than the [Lead Auditor](/services/iso-lead-auditor-training) programme, concentrating on the practical skills an internal auditor needs. For staff who only need to understand a standard rather than audit it, the [Awareness](/services/iso-awareness-training) course is the lighter option.
 
-It sits within the [Management System Training](/services/management-system-training) portfolio.
+It sits within the [Training & Professional Development](/services/management-system-training) portfolio.
 
 ## Common questions
 

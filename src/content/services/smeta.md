@@ -3,11 +3,11 @@ title: "SMETA — Sedex Members Ethical Trade Audit"
 shortName: "SMETA"
 description: "The most widely used ethical audit format — assessing labour, health & safety, environment and business ethics. SMETA is an audit that produces a report, not a certificate."
 icon: "ti-scale"
-tags: ["SMETA", "Ethical Audit", "Sedex", "Industry & Food"]
+tags: ["SMETA", "Ethical Audit", "Sedex", "Food Industry"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "SMETA ethical trade audit of a workplace"
 category: "industry-food-certifications"
-categoryName: "Industry & Food Certifications"
+categoryName: "Food Industry Certifications"
 order: 8
 governingBody: "Sedex"
 featured: false
@@ -51,4 +51,4 @@ No. SMETA is an ethical audit methodology, and the deliverable is an audit repor
 
 ### What does a SMETA audit cover?
 
-It runs as a 2-pillar or 4-pillar audit. The core pillars are Labour Standards and Health & Safety; the 4-pillar version adds Environment and Business Ethics. It is one of the [Industry & Food Certifications](/services/industry-food-certifications) services and is especially relevant to [manufacturers](/industries/manufacturing) and their supply chains.
+It runs as a 2-pillar or 4-pillar audit. The core pillars are Labour Standards and Health & Safety; the 4-pillar version adds Environment and Business Ethics. It is one of the [Food Industry Certifications](/services/industry-food-certifications) services and is especially relevant to [manufacturers](/industries/manufacturing) and their supply chains.
