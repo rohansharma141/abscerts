@@ -17,7 +17,7 @@ seo:
 
 ## What ISO certification is
 
-ISO — the International Organization for Standardization — is an independent, non-governmental body made up of 167 national standards organisations, and the world's largest developer of voluntary international standards. An ISO management system certification confirms, through an independent audit, that your organisation runs a particular function — quality, information security, environmental management, occupational health and safety, and many others — to a globally agreed standard. For B2B buyers in 2026, that certificate is a shortcut to trust: it answers the supplier-assurance question before it is asked.
+ISO — the International Organization for Standardization — is an independent, non-governmental body made up of more than 170 national standards bodies, and the world's largest developer of voluntary international standards. An ISO management system certification confirms, through an independent audit, that your organisation runs a particular function — quality, information security, environmental management, occupational health and safety, and many others — to a globally agreed standard. For B2B buyers in 2026, that certificate is a shortcut to trust: it answers the supplier-assurance question before it is asked.
 
 ## Why it matters, and who needs it
 

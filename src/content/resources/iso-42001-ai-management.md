@@ -25,7 +25,7 @@ ISO 42001 is built around seven main components: organisational context, leaders
 
 The standard mirrors the format of [ISO 27001](/services/iso-27001), using Clauses 4–10, and includes:
 
-- **Annex A** — 39 controls covering AI policies, internal organisation, resources, impact analysis, system lifecycle, data management, stakeholder communication, intended use and third-party relationships
+- **Annex A** — 38 controls covering AI policies, internal organisation, resources, impact analysis, system lifecycle, data management, stakeholder communication, intended use and third-party relationships
 - **Annex B** — implementation guidance for the controls
 - **Annex C** — organisational objectives and risk sources
 - **Annex D** — cross-sector and domain-specific application guidance

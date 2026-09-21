@@ -12,7 +12,7 @@ draft: false
 
 ## What is SOC 2?
 
-SOC 2 — Service Organization Control 2 — is an auditing standard from the American Institute of Certified Public Accountants (AICPA) covering controls related to security, availability, processing integrity, confidentiality and privacy in service organisations. An independent auditor assesses whether the organisation meets the Trust Services Criteria, built on five principles:
+SOC 2 — Service Organization Control 2 — is an examination and reporting framework from the American Institute of Certified Public Accountants (AICPA) covering controls related to security, availability, processing integrity, confidentiality and privacy in service organisations. An independent auditor assesses whether the organisation meets the Trust Services Criteria, which are grouped into five categories:
 
 1. **Security** — protecting against unauthorised access and safeguarding sensitive information
 2. **Availability** — keeping systems and services accessible to authorised users
@@ -26,7 +26,7 @@ A SOC 2 report shows that effective risk-management controls are in place. Impor
 
 The process runs in six steps:
 
-1. **Define scope and objectives** — which systems and trust principles the assessment covers
+1. **Define scope and objectives** — which systems and Trust Services Criteria categories the assessment covers
 2. **Select a qualified CPA firm** — auditors experienced in your industry
 3. **Plan and prepare** — identify controls, document procedures and gather evidence
 4. **Conduct the audit** — reviews, interviews, observations and control testing

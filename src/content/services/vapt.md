@@ -17,7 +17,7 @@ seo:
   keywords: ["VAPT services", "penetration testing", "vulnerability assessment", "VAPT for SOC 2 ISO 27001"]
 faqs:
   - question: "Is VAPT a certification?"
-    answer: "No. VAPT is a security testing service, and the deliverable is a report — not a certificate. That said, certifications such as SOC 2, ISO 27001 and PCI DSS expect regular vulnerability testing, so a current VAPT report is often used as supporting evidence for them."
+    answer: "No. VAPT is a security testing service, and the deliverable is a report — not a certificate. That said, frameworks such as SOC 2, ISO 27001 and PCI DSS expect regular vulnerability testing, so a current VAPT report is often used as supporting evidence for them."
   - question: "What is the difference between vulnerability assessment and penetration testing?"
     answer: "A vulnerability assessment is about breadth — systematically scanning systems to identify known weaknesses. Penetration testing is about depth — skilled testers attempt to exploit weaknesses to demonstrate real-world impact. Done together, as VAPT, they give you both a wide inventory of issues and proof of which ones actually matter."
   - question: "How often should we run VAPT?"
@@ -50,7 +50,7 @@ Because VAPT is a testing engagement rather than a full management-system audit,
 
 ### Is VAPT a certification?
 
-No. VAPT is a security testing service, and the deliverable is a report — not a certificate. That said, certifications such as [SOC 2](/services/soc-2), [ISO 27001](/services/iso-27001) and PCI DSS expect regular vulnerability testing, so a current VAPT report is often used as supporting evidence for them.
+No. VAPT is a security testing service, and the deliverable is a report — not a certificate. That said, frameworks such as [SOC 2](/services/soc-2), [ISO 27001](/services/iso-27001) and PCI DSS expect regular vulnerability testing, so a current VAPT report is often used as supporting evidence for them.
 
 ### What is the difference between vulnerability assessment and penetration testing?
 

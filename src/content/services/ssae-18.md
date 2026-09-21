@@ -18,7 +18,7 @@ seo:
   keywords: ["SSAE 18 attestation", "SSAE 18 SOC 1", "SSAE 16 vs SSAE 18", "AICPA attestation standard"]
 faqs:
   - question: "What is the difference between SSAE 18 and SOC 1?"
-    answer: "SSAE 18 is the standard; SOC 1 is the report produced under it. SSAE 18 (Statement on Standards for Attestation Engagements No. 18) is the AICPA attestation standard that governs how a SOC 1 examination is performed and reported in the United States. When someone asks for a 'SSAE 18 report', they usually mean a SOC 1 report."
+    answer: "SSAE 18 is the standard; SOC 1 is a report produced under it. SSAE 18 (Statement on Standards for Attestation Engagements No. 18) is the AICPA attestation standard under which SOC 1 (and SOC 2) examinations are performed and reported in the United States. When someone asks for an 'SSAE 18 report', they usually mean a SOC 1 report."
   - question: "What happened to SSAE 16?"
     answer: "SSAE 18 superseded SSAE 16 in 2017, consolidating and updating the AICPA's attestation standards. Among other changes it strengthened requirements around the monitoring of sub-service organisations and the assessment of complementary controls. Reports previously issued under SSAE 16 are now performed under SSAE 18."
   - question: "What is the difference between a Type I and a Type II report?"
@@ -29,7 +29,7 @@ faqs:
 
 ## What SSAE 18 is and why buyers ask for it
 
-SSAE 18 — the Statement on Standards for Attestation Engagements No. 18 — is the auditing standard in the United States for evaluating and reporting on the internal controls of service organisations. Issued by the American Institute of Certified Public Accountants (AICPA), it replaced the earlier SSAE 16 standard and now governs how a [SOC 1](/services/soc-1) examination is conducted and reported.
+SSAE 18 — the Statement on Standards for Attestation Engagements No. 18 — is the AICPA attestation standard under which [SOC 1](/services/soc-1) (and [SOC 2](/services/soc-2)) examinations are performed. Issued by the American Institute of Certified Public Accountants (AICPA), it replaced the earlier SSAE 16 standard and governs how these examinations of a service organisation's controls are conducted and reported in the United States.
 
 In practice, when a customer asks a vendor for "an SSAE 18 report," they are asking for assurance — usually a SOC 1 report — over the controls the vendor operates that touch the customer's financial data or critical operations. Like the other service-organisation reports in the [Cyber Security](/services/cyber-security) family, it lets you satisfy many customers and their auditors with one independent examination rather than a stream of individual audits.
 
@@ -59,7 +59,7 @@ A Type I report is typically achievable in around 10–14 weeks depending on how
 
 ### What is the difference between SSAE 18 and SOC 1?
 
-SSAE 18 is the standard; [SOC 1](/services/soc-1) is the report produced under it. SSAE 18 is the AICPA attestation standard that governs how a SOC 1 examination is performed and reported in the United States. When someone asks for an "SSAE 18 report," they usually mean a SOC 1 report.
+SSAE 18 is the standard; [SOC 1](/services/soc-1) is a report produced under it. SSAE 18 (Statement on Standards for Attestation Engagements No. 18) is the AICPA attestation standard under which SOC 1 (and [SOC 2](/services/soc-2)) examinations are performed and reported in the United States. When someone asks for an 'SSAE 18 report', they usually mean a SOC 1 report.
 
 ### What happened to SSAE 16?
 

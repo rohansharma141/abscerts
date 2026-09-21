@@ -27,7 +27,7 @@ The SoA is the document that sets out the controls selected to address the infor
 
 ## A living document
 
-The SoA is dynamic — it evolves as the organisation's risk profile changes, and is updated as part of ISMS maintenance when new threats emerge. In the standard, it sits at clause **6.1.3** (within 6.1, addressing risks and opportunities) and is benchmarked against the Annex A control objectives. It is mandatory documentation presented to external auditors during the ISMS audit.
+The SoA is dynamic — it evolves as the organisation's risk profile changes, and is updated as part of ISMS maintenance when new threats emerge. In the standard, it sits at clause **6.1.3** (within 6.1, addressing risks and opportunities) and is benchmarked against the Annex A controls. It is mandatory documentation presented to external auditors during the ISMS audit.
 
 ## Why it matters
 
