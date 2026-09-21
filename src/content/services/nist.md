@@ -35,7 +35,7 @@ Buyers, particularly larger enterprises and organisations in regulated or critic
 
 ## What the assessment covers
 
-The CSF Core organises cybersecurity activities into a set of high-level functions — **Govern, Identify, Protect, Detect, Respond and Recover** — each of which breaks down into categories of outcomes. An ABS assessment maps your current programme against these functions, helps you understand your maturity, and surfaces the gaps that matter most.
+In the current version, **NIST CSF 2.0** (2024), the CSF Core organises cybersecurity activities into six high-level functions — **Govern, Identify, Protect, Detect, Respond and Recover** — each of which breaks down into categories of outcomes. An ABS assessment maps your current programme against these functions, helps you understand your maturity, and surfaces the gaps that matter most.
 
 The output is a clear picture of where you stand and a prioritised roadmap: which outcomes you already meet, which need attention, and a sensible order to address them. Because the framework is risk-based, the assessment is tailored to your sector, size and threat profile rather than applied as a generic template.
 

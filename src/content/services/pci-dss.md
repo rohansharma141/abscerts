@@ -36,7 +36,7 @@ For fintechs, payment processors, e-commerce businesses and SaaS platforms that 
 
 ## What the assessment covers
 
-PCI DSS is organised around twelve requirements, grouped under six goals:
+The current version is PCI DSS v4.0.1, published in June 2024; since 31 March 2025, all of its requirements, including those first introduced as future-dated, are mandatory. PCI DSS is organised around twelve requirements, grouped under six goals:
 
 - **Build and maintain a secure network** — network security controls and secure configurations
 - **Protect cardholder data** — protect stored account data and encrypt it in transit across open networks
