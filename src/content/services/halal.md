@@ -20,6 +20,14 @@ faqs:
     answer: "It confirms that a product and the way it is made comply with Islamic dietary law — covering ingredients (no prohibited substances), the production process, segregation from non-Halal products, hygiene, handling and storage. Certification gives Muslim consumers and importing markets confidence that the product is genuinely Halal."
   - question: "Why do businesses seek Halal certification?"
     answer: "Primarily market access. Many Muslim-majority countries require Halal certification for imported food and related products, and Muslim consumers worldwide actively look for it. Certification opens those markets and signals trust to a large and growing consumer base."
+  - question: "How long does Halal certification take?"
+    answer: "For most operations, Halal certification takes around 6–10 weeks, depending on the range of products and the complexity of the process."
+  - question: "What does ABS do, and what does the certification body do?"
+    answer: "ABS helps you prepare: ingredient and supplier review, segregation and process controls, documentation, a readiness check and support through the audit. Certification is carried out by a Halal certification body recognised by the markets you sell into, such as JAKIM in Malaysia, BPJPH in Indonesia or the UAE authorities, which audits your operation and issues the certificate."
+  - question: "How long is a Halal certificate valid?"
+    answer: "It depends on the certification body: validity periods and surveillance rules differ between Halal bodies and importing countries, so we confirm the rules for your target markets at the start."
+  - question: "Which Halal standard applies?"
+    answer: "It depends on your target markets. Halal bodies work to their own or their country's standard, for example MS 1500 in Malaysia, GSO 2055-1 in the Gulf states or OIC/SMIIC 1 in many OIC member countries, so we confirm which standard and which body your buyers accept before you start."
 ---
 
 ## What Halal certification is and why buyers ask for it
@@ -61,3 +69,19 @@ It confirms that a product and how it is made comply with Islamic dietary law �
 ### Why do businesses seek Halal certification?
 
 Mainly market access: many Muslim-majority countries require it for imported products, and Muslim consumers worldwide look for it. It is often pursued alongside other [Food Industry](/services/industry-food-certifications) certifications such as [HACCP](/services/haccp), and is especially relevant to food [manufacturers](/industries/manufacturing).
+
+### How long does Halal certification take?
+
+For most operations, Halal certification takes around 6–10 weeks, depending on the range of products and the complexity of the process.
+
+### What does ABS do, and what does the certification body do?
+
+ABS helps you prepare: ingredient and supplier review, segregation and process controls, documentation, a readiness check and support through the audit. Certification is carried out by a Halal certification body recognised by the markets you sell into, such as JAKIM in Malaysia, BPJPH in Indonesia or the UAE authorities, which audits your operation and issues the certificate.
+
+### How long is a Halal certificate valid?
+
+It depends on the certification body: validity periods and surveillance rules differ between Halal bodies and importing countries, so we confirm the rules for your target markets at the start.
+
+### Which Halal standard applies?
+
+It depends on your target markets. Halal bodies work to their own or their country's standard, for example MS 1500 in Malaysia, GSO 2055-1 in the Gulf states or OIC/SMIIC 1 in many OIC member countries, so we confirm which standard and which body your buyers accept before you start.

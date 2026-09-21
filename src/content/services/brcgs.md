@@ -21,6 +21,14 @@ faqs:
     answer: "BRCGS (originally the British Retail Consortium Global Standard) is a GFSI-recognised certification scheme for food safety and quality. It is widely required by retailers — particularly UK and European supermarkets — as a condition of supplying own-brand and other products, so it is essential for many manufacturers selling into retail."
   - question: "How does BRCGS relate to FSSC 22000?"
     answer: "Both are GFSI-recognised food safety schemes, so both satisfy a retailer's requirement for a GFSI-benchmarked certification. They differ in structure and emphasis, and which one you need usually depends on what your specific customers ask for. Some manufacturers hold more than one to meet different buyers' requirements."
+  - question: "How long does BRCGS certification take?"
+    answer: "For most food manufacturers, BRCGS certification takes around 12–16 weeks from kick-off, depending on the size and complexity of the site and the maturity of existing food safety systems."
+  - question: "What does ABS do, and what does the certification body do?"
+    answer: "ABS prepares you for certification: we assess your site against the standard, help you close the gaps, support your internal audit, check readiness and support you through the audit. The certification body, an accredited body approved by BRCGS, carries out the audit, grades the site and issues the certificate."
+  - question: "How often is a BRCGS site re-audited?"
+    answer: "BRCGS works on a shorter cycle than ISO standards: sites are re-audited every 12 months, or every 6 months at the lower grades, and the certificate is renewed at each re-audit."
+  - question: "Which issue of the BRCGS standard is current?"
+    answer: "The current version is Issue 9 of the BRCGS Global Standard for Food Safety, used for all audits since 1 February 2023, together with the BRCGS position statements that apply on your audit date."
 ---
 
 ## What BRCGS is and why buyers ask for it
@@ -63,3 +71,19 @@ BRCGS is a GFSI-recognised certification scheme for food safety and quality, wid
 ### How does BRCGS relate to FSSC 22000?
 
 Both are GFSI-recognised food safety schemes, so both satisfy a retailer's requirement for a GFSI-benchmarked certification. Which you need depends on what your customers ask for; some manufacturers hold both. Many build from a [HACCP](/services/haccp) foundation. It sits alongside [FSSC 22000](/services/fssc-22000) in the [Food Industry Certifications](/services/industry-food-certifications) portfolio for [manufacturers](/industries/manufacturing).
+
+### How long does BRCGS certification take?
+
+For most food manufacturers, BRCGS certification takes around 12–16 weeks from kick-off, depending on the size and complexity of the site and the maturity of existing food safety systems.
+
+### What does ABS do, and what does the certification body do?
+
+ABS prepares you for certification: we assess your site against the standard, help you close the gaps, support your internal audit, check readiness and support you through the audit. The certification body, an accredited body approved by BRCGS, carries out the audit, grades the site and issues the certificate.
+
+### How often is a BRCGS site re-audited?
+
+BRCGS works on a shorter cycle than ISO standards: sites are re-audited every 12 months, or every 6 months at the lower grades, and the certificate is renewed at each re-audit.
+
+### Which issue of the BRCGS standard is current?
+
+The current version is Issue 9 of the BRCGS Global Standard for Food Safety, used for all audits since 1 February 2023, together with the BRCGS position statements that apply on your audit date.

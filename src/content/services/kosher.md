@@ -20,6 +20,14 @@ faqs:
     answer: "It confirms that a product and the way it is produced comply with Jewish dietary law (kashrut). That includes the ingredients and their sources, the equipment and production lines used, and the separation requirements that kashrut sets out. Certification gives kosher-observant consumers and markets confidence the product is genuinely kosher."
   - question: "Who benefits from Kosher certification?"
     answer: "Beyond kosher-observant consumers, many buyers treat the kosher mark as a general signal of careful ingredient control and production discipline. Certification opens kosher markets and can broaden a product's appeal — which is why many manufacturers pursue it even where the core market is not specifically kosher."
+  - question: "How long does Kosher certification take?"
+    answer: "For most operations, Kosher certification takes around 6–10 weeks, depending on the range of products and the complexity of the process."
+  - question: "What does ABS do, and what does the kosher agency do?"
+    answer: "ABS helps you prepare: ingredient and supplier review, equipment and production-line controls, documentation, a readiness check and support through the inspection. Certification is given by a kosher certification agency under rabbinical supervision, which inspects your ingredients, equipment and production and approves the use of its mark."
+  - question: "How long does Kosher certification last?"
+    answer: "It depends on the agency: kosher certification is usually granted under an ongoing agreement with regular inspections, and the agency sets the terms and the renewal."
+  - question: "Is there a single kosher standard?"
+    answer: "There is no single published standard or edition. Each agency applies Jewish dietary law (kashrut) under its own rabbinical authority, which is why buyers often specify the agencies they accept."
 ---
 
 ## What Kosher certification is and why buyers ask for it
@@ -61,3 +69,19 @@ It confirms that a product and how it is produced comply with Jewish dietary law
 ### Who benefits from Kosher certification?
 
 Beyond kosher-observant consumers, many buyers treat the kosher mark as a signal of careful ingredient control and production discipline. It opens kosher markets and can broaden appeal — and is often pursued alongside other [Food Industry](/services/industry-food-certifications) certifications such as [Halal](/services/halal) and [HACCP](/services/haccp) by food [manufacturers](/industries/manufacturing).
+
+### How long does Kosher certification take?
+
+For most operations, Kosher certification takes around 6–10 weeks, depending on the range of products and the complexity of the process.
+
+### What does ABS do, and what does the kosher agency do?
+
+ABS helps you prepare: ingredient and supplier review, equipment and production-line controls, documentation, a readiness check and support through the inspection. Certification is given by a kosher certification agency under rabbinical supervision, which inspects your ingredients, equipment and production and approves the use of its mark.
+
+### How long does Kosher certification last?
+
+It depends on the agency: kosher certification is usually granted under an ongoing agreement with regular inspections, and the agency sets the terms and the renewal.
+
+### Is there a single kosher standard?
+
+There is no single published standard or edition. Each agency applies Jewish dietary law (kashrut) under its own rabbinical authority, which is why buyers often specify the agencies they accept.

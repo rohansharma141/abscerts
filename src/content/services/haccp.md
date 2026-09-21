@@ -21,6 +21,16 @@ faqs:
     answer: "HACCP is the method for identifying and controlling food safety hazards, built on seven principles. ISO 22000 wraps those HACCP principles inside a full management system, adding leadership, planning and continual improvement. HACCP is an excellent, widely recognised starting point; ISO 22000 is the certifiable management system that builds on it."
   - question: "Who needs HACCP certification?"
     answer: "Any business in the food chain — producers, processors, manufacturers, packaging, storage, transport and food service. Many retailers and customers require HACCP as a baseline condition of supply, and in many jurisdictions a HACCP-based approach to food safety is also a legal expectation."
+  - question: "How long does HACCP implementation take?"
+    answer: "For most food businesses, implementing a HACCP system takes around 8–12 weeks from kick-off, depending on the size and complexity of the operation. Where independent HACCP certification is required, the assessment and certificate are provided by the appointed certification body — we get you ready for it."
+  - question: "What does ABS do, and what does the certification body do?"
+    answer: "ABS helps you build and implement your HACCP system: the hazard analysis, critical control points and critical limits, monitoring, corrective actions, verification and records, and prepares you for assessment. Where you need independent HACCP certification, the certification body you appoint carries out the assessment and issues the certificate."
+  - question: "How long is a HACCP certificate valid?"
+    answer: "It depends on the certification body and scheme, because HACCP certification is not a single international scheme. The certification body confirms the certificate period and any surveillance audits before you start."
+  - question: "Can HACCP be combined with other standards?"
+    answer: "Yes. HACCP principles are built into ISO 22000, FSSC 22000 and BRCGS, so a HACCP system is a natural step towards one of those certifications, and it can run alongside ISO 9001."
+  - question: "Which version of HACCP applies?"
+    answer: "HACCP's seven principles are set out by the Codex Alimentarius in the General Principles of Food Hygiene (CXC 1-1969), which was substantially revised in 2020 and updated in 2022. Certification bodies audit against that text or a scheme based on it."
 ---
 
 ## What HACCP is and why buyers ask for it
@@ -53,3 +63,23 @@ HACCP is the method for identifying and controlling food safety hazards. [ISO 22
 ### Who needs HACCP certification?
 
 Any business in the food chain — producers, processors, [manufacturers](/industries/manufacturing), packaging, storage, transport and food service. Many retailers require HACCP as a condition of supply, and a HACCP-based approach is often a legal expectation too.
+
+### How long does HACCP implementation take?
+
+For most food businesses, implementing a HACCP system takes around 8–12 weeks from kick-off, depending on the size and complexity of the operation. Where independent HACCP certification is required, the assessment and certificate are provided by the appointed certification body — we get you ready for it.
+
+### What does ABS do, and what does the certification body do?
+
+ABS helps you build and implement your HACCP system: the hazard analysis, critical control points and critical limits, monitoring, corrective actions, verification and records, and prepares you for assessment. Where you need independent HACCP certification, the certification body you appoint carries out the assessment and issues the certificate.
+
+### How long is a HACCP certificate valid?
+
+It depends on the certification body and scheme, because HACCP certification is not a single international scheme. The certification body confirms the certificate period and any surveillance audits before you start.
+
+### Can HACCP be combined with other standards?
+
+Yes. HACCP principles are built into ISO 22000, FSSC 22000 and BRCGS, so a HACCP system is a natural step towards one of those certifications, and it can run alongside ISO 9001.
+
+### Which version of HACCP applies?
+
+HACCP's seven principles are set out by the Codex Alimentarius in the General Principles of Food Hygiene (CXC 1-1969), which was substantially revised in 2020 and updated in 2022. Certification bodies audit against that text or a scheme based on it.
