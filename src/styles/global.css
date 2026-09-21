@@ -1527,6 +1527,32 @@ em {
   transition: background 0.2s;
 }
 .footer-newsletter button:hover { background: var(--blue-deep); }
+.footer-newsletter button:disabled { opacity: 0.7; cursor: default; }
+/* Footer sign-up (content review 5b): consent line, and the shared form states restyled for the dark footer */
+.footer-newsletter-note {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.62);
+}
+.footer-newsletter-note a { color: rgba(255, 255, 255, 0.88); text-decoration: underline; }
+.footer-newsletter .form-success {
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  padding: 6px 0 0;
+}
+.footer-newsletter .form-success-icon { width: 32px; height: 32px; font-size: 18px; }
+.footer-newsletter .form-success p { font-family: inherit; font-size: 15px; color: var(--white); margin: 0; }
+.footer-newsletter .form-status-error {
+  color: #FFD9DE;
+  background: rgba(255, 255, 255, 0.06);
+  border-left-color: #FF8A9A;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.footer-newsletter .form-status-error a { color: var(--white); }
 .footer h3 {
   font-family: 'JetBrains Mono', monospace;
   font-size: 12.5px;

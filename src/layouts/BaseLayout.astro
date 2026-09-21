@@ -214,10 +214,18 @@ const orgSchema = {
         <p class="footer-tag">Consulting and advisory firm helping organisations across UK, EU, US, Middle East and APAC achieve certification. Transparent pricing, global delivery.</p>
         <div class="footer-newsletter">
           <label for="footer-newsletter-email">Stay in the loop</label>
-          <div class="footer-newsletter-input">
-            <input type="email" id="footer-newsletter-email" name="email" placeholder="your@email.com">
-            <button aria-label="Subscribe"><i class="ti ti-arrow-right"></i></button>
-          </div>
+          <!-- Sign-ups go to ABS's marketing inbox via /api/newsletter, labelled "footer" (content review §8.4) -->
+          <form data-form="newsletter" data-success="Thanks — we've received your sign-up.">
+            <input type="hidden" name="type" value="email">
+            <input type="hidden" name="source" value="footer">
+            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field">
+            <div class="footer-newsletter-input">
+              <input type="email" id="footer-newsletter-email" name="email" placeholder="your@email.com" autocomplete="email" required>
+              <button type="submit" aria-label="Subscribe" data-submit data-sending="…"><i class="ti ti-arrow-right"></i></button>
+            </div>
+            <div data-form-status></div>
+          </form>
+          <p class="footer-newsletter-note">Occasional updates from ABS. See our <a href="/privacy">Privacy policy</a>.</p>
         </div>
       </div>
       <div>

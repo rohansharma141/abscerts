@@ -10,8 +10,10 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       type: 'email' | 'phone';
       email?: string;
       phone?: string;
+      source?: string;  // "footer" = footer newsletter box; anything else = the exit popup
       website?: string; // honeypot — must stay empty
     }>();
+    const fromFooter = data.source === 'footer';
 
     // Honeypot: if a bot filled the hidden "website" field, pretend success and skip the email send.
     if (data.website) {
@@ -57,8 +59,13 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         from: context.env.FROM_EMAIL,
         to: context.env.MARKETING_EMAIL,
         ...(data.type === 'email' && data.email ? { reply_to: data.email } : {}),
-        subject: `New lead from exit popup — ${data.type}`,
-        html: `
+        subject: fromFooter ? 'New newsletter sign-up (footer)' : `New lead from exit popup — ${data.type}`,
+        html: fromFooter
+          ? `
+          <h2>New newsletter sign-up (footer)</h2>
+          ${data.email ? `<p><strong>Email:</strong> ${escape(data.email)}</p>` : ''}
+        `
+          : `
           <h2>New lead from exit popup</h2>
           <p><strong>Preferred contact:</strong> ${escape(data.type)}</p>
           ${data.email ? `<p><strong>Email:</strong> ${escape(data.email)}</p>` : ''}

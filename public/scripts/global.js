@@ -226,7 +226,7 @@ document.addEventListener('keydown', (e) => {
       if (submitBtn) {
         submitBtn.disabled = true;
         if (!submitBtn.dataset.originalLabel) submitBtn.dataset.originalLabel = submitBtn.innerHTML;
-        submitBtn.innerHTML = 'Sending…';
+        submitBtn.innerHTML = submitBtn.dataset.sending || 'Sending…'; // icon-only buttons (footer) use a short label
       }
 
       try {
@@ -247,13 +247,13 @@ document.addEventListener('keydown', (e) => {
         form.innerHTML =
           '<div class="form-success">' +
           '<span class="form-success-icon"><i class="ti ti-circle-check"></i></span>' +
-          '<p>' + (SUCCESS_MESSAGES[type] || 'Thanks — message received.') + '</p>' +
+          '<p>' + (form.dataset.success || SUCCESS_MESSAGES[type] || 'Thanks — message received.') + '</p>' +
           downloadHtml +
           '</div>';
 
         if (type === 'quote') setTimeout(closeQuoteModal, 3000);
         if (type === 'partner') setTimeout(closePartnerModal, 3000);
-        if (type === 'newsletter') setTimeout(closeExitPopup, 3000);
+        if (type === 'newsletter' && form.closest('#exitPopup')) setTimeout(closeExitPopup, 3000); // not the footer sign-up
       } catch (err) {
         if (status) {
           status.className = 'form-status form-status-error';
