@@ -22,7 +22,9 @@ const breadcrumbSchema = {
 };
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical}>
+{/* Kept out of search results and the sitemap (astro.config.mjs) until the first real case study is
+    published (content review, B1-23). Remove `noindex` and the sitemap filter together. */}
+<BaseLayout title={title} description={description} canonical={canonical} noindex>
   <Fragment slot="head">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>

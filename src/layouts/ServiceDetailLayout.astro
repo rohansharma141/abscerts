@@ -17,8 +17,8 @@ const pageDescription = d.seo?.description ?? d.description;
 
 // Related services (client review, Sep 2026): a curated list when the service sets
 // `related` in its frontmatter, otherwise the first 3 other services in the same
-// category. Services whose slug is taken by a category page (the unpublished `cmmi`
-// entry) have no page of their own, so they are never listed.
+// category. A service whose slug is taken by a category page would have no page of
+// its own, so it is never listed.
 const categorySlugs = new Set((await getCollection('categories')).map((c) => c.id));
 const all = (await getCollection('services'))
   .filter((s) => !categorySlugs.has(s.id))

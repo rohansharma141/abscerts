@@ -10,10 +10,9 @@ export async function getStaticPaths() {
   const categorySlugs = new Set(categories.map((c) => c.id));
 
   return [
-    // Categories first. On a slug collision (the Phase-2 `cmmi` service shares the
-    // `cmmi` category slug), the category page wins — per migration brief Section 4,
-    // the category is the destination and the service stays in the collection only
-    // for menu/related references.
+    // Categories first. On a slug collision (a service file named after a category,
+    // as the old `cmmi` service was until the Sep 2026 content review), the category
+    // page wins — per migration brief Section 4, the category is the destination.
     ...categories.map((c) => ({ params: { slug: c.id }, props: { entry: c, kind: 'category' } })),
     ...services
       .filter((s) => !categorySlugs.has(s.id))
