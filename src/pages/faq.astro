@@ -4,17 +4,19 @@ import CTABanner from '../components/sections/CTABanner.astro';
 
 const title = 'Frequently Asked Questions | ABS Certifications & Advisory';
 const description =
-  'Answers to common questions about working with ABS — timelines, remote delivery, the Stage 1/Stage 2 process, international recognition, cost and the standards we work with.';
+  'Answers about working with ABS — choosing a standard, cost and timelines, remote and on-site work, the certification journey, partnering and training.';
 const canonical = new URL('/faq', Astro.site).href;
 
 // Six groups decided in the content review (decisions doc §5.9). Build 4a-1 regroups the existing
-// questions and applies the decided fixes; the new questions (and the "Partnerships & training" group) follow in 4a-2.
+// questions and applies the decided fixes; 4a-2 adds the new questions. An item's optional `link` turns a phrase
+// that already appears in its answer into a link (href) or a button (onclick), so the FAQ data matches the visible text.
 const groups = [
   {
     title: 'Getting started',
     items: [
       { q: 'How does ABS help us get certified?', a: 'ABS is a consulting and advisory firm. We take you through five steps — discovery and scope definition, gap assessment and roadmap, implementation, audit readiness, and support through the independent audit — guiding you through to successful certification. See our process page for the detail of each step.' },
       { q: 'How do I get a quote?', a: 'Tell us your scope — the standard you want, your organisation size, number of sites and any existing certifications — and we send a fixed-price proposal within 24 hours. You can use the Request-a-quote form or the contact page.' },
+      { q: 'Which standard do we need?', a: 'It depends on what your customers, contracts or regulators ask for, and what you want to improve. Common starting points are ISO 9001 for quality, ISO 27001 for information security (or SOC 2 where your customers are mainly US enterprises), ISO 14001 for environmental management and ISO 45001 for health and safety, and many sectors have their own schemes, such as FSSC 22000 for food or IATF 16949 for automotive. If you are unsure, tell us who is asking and why, and we will recommend the right standard at the scoping call.' },
       { q: 'Do we need to build our system from scratch first?', a: 'No. If you already have policies and controls in place, we assess what exists against the standard. Where there are gaps, our gap assessment tells you exactly what to close before the audit — you are never left guessing.' },
     ],
   },
@@ -23,12 +25,18 @@ const groups = [
     items: [
       { q: 'How long does certification take?', a: 'For most organisations under 200 employees, the full path from kick-off to certificate is around 10–14 weeks, assuming the management system is already operating. Larger or multi-site organisations typically take 4–6 months. You receive a firm timeline with your quote.' },
       { q: 'What does the engagement cost?', a: 'Our consulting fees depend on the standard, organisation size, number of sites and complexity of scope, and every engagement starts with a fixed-price scoping call and a proposal within 24 hours. Note that the independent certification body charges its own separate audit, surveillance and recertification fees, which we identify clearly so there are no surprises.' },
+      { q: 'Do you charge travel for on-site work?', a: 'Yes, for on-site work. Much of our work is delivered remotely, so many engagements need no travel at all. Where on-site work is needed, our consultants travel to you and the travel costs are set out upfront in your proposal — so there are no surprises.' },
     ],
   },
   {
     title: 'Working with ABS',
     items: [
       { q: 'Can you support us remotely?', a: 'Most of it, yes. Our team is based in India, and gap analysis, documentation review, training and audit preparation are routinely delivered fully remotely to clients worldwide. Some standards — for example ISO 45001, where site safety must be observed — involve an on-site element, and your certification body may require an on-site audit. We confirm the approach for your scope upfront.' },
+      { q: 'Where is your team based, and what hours do you work?', a: 'Our team is based in New Delhi, India, and works with clients worldwide. Office hours are Monday to Friday, 9:00–18:00 IST.' },
+      { q: 'Which currencies do you invoice in?', a: 'We invoice in your currency: GBP for clients in the UK, EUR in Europe, AED or USD in the Middle East, and USD in North America.' },
+      { q: 'How do we choose a certification body?', a: 'You choose and contract the certification body. We help you shortlist bodies accredited for your scope by an IAF MLA-signatory accreditation body, compare their proposals, and prepare for their audit.' },
+      { q: 'Is our information kept confidential?', a: 'Yes. Confidentiality is part of every engagement agreement, and we sign a separate NDA on request, including before the scoping call if you need one.' },
+      { q: 'Can you help if we already hold a certificate?', a: 'Yes. We support certified organisations through surveillance and recertification audits, and through the move to a new edition of a standard, such as ISO 9001:2026.' },
     ],
   },
   {
@@ -52,6 +60,15 @@ const groups = [
       { q: 'Is CMMI a certification?', a: 'No — CMMI maturity is confirmed through an appraisal (the current CMMI Appraisal Method) led by a Certified Lead Appraiser, not a certificate. Organisations are "appraised at" a maturity level, and the result is typically valid for three years.' },
       { q: 'Is SMETA a certification?', a: 'No. SMETA is an ethical audit developed by Sedex; the deliverable is an audit report shared on the Sedex platform, not a certificate. Buyers request it for responsible-sourcing due diligence.' },
       { q: 'Can we pursue more than one standard together?', a: 'Yes. Many organisations pursue integrated management systems — for example ISO 9001, ISO 14001 and ISO 45001 together, or ISO 27001 with ISO 27701. Shared structure means evidence can be reused across standards, reducing effort and cost.' },
+      { q: 'What is ISO 9001:2026, and do we need to transition?', a: 'ISO 9001:2026 is the new edition of the quality management standard, published on 16 September 2026 to replace ISO 9001:2015. It builds on the 2015 edition: top management is expected to promote a quality culture and ethical behaviour, risks and opportunities are addressed more clearly, and the 2024 climate change amendment is now part of the standard. Certified organisations need to transition to keep their certification, but there is time to plan: there is a three-year transition period, and 2015 certificates are expected to remain valid until September 2029, subject to final confirmation by the accreditation bodies.' },
+      { q: 'What is the 2024 climate change amendment?', a: 'In February 2024, ISO amended 31 of its management system standards, including ISO 9001, ISO 14001, ISO 45001, ISO 27001, ISO 22000, ISO 22301 and ISO 50001. Each now requires the organisation to determine whether climate change is a relevant issue for it, and notes that interested parties can have climate-related requirements. Certification audits include it. Editions published since then, such as ISO 9001:2026, build the same requirement in.' },
+    ],
+  },
+  {
+    title: 'Partnerships & training',
+    items: [
+      { q: 'How can we partner with ABS?', a: 'Tell us a little about yourself and the partnership you have in mind through our partner form, and our team will be in touch.', link: { text: 'partner form', onclick: 'openPartnerModal()' } },
+      { q: 'Do you train our team?', a: 'Yes. Training can be part of your engagement, and ABS Academy also runs standalone management system courses, including awareness, internal auditor and lead auditor training. See Training & Professional Development for the courses.', link: { text: 'Training & Professional Development', href: '/services/management-system-training' } },
     ],
   },
 ];
@@ -101,7 +118,17 @@ const breadcrumbSchema = {
             {g.items.map((f) => (
               <div class="faq-item">
                 <button class="faq-q" onclick="toggleFaq(this)">{f.q}<span class="icon"><i class="ti ti-plus"></i></span></button>
-                <div class="faq-a">{f.a}</div>
+                <div class="faq-a">
+                  {f.link ? (
+                    <>
+                      {f.a.slice(0, f.a.indexOf(f.link.text))}
+                      {f.link.href
+                        ? <a href={f.link.href}>{f.link.text}</a>
+                        : <button type="button" class="faq-inline-link" onclick={f.link.onclick}>{f.link.text}</button>}
+                      {f.a.slice(f.a.indexOf(f.link.text) + f.link.text.length)}
+                    </>
+                  ) : f.a}
+                </div>
               </div>
             ))}
           </div>
@@ -125,5 +152,20 @@ const breadcrumbSchema = {
     margin-bottom: 20px;
     padding-bottom: 12px;
     border-bottom: 1px solid var(--line);
+  }
+  .faq-a a,
+  .faq-inline-link {
+    color: var(--accent-text);
+    border-bottom: 1px solid var(--line-blue);
+    text-decoration: none;
+  }
+  .faq-inline-link {
+    background: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
   }
 </style>
