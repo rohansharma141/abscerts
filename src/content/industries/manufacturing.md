@@ -23,6 +23,10 @@ Most production sites build an integrated management system from three standards
 
 Manufacturing audits are grounded in the physical operation. Auditors spend time on the production floor, looking at how process controls work in practice, how non-conforming product is contained, how environmental aspects such as waste, emissions and resource use are managed, and how safety controls hold up around machinery and material handling. Because so much depends on direct observation, the Stage 2 audit normally includes a site visit — so our consultants can also work with you on-site to prepare for it, with any travel agreed upfront in your proposal.
 
+## How ABS helps
+
+We prepare production sites for certification: an integrated gap assessment across ISO 9001, 14001 and 45001, process, environmental and safety controls built around how the floor actually runs, internal audits and management review, a readiness check, and support through the certification body's audits — on-site where your scope needs it, with travel agreed in your proposal.
+
 ## Common questions
 
 ### Can we pursue all three standards in one programme?
@@ -32,4 +36,4 @@ Yes. An integrated audit across ISO 9001, 14001 and 45001 is common for manufact
 Much of the preparation can be done remotely. Where on-site work is needed, our consultants travel to you and the travel costs are set out upfront in your proposal — so there are no surprises.
 
 ### We run multiple sites — how does that work?
-Multi-site organisations can often be certified under a sampling approach, where a representative set of sites is audited each cycle rather than every location every year. We confirm the sampling plan as part of your quote.
+Multi-site organisations can often be certified under a sampling approach, where a representative set of sites is audited each cycle rather than every location every year. The certification body sets the sampling plan; we help you prepare every site and plan for it.

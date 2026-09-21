@@ -23,6 +23,10 @@ Organisations handling payment card data need to demonstrate **PCI DSS** complia
 
 Audits here are demanding on access control, monitoring, change management and the segregation of sensitive environments — particularly anything that touches cardholder data or money movement. Auditors expect to see strong governance, evidence that controls operate continuously rather than at a point in time, and careful management of the third parties woven through modern financial platforms. Scoping is critical: well-segmented environments reduce both risk and the cost of assessment.
 
+## How ABS helps
+
+We prepare financial services and fintech organisations for these assessments: scoping the cardholder-data and service environments, gap assessments against PCI DSS, SOC 2 and ISO 27001, one set of controls and evidence that serves all three, and support through the PCI DSS assessment, the licensed CPA firm's SOC 2 examination and the certification body's ISO 27001 audit.
+
 ## Common questions
 
 ### Which certifications does a fintech actually need?

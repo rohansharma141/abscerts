@@ -40,6 +40,15 @@ VDA 6 audits focus on process capability and risk, typically including:
 
 The VDA 6.3 process audit in particular produces a clear, scored view of where a process is strong and where it carries risk.
 
+## How ABS helps
+
+The VDA 6.3 process audit is carried out by your customer or by a qualified VDA 6.3 auditor. ABS prepares your processes for it:
+
+- **Process review** — we review your processes against the VDA 6.3 requirements and identify where they carry risk.
+- **Improvement actions** — we help you strengthen process controls, capability and the customer-specific requirements of your OEMs.
+- **Readiness check** — a pre-assessment against the VDA 6.3 requirements before the audit.
+- **Audit support** — support during the audit and in closing any findings.
+
 ## Typical timeline
 
 For most organisations, a VDA 6 engagement takes around 12–16 weeks, depending on the scope and the number of processes assessed. Each engagement begins with a fixed-price scoping call and a proposal within 24 hours.

@@ -40,4 +40,4 @@ The standard tackles eight core AI governance concerns: ethical application (in 
 
 Implementation supports ethical AI assurance, enhanced trust and reputation, mechanisms for security, safety, fairness and transparency, governance aligned to business objectives, regulatory-compliance support, structured risk management, and innovation within a controlled environment.
 
-ABS offers [ISO 42001](/services/iso-42001) certification for organisations ready to demonstrate responsible AI governance.
+ABS helps organisations prepare for [ISO 42001](/services/iso-42001) certification and demonstrate responsible AI governance.

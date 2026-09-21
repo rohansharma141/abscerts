@@ -31,7 +31,7 @@ faqs:
 
 SOC 1 — System and Organization Controls 1 — is an audit report, defined by the American Institute of Certified Public Accountants (AICPA), that focuses on the controls at a service organisation that are relevant to its clients' financial reporting. If your business performs a function that feeds into another company's financial statements — payroll, data hosting, transaction processing, claims administration — then that company's auditors need assurance over how you manage those controls.
 
-A SOC 1 report gives them exactly that. Rather than each customer auditing you separately, a single independent report can be shared with all of them and with their auditors. In practice, SOC 1 reports get requested during vendor due diligence and at financial year-end, and not having one can stall or block a contract with a regulated or audited client. SOC 1 sits within the broader [Cyber Security](/services/cyber-security) assurance work ABS delivers, alongside the security-focused [SOC 2 certification](/services/soc-2).
+A SOC 1 report gives them exactly that. Rather than each customer auditing you separately, a single independent report can be shared with all of them and with their auditors. In practice, SOC 1 reports get requested during vendor due diligence and at financial year-end, and not having one can stall or block a contract with a regulated or audited client. SOC 1 sits within the broader [Cyber Security](/services/cyber-security) work ABS supports, alongside the security-focused [SOC 2](/services/soc-2).
 
 ## What the audit covers
 
@@ -40,7 +40,7 @@ A SOC 1 engagement is built around the control objectives relevant to financial 
 - **Type I** — an opinion on whether the controls are suitably designed at a specific date.
 - **Type II** — design plus a test of operating effectiveness over a period, typically 6 to 12 months.
 
-ABS supports the full path: a readiness assessment to map your current controls against the objectives, evaluation of control design, remediation assistance to close gaps, audit preparation and support, and issuance of the report. The engagement is conducted under SSAE 18, the AICPA attestation standard that governs SOC 1; where a client needs the international form, the equivalent [ISAE 3402](/services/isae-3402) report covers the same ground for audiences outside the US.
+ABS supports the full path: a readiness assessment to map your current controls against the objectives, evaluation of control design, remediation assistance to close gaps, and support through the examination. The examination and report are performed and issued by a licensed CPA firm under SSAE 18, the AICPA attestation standard that governs SOC 1; where a client needs the international form, the equivalent [ISAE 3402](/services/isae-3402) report covers the same ground for audiences outside the US.
 
 ## Typical timeline
 

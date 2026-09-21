@@ -1,5 +1,5 @@
 ---
-title: "Kosher Certification"
+title: "Kosher Certification Readiness"
 shortName: "Kosher"
 description: "Certification-readiness support for kosher — helping products and processes meet Jewish dietary law (kashrut), opening kosher markets and signalling quality to a wider consumer base."
 icon: "ti-star"
@@ -36,6 +36,17 @@ Certification assesses the product and operation against kashrut requirements, t
 - **Equipment and production lines** — and how they are used and prepared
 - **Segregation** — meeting kashrut separation requirements
 - **Handling, storage and traceability**
+
+## Who certifies, and how ABS helps
+
+Kosher certification is granted by a kosher certification agency, under rabbinical supervision; the agency's mark on the product is what kosher-observant consumers and buyers look for.
+
+ABS prepares your operation for the agency's review:
+
+- **Ingredient and supplier review** — we check ingredients and their sources, and the supplier documentation behind them.
+- **Equipment, lines and segregation** — we help you plan how equipment and production lines are used and prepared, and how kashrut separation requirements are met.
+- **Documentation** — we help you prepare the procedures and records the agency will ask for.
+- **Readiness check and support** — a pre-assessment before the agency's visit, then support in closing anything it raises.
 
 ## Typical timeline
 

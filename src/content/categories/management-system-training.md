@@ -27,7 +27,7 @@ The training is designed for professionals who want to demonstrate their compete
 
 ## From training to a recognised credential
 
-Training builds competence; personnel certification recognises it. For auditors and other specialists whose judgement organisations depend on, a recognised personnel credential is portable proof of competence that moves with them between employers and engagements, rather than relying on a CV alone. Our [Lead Auditor personnel certification](/services/personnel-cert-lead-auditor) page explains how the credential relates to auditor training — [contact us](/contact) to discuss the scheme that fits your role.
+Training builds competence; personnel certification recognises it. For auditors and other specialists whose judgement organisations depend on, a recognised personnel credential is portable proof of competence that moves with them between employers and engagements, rather than relying on a CV alone. Our [Lead Auditor credentials](/services/personnel-cert-lead-auditor) page explains the route from training to a recognised credential — [contact us](/contact) to discuss the scheme that fits your role.
 
 ## How ABS approaches training
 

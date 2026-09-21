@@ -42,6 +42,15 @@ An SSAE 18 engagement reports on the controls relevant to the service you provid
 
 A defining feature of SSAE 18 compared with its predecessor is the emphasis on how a service organisation monitors any **sub-service organisations** it relies on, and on the complementary controls customers are expected to have in place. The engagement is scoped to the control objectives that matter for your service, with readiness work to close gaps before the formal examination.
 
+## How ABS helps
+
+ABS prepares you for the examination and supports you through it:
+
+- **Scoping** — we help you define the service, the system and the control objectives the report will cover.
+- **Readiness assessment** — we map your current controls against those objectives and identify the gaps, including how you monitor any sub-service organisations.
+- **Remediation** — we help you design and implement the controls and evidence needed to close the gaps.
+- **Examination support** — we support you through the examination, which is performed, and the report issued, by a licensed CPA firm.
+
 ## Typical timeline
 
 A Type I report is typically achievable in around 10–14 weeks depending on how mature your controls already are; a Type II report adds the observation period over which they are tested. As always, the engagement starts with a fixed-price scoping call and a proposal within 24 hours.

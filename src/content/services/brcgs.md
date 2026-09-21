@@ -40,6 +40,16 @@ Certification assesses the operation against the requirements of the relevant BR
 
 Audits result in a grade, and certification is maintained through regular re-audit.
 
+## How ABS helps
+
+We prepare you for the certification audit in five steps, tailored to BRCGS:
+
+- **Scope and gap assessment** — we agree the scope of your site and products in scope and assess what you already have against the standard, so you know exactly what to close.
+- **Implementation** — we help you meet the standard's requirements: senior management commitment and food safety culture, the HACCP-based food safety plan, the food safety and quality management system, and site, product, process and personnel controls.
+- **Internal audit and management review** — we help you run the internal audits and management review the standard requires, so your site has a record of operating to it before the audit.
+- **Readiness check** — a pre-assessment, approached the way an auditor would approach it, highlights anything still to close.
+- **Audit support** — we support you through the certification body's audit and help you close any non-conformities.
+
 ## Typical timeline
 
 For most food manufacturers, BRCGS certification takes around 12–16 weeks from kick-off, depending on the size and complexity of the site and the maturity of existing food safety systems. Each engagement begins with a fixed-price scoping call and a proposal within 24 hours.

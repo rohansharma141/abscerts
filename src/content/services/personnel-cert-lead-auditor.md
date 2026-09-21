@@ -1,6 +1,6 @@
 ---
-title: "Lead Auditor Personnel Certification"
-shortName: "Lead Auditor Certification"
+title: "Lead Auditor Credentials — from training to recognition"
+shortName: "Lead Auditor Credentials"
 description: "The route from lead auditor training to a recognised auditor credential — how auditor registration works, the experience it needs, and how ABS supports the candidate."
 icon: "ti-user-check"
 tags: ["Personnel Certification", "Lead Auditor", "Auditor Competence"]
@@ -18,22 +18,29 @@ faqs:
   - question: "What is the difference between personnel certification and management system certification?"
     answer: "Management system certification confirms that an organisation's system (for example its ISO 9001 quality system) meets a standard. Personnel certification confirms that an individual — such as an auditor — has the competence to perform a role. One certifies an organisation; the other certifies a person."
   - question: "How does personnel certification relate to auditor training?"
-    answer: "Training builds the knowledge and skills; personnel certification recognises that an individual has demonstrated the competence to apply them. Auditor training, such as Lead Auditor training, is typically the route towards being recognised as a competent auditor."
+    answer: "Training builds the knowledge and skills; a registration scheme recognises that an individual has demonstrated the competence to apply them — usually through a recognised course plus audit experience. Lead Auditor training is typically the first step on that route."
 ---
 
-## What personnel certification is
+## From training to a recognised credential
 
-Personnel certification recognises the competence of an individual to perform a defined role — here, the role of an auditor. It is distinct from the certification of an organisation's management system: a management system certificate says "this organisation's system meets the standard," whereas a personnel certification says "this person is competent to do this work." Both matter, but they answer different questions.
+A lead auditor credential recognises that an individual is competent to plan, lead and report management system audits. It is different from the certification of an organisation's management system: a management system certificate says "this organisation's system meets the standard," whereas a personal auditor credential says "this person is competent to do this work."
 
-## Who it's for
+## How auditor registration works
 
-A Lead Auditor personnel credential is relevant to individuals who audit management systems — and to the organisations that rely on them. Demonstrating individual auditor competence gives confidence to employers, clients and the organisations being audited that audits are carried out to a consistent, professional standard.
+Auditor credentials are granted by independent registration schemes, such as CQI and IRCA (the Chartered Quality Institute's International Register of Certificated Auditors) or Exemplar Global. Schemes typically look at:
 
-## How it relates to training
+- **Training** — a lead auditor course that the scheme recognises
+- **Audit experience** — a record of audits you have taken part in or led
+- **Work experience** in the relevant discipline
+- **Continuing professional development** to keep the credential current
 
-Competence is built through training and experience, then recognised through certification. [Lead Auditor training](/services/iso-lead-auditor-training) develops the skills to plan, lead and report management system audits; [Internal Auditor training](/services/iso-internal-auditor-training) develops the skills to audit within one's own organisation. Personnel certification sits at the end of that path, recognising demonstrated competence.
+The exact criteria and grades differ between schemes, so check the current requirements of the scheme you plan to register with.
 
-This page sits within [Training & Professional Development](/services/management-system-training), alongside the auditor courses that build the competence a personnel credential recognises. [Contact us](/contact) to discuss the scheme that fits your role.
+## How ABS supports you
+
+[ISO Lead Auditor training](/services/iso-lead-auditor-training) from ABS Academy builds the knowledge and skills to plan, lead, report and follow up a management system audit, and [Internal Auditor training](/services/iso-internal-auditor-training) builds the skills to audit within your own organisation. We can also help you understand what a registration scheme asks for and plan your route towards it.
+
+This page sits within [Training & Professional Development](/services/management-system-training). [Contact us](/contact) to discuss your route.
 
 ## Common questions
 
@@ -43,4 +50,4 @@ Management system certification confirms that an organisation's system meets a s
 
 ### How does personnel certification relate to auditor training?
 
-Training builds the knowledge and skills; personnel certification recognises that an individual has demonstrated the competence to apply them. [Lead Auditor training](/services/iso-lead-auditor-training) is typically the route towards being recognised as a competent auditor.
+Training builds the knowledge and skills; a registration scheme recognises that you have demonstrated the competence to apply them — usually through a recognised course plus audit experience. [Lead Auditor training](/services/iso-lead-auditor-training) is typically the first step on that route.

@@ -23,6 +23,10 @@ Most technology companies start with **ISO 27001** for a recognised information 
 
 Software audits are shaped by the way modern engineering teams actually work: cloud infrastructure, continuous deployment, distributed teams and heavy reliance on third-party services. A good auditor assesses your controls in that context — looking at how access is managed across cloud platforms, how changes are reviewed and shipped, how you monitor production, and how you manage the sub-processors in your supply chain. Most of this can be assessed remotely, which suits teams that are spread across time zones.
 
+## How ABS helps
+
+We prepare technology and SaaS companies for ISO 27001 and SOC 2 together: scoping around your cloud platforms, a gap assessment, controls and evidence that fit continuous delivery — access, change, monitoring and sub-processors — internal audits and a readiness check, then support through the certification body's audit and the CPA firm's SOC 2 examination, largely remotely.
+
 ## Common questions
 
 ### Do we need ISO 27001 and SOC 2, or just one?

@@ -23,6 +23,10 @@ Medical device organisations typically pursue **ISO 13485**, the sector-specific
 
 Audits in this sector carry a heavier emphasis on traceability, risk management and documented control, reflecting the regulated nature of the work. For ISO 13485, auditors look closely at design controls, supplier management, and the handling of complaints and corrective actions. For information security in clinical settings, the focus falls on protecting patient and research data across systems and partners. Because patient safety and data protection are the stakes, the evidence bar is exacting — which is also why a clean, independently audited certificate carries weight with buyers.
 
+## How ABS helps
+
+We prepare medical device and health-data organisations for certification: a gap assessment against ISO 13485 and ISO 27001, design, risk-management, supplier and complaint-handling controls with the traceability auditors expect, data-protection controls across systems and partners, internal audits and a readiness check, then support through the certification body's audits.
+
 ## Common questions
 
 ### How is ISO 13485 different from ISO 9001?

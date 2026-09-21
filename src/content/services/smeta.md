@@ -39,9 +39,17 @@ A SMETA audit is conducted as either a 2-pillar or 4-pillar audit:
 
 The findings are documented in the audit report and shared with the buyers who rely on them.
 
+## How ABS helps
+
+SMETA audits are carried out by Sedex-affiliated audit companies using APSCA-registered auditors; the current methodology is SMETA 7.0, introduced in 2024. ABS helps your site prepare for the audit and respond to it:
+
+- **Pre-audit gap check** — we review your site against the pillars in scope, including working hours, wages, contracts, health and safety and, for 4-pillar audits, environment and business ethics.
+- **Records and evidence** — we help you get the worker, payroll and safety records the auditor will ask for in order.
+- **Corrective-action support** — before the audit, and afterwards to close any non-compliances the report raises.
+
 ## Timeline & process
 
-Because SMETA is an audit rather than a certification programme, it is scoped per engagement around the site and the number of pillars in scope. We begin with a fixed-price scoping call and a proposal within 24 hours.
+Because SMETA is an audit rather than a certification programme, readiness work is scoped around your site and the number of pillars in scope. Each engagement begins with a fixed-price scoping call and a proposal within 24 hours.
 
 ## Common questions
 

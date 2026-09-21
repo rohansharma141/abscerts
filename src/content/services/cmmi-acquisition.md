@@ -46,7 +46,7 @@ As with the rest of the model, maturity is confirmed through an **appraisal**, n
 
 ABS provides CMMI implementation and appraisal-readiness consulting; formal Benchmark or Sustainment Appraisals are performed through appropriately authorised CMMI appraisal professionals in accordance with current ISACA CMMI requirements. Our consultants bring a minimum of 8–10 years' hands-on experience implementing CMMI.
 
-We support organisations end to end as they mature their acquisition and supplier-management processes: gap analysis and current-state assessment, CMMI overview training, a process-improvement strategy and roadmap, defining and documenting acquisition processes, establishing a measurement framework, software quality assurance (SQA) support, CMMI appraisal facilitation, and appraisals conducted by our Lead Appraisers.
+We support organisations end to end as they mature their acquisition and supplier-management processes: gap analysis and current-state assessment, CMMI overview training, a process-improvement strategy and roadmap, defining and documenting acquisition processes, establishing a measurement framework, software quality assurance (SQA) support, and preparation for and support through the formal appraisal, which is led by an authorised Lead Appraiser.
 
 It suits organisations with significant procurement or outsourcing — including [manufacturing](/industries/manufacturing) supply chains and enterprises that outsource development. It complements [CMMI for Development](/services/cmmi-dev) and [CMMI for Services](/services/cmmi-services); see the full [CMMI & Process](/services/cmmi) category for related work.
 

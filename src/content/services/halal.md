@@ -1,5 +1,5 @@
 ---
-title: "Halal Certification"
+title: "Halal Certification Readiness"
 shortName: "Halal"
 description: "Certification-readiness support for Halal — helping products and processes meet Islamic dietary law, opening access to Muslim-majority markets and consumers worldwide."
 icon: "ti-moon"
@@ -36,6 +36,17 @@ Certification assesses the product and operation against Halal requirements, typ
 - **Processing and production** — methods consistent with Halal requirements
 - **Segregation** — preventing cross-contamination with non-Halal products
 - **Hygiene, handling, storage and traceability**
+
+## Who certifies, and how ABS helps
+
+Halal certificates are issued by Halal certification bodies, and many importing countries accept certificates only from bodies they recognise — for example, those recognised by JAKIM in Malaysia or BPJPH in Indonesia, or registered with the UAE's national authorities. Choosing a body recognised in your target markets matters as much as the audit itself.
+
+ABS prepares your operation for that audit:
+
+- **Ingredient and supplier review** — we check ingredients, additives and their sources, and the supplier documentation behind them.
+- **Segregation and process controls** — we help you set up segregation from non-Halal products, cleaning and handling controls, and traceability.
+- **Documentation** — we help you prepare the procedures and records the certification body will ask for.
+- **Readiness check and audit support** — a pre-assessment before the audit, then support through it and in closing any findings.
 
 ## Typical timeline
 
