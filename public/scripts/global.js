@@ -338,5 +338,10 @@ document.addEventListener('keydown', (e) => {
       if (match) visible++;
     });
     if (emptyState) emptyState.hidden = visible !== 0;
+    // Split category pages: hide a section's heading when none of its tiles match
+    document.querySelectorAll('[data-search-section]').forEach((section) => {
+      const any = Array.from(section.querySelectorAll('[data-search-target]')).some((t) => t.style.display !== 'none');
+      section.hidden = !any;
+    });
   });
 })();

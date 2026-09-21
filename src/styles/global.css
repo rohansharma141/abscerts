@@ -3057,6 +3057,28 @@ a.float-btn { text-decoration: none; } /* the call button is a tel: link (single
   color: var(--gray-soft);
   text-transform: uppercase;
 }
+/* Split category pages (content review 5a): section headings and per-tile labels */
+.service-section + .service-section { margin-top: 56px; }
+.service-section-head {
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--blue-ink);
+  margin: 0 0 20px;
+}
+.service-tile-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--gray-text);
+  border: 1px solid var(--line);
+  padding: 4px 8px;
+  max-width: 60%;
+}
 .service-tile-arrow {
   width: 32px; height: 32px;
   background: var(--blue-50);

@@ -21,6 +21,17 @@ const services = (await getCollection('services'))
   .filter((s) => s.data.category === entry.id && s.id !== entry.id)
   .sort((a, b) => a.data.order - b.data.order);
 
+// A category that contains guidance / implementation standards (`standardType: "guidance"`, only the ISO
+// category today) is shown in two labelled sections (content review, decision §4.1 row 9). Other categories
+// keep a single grid.
+const guidance = services.filter((s) => s.data.standardType === 'guidance');
+const sections = guidance.length > 0
+  ? [
+      { title: 'ISO Certification Standards', label: 'Certification', items: services.filter((s) => s.data.standardType !== 'guidance') },
+      { title: 'ISO Guidance / Implementation Standards', label: 'Guidance / implementation', items: guidance },
+    ]
+  : null;
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -80,7 +91,7 @@ const collectionSchema = {
   <!-- SEARCH + TILE GRID -->
   <section class="section section-tint" style="padding:40px 0 72px;">
     <div class="container">
-      <h2 class="visually-hidden">Services in {d.shortName}</h2>
+      {!sections && <h2 class="visually-hidden">Services in {d.shortName}</h2>}
       {services.length > 0 ? (
         <Fragment>
           <div class="category-search">
@@ -92,9 +103,20 @@ const collectionSchema = {
               aria-label={`Search within ${d.shortName}`}
             />
           </div>
-          <div class="service-tile-grid">
-            {services.map((s) => <ServiceTile service={s} />)}
-          </div>
+          {sections ? (
+            sections.map((sec) => (
+              <div class="service-section" data-search-section>
+                <h2 class="service-section-head">{sec.title}</h2>
+                <div class="service-tile-grid">
+                  {sec.items.map((s) => <ServiceTile service={s} label={sec.label} />)}
+                </div>
+              </div>
+            ))
+          ) : (
+            <div class="service-tile-grid">
+              {services.map((s) => <ServiceTile service={s} />)}
+            </div>
+          )}
           <div class="search-empty-state" data-search-empty-state hidden>
             <p>No services match your search.</p>
           </div>

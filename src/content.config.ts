@@ -29,6 +29,7 @@ const services = defineCollection({
     accreditation: z.string().optional(),       // "IAS/IAF" — used for credibility chips
     featured: z.boolean().default(false),       // shown on home page services section
     related: z.array(z.string()).optional(),    // curated "Related services" (service ids, in order); without it the page shows others from the same category
+    standardType: z.enum(['certification', 'guidance']).optional(), // "guidance" = guidance / implementation standard; splits its category page into two sections
     // Optional Q&A used to emit FAQPage JSON-LD (Phase 4c). Mirrors the "Common
     // questions" section in the body so search engines get structured FAQ data.
     faqs: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
