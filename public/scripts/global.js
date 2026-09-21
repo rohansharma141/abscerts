@@ -125,13 +125,8 @@ function jumpToContactForm() {
 
 /* ===== Floating widget actions ===== */
 function openWhatsApp() {
-  window.open('https://wa.me/919625776771?text=Hi%20ABS%2C%20I%27m%20interested%20in%20getting%20certified.', '_blank');
+  window.open('https://wa.me/919821696444?text=Hi%20ABS%2C%20I%27m%20interested%20in%20getting%20certified.', '_blank');
 }
-function toggleCallMenu(e) {
-  e.stopPropagation();
-  document.getElementById('callMenu').classList.toggle('open');
-}
-document.addEventListener('click', () => document.getElementById('callMenu').classList.remove('open'));
 
 /* ===== Scroll-to-top button visibility ===== */
 const scrollTopBtn = document.getElementById('scrollTopBtn');
@@ -263,7 +258,7 @@ document.addEventListener('keydown', (e) => {
         if (status) {
           status.className = 'form-status form-status-error';
           status.innerHTML =
-            'Something went wrong. Please call us at <a href="tel:+919625776771">+91 96257 76771</a> ' +
+            'Something went wrong. Please call us at <a href="tel:+919821696444">+91 98216 96444</a> ' +
             'or email <a href="mailto:info@abscerts.com">info@abscerts.com</a>.';
         }
         if (submitBtn) {

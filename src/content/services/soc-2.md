@@ -12,6 +12,7 @@ governingBody: "AICPA"
 order: 5
 timelineWeeks: "6-10"
 featured: true
+related: ["iso-27001", "vapt", "gdpr", "pci-dss"]
 seo:
   title: "SOC 2 Type I & Type II | Audit & Readiness | ABS"
   description: "Independent SOC 2 Type I and Type II readiness and assessment for SaaS and cloud providers selling into the US and UK. Fixed-price quote in 24 hours."

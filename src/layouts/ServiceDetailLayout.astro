@@ -15,9 +15,18 @@ const d = entry.data;
 const pageTitle = d.seo?.title ?? `${d.title} | ABS Certifications`;
 const pageDescription = d.seo?.description ?? d.description;
 
-// Related services — the other entries, sorted by order, first 3.
-const all = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
-const related = all.filter((s) => s.id !== entry.id).slice(0, 3);
+// Related services (client review, Sep 2026): a curated list when the service sets
+// `related` in its frontmatter, otherwise the first 3 other services in the same
+// category. Services whose slug is taken by a category page (the unpublished `cmmi`
+// entry) have no page of their own, so they are never listed.
+const categorySlugs = new Set((await getCollection('categories')).map((c) => c.id));
+const all = (await getCollection('services'))
+  .filter((s) => !categorySlugs.has(s.id))
+  .sort((a, b) => a.data.order - b.data.order);
+const byId = new Map(all.map((s) => [s.id, s]));
+const related = d.related?.length
+  ? d.related.map((id: string) => byId.get(id)).filter((s): s is NonNullable<typeof s> => Boolean(s))
+  : all.filter((s) => s.id !== entry.id && s.data.category === d.category).slice(0, 3);
 
 const canonical = new URL(`/services/${entry.id}`, Astro.site).href;
 const categoryUrl = `/services/${d.category}`;
@@ -138,7 +147,7 @@ const faqSchema = d.faqs && d.faqs.length > 0 ? {
   </section>
 
   {related.length > 0 && (
-    <RelatedItems type="services" title="Related certifications" eyebrow="More services" items={related} />
+    <RelatedItems type="services" title="Related services" eyebrow="More services" items={related} />
   )}
 
   <CTABanner />

@@ -1130,7 +1130,7 @@ em {
 .numbers-strip-head .eyebrow::before { background: var(--glow); }
 .numbers-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
 }
 .numbers-item {
@@ -2181,6 +2181,7 @@ textarea.form-control {
 .float-btn.whatsapp { background: #25D366; }
 .float-btn.whatsapp:hover { background: #1FB855; }
 .float-btn.call { background: var(--grad-cobalt); }
+a.float-btn { text-decoration: none; } /* the call button is a tel: link (single number, Sep 2026) */
 .float-btn.scroll-top {
   background: var(--blue-ink);
   width: 48px; height: 48px;
@@ -2224,55 +2225,6 @@ textarea.form-control {
 .float-btn:hover .tooltip { opacity: 1; transform: translateY(-50%) translateX(0); }
 
 /* Phone menu (call options) */
-.call-menu {
-  position: absolute;
-  right: 70px;
-  bottom: 0;
-  background: var(--white);
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 20px 50px rgba(10, 14, 26, 0.18);
-  border: 1px solid var(--line);
-  width: 280px;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateX(20px);
-  transition: all 0.25s;
-}
-.call-menu.open { opacity: 1; pointer-events: auto; transform: translateX(0); }
-.call-menu-head {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  color: var(--blue-ink);
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--line);
-  margin-bottom: 10px;
-}
-.call-menu a {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 8px;
-  border-radius: 6px;
-  color: var(--blue-ink);
-  font-size: 15px;
-  transition: background 0.2s;
-}
-.call-menu a:hover { background: var(--blue-50); }
-.call-menu a strong {
-  font-family: 'Fraunces', serif;
-  font-weight: 500;
-  font-size: 17px;
-  display: block;
-}
-.call-menu a small {
-  font-size: 12px;
-  color: var(--gray-soft);
-  display: block;
-  margin-top: 2px;
-}
-.call-menu a i { color: var(--blue); font-size: 18px; }
 
 /* ============ Modal (Quote Form) ============ */
 .modal-backdrop {
@@ -2573,7 +2525,7 @@ textarea.form-control {
   .hero-stat .num { font-size: 44px; }
   .services-grid, .industries-grid, .regions-grid, .quick-actions-grid { grid-template-columns: repeat(2, 1fr); }
   .testimonial-mini-grid { grid-template-columns: 1fr; }
-  .numbers-grid { grid-template-columns: repeat(2, 1fr); }
+  .numbers-grid { grid-template-columns: 1fr; }
   .numbers-item { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.12); padding: 24px 0 !important; }
   .numbers-item::before { left: 0 !important; }
   .process-wrap, .why-wrap, .testimonial-feature, .verify-block, .faq-grid, .contact-grid, .page-hero-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -2589,7 +2541,6 @@ textarea.form-control {
   .float-stack { right: 16px; bottom: 16px; gap: 10px; }
   .float-btn { width: 52px; height: 52px; font-size: 22px; }
   .float-btn.scroll-top { width: 44px; height: 44px; font-size: 18px; }
-  .call-menu { width: 260px; right: 64px; }
   .modal-body { padding: 24px; }
   .modal-header { padding: 28px 24px 22px; }
   .modal-header h2 { font-size: 26px; }

@@ -9,6 +9,11 @@ const title = 'ISO, SOC 2 & Compliance Consulting | ABS Certifications';
 const description =
   'Certification consulting for organisations in the UK, EU, US and Middle East — ISO 9001, 27001, SOC 2, PCI DSS and CMMI. Fixed-price proposal in 24 hours.';
 
+// Years in operation: ABS has operated since 2004 (confirmed Sep 2026). Worked out at
+// build time so the hero figure never goes out of date.
+const FOUNDED = 2004;
+const yearsActive = new Date().getFullYear() - FOUNDED;
+
 // Home services grid: all 9 service categories, in the client's order (Sep 2026) —
 // the same order as the mega-menu, /services and the footer (category `order`).
 // Kept as literal ServiceCard props (richer copy and tag pills than the collection);
@@ -68,7 +73,7 @@ const heroSlides: HeroSlide[] = [
   // India-based delivery model (travel is charged; English only). The client also asked for
   // the small `meta` chips to be removed.
   {
-    show: false, image: 'hero-1', meta: ['ISO · SOC 2 · CMMI', 'Est. 2008'],
+    show: false, image: 'hero-1', meta: ['ISO · SOC 2 · CMMI', 'Est. 2004'],
     headline: 'Global ISO, SOC 2 and <em>compliance advisory</em> services.',
     sub: 'We help organisations implement effective management systems, close compliance gaps and prepare for independent certification, attestation and regulatory assessments.',
     primary: { label: 'Request a fixed-price proposal' },
@@ -199,14 +204,14 @@ const serviceSchema = {
       <div class="hero-stats-grid">
         <div class="hero-stat">
           <div class="num">1,200<small>+</small></div>
-          <div class="label">Certificates issued globally</div>
+          <div class="label">Certification &amp; compliance engagements supported</div>
         </div>
         <div class="hero-stat">
           <div class="num">500<small>+</small></div>
           <div class="label">Clients supported successfully</div>
         </div>
         <div class="hero-stat">
-          <div class="num">18<small>yrs</small></div>
+          <div class="num">{yearsActive}<small>yrs</small></div>
           <div class="label">In certification & advisory</div>
         </div>
         <div class="hero-stat">
@@ -419,11 +424,7 @@ const serviceSchema = {
       <div class="numbers-grid">
         <div class="numbers-item">
           <div class="numbers-num">1,200<small>+</small></div>
-          <div class="numbers-label">Certification and compliance engagements supported across the UK, EU, US, Middle East and APAC since 2008.</div>
-        </div>
-        <div class="numbers-item">
-          <div class="numbers-num">100<small>%</small></div>
-          <div class="numbers-label">First-time certification success rate for organisations completing our implementation programme.</div>
+          <div class="numbers-label">Certification and compliance engagements supported across the UK, EU, US, Middle East and APAC since 2004.</div>
         </div>
         <div class="numbers-item">
           <div class="numbers-num">24<small>h</small></div>
@@ -434,7 +435,7 @@ const serviceSchema = {
           <div class="numbers-label">Typical implementation timeline to certification readiness for ISO standards.</div>
         </div>
       </div>
-      <p style="margin-top:16px;font-size:12px;opacity:0.6;">Figures updated July 2026.</p>
+      <p style="margin-top:16px;font-size:12px;opacity:0.6;">Figures updated September 2026.</p>
     </div>
   </section>
 

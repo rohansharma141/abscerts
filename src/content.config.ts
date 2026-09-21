@@ -28,6 +28,7 @@ const services = defineCollection({
     governingBody: z.string().optional(),       // "ISO", "AICPA", "PCI Security Standards Council"
     accreditation: z.string().optional(),       // "IAS/IAF" — used for credibility chips
     featured: z.boolean().default(false),       // shown on home page services section
+    related: z.array(z.string()).optional(),    // curated "Related services" (service ids, in order); without it the page shows others from the same category
     // Optional Q&A used to emit FAQPage JSON-LD (Phase 4c). Mirrors the "Common
     // questions" section in the body so search engines get structured FAQ data.
     faqs: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
