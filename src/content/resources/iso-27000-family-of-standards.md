@@ -1,6 +1,6 @@
 ---
 title: "The ISO 27000 Family of Standards"
-description: "The ISO 27000 series is the international framework for information security management — dozens of standards, with ISO 27001 the one you certify against."
+description: "The ISO 27000 series is the international framework for information security management — dozens of standards, with ISO 27001 the main one you certify against."
 publishDate: 2024-06-17
 author: "ABS Certifications"
 image: "/images/blog-iso-27001.jpg"
@@ -19,7 +19,7 @@ The series traces back to British Standard BS 7799 (1995), itself derived from s
 ## The core standards
 
 - **ISO 27000** — overview and vocabulary for the whole series
-- **[ISO 27001](/services/iso-27001)** — the requirements for an ISMS, and the only standard in the series that organisations can be **audited and certified against**
+- **[ISO 27001](/services/iso-27001)** — the requirements for an ISMS, and the main **certifiable** standard in the series (alongside ISO/IEC 27701 for privacy since 2025)
 - **[ISO 27002](/services/iso-27002)** — detailed implementation guidance for the security controls
 
 ## The wider family

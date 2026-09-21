@@ -10,7 +10,7 @@ category: "cyber-security"
 categoryName: "Cyber Security"
 order: 11
 timelineWeeks: "8-12"
-governingBody: "European Commission"
+governingBody: "European Union (EDPB)"
 featured: false
 seo:
   title: "GDPR Compliance & Readiness Assessment | EU & UK | ABS"
@@ -20,7 +20,7 @@ faqs:
   - question: "Is GDPR mandatory for companies outside the EU?"
     answer: "Often, yes. The GDPR applies extraterritorially: any organisation that offers goods or services to, or monitors the behaviour of, individuals in the EU must comply regardless of where the organisation itself is based. The UK GDPR places equivalent obligations on processing relating to individuals in the UK."
   - question: "Is there an official GDPR certificate?"
-    answer: "There is no single official 'GDPR certificate' issued by one body — compliance is demonstrated through your records, policies and practices. The recognised, certifiable route to evidence a privacy management system aligned with GDPR is ISO 27701, which extends ISO 27001 to privacy."
+    answer: "There is no single official 'GDPR certificate' issued by one body — compliance is demonstrated through your records, policies and practices. One certifiable route is ISO/IEC 27701, a privacy management system standard (standalone since its 2025 edition) that maps closely to GDPR. GDPR also allows approved certification schemes under Article 42, such as Europrivacy, which the European Data Protection Board has approved as a European Data Protection Seal."
   - question: "How is GDPR different from ISO 27701?"
     answer: "GDPR is a law that sets obligations; ISO 27701 is a certifiable management system standard. Implementing ISO 27701 gives you an audited framework that maps onto many GDPR requirements, which is why organisations often use it to demonstrate their privacy programme to customers and regulators."
   - question: "What are the penalties for non-compliance?"
@@ -45,7 +45,7 @@ GDPR compliance is not a single certificate — it is an ongoing programme. An A
 - **International transfers** and the safeguards used for them
 - **Processor agreements** and oversight of sub-processors
 
-We identify where you already meet the requirements, where the gaps are, and what to prioritise. Because GDPR is regulatory rather than a certifiable standard with a single issuing body, the recognised way to *certify* an aligned privacy programme is [ISO 27701](/services/iso-27701) — many organisations pair the two.
+We identify where you already meet the requirements, where the gaps are, and what to prioritise. Because GDPR is a regulation rather than a certifiable standard with a single issuing body, there is no single GDPR certificate. Organisations that want to *certify* an aligned privacy programme can use [ISO 27701](/services/iso-27701), a standalone privacy management system standard since its 2025 edition, or an approved GDPR certification scheme under Article 42. Many organisations pair GDPR work with ISO 27701.
 
 ## Typical timeline
 
@@ -59,7 +59,7 @@ Often, yes. The GDPR applies extraterritorially: any organisation that offers go
 
 ### Is there an official GDPR certificate?
 
-There is no single official "GDPR certificate" issued by one body — compliance is demonstrated through your records, policies and practices. The recognised, certifiable route to evidence a privacy management system aligned with GDPR is [ISO 27701](/services/iso-27701), which extends ISO 27001 to privacy.
+There is no single official "GDPR certificate" issued by one body — compliance is demonstrated through your records, policies and practices. One certifiable route is [ISO/IEC 27701](/services/iso-27701), a privacy management system standard (standalone since its 2025 edition) that maps closely to GDPR. GDPR also allows approved certification schemes under Article 42, such as Europrivacy, which the European Data Protection Board has approved as a European Data Protection Seal.
 
 ### How is GDPR different from ISO 27701?
 
