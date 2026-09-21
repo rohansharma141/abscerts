@@ -21,7 +21,7 @@ ISO — the International Organization for Standardization — is an independent
 
 ## Why it matters, and who needs it
 
-The value of ISO certification shows up across the whole supply chain. For businesses, it opens new markets, supports entry into competitive tenders, and improves products through better quality, compatibility and safety while reducing waste. For regulators and buyers, harmonised standards make cross-border trade and outsourcing more credible. Industry surveys consistently report high satisfaction among certified organisations, who tend to view certification as a sound investment rather than a compliance cost.
+The value of ISO certification shows up across the whole supply chain. For businesses, it opens new markets, supports entry into competitive tenders, and improves products through better quality, compatibility and safety while reducing waste. For regulators and buyers, harmonised standards make cross-border trade and outsourcing more credible.
 
 ABS helps organisations achieve certification to a broad range of ISO management system standards, including ISO 9001 (quality), ISO 14001 (environment), ISO 45001 (occupational health and safety), ISO 27001 (information security) with its privacy and cloud extensions, ISO 22000 (food safety), ISO 13485 (medical devices), ISO 50001 (energy), ISO 37001 (anti-bribery), ISO 42001 (AI management) and many more. Whether you are a single-site manufacturer, a SaaS company, a hospital or a multinational, there is almost certainly a standard relevant to how your customers judge you.
 
