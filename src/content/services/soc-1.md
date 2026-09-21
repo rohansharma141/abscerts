@@ -25,6 +25,12 @@ faqs:
     answer: "SSAE 18 is the AICPA attestation standard that governs SOC 1 engagements in the United States. ISAE 3402 is the international equivalent, issued by the IAASB, and is often requested when reporting to organisations outside the US. The three describe the same kind of service-organisation controls report under different standards."
   - question: "Who needs a SOC 1 report?"
     answer: "Service organisations whose services could affect their customers' financial statements — payroll processors, data hosting and SaaS providers, claims administrators, loan servicers and similar — are most often asked for one, because their clients' auditors need assurance over those outsourced controls."
+  - question: "Who issues a SOC 1 report?"
+    answer: "A licensed CPA firm performs the examination and issues the report, under the AICPA's SSAE 18 attestation standard. ABS prepares you for it: scoping, a readiness assessment, remediation and support through the examination."
+  - question: "How long does a SOC 1 report stay current?"
+    answer: "A SOC 1 report has no formal expiry date, but it covers a specific date (Type I) or period (Type II), so most clients and their auditors expect a new report every 12 months. A bridge letter from management can cover the gap between the end of the reporting period and the next report."
+  - question: "Which controls does a SOC 1 report cover?"
+    answer: "There is no fixed checklist. A SOC 1 report is built around control objectives relevant to your clients' financial reporting, agreed with the CPA firm for your specific service, together with the controls that meet them."
 ---
 
 ## What SOC 1 is and why buyers ask for it
@@ -63,3 +69,15 @@ SSAE 18 is the AICPA attestation standard that governs SOC 1 engagements in the 
 ### Who needs a SOC 1 report?
 
 Service organisations whose services could affect their customers' financial statements — payroll processors, data hosting and SaaS providers, claims administrators, loan servicers and similar — are most often asked for one. It is especially common for vendors to [financial services](/industries/finance) clients, whose own auditors need assurance over those outsourced controls.
+
+### Who issues a SOC 1 report?
+
+A licensed CPA firm performs the examination and issues the report, under the AICPA's SSAE 18 attestation standard. ABS prepares you for it: scoping, a readiness assessment, remediation and support through the examination.
+
+### How long does a SOC 1 report stay current?
+
+A SOC 1 report has no formal expiry date, but it covers a specific date (Type I) or period (Type II), so most clients and their auditors expect a new report every 12 months. A bridge letter from management can cover the gap between the end of the reporting period and the next report.
+
+### Which controls does a SOC 1 report cover?
+
+There is no fixed checklist. A SOC 1 report is built around control objectives relevant to your clients' financial reporting, agreed with the CPA firm for your specific service, together with the controls that meet them.

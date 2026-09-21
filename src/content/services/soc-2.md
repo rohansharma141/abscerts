@@ -23,6 +23,12 @@ faqs:
     answer: "Yes. SOC 2 assessments are almost always conducted remotely through secure evidence collection and interviews, which suits distributed engineering teams well."
   - question: "How does SOC 2 relate to ISO 27001?"
     answer: "They overlap heavily. If you already hold ISO 27001, much of the control evidence is reusable for SOC 2, and vice versa — we can scope an efficient path when you need both."
+  - question: "Who issues a SOC 2 report?"
+    answer: "A licensed CPA firm performs the examination and issues the report, under the AICPA's attestation standards. ABS prepares you for it: scoping, a readiness assessment, remediation and support through the examination."
+  - question: "How long does a SOC 2 report stay current?"
+    answer: "A SOC 2 report has no formal expiry date, but it covers a specific date (Type I) or period (Type II), so most customers expect a new report every 12 months. A bridge letter from management can cover the gap between the end of the reporting period and the next report."
+  - question: "Which Trust Services Criteria are mandatory?"
+    answer: "Only Security, the common criteria, is required in every SOC 2 report. Availability, processing integrity, confidentiality and privacy are optional, and you include the ones that match the commitments you make to your customers."
 ---
 
 ## Why SOC 2 matters for global businesses
@@ -53,3 +59,12 @@ Yes. SOC 2 assessments are almost always conducted remotely through secure evide
 
 ### How does SOC 2 relate to ISO 27001?
 They overlap heavily. If you already hold ISO 27001, much of the control evidence is reusable for SOC 2, and vice versa — we can scope an efficient path when you need both.
+
+### Who issues a SOC 2 report?
+A licensed CPA firm performs the examination and issues the report, under the AICPA's attestation standards. ABS prepares you for it: scoping, a readiness assessment, remediation and support through the examination.
+
+### How long does a SOC 2 report stay current?
+A SOC 2 report has no formal expiry date, but it covers a specific date (Type I) or period (Type II), so most customers expect a new report every 12 months. A bridge letter from management can cover the gap between the end of the reporting period and the next report.
+
+### Which Trust Services Criteria are mandatory?
+Only Security, the common criteria, is required in every SOC 2 report. Availability, processing integrity, confidentiality and privacy are optional, and you include the ones that match the commitments you make to your customers.

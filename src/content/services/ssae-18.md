@@ -25,6 +25,12 @@ faqs:
     answer: "A Type I report assesses the design and implementation of controls at a specific point in time. A Type II report assesses design and operating effectiveness over a period — commonly six months to a year. Most clients of a service organisation expect a Type II report."
   - question: "How does SSAE 18 relate to ISAE 3402?"
     answer: "SSAE 18 governs SOC 1 reports in the US, while ISAE 3402 is the international equivalent issued by the IAASB. Organisations reporting to overseas clients or auditors often choose ISAE 3402; those reporting primarily to US audiences use SOC 1 under SSAE 18."
+  - question: "Who performs an SSAE 18 examination?"
+    answer: "A licensed CPA firm performs the examination and issues the report. ABS prepares you for it: scoping, a readiness assessment, including how you monitor any sub-service organisations, remediation, and support through the examination."
+  - question: "How long does an SSAE 18 report stay current?"
+    answer: "The report has no formal expiry date, but it covers a specific date (Type I) or period (Type II), so most clients and their auditors expect a new report every 12 months. A bridge letter from management can cover the gap between the end of the reporting period and the next report."
+  - question: "Which criteria does an SSAE 18 examination use?"
+    answer: "It depends on the report. A SOC 1 examination is built around control objectives relevant to your clients' financial reporting, agreed for your specific service; a SOC 2 examination uses the AICPA Trust Services Criteria, in which Security is always required."
 ---
 
 ## What SSAE 18 is and why buyers ask for it
@@ -72,3 +78,15 @@ A Type I report assesses the design and implementation of controls at a specific
 ### How does SSAE 18 relate to ISAE 3402?
 
 SSAE 18 governs SOC 1 reports in the US, while [ISAE 3402](/services/isae-3402) is the international equivalent issued by the IAASB. Organisations reporting to overseas clients often choose ISAE 3402; those reporting primarily to US audiences use SOC 1 under SSAE 18.
+
+### Who performs an SSAE 18 examination?
+
+A licensed CPA firm performs the examination and issues the report. ABS prepares you for it: scoping, a readiness assessment, including how you monitor any sub-service organisations, remediation, and support through the examination.
+
+### How long does an SSAE 18 report stay current?
+
+The report has no formal expiry date, but it covers a specific date (Type I) or period (Type II), so most clients and their auditors expect a new report every 12 months. A bridge letter from management can cover the gap between the end of the reporting period and the next report.
+
+### Which criteria does an SSAE 18 examination use?
+
+It depends on the report. A SOC 1 examination is built around control objectives relevant to your clients' financial reporting, agreed for your specific service; a SOC 2 examination uses the AICPA Trust Services Criteria, in which Security is always required.
