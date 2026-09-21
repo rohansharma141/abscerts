@@ -48,7 +48,7 @@ ABS provides CMMI implementation and appraisal-readiness consulting; formal Benc
 
 We support service organisations end to end on the journey to their target maturity level: gap analysis and current-state assessment, CMMI overview training, a process-improvement strategy and roadmap, defining and documenting service-delivery processes, establishing a measurement framework, software quality assurance (SQA) support, and preparation for and support through the formal appraisal, which is led by an authorised Lead Appraiser. The goal is service delivery that holds up under scrutiny and improves over time.
 
-It suits IT service providers, BPO and managed-services firms. Organisations that also build software often pair it with [CMMI for Development](/services/cmmi-dev), and those managing large supplier relationships with [CMMI for Acquisition](/services/cmmi-acquisition). See the full [CMMI & Process](/services/cmmi) category for related work.
+It suits IT service providers, BPO and managed-services firms. Organisations that also build software often pair it with [CMMI for Development](/services/cmmi-dev), and those managing large supplier relationships with [CMMI for Supplier Management](/services/cmmi-acquisition) (formerly Acquisition). See the full [CMMI & Process](/services/cmmi) category for related work.
 
 ## Common questions
 

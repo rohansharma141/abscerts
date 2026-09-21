@@ -1,30 +1,32 @@
 ---
-title: "CMMI for Acquisition (CMMI-ACQ)"
-shortName: "CMMI for Acquisition"
+title: "CMMI for Supplier Management (formerly Acquisition)"
+shortName: "CMMI for Supplier Management"
 description: "Process maturity improvement for organisations that acquire products and services from suppliers — strengthening acquisition and supplier-management processes."
 icon: "ti-truck-delivery"
 tags: ["CMMI", "CMMI-ACQ", "Acquisition", "Supplier Management"]
 image: "/images/cat-cmmi.jpg"
-imageAlt: "CMMI for Acquisition supplier and procurement process maturity"
+imageAlt: "CMMI supplier management and procurement process maturity"
 category: "cmmi"
 categoryName: "CMMI & Process"
 order: 3
 governingBody: "ISACA / CMMI Institute"
 featured: false
 seo:
-  title: "CMMI for Acquisition (CMMI-ACQ) | Appraisal Readiness | ABS"
-  description: "CMMI-ACQ advisory and appraisal-readiness for organisations that procure products and services from suppliers. Strengthen acquisition processes. Quote in 24 hours."
-  keywords: ["CMMI for Acquisition", "CMMI-ACQ", "CMMI supplier management", "acquisition process improvement"]
+  title: "CMMI for Supplier Management | Appraisal Readiness | ABS"
+  description: "CMMI Supplier Management (formerly CMMI for Acquisition) advisory and appraisal readiness for organisations that buy from suppliers. Quote in 24 hours."
+  keywords: ["CMMI Supplier Management", "CMMI for Acquisition", "CMMI-ACQ", "acquisition process improvement"]
 faqs:
-  - question: "What does CMMI for Acquisition cover?"
-    answer: "It applies the CMMI model to organisations that obtain products and services from suppliers rather than build them in-house — strengthening how they plan acquisitions, select and manage suppliers, and verify what is delivered. In current CMMI terminology this domain is often described as Supplier Management; the underlying intent is the same."
+  - question: "What does CMMI for Supplier Management (formerly Acquisition) cover?"
+    answer: "It applies the CMMI model to organisations that obtain products and services from suppliers rather than build them in-house — strengthening how they plan acquisitions, select and manage suppliers, and verify what is delivered. It was called CMMI for Acquisition (CMMI-ACQ) in CMMI v1.3 and Supplier Management in CMMI V2.0; in the current CMMI V3.0 it is the Suppliers domain. The intent is the same."
   - question: "How does it differ from CMMI for Development and Services?"
-    answer: "All three share the same five-level maturity scale and appraisal approach. Development targets building products and systems, Services targets delivering services, and Acquisition targets buying and managing what suppliers provide. Organisations with significant outsourcing or procurement use the Acquisition view to make those relationships more disciplined and predictable."
+    answer: "All three share the same five-level maturity scale and appraisal approach. Development targets building products and systems, Services targets delivering services, and Supplier Management (formerly Acquisition) targets buying and managing what suppliers provide. Organisations with significant outsourcing or procurement use it to make those relationships more disciplined and predictable."
 ---
 
-## What CMMI for Acquisition is
+## What CMMI for Supplier Management is
 
-CMMI (Capability Maturity Model Integration), administered by ISACA, is a globally recognised model for improving how an organisation performs its work and for measuring the maturity of those processes. The Acquisition view — **CMMI-ACQ** — applies the model to organisations that obtain products and services from suppliers rather than build them in-house. It strengthens the processes around planning acquisitions, selecting and managing suppliers, and verifying that what is delivered meets requirements. (In current CMMI, this domain is commonly framed as **Supplier Management** — the terminology has evolved, but the focus on disciplined acquisition is unchanged.)
+CMMI (Capability Maturity Model Integration), administered by ISACA, is a globally recognised model for improving how an organisation performs its work and for measuring the maturity of those processes. **CMMI for Supplier Management**, formerly **CMMI for Acquisition (CMMI-ACQ)**, applies the model to organisations that obtain products and services from suppliers rather than build them in-house. It strengthens the processes around planning acquisitions, selecting and managing suppliers, and verifying that what is delivered meets requirements.
+
+The name has changed as the model has evolved: CMMI v1.3 called it CMMI for Acquisition (CMMI-ACQ), CMMI V2.0 called it Supplier Management, and in the current CMMI V3.0 (ISACA, April 2023) it is the **Suppliers** domain. The focus on disciplined acquisition and supplier management is unchanged.
 
 ## The maturity levels
 
@@ -42,7 +44,7 @@ For organisations that depend heavily on suppliers, a higher maturity level mean
 
 As with the rest of the model, maturity is confirmed through an **appraisal**, not a certification. The formal method is the current CMMI Appraisal Method, conducted by an appraisal team led by a certified Lead Appraiser, and the result is typically valid for three years.
 
-## How ABS supports CMMI-ACQ
+## How ABS supports CMMI Supplier Management
 
 ABS provides CMMI implementation and appraisal-readiness consulting; formal Benchmark or Sustainment Appraisals are performed through appropriately authorised CMMI appraisal professionals in accordance with current ISACA CMMI requirements. Our consultants bring a minimum of 8–10 years' hands-on experience implementing CMMI.
 
@@ -52,10 +54,10 @@ It suits organisations with significant procurement or outsourcing — including
 
 ## Common questions
 
-### What does CMMI for Acquisition cover?
+### What does CMMI for Supplier Management (formerly Acquisition) cover?
 
-It applies the CMMI model to organisations that obtain products and services from suppliers rather than build them in-house — strengthening how they plan acquisitions, select and manage suppliers, and verify what is delivered. Current CMMI often calls this domain Supplier Management.
+It applies the CMMI model to organisations that obtain products and services from suppliers rather than build them in-house — strengthening how they plan acquisitions, select and manage suppliers, and verify what is delivered. It was called CMMI for Acquisition (CMMI-ACQ) in CMMI v1.3 and Supplier Management in CMMI V2.0; in the current CMMI V3.0 it is the Suppliers domain. The intent is the same.
 
 ### How does it differ from CMMI for Development and Services?
 
-All three share the same five-level maturity scale and appraisal approach. [Development](/services/cmmi-dev) targets building products and systems, [Services](/services/cmmi-services) targets delivering services, and Acquisition targets buying and managing what suppliers provide.
+All three share the same five-level maturity scale and appraisal approach. [Development](/services/cmmi-dev) targets building products and systems, [Services](/services/cmmi-services) targets delivering services, and Supplier Management (formerly Acquisition) targets buying and managing what suppliers provide. Organisations with significant outsourcing or procurement use it to make those relationships more disciplined and predictable.

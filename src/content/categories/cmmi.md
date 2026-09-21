@@ -11,7 +11,7 @@ row: 1
 industries: ["saas"]
 seo:
   title: "CMMI Appraisal Readiness | Maturity Level 2 & 3 | ABS"
-  description: "CMMI for Development, Services and Suppliers — Maturity Level 2 and 3 readiness, gap analysis and appraisal support. Recognised for enterprise and government tenders."
+  description: "CMMI for Development, Services and Supplier Management — Level 2 and 3 readiness, gap analysis and appraisal support for enterprise and government tenders."
   keywords: ["CMMI appraisal India", "CMMI Level 3", "CMMI for development", "process maturity"]
 ---
 
