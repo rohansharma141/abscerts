@@ -25,7 +25,7 @@ You need:
 3. **API Keys** → **Create API Key** (sending permission). Copy it — this is `RESEND_API_KEY`. You won't see it again.
 4. Decide the three addresses the forms use (all on the verified domain for the *from* address):
    - `FROM_EMAIL` — the sender, e.g. `ABS Certifications <noreply@abscerts.com>`
-   - `NOTIFICATION_EMAIL` — where **Contact** + **Quote** enquiries land, e.g. `info@abscerts.com`
+   - `NOTIFICATION_EMAIL` — where **Contact**, **Quote**, **Partner** and **Consultation** enquiries land, e.g. `info@abscerts.com`
    - `MARKETING_EMAIL` — where **Newsletter** sign-ups land, e.g. `marketing@abscerts.com`
 
    (`NOTIFICATION_EMAIL` / `MARKETING_EMAIL` can be any inbox you read — they don't need to be on the abscerts.com domain; only `FROM_EMAIL` must be on the Resend-verified domain.)
@@ -92,7 +92,7 @@ In the Pages project → **Settings → Environment variables → Production** (
 |---|---|---|
 | `RESEND_API_KEY` | `re_xxxxxxxx` | **Mark as Secret/encrypted** |
 | `FROM_EMAIL` | `ABS Certifications <noreply@abscerts.com>` | must be on the Resend-verified domain |
-| `NOTIFICATION_EMAIL` | `info@abscerts.com` | receives Contact + Quote |
+| `NOTIFICATION_EMAIL` | `info@abscerts.com` | receives Contact, Quote, Partner and Consultation |
 | `MARKETING_EMAIL` | `marketing@abscerts.com` | receives Newsletter sign-ups |
 
 After adding/changing variables, **re-deploy** for them to take effect.
