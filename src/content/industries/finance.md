@@ -1,6 +1,6 @@
 ---
-title: "Financial services"
-shortName: "Financial services"
+title: "Financial Services"
+shortName: "Financial Services"
 description: "PCI DSS, SOC 2, ISO 27001 for fintech & banks."
 seoDescription: "Certification consulting for fintechs, banks and financial-services firms — PCI DSS, SOC 2 and ISO 27001 implementation and audit-readiness support."
 image: "/images/industry-finance.jpg"

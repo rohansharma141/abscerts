@@ -3,7 +3,7 @@ title: "Kosher Certification Readiness"
 shortName: "Kosher"
 description: "Certification-readiness support for kosher — helping products and processes meet Jewish dietary law (kashrut), opening kosher markets and signalling quality to a wider consumer base."
 icon: "ti-star"
-tags: ["Kosher", "Food Certification", "Market Access", "Food Industry"]
+tags: ["Kosher", "Food Certification", "Market Access"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "Kosher food and product compliance"
 category: "industry-food-certifications"

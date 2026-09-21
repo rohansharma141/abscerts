@@ -3,7 +3,7 @@ title: "SMETA — Sedex Members Ethical Trade Audit"
 shortName: "SMETA"
 description: "Readiness support for SMETA, the most widely used ethical audit — covering labour, health & safety, environment and business ethics. The audit produces a report, not a certificate."
 icon: "ti-scale"
-tags: ["SMETA", "Ethical Audit", "Sedex", "Food Industry"]
+tags: ["SMETA", "Ethical Audit", "Sedex"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "SMETA ethical trade audit readiness at a workplace"
 category: "industry-food-certifications"

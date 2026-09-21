@@ -3,7 +3,7 @@ title: "What is VAPT? Vulnerability Assessment and Penetration Testing"
 seoTitle: "What Is VAPT? Vulnerability Assessment & Pen Testing"
 description: "VAPT combines vulnerability assessment and penetration testing to find and fix security weaknesses before attackers do — what it covers and why."
 publishDate: 2024-01-16
-author: "ABS Certifications"
+author: "ABS Certifications & Advisory"
 image: "/images/blog-vapt.jpg"
 imageAlt: "Vulnerability assessment and penetration testing of IT systems"
 tags: ["VAPT", "Penetration Testing", "Cyber Security"]

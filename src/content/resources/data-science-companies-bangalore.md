@@ -2,7 +2,7 @@
 title: "5 Best Data Science Companies in Bangalore"
 description: "A look at five notable data science companies in Bangalore and the analytics capabilities they offer — from cloud analytics platforms to digital engineering."
 publishDate: 2023-12-29
-author: "ABS Certifications"
+author: "ABS Certifications & Advisory"
 image: "/images/blog-iso-45001.jpg"
 imageAlt: "Data science and analytics teams in Bangalore"
 tags: ["Data Analytics", "Data Science", "Bangalore"]

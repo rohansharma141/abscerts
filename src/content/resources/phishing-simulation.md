@@ -3,7 +3,7 @@ title: "Phishing Simulation — A Simple Yet Powerful Tool Against Cyberthreats"
 seoTitle: "Phishing Simulation: How It Works & Why It Matters"
 description: "Phishing simulation tests employees with safe, realistic mock attacks to build awareness and cut click rates. What it is and why it matters."
 publishDate: 2024-07-31
-author: "ABS Certifications"
+author: "ABS Certifications & Advisory"
 image: "/images/blog-phishing.jpg"
 imageAlt: "Phishing simulation and security awareness training"
 tags: ["Phishing", "Cyber Security", "Security Awareness"]

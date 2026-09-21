@@ -2,7 +2,7 @@
 title: "Frequently Asked Questions: SOC 2"
 description: "What SOC 2 is, how organisations obtain a report, what auditors evaluate, and the common gaps a SOC 2 audit surfaces — answered plainly."
 publishDate: 2024-05-10
-author: "ABS Certifications"
+author: "ABS Certifications & Advisory"
 image: "/images/blog-soc-2.jpg"
 imageAlt: "SOC 2 audit and information security controls"
 tags: ["SOC 2", "Cyber Security", "AICPA", "FAQ"]

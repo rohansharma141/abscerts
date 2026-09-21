@@ -3,7 +3,7 @@ title: "NABH Accreditation Support"
 shortName: "NABH"
 description: "Readiness and advisory support to help hospitals and healthcare providers achieve NABH accreditation for patient safety and quality of care."
 icon: "ti-building-hospital"
-tags: ["NABH", "Healthcare Accreditation", "Patient Safety", "Food Industry"]
+tags: ["NABH", "Healthcare Accreditation", "Patient Safety"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "NABH hospital accreditation support"
 category: "industry-food-certifications"

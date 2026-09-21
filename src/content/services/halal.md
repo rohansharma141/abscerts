@@ -3,7 +3,7 @@ title: "Halal Certification Readiness"
 shortName: "Halal"
 description: "Certification-readiness support for Halal — helping products and processes meet Islamic dietary law, opening access to Muslim-majority markets and consumers worldwide."
 icon: "ti-moon"
-tags: ["Halal", "Food Certification", "Market Access", "Food Industry"]
+tags: ["Halal", "Food Certification", "Market Access"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "Halal food and product compliance"
 category: "industry-food-certifications"

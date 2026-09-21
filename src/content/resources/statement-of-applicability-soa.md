@@ -2,7 +2,7 @@
 title: "What is a Statement of Applicability (SoA)?"
 description: "The Statement of Applicability is a mandatory ISO 27001 document recording which controls you apply, which you don't, and why. What it contains."
 publishDate: 2024-05-07
-author: "ABS Certifications"
+author: "ABS Certifications & Advisory"
 image: "/images/blog-data-privacy.jpg"
 imageAlt: "ISO 27001 Statement of Applicability documentation"
 tags: ["ISO 27001", "Statement of Applicability", "Information Security"]
