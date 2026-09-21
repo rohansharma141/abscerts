@@ -12,7 +12,7 @@ order: 2
 governingBody: "ISACA / CMMI Institute"
 featured: false
 seo:
-  title: "CMMI for Services (CMMI-SVC) | Maturity Appraisal Support | ABS"
+  title: "CMMI for Services (CMMI-SVC) | Appraisal Readiness | ABS"
   description: "CMMI-SVC advisory and appraisal-readiness for IT services, BPO and managed-services organisations. Reach your target CMMI maturity level. Quote in 24 hours."
   keywords: ["CMMI for Services", "CMMI-SVC", "CMMI services maturity", "IT services process improvement"]
 faqs:

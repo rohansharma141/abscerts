@@ -1,11 +1,11 @@
 ---
 title: "BRCGS — Global Standard for Food Safety"
 shortName: "BRCGS"
-description: "Certification against the BRCGS Global Standard — a GFSI-recognised benchmark for food safety, quality and operational criteria, widely required by retailers."
+description: "Implementation and certification-readiness support for the BRCGS Global Standard — a GFSI-recognised benchmark for food safety, quality and operational criteria, widely required by retailers."
 icon: "ti-building-store"
 tags: ["BRCGS", "Food Safety", "GFSI", "Food Industry"]
 image: "/images/cat-industry-food-certifications.jpg"
-imageAlt: "BRCGS Global Standard for Food Safety certification"
+imageAlt: "BRCGS Global Standard for Food Safety implementation"
 category: "industry-food-certifications"
 categoryName: "Food Industry Certifications"
 order: 3
@@ -13,8 +13,8 @@ timelineWeeks: "12-16"
 governingBody: "BRCGS"
 featured: false
 seo:
-  title: "BRCGS Certification | Global Standard for Food Safety | ABS"
-  description: "BRCGS Global Standard certification — a GFSI-recognised benchmark for food safety and quality, widely required by retailers. Independent certification from ABS."
+  title: "BRCGS Certification Consulting | Food Safety | ABS"
+  description: "BRCGS Global Standard — a GFSI-recognised food safety benchmark widely required by retailers. Implementation and certification-readiness support from ABS."
   keywords: ["BRCGS certification", "BRC Global Standard", "food safety GFSI", "British Retail Consortium standard"]
 faqs:
   - question: "What is BRCGS and who requires it?"

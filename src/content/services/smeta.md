@@ -1,19 +1,19 @@
 ---
 title: "SMETA — Sedex Members Ethical Trade Audit"
 shortName: "SMETA"
-description: "The most widely used ethical audit format — assessing labour, health & safety, environment and business ethics. SMETA is an audit that produces a report, not a certificate."
+description: "Readiness support for SMETA, the most widely used ethical audit — covering labour, health & safety, environment and business ethics. The audit produces a report, not a certificate."
 icon: "ti-scale"
 tags: ["SMETA", "Ethical Audit", "Sedex", "Food Industry"]
 image: "/images/cat-industry-food-certifications.jpg"
-imageAlt: "SMETA ethical trade audit of a workplace"
+imageAlt: "SMETA ethical trade audit readiness at a workplace"
 category: "industry-food-certifications"
 categoryName: "Food Industry Certifications"
 order: 8
 governingBody: "Sedex"
 featured: false
 seo:
-  title: "SMETA Ethical Audit | Sedex Members Ethical Trade Audit | ABS"
-  description: "SMETA — the most widely used ethical audit, covering labour, health & safety, environment and business ethics. An audit and report, not a certificate. From ABS."
+  title: "SMETA Audit Readiness | Sedex Ethical Trade Audit | ABS"
+  description: "SMETA audit readiness — pre-audit gap checks and corrective-action support for the most widely used ethical audit: labour, health & safety, environment, ethics."
   keywords: ["SMETA audit", "Sedex ethical audit", "ethical trade audit", "supply chain ethics audit"]
 faqs:
   - question: "Is SMETA a certification?"

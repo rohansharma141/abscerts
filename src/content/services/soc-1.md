@@ -1,11 +1,11 @@
 ---
 title: "SOC 1 — System & Organization Controls (Type I & Type II)"
 shortName: "SOC 1"
-description: "Independent SOC 1 Type I and Type II audits for service organisations whose controls affect their clients' financial reporting."
+description: "Readiness and support for SOC 1 Type I and Type II reports, for service organisations whose controls affect their clients' financial reporting."
 icon: "ti-report-money"
 tags: ["SOC 1", "AICPA", "Financial Controls", "Service Organization"]
 image: "/images/cat-cyber-security.jpg"
-imageAlt: "SOC 1 audit of financial reporting controls at a service organisation"
+imageAlt: "SOC 1 readiness for financial reporting controls at a service organisation"
 category: "cyber-security"
 categoryName: "Cyber Security"
 order: 7
@@ -13,8 +13,8 @@ timelineWeeks: "10-14"
 governingBody: "AICPA"
 featured: false
 seo:
-  title: "SOC 1 Audit (Type I & Type II) | Financial Controls | ABS"
-  description: "Independent SOC 1 Type I and Type II audits for service organisations whose controls affect client financial reporting. AICPA SSAE 18. Quote in 24 hours."
+  title: "SOC 1 Readiness (Type I & II) | Financial Controls | ABS"
+  description: "SOC 1 Type I and Type II readiness and support for service organisations whose controls affect client financial reporting. AICPA SSAE 18. Quote in 24 hours."
   keywords: ["SOC 1 audit", "SOC 1 Type 2", "SSAE 18 SOC 1", "service organization controls"]
 faqs:
   - question: "What's the difference between SOC 1 and SOC 2?"

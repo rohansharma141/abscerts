@@ -4,7 +4,7 @@ shortName: "ISO Certifications"
 description: "Consulting and training across the full range of ISO management system standards — helping you achieve certification recognised by buyers worldwide."
 icon: "ti-certificate"
 image: "/images/cat-iso-certifications.jpg"
-imageAlt: "ISO management system certification audit"
+imageAlt: "ISO management system implementation and audit readiness"
 order: 2
 column: 2
 row: 1

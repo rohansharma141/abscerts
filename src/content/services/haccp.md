@@ -5,7 +5,7 @@ description: "Implementation and certification-readiness support for a HACCP foo
 icon: "ti-meat"
 tags: ["HACCP", "Food Safety", "Hazard Analysis", "Food Industry"]
 image: "/images/service-haccp.jpg"
-imageAlt: "HACCP food safety hazard analysis certification"
+imageAlt: "HACCP food safety hazard analysis"
 category: "industry-food-certifications"
 categoryName: "Food Industry Certifications"
 order: 1

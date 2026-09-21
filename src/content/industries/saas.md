@@ -4,7 +4,7 @@ shortName: "Technology & SaaS"
 description: "ISO 27001, SOC 2, GDPR for software companies."
 seoDescription: "Certification consulting for SaaS and tech firms — ISO 27001, SOC 2 and GDPR implementation and audit-readiness support to speed up enterprise reviews."
 image: "/images/industry-saas.jpg"
-imageAlt: "Technology and SaaS companies — ISO 27001 and SOC 2 certification"
+imageAlt: "Technology and SaaS companies — ISO 27001 and SOC 2 readiness"
 standards: ["ISO 27001", "SOC 2", "GDPR"]
 services: ["iso-27001", "soc-2", "iso-27701", "iso-27017", "iso-27018", "gdpr", "iso-42001", "iso-22301", "nist", "vapt", "soc-1", "iso-9001", "cmmi-dev"]
 order: 1

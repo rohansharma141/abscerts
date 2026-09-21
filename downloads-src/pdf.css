@@ -1,0 +1,36 @@
+/* Shared print styles for the downloadable guides in /public/downloads.
+   One A4 page each, printed with headless Chrome by build_pdfs.py. */
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #2a2f3a;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.bar { height: 6pt; background: #34e0c4; }
+.page { padding: 26pt 54pt 0; }
+.brand { font-weight: 700; font-size: 11pt; color: #081f4d; margin: 0; }
+.tagline { font-size: 9pt; color: #5c6373; margin: 3pt 0 0; letter-spacing: 0.02em; }
+h1 { font-size: 22pt; color: #081f4d; margin: 26pt 0 6pt; letter-spacing: -0.01em; }
+.sub { font-size: 11pt; color: #5c6373; margin: 0 0 10pt; line-height: 1.4; }
+h2 { font-size: 13pt; color: #081f4d; margin: 14pt 0 7pt; }
+p { font-size: 10.5pt; line-height: 1.5; margin: 0 0 6pt; }
+ul.check { list-style: none; margin: 0; padding: 0; }
+ul.check li {
+  font-size: 10.5pt; line-height: 1.35; margin: 0 0 6pt;
+  padding-left: 18pt; position: relative;
+}
+ul.check li::before {
+  content: ''; position: absolute; left: 0; top: 1.5pt;
+  width: 8pt; height: 8pt; border: 1pt solid #081f4d; border-radius: 1.5pt;
+}
+.step { margin: 0 0 9pt; }
+.step h3 { font-size: 11pt; color: #081f4d; margin: 0 0 2pt; }
+.step h3 span { color: #b8935a; margin-right: 6pt; }
+.step p { margin: 0; }
+.foot {
+  margin-top: 18pt; padding-top: 8pt; border-top: 1pt solid #d8dce3;
+  font-size: 8pt; color: #5c6373; text-align: center; line-height: 1.5;
+}

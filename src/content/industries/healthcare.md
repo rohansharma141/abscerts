@@ -4,7 +4,7 @@ shortName: "Healthcare & medical"
 description: "ISO 13485, 27001 for life sciences."
 seoDescription: "Certification consulting for healthcare, medical-device and life-sciences firms — ISO 13485, ISO 27001, HIPAA and NABH implementation and readiness support."
 image: "/images/industry-healthcare.jpg"
-imageAlt: "Healthcare and medical devices — ISO 13485 certification"
+imageAlt: "Healthcare and medical devices — ISO 13485 readiness"
 standards: ["ISO 13485", "ISO 27001", "ISO 9001"]
 services: ["iso-13485", "iso-9001", "iso-27001", "iso-27701", "hipaa", "gdpr", "soc-2", "nabh", "nabl", "iso-22301"]
 order: 3

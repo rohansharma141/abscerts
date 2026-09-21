@@ -4,7 +4,7 @@ shortName: "Manufacturing"
 description: "ISO 9001, 14001, 45001 for production sites."
 seoDescription: "Certification consulting for manufacturers and production sites — ISO 9001, 14001, 45001 and IATF 16949 implementation and audit-readiness support."
 image: "/images/industry-manufacturing.jpg"
-imageAlt: "Manufacturing facility — ISO 9001, 14001 and 45001 certification"
+imageAlt: "Manufacturing facility — ISO 9001, 14001 and 45001 readiness"
 standards: ["ISO 9001", "ISO 14001", "ISO 45001"]
 services: ["iso-9001", "iso-14001", "iso-45001", "iso-50001", "iso-55001", "iatf-16949", "vda-6", "iso-29001", "ce-marking", "iso-28000", "smeta", "haccp", "fssc-22000", "brcgs"]
 order: 2

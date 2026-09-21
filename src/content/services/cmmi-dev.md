@@ -12,7 +12,7 @@ order: 1
 governingBody: "ISACA / CMMI Institute"
 featured: false
 seo:
-  title: "CMMI for Development (CMMI-DEV) | Maturity Appraisal Support | ABS"
+  title: "CMMI for Development (CMMI-DEV) | Appraisal Readiness | ABS"
   description: "CMMI-DEV advisory and appraisal-readiness for software, product and systems development organisations. Reach your target CMMI maturity level. Quote in 24 hours."
   keywords: ["CMMI for Development", "CMMI-DEV", "CMMI maturity level", "CMMI appraisal"]
 faqs:

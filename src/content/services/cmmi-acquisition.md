@@ -12,7 +12,7 @@ order: 3
 governingBody: "ISACA / CMMI Institute"
 featured: false
 seo:
-  title: "CMMI for Acquisition (CMMI-ACQ) | Maturity Appraisal Support | ABS"
+  title: "CMMI for Acquisition (CMMI-ACQ) | Appraisal Readiness | ABS"
   description: "CMMI-ACQ advisory and appraisal-readiness for organisations that procure products and services from suppliers. Strengthen acquisition processes. Quote in 24 hours."
   keywords: ["CMMI for Acquisition", "CMMI-ACQ", "CMMI supplier management", "acquisition process improvement"]
 faqs:

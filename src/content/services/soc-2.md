@@ -1,11 +1,11 @@
 ---
 title: "SOC 2 — Type I & Type II Reports"
 shortName: "SOC 2"
-description: "Independent assurance over security, availability and confidentiality controls for SaaS and cloud providers."
+description: "Readiness and support for SOC 2 reports on security, availability and confidentiality controls, for SaaS and cloud providers."
 icon: "ti-cloud-lock"
 tags: ["SOC 2", "Type I", "Type II", "Trust Services"]
 image: "/images/cat-cyber-security.jpg"
-imageAlt: "SOC 2 controls assessment for a cloud service provider"
+imageAlt: "SOC 2 controls readiness for a cloud service provider"
 category: "cyber-security"
 categoryName: "Cyber Security"
 governingBody: "AICPA"
@@ -14,8 +14,8 @@ timelineWeeks: "6-10"
 featured: true
 related: ["iso-27001", "vapt", "gdpr", "pci-dss"]
 seo:
-  title: "SOC 2 Type I & Type II | Audit & Readiness | ABS"
-  description: "Independent SOC 2 Type I and Type II readiness and assessment for SaaS and cloud providers selling into the US and UK. Fixed-price quote in 24 hours."
+  title: "SOC 2 Type I & Type II | Readiness & Support | ABS"
+  description: "SOC 2 Type I and Type II readiness and support for SaaS and cloud providers selling into the US and UK. Fixed-price quote in 24 hours."
 faqs:
   - question: "Should we start with Type I or Type II?"
     answer: "Many companies start with Type I to have a report in hand quickly for active deals, then move to Type II to cover an operating period. If your buyers are already asking specifically for Type II, we can plan directly toward it."

@@ -4,13 +4,13 @@ shortName: "CMMI & Process"
 description: "CMMI Maturity Level 2 and 3 readiness and appraisal support for software, IT services and supplier organisations bidding into enterprise and government work."
 icon: "ti-stairs-up"
 image: "/images/cat-cmmi.jpg"
-imageAlt: "CMMI process maturity appraisal for software organisations"
+imageAlt: "CMMI process maturity readiness for software organisations"
 order: 3
 column: 3
 row: 1
 industries: ["saas"]
 seo:
-  title: "CMMI Appraisals | Maturity Level 2 & 3 | ABS Certifications"
+  title: "CMMI Appraisal Readiness | Maturity Level 2 & 3 | ABS"
   description: "CMMI for Development, Services and Suppliers — Maturity Level 2 and 3 readiness, gap analysis and appraisal support. Recognised for enterprise and government tenders."
   keywords: ["CMMI appraisal India", "CMMI Level 3", "CMMI for development", "process maturity"]
 ---

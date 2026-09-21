@@ -1,18 +1,18 @@
 ---
 title: "Lead Auditor Personnel Certification"
 shortName: "Lead Auditor Certification"
-description: "Certification of an individual auditor's competence — a personal credential, distinct from the certification of an organisation's management system."
+description: "The route from lead auditor training to a recognised auditor credential — how auditor registration works, the experience it needs, and how ABS supports the candidate."
 icon: "ti-user-check"
 tags: ["Personnel Certification", "Lead Auditor", "Auditor Competence"]
 image: "/images/cat-personnel-certifications.jpg"
-imageAlt: "Lead auditor personnel certification"
+imageAlt: "Lead auditor training and credentials"
 category: "management-system-training"
 categoryName: "Training & Professional Development"
 order: 4
 featured: false
 seo:
-  title: "Lead Auditor Personnel Certification | Auditor Competence | ABS"
-  description: "Personnel certification recognises an individual auditor's competence — a personal credential, distinct from an organisation's management system certification."
+  title: "Lead Auditor Credentials | Training to Recognition | ABS"
+  description: "From lead auditor training to a recognised auditor credential — how registration schemes work, the audit experience needed, and how ABS supports you."
   keywords: ["personnel certification", "lead auditor certification", "auditor competence", "certified auditor"]
 faqs:
   - question: "What is the difference between personnel certification and management system certification?"

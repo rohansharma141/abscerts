@@ -1,11 +1,11 @@
 ---
 title: "VDA 6 — Automotive Process & System Audits"
 shortName: "VDA 6"
-description: "Audits against the German automotive industry's VDA 6 standards — including the VDA 6.3 process audit relied on by German OEMs and their suppliers."
+description: "Readiness support for the German automotive industry's VDA 6 standards — including the VDA 6.3 process audit relied on by German OEMs and their suppliers."
 icon: "ti-engine"
 tags: ["VDA 6", "VDA 6.3", "Automotive", "Food Industry"]
 image: "/images/cat-industry-food-certifications.jpg"
-imageAlt: "VDA 6 automotive process audit"
+imageAlt: "VDA 6.3 automotive process audit readiness"
 category: "industry-food-certifications"
 categoryName: "Food Industry Certifications"
 order: 7
@@ -13,8 +13,8 @@ timelineWeeks: "12-16"
 governingBody: "VDA"
 featured: false
 seo:
-  title: "VDA 6 / VDA 6.3 Audits | Automotive Quality | ABS"
-  description: "VDA 6 automotive audits, including the VDA 6.3 process audit used by German OEMs and suppliers to assess process capability. Independent assessment from ABS."
+  title: "VDA 6.3 Readiness | Automotive Process Audits | ABS"
+  description: "VDA 6.3 readiness — preparing automotive suppliers for the VDA 6.3 process audit used by German OEMs to assess process capability. Support from ABS."
   keywords: ["VDA 6", "VDA 6.3 process audit", "automotive process audit", "German automotive quality"]
 faqs:
   - question: "What is VDA 6 and VDA 6.3?"

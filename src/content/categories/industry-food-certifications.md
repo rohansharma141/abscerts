@@ -1,17 +1,17 @@
 ---
 title: "Food Industry Certifications"
 shortName: "Food Industry"
-description: "Sector-specific certification and accreditation — HACCP, Halal, Kosher, FSSC 22000, BRCGS, IATF 16949, CE marking and more — for food, manufacturing and supply chains."
+description: "Readiness and implementation support for sector schemes — HACCP, Halal, Kosher, FSSC 22000, BRCGS, IATF 16949, CE marking and more — for food, manufacturing and supply chains."
 icon: "ti-building-factory-2"
 image: "/images/cat-industry-food-certifications.jpg"
-imageAlt: "Food safety and industrial product certification"
+imageAlt: "Food safety and industrial product compliance"
 order: 4
 column: 4
 row: 1
 industries: ["manufacturing", "healthcare"]
 seo:
   title: "Food Industry Certifications | HACCP, Halal, BRCGS | ABS"
-  description: "Food safety and industry certification — HACCP, Halal, Kosher, FSSC 22000, BRCGS, IATF 16949, CE marking, NABL, NABH."
+  description: "Food safety and sector certification readiness — HACCP, Halal, Kosher, FSSC 22000, BRCGS, IATF 16949, CE marking, NABL, NABH."
   keywords: ["HACCP certification", "food safety certification India", "BRCGS", "IATF 16949 certification"]
 ---
 

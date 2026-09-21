@@ -1,19 +1,19 @@
 ---
 title: "Halal Certification"
 shortName: "Halal"
-description: "Certification that products and processes comply with Islamic dietary law — opening access to Muslim-majority markets and consumers worldwide."
+description: "Certification-readiness support for Halal — helping products and processes meet Islamic dietary law, opening access to Muslim-majority markets and consumers worldwide."
 icon: "ti-moon"
 tags: ["Halal", "Food Certification", "Market Access", "Food Industry"]
 image: "/images/cat-industry-food-certifications.jpg"
-imageAlt: "Halal food certification"
+imageAlt: "Halal food and product compliance"
 category: "industry-food-certifications"
 categoryName: "Food Industry Certifications"
 order: 4
 timelineWeeks: "6-10"
 featured: false
 seo:
-  title: "Halal Certification | Market Access for Food & Products | ABS"
-  description: "Halal certification confirms products and processes comply with Islamic dietary law, opening Muslim-majority markets and consumers worldwide. Certification from ABS."
+  title: "Halal Certification Consulting | Market Access | ABS"
+  description: "Halal certification confirms products and processes comply with Islamic dietary law, opening Muslim-majority markets. Certification-readiness support from ABS."
   keywords: ["Halal certification", "Halal food certification", "Halal market access", "Halal compliance"]
 faqs:
   - question: "What does Halal certification cover?"

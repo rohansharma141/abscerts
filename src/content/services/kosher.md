@@ -1,19 +1,19 @@
 ---
 title: "Kosher Certification"
 shortName: "Kosher"
-description: "Certification that products and processes comply with Jewish dietary law (kashrut) — opening kosher markets and signalling quality to a wider consumer base."
+description: "Certification-readiness support for kosher — helping products and processes meet Jewish dietary law (kashrut), opening kosher markets and signalling quality to a wider consumer base."
 icon: "ti-star"
 tags: ["Kosher", "Food Certification", "Market Access", "Food Industry"]
 image: "/images/cat-industry-food-certifications.jpg"
-imageAlt: "Kosher food certification"
+imageAlt: "Kosher food and product compliance"
 category: "industry-food-certifications"
 categoryName: "Food Industry Certifications"
 order: 5
 timelineWeeks: "6-10"
 featured: false
 seo:
-  title: "Kosher Certification | Market Access for Food & Products | ABS"
-  description: "Kosher certification confirms products and processes comply with Jewish dietary law (kashrut), opening kosher markets and signalling quality. Certification from ABS."
+  title: "Kosher Certification Consulting | Market Access | ABS"
+  description: "Kosher certification confirms products and processes comply with Jewish dietary law (kashrut), opening kosher markets. Certification-readiness support from ABS."
   keywords: ["Kosher certification", "Kosher food certification", "kashrut", "Kosher market access"]
 faqs:
   - question: "What does Kosher certification cover?"

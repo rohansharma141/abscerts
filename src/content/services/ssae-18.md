@@ -1,11 +1,11 @@
 ---
 title: "SSAE 18 — Attestation Standard for Service Organisations"
 shortName: "SSAE 18"
-description: "Independent SOC reporting under SSAE 18 — the AICPA attestation standard governing service organisation control reports in the United States."
+description: "Readiness and support for SOC reports under SSAE 18 — the AICPA attestation standard governing service organisation control reports in the United States."
 icon: "ti-clipboard-check"
 tags: ["SSAE 18", "AICPA", "Attestation", "Service Organization"]
 image: "/images/cat-cyber-security.jpg"
-imageAlt: "SSAE 18 attestation engagement for a service organisation"
+imageAlt: "SSAE 18 readiness for a service organisation"
 category: "cyber-security"
 categoryName: "Cyber Security"
 order: 9
@@ -14,7 +14,7 @@ governingBody: "AICPA"
 featured: false
 seo:
   title: "SSAE 18 Attestation & SOC Reporting | AICPA | ABS"
-  description: "Independent SOC reporting under SSAE 18, the AICPA attestation standard for US service organisation controls. Type I and Type II. Fixed-price quote in 24 hours."
+  description: "SOC report readiness under SSAE 18, the AICPA attestation standard for US service organisation controls. Type I and Type II. Fixed-price quote in 24 hours."
   keywords: ["SSAE 18 attestation", "SSAE 18 SOC 1", "SSAE 16 vs SSAE 18", "AICPA attestation standard"]
 faqs:
   - question: "What is the difference between SSAE 18 and SOC 1?"

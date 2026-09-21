@@ -1,10 +1,10 @@
 ---
 title: "Cyber Security"
 shortName: "Cyber Security"
-description: "Independent audits for SOC 2, PCI DSS, GDPR, NIST and other cyber security frameworks — for SaaS, fintech, healthcare and enterprise."
+description: "Readiness, implementation and compliance support for SOC 2, PCI DSS, GDPR, NIST and other cyber security frameworks — for SaaS, fintech, healthcare and enterprise."
 icon: "ti-shield-lock"
 image: "/images/cat-cyber-security.jpg"
-imageAlt: "Cyber security audit and information security controls"
+imageAlt: "Cyber security readiness and information security controls"
 order: 1
 column: 1
 row: 1
