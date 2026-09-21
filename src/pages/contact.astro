@@ -84,11 +84,11 @@ const faqSchema = {
           <p>Fixed price within 24 hours</p>
           <span class="quick-action-link">Send enquiry <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
         </div>
-        <div class="quick-action">
+        <div class="quick-action" onclick="openConsultModal()">
           <div class="quick-action-icon"><i class="ti ti-calendar-event"></i></div>
           <h3>Book a meeting</h3>
           <p>30-min consultation in your time zone</p>
-          <span class="quick-action-link">Pick a slot <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+          <button type="button" class="quick-action-link">Request a time <i class="ti ti-arrow-right" style="font-size:11px"></i></button>
         </div>
         <div class="quick-action">
           <div class="quick-action-icon"><i class="ti ti-headset"></i></div>
@@ -368,9 +368,91 @@ const faqSchema = {
       <h2>Not sure where to <em>start</em>?</h2>
       <p>Book a free 30-minute consultation. We'll review your goals, recommend the right standard, and outline a realistic timeline — no obligation.</p>
       <div class="cta-buttons">
-        <button class="btn btn-glow"><i class="ti ti-calendar-event"></i>Book free consultation</button>
+        <button type="button" class="btn btn-glow" onclick="openConsultModal()"><i class="ti ti-calendar-event"></i>Book free consultation</button>
         <button class="btn btn-outline" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Send a written enquiry instead</button>
       </div>
     </div>
   </section>
+
+  <!-- ============ CONSULTATION MODAL (this page only: the banner button and the "Book a meeting" card) ============ -->
+  <div class="modal-backdrop" id="consultModal" inert onclick="if(event.target===this) closeConsultModal()">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="consultModalTitle" tabindex="-1">
+      <div class="modal-header">
+        <button class="modal-close" onclick="closeConsultModal()" aria-label="Close"><i class="ti ti-x"></i></button>
+        <p class="eyebrow">Free · No obligation</p>
+        <h2 id="consultModalTitle">Book a free consultation</h2>
+        <p>Tell us what you'd like to discuss and when suits you, and we'll be in touch to arrange a time.</p>
+      </div>
+      <div class="modal-body">
+        <form data-form="consultation">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field">
+          <div class="form-row">
+            <div>
+              <label for="cm-name">Full name *</label>
+              <input type="text" id="cm-name" name="name" class="form-control" placeholder="Jane Smith" autocomplete="name" required>
+            </div>
+            <div>
+              <label for="cm-email">Work email *</label>
+              <input type="email" id="cm-email" name="email" class="form-control" placeholder="jane@company.com" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="cm-phone">Phone (with country code) *</label>
+              <input type="tel" id="cm-phone" name="phone" class="form-control" placeholder="+44 20 7946 0958" autocomplete="tel" required>
+            </div>
+            <div>
+              <label for="cm-company">Company name</label>
+              <input type="text" id="cm-company" name="company" class="form-control" placeholder="Optional" autocomplete="organization">
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="cm-country">Country *</label>
+              <select id="cm-country" name="country" class="form-control" required>
+                <option value="">Select country</option>
+                <option>India</option>
+                <option>United Kingdom</option>
+                <option>United States</option>
+                <option>United Arab Emirates</option>
+                <option>Germany</option>
+                <option>Saudi Arabia</option>
+                <option>France</option>
+                <option>Netherlands</option>
+                <option>Qatar</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="cm-service">Service area *</label>
+              <select id="cm-service" name="service" class="form-control" required>
+                <option value="">Select a service area</option>
+                <option>Cyber Security</option>
+                <option>ISO Certifications</option>
+                <option>CMMI &amp; Process</option>
+                <option>Food Industry</option>
+                <option>Training &amp; Professional Development</option>
+                <option>Data Analytics</option>
+                <option>Agile Transformation</option>
+                <option>Third Party Inspection</option>
+                <option>HR Services</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cm-message">What would you like to discuss?</label>
+            <textarea id="cm-message" name="message" class="form-control" placeholder="Optional — your goals, the standard you're considering, or any questions."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="cm-times">Preferred days and times</label>
+            <input type="text" id="cm-times" name="preferredTimes" class="form-control" placeholder="e.g. Tuesday or Wednesday afternoon">
+          </div>
+          <button type="submit" class="form-submit" data-submit>Send request <i class="ti ti-arrow-right"></i></button>
+          <div data-form-status></div>
+          <p class="modal-privacy">We use your details only to respond to your enquiry — see our <a href="/privacy">Privacy Policy</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
 </BaseLayout>

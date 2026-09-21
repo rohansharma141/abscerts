@@ -129,7 +129,8 @@ The site's canonical URL is **`https://www.abscerts.com`** (set in `astro.config
 - [ ] A handful of pages render: a category (`/services/iso-certifications`), a service
       (`/services/iso-27001`), an industry (`/industries/healthcare`), `/about`, `/process`,
       `/blog`, a blog post.
-- [ ] **Forms (the real test):** submit **Request a quote** and **Contact** with test data →
+- [ ] **Forms (the real test):** submit **Request a quote**, **Contact**, **Become a Partner** and
+      **Book a free consultation** (contact page: the "Book free consultation" button) with test data →
       success message shows **and** the email arrives at `NOTIFICATION_EMAIL`. Submit the footer
       **newsletter** → arrives at `MARKETING_EMAIL`. (If not: check `RESEND_API_KEY`, that
       `FROM_EMAIL`'s domain is Resend-verified, and the Functions logs in the dashboard.)

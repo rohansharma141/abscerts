@@ -114,6 +114,44 @@ function closePartnerModal() {
   document.body.style.overflow = '';
 }
 
+/* ===== Consultation Modal ("Book a free consultation" — contact page only) =====
+   Opened by the closing banner's "Book free consultation" button and the "Book a meeting" card
+   (content review, decision §8.2). It also handles keyboard focus: while it's open the rest of the
+   page is inert, focus moves into the dialog, and it returns to the button that opened it on close. */
+let consultState = null;
+function openConsultModal() {
+  const m = document.getElementById('consultModal');
+  if (!m || m.classList.contains('open')) return;
+  // Make everything outside the dialog inert: the siblings of the modal and of each of its ancestors.
+  const inerted = [];
+  for (let node = m; node !== document.body && node.parentElement; node = node.parentElement) {
+    for (const sib of node.parentElement.children) {
+      if (sib !== node && !sib.hasAttribute('inert') && sib.tagName !== 'SCRIPT') {
+        sib.setAttribute('inert', '');
+        inerted.push(sib);
+      }
+    }
+  }
+  consultState = { returnTo: document.activeElement, inerted };
+  m.classList.add('open');
+  m.removeAttribute('inert');
+  document.body.style.overflow = 'hidden';
+  m.querySelector('.modal').focus({ preventScroll: true });
+}
+function closeConsultModal() {
+  const m = document.getElementById('consultModal');
+  if (!m || !m.classList.contains('open')) return;
+  m.classList.remove('open');
+  m.setAttribute('inert', '');
+  document.body.style.overflow = '';
+  if (consultState) {
+    consultState.inerted.forEach((el) => el.removeAttribute('inert'));
+    const back = consultState.returnTo;
+    consultState = null;
+    if (back && back !== document.body && typeof back.focus === 'function') back.focus({ preventScroll: true });
+  }
+}
+
 /* ===== Scroll to contact form on contact page ===== */
 function jumpToContactForm() {
   showPage('contact');
@@ -193,6 +231,7 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeQuoteModal();
     closePartnerModal();
+    closeConsultModal();
     closeExitPopup();
     if (document.getElementById('mobileNav').classList.contains('open')) toggleMobileNav();
   }
@@ -209,6 +248,7 @@ document.addEventListener('keydown', (e) => {
     newsletter: "Thanks — we'll be in touch shortly.",
     download: "Thanks — we've emailed you the guide. You can also download it now:",
     partner: "Thanks — your partner enquiry is in. Our team will be in touch.",
+    consultation: "Thanks, your consultation request is in. We'll be in touch to arrange a time.", // no reply-time promise (§5.32)
   };
 
   forms.forEach((form) => {
@@ -253,6 +293,7 @@ document.addEventListener('keydown', (e) => {
 
         if (type === 'quote') setTimeout(closeQuoteModal, 3000);
         if (type === 'partner') setTimeout(closePartnerModal, 3000);
+        if (type === 'consultation') setTimeout(closeConsultModal, 3000);
         if (type === 'newsletter' && form.closest('#exitPopup')) setTimeout(closeExitPopup, 3000); // not the footer sign-up
       } catch (err) {
         if (status) {
