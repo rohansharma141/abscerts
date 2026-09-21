@@ -21,6 +21,14 @@ faqs:
     answer: "VDA 6 is a family of automotive quality standards from the VDA, the German Association of the Automotive Industry. VDA 6.3 is its process audit — used to assess the capability and risk of a manufacturing process — while related parts cover system and product audits. They are widely used by German OEMs and their suppliers."
   - question: "How does VDA 6 relate to IATF 16949?"
     answer: "IATF 16949 is the global automotive quality management system standard; VDA 6 provides the audit methodology — especially process audits — favoured by the German automotive sector. Many suppliers to German OEMs hold IATF 16949 certification and also use VDA 6.3 because their customers specifically require it."
+  - question: "How long does a VDA 6 engagement take?"
+    answer: "For most organisations, a VDA 6 engagement takes around 12–16 weeks, depending on the scope and the number of processes assessed."
+  - question: "What does ABS do, and who carries out the VDA 6.3 audit?"
+    answer: "ABS prepares your processes for the audit: a process review against the VDA 6.3 requirements, improvement actions, a readiness check and support during the audit and in closing any findings. The VDA 6.3 process audit itself is carried out by your customer or by a qualified VDA 6.3 auditor."
+  - question: "How often is a VDA 6.3 audit repeated?"
+    answer: "There is no certificate period. Your customer decides when a VDA 6.3 process audit is carried out and how often it is repeated."
+  - question: "Which edition of VDA 6.3 is current?"
+    answer: "The current edition of the VDA 6.3 process audit is the 2023 edition, published in January 2023 to replace the 2016 edition."
 ---
 
 ## What VDA 6 is and why buyers ask for it
@@ -62,3 +70,19 @@ VDA 6 is a family of automotive quality standards from the VDA. VDA 6.3 is its p
 ### How does VDA 6 relate to IATF 16949?
 
 [IATF 16949](/services/iatf-16949) is the global automotive quality management system standard; VDA 6 provides the audit methodology favoured by the German sector. Many suppliers to German OEMs hold IATF 16949 and also use VDA 6.3 because their customers require it. It is especially relevant to automotive [manufacturers](/industries/manufacturing).
+
+### How long does a VDA 6 engagement take?
+
+For most organisations, a VDA 6 engagement takes around 12–16 weeks, depending on the scope and the number of processes assessed.
+
+### What does ABS do, and who carries out the VDA 6.3 audit?
+
+ABS prepares your processes for the audit: a process review against the VDA 6.3 requirements, improvement actions, a readiness check and support during the audit and in closing any findings. The VDA 6.3 process audit itself is carried out by your customer or by a qualified VDA 6.3 auditor.
+
+### How often is a VDA 6.3 audit repeated?
+
+There is no certificate period. Your customer decides when a VDA 6.3 process audit is carried out and how often it is repeated.
+
+### Which edition of VDA 6.3 is current?
+
+The current edition of the VDA 6.3 process audit is the 2023 edition, published in January 2023 to replace the 2016 edition.

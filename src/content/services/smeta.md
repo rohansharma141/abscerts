@@ -20,6 +20,16 @@ faqs:
     answer: "No. SMETA is an ethical audit methodology developed by Sedex, and the deliverable is an audit report — not a certificate. The report documents findings against the audit's pillars and is typically shared with customers through the Sedex platform, where buyers use it for responsible-sourcing due diligence."
   - question: "What does a SMETA audit cover?"
     answer: "SMETA is run as either a 2-pillar or 4-pillar audit. The two core pillars are Labour Standards and Health & Safety; the 4-pillar version adds Environment and Business Ethics. The audit assesses a site against responsible business practices across these areas and records the findings for the customer."
+  - question: "Who needs a SMETA audit?"
+    answer: "Suppliers whose customers ask for it. SMETA has become a standard way for retailers and brands to check the ethics of their suppliers, and buyers increasingly ask for a recent SMETA audit, shared through the Sedex platform, as a condition of doing business."
+  - question: "How long does SMETA preparation take?"
+    answer: "Because SMETA is an audit rather than a certification programme, readiness work is scoped around your site and the number of pillars in scope. Each engagement begins with a fixed-price scoping call and a proposal within 24 hours."
+  - question: "What does ABS do, and who carries out the SMETA audit?"
+    answer: "ABS helps your site prepare for the audit and respond to it: a pre-audit gap check against the pillars in scope, the records and evidence the auditor will ask for, and corrective-action support before and after the audit. The audit is carried out by a Sedex-affiliated audit company using APSCA-registered auditors."
+  - question: "How often is a SMETA audit repeated?"
+    answer: "There is no certificate period, because SMETA produces an audit report rather than a certificate. Your customers decide how often they want a new audit, and follow-up audits verify that non-compliances have been closed."
+  - question: "Which version of SMETA is current?"
+    answer: "The current methodology is SMETA 7.0, launched in September 2024. SMETA 6.1 audits have not been permitted since 1 January 2025."
 ---
 
 ## What SMETA is and why buyers ask for it
@@ -60,3 +70,23 @@ No. SMETA is an ethical audit methodology, and the deliverable is an audit repor
 ### What does a SMETA audit cover?
 
 It runs as a 2-pillar or 4-pillar audit. The core pillars are Labour Standards and Health & Safety; the 4-pillar version adds Environment and Business Ethics. It is one of the [Food Industry Certifications](/services/industry-food-certifications) services and is especially relevant to [manufacturers](/industries/manufacturing) and their supply chains.
+
+### Who needs a SMETA audit?
+
+Suppliers whose customers ask for it. SMETA has become a standard way for retailers and brands to check the ethics of their suppliers, and buyers increasingly ask for a recent SMETA audit, shared through the Sedex platform, as a condition of doing business.
+
+### How long does SMETA preparation take?
+
+Because SMETA is an audit rather than a certification programme, readiness work is scoped around your site and the number of pillars in scope. Each engagement begins with a fixed-price scoping call and a proposal within 24 hours.
+
+### What does ABS do, and who carries out the SMETA audit?
+
+ABS helps your site prepare for the audit and respond to it: a pre-audit gap check against the pillars in scope, the records and evidence the auditor will ask for, and corrective-action support before and after the audit. The audit is carried out by a Sedex-affiliated audit company using APSCA-registered auditors.
+
+### How often is a SMETA audit repeated?
+
+There is no certificate period, because SMETA produces an audit report rather than a certificate. Your customers decide how often they want a new audit, and follow-up audits verify that non-compliances have been closed.
+
+### Which version of SMETA is current?
+
+The current methodology is SMETA 7.0, launched in September 2024. SMETA 6.1 audits have not been permitted since 1 January 2025.

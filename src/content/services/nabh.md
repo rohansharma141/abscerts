@@ -20,6 +20,8 @@ faqs:
     answer: "NABH — the National Accreditation Board for Hospitals & Healthcare Providers, a body under the Quality Council of India — accredits hospitals and healthcare organisations against standards for patient safety and quality of care. The accreditation is granted by NABH and is widely recognised by patients, insurers and regulators as a mark of a well-run, safe healthcare provider."
   - question: "How does ABS help with NABH accreditation?"
     answer: "ABS provides readiness and advisory support — assessing the organisation against the NABH standards, helping build the necessary processes and documentation, and preparing it for its NABH assessment, so the healthcare provider meets the requirements with confidence."
+  - question: "How long does NABH readiness take?"
+    answer: "NABH readiness is scoped per organisation, depending on the size and type of facility and the maturity of existing processes. We begin with a fixed-price scoping call and a proposal within 24 hours."
 ---
 
 ## What NABH accreditation is
@@ -52,3 +54,7 @@ NABH, a body under the Quality Council of India, accredits hospitals and healthc
 ### How does ABS help with NABH accreditation?
 
 ABS provides readiness and advisory support — gap assessment, building the necessary processes and documentation, and preparation for the NABH assessment. It is one of the [Food Industry Certifications](/services/industry-food-certifications) services and complements [NABL](/services/nabl) support for laboratories.
+
+### How long does NABH readiness take?
+
+NABH readiness is scoped per organisation, depending on the size and type of facility and the maturity of existing processes. We begin with a fixed-price scoping call and a proposal within 24 hours.
