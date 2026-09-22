@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Built as dist/404.html, which Cloudflare Pages serves with status 404 for any unknown URL (content review,
+// finding N12). Without a top-level 404.html, Pages treats the site as a single-page app and answers every
+// unknown URL with the home page and status 200.
+const title = 'Page not found | ABS Certifications';
+const description = "The page you're looking for doesn't exist or has moved.";
+---
+<BaseLayout title={title} description={description} noindex>
+  <section class="cat-hero">
+    <div class="container">
+      <p class="eyebrow">Error 404</p>
+      <h1>Page not found</h1>
+      <p class="cat-hero-sub">The page you're looking for doesn't exist or has moved. If you followed a link to our old website, the page may have a new address.</p>
+    </div>
+  </section>
+
+  <section class="section section-white" style="padding:64px 0 96px;">
+    <div class="container">
+      <h2 class="visually-hidden">Where to go from here</h2>
+      <div class="notfound-links">
+        <a href="/" class="btn btn-primary">Go to the home page <span class="btn-icon-square"><i class="ti ti-arrow-up-right"></i></span></a>
+        <a href="/services" class="btn btn-outline-blue">Browse our services</a>
+        <a href="/faq" class="btn btn-outline-blue">Read the FAQ</a>
+        <a href="/contact" class="btn btn-outline-blue">Contact us</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .notfound-links { display: flex; flex-wrap: wrap; gap: 12px; }
+  /* Readable gold on white (--blue alone is ~2.7:1); the hover state is unchanged. */
+  .notfound-links .btn-outline-blue:not(:hover) { color: var(--accent-text); }
+</style>

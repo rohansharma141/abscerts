@@ -129,8 +129,10 @@ const orgSchema = {
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-<!-- ============ Favicon (placeholder paths — replace with real assets in production) ============ -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%23081F4D'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='56' font-weight='500' text-anchor='middle' fill='%23fff'%3EA%3C/text%3E%3Crect x='78' y='78' width='14' height='14' rx='2' fill='%2334E0C4'/%3E%3C/svg%3E">
+<!-- ============ Favicon: the site's "A" mark as real files (content review, N11) — favicon.ico holds
+     16/32/48 px for browsers and Google (which needs a crawlable file, a multiple of 48 px) ============ -->
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <!-- ============ Performance: DNS prefetch for the one third-party link used site-wide ============ -->
