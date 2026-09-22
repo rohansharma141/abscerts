@@ -1,0 +1,17 @@
+# Security headers for every page and file (content review, go-live checklist C2). Cloudflare Pages doesn't add
+# them to Pages Functions responses (the /api/* form endpoints) or to redirects.
+# HSTS leaves out includeSubDomains, so other abscerts.com subdomains aren't forced onto HTTPS.
+/*
+  Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Content-Security-Policy: frame-ancestors 'self'
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+
+# Keep the staging address and preview deployments out of search results; the live site is www.abscerts.com.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
