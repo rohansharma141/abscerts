@@ -16,9 +16,11 @@ interface Props {
 
 const { title, description, canonical, ogImage, noindex = false } = Astro.props;
 
-const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site).href;
+// The page's public path: pages build as files (about.html) that Cloudflare Pages serves at /about (N23), so drop
+// ".html" / "index.html" and any trailing slash. Used for the canonical URL and the active menu item.
+const path = Astro.url.pathname.replace(/(index)?\.html$/, '').replace(/(.)\/$/, '$1') || '/';
+const canonicalURL = canonical ?? new URL(path, Astro.site).href;
 const ogImageURL = new URL(ogImage ?? '/og-image.jpg', Astro.site).href;
-const path = Astro.url.pathname;
 const year = new Date().getFullYear();
 
 // Footer "Services" column — every category, in the same order as the mega-menu.
