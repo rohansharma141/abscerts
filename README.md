@@ -1,7 +1,8 @@
 # ABS Certifications & Advisory — website
 
-Astro site deployed to Cloudflare Pages. The four contact/quote/newsletter/verify
-endpoints are **Cloudflare Pages Functions** in [`functions/api/`](functions/api/).
+Astro site deployed to Cloudflare Pages. The form endpoints (contact, quote, partner,
+consultation, newsletter, download; verify is parked) are **Cloudflare Pages Functions**
+in [`functions/api/`](functions/api/).
 
 ## Forms & email (important)
 
@@ -16,12 +17,15 @@ Cloudflare dashboard (Pages → Settings → Environment variables).
 
 ```sh
 npm run dev      # Astro dev server (UI only — does NOT run the Pages Functions)
-npm run build    # build to dist/
+npm run build    # build to dist/ (pages build as files, e.g. about.html, served at /about),
+                 # then scripts/check-icons.mjs checks every icon is in the icon-font subset
 npm run preview  # wrangler: serves dist/ AND runs functions/ + KV binding locally
 npm run deploy   # build + wrangler pages deploy
 ```
 
 Local secrets live in a gitignored `.dev.vars` (see `.env.example` for the variable list).
+
+After adding a new `ti-*` icon, run `python scripts/subset-icons.py` (see `DEPLOY.md` §9).
 
 ---
 

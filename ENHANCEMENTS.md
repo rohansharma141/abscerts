@@ -54,12 +54,13 @@ not lost. Nothing here is actioned without the stakeholder's say-so.
 
 ## Pre-launch must-do (placeholders that must be resolved before going live)
 
-- [ ] **Replace or remove placeholder testimonials.** The 3 testimonial entries
-  (Sarah Henderson, Ahmed Khalifa, Mark Reynolds) are v7-mockup placeholders, each with
-  a TODO comment. They must be replaced with real, permissioned testimonials or removed
-  — do not present them as real endorsements.
+- [x] **Replace or remove placeholder testimonials.** Done: the three v7-mockup placeholders
+  were replaced by real client quotes (RDM Traders, SteelBird Helmets, ThoughtSol Infotech).
+  Their wording is being settled with ABS separately.
 
-- [ ] **Confirm stakeholder accreditation answers (gates real content):**
+- [x] **Confirm stakeholder accreditation answers (gates real content):** Settled in the
+  September 2026 content review: the site describes ABS as a consulting firm, and certification,
+  CMMI appraisals and PCI QSA assessments as carried out by independent bodies. Originally:
   PCI DSS QSA status, CMMI Institute Lead Appraiser status, and which personnel
   certification schemes ABS actually offers. These unblock the parked PCI DSS / CMMi
   service-body rewrites and the Personnel Certifications depth, and are prerequisites

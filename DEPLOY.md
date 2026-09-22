@@ -136,7 +136,7 @@ The site's canonical URL is **`https://www.abscerts.com`** (set in `astro.config
       `FROM_EMAIL`'s domain is Resend-verified, and the Functions logs in the dashboard.)
 - [ ] `/sitemap-index.xml`, `/sitemap-0.xml` and `/robots.txt` resolve.
 - [ ] A made-up URL (e.g. `/nope`) returns the 404 page.
-- [ ] **Social preview:** paste a URL into the [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/) or [opengraph.xyz](https://www.opengraph.xyz/) → the OG image appears. *(Currently a placeholder — see pre-launch notes.)*
+- [ ] **Social preview:** paste a URL into the [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/) or [opengraph.xyz](https://www.opengraph.xyz/) → the share image (`public/og-image.jpg`; blog posts use their own cover) appears.
 - [ ] Run **Lighthouse** on the live site (a service page, a blog post, the homepage) — target
       ≥95 Performance / 100 Accessibility / ≥95 Best Practices / 100 SEO.
 
@@ -165,14 +165,20 @@ The site's canonical URL is **`https://www.abscerts.com`** (set in `astro.config
 | Build fails resolving a KV namespace | The placeholder `[[kv_namespaces]]` id — do step 2. |
 | Forms show success but no email arrives | `RESEND_API_KEY` missing/placeholder, or `FROM_EMAIL` domain not verified in Resend. |
 | Forms return an error | Check the function's real-time logs: Pages → the deployment → **Functions** logs. |
-| OG image missing in social preview | It's a placeholder; replace `public/og-image.jpg` with real artwork, then re-deploy. |
+| Old image in a social preview | LinkedIn and others cache previews: re-scrape the URL in the LinkedIn Post Inspector after deploying. |
 | Pages load but CSS/JS looks off | Hard-refresh; confirm build output dir is `dist`. |
 
 ---
 
 ## Pre-launch reminders (content, not deployment)
 
-These are tracked in `ENHANCEMENTS.md` and were shared with the client — they don't block deploy:
-real photography, real testimonials (3 placeholders on the homepage), a proper legal privacy
-policy (the current one is verbatim boilerplate), and confirmation of the migrated PCI/CMMi/
-personnel claims and the "1,200+ certificates" stat.
+Tracked with the client (see `ENHANCEMENTS.md`):
+- **Privacy policy — blocks go-live.** `/privacy` still shows the old WordPress text. A new draft,
+  written from how the site works, is ready and held back until ABS supplies four facts (legal
+  entity name, privacy contact email, retention period, marketing-email handling) and signs it off.
+- Real photography in place of the stock images, and the parked content questions.
+
+Resolved in the September 2026 content review: the placeholder testimonials (replaced by real
+client quotes), the "1,200+ certificates" stat (removed), and the PCI/CMMI/personnel claims
+(the site describes ABS as a consulting firm; certification, appraisals and QSA assessments are
+carried out by independent bodies).
