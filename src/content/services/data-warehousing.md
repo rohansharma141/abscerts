@@ -16,9 +16,9 @@ seo:
   keywords: ["data warehousing", "data warehouse", "centralised data repository", "analytics infrastructure"]
 faqs:
   - question: "What is a data warehouse?"
-    answer: "A data warehouse is a centralised repository that brings together data from across an organisation so it can be analysed consistently. It enables organisations to extract actionable insights and make informed decisions, rather than working from scattered, inconsistent data held in separate systems."
+    answer: "A data warehouse is a centralised repository that brings together data from across an organisation so it can be analysed consistently — enabling actionable insights and informed decisions instead of working from scattered, inconsistent data."
   - question: "Why does a data warehouse matter for analytics?"
-    answer: "Analytics, dashboards and forecasts are only as good as the data behind them. A well-designed data warehouse gives those activities a single, trustworthy source of data — which is why it is often the foundation that makes everything else in a data programme reliable."
+    answer: "Analytics, dashboards and forecasts are only as good as the data behind them. A well-designed warehouse gives them a single, trustworthy source — which is why it is often the foundation that makes everything else reliable."
 ---
 
 ## What data warehousing is

@@ -16,9 +16,9 @@ seo:
   keywords: ["quality assurance inspection", "production inspection", "in-production check", "random inspection"]
 faqs:
   - question: "What does quality assurance inspection involve?"
-    answer: "It involves independent checks at key points in production: an initial production check at the start of a run, in-production checks while manufacturing is underway, and random inspection of finished or in-progress goods. Catching issues during production — rather than only at the end — reduces the risk and cost of non-conforming output."
+    answer: "Independent checks at key points in production — an initial production check at the start of a run, in-production checks while manufacturing is underway, and random inspection of goods — so issues are caught during production rather than only at the end."
   - question: "How is QA inspection different from vendor inspection?"
-    answer: "Vendor inspection focuses on the supplier and the goods around dispatch — factory audits, raw materials and loading. QA inspection focuses on quality during the production process itself. Many organisations use both: vendor inspection to qualify the supplier, QA inspection to verify what they produce."
+    answer: "Vendor inspection focuses on the supplier and goods around dispatch; QA inspection focuses on quality during production itself. Many organisations use both — vendor inspection to qualify the supplier, QA inspection to verify what they produce."
 ---
 
 ## What the service covers

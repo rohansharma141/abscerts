@@ -17,9 +17,9 @@ seo:
   keywords: ["Kosher certification", "Kosher food certification", "kashrut", "Kosher market access"]
 faqs:
   - question: "What does Kosher certification cover?"
-    answer: "It confirms that a product and the way it is produced comply with Jewish dietary law (kashrut). That includes the ingredients and their sources, the equipment and production lines used, and the separation requirements that kashrut sets out. Certification gives kosher-observant consumers and markets confidence the product is genuinely kosher."
+    answer: "It confirms that a product and how it is produced comply with Jewish dietary law (kashrut) — the ingredients and their sources, the equipment and lines used, and the separation requirements kashrut sets out."
   - question: "Who benefits from Kosher certification?"
-    answer: "Beyond kosher-observant consumers, many buyers treat the kosher mark as a general signal of careful ingredient control and production discipline. Certification opens kosher markets and can broaden a product's appeal — which is why many manufacturers pursue it even where the core market is not specifically kosher."
+    answer: "Beyond kosher-observant consumers, many buyers treat the kosher mark as a signal of careful ingredient control and production discipline. It opens kosher markets and can broaden appeal — and is often pursued alongside other Food Industry certifications such as Halal and HACCP by food manufacturers."
   - question: "How long does Kosher certification take?"
     answer: "For most operations, Kosher certification takes around 6–10 weeks, depending on the range of products and the complexity of the process."
   - question: "What does ABS do, and what does the kosher agency do?"

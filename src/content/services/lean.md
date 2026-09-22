@@ -16,9 +16,9 @@ seo:
   keywords: ["Lean training", "Lean principles", "continuous improvement", "waste elimination"]
 faqs:
   - question: "How does Lean work alongside Scrum and Kanban?"
-    answer: "They reinforce each other. Lean's focus on value and flow underpins the iterative delivery of Scrum and the work-in-progress management of Kanban, so teams adopting agile frameworks often learn Lean too. ABS trains teams in all three as part of its agile methodologies."
+    answer: "They reinforce each other. Lean's focus on value and flow underpins the iterative delivery of Scrum and the work-in-progress management of Kanban, so teams adopting agile frameworks often learn Lean too — ABS trains teams in all three."
   - question: "What does Lean focus on?"
-    answer: "Lean focuses on delivering more value with less waste — identifying the steps that genuinely add value, removing those that don't, and improving the flow of work. It complements agile frameworks like Scrum and Kanban, which is why teams often learn them together."
+    answer: "Lean focuses on delivering more value with less waste — identifying the steps that add value, removing those that don't, and improving flow. It complements agile frameworks like Scrum and Kanban, so teams often learn them together."
 ---
 
 ## What Lean is

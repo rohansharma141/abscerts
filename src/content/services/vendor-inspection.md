@@ -16,9 +16,9 @@ seo:
   keywords: ["vendor inspection", "supplier audit", "factory audit", "third party inspection"]
 faqs:
   - question: "What does vendor and supplier inspection cover?"
-    answer: "It covers independent verification across the supplier relationship — factory audits to assess a supplier's capability, OEM development support, raw material inspection to confirm inputs before production, and loading supervision to verify goods as they are dispatched. The aim is impartial assurance that suppliers and their output meet requirements."
+    answer: "Independent verification across the supplier relationship — factory audits, OEM development, raw material inspection before production, and loading supervision at dispatch — giving impartial assurance that suppliers and their output meet requirements."
   - question: "Why use an independent third party for supplier inspection?"
-    answer: "An independent inspection gives a credible, impartial basis for verification — assurance that doesn't rely on the supplier's own word. That matters most when buyers and suppliers are in different locations, or when the cost of receiving non-conforming goods is high."
+    answer: "An independent inspection gives a credible, impartial basis for verification that doesn't rely on the supplier's own word — most valuable when buyer and supplier are in different locations, or when receiving non-conforming goods is costly."
 ---
 
 ## What the service covers

@@ -16,9 +16,9 @@ seo:
   keywords: ["Scrum training", "Kanban training", "agile framework training", "agile team training"]
 faqs:
   - question: "Is this a certification course?"
-    answer: "It is a practical training course focused on real team capability. ABS provides training in agile frameworks such as Scrum, Kanban and Lean to help your teams work effectively, and team members who want a formal personal certification can go on to pursue one through the relevant Scrum body, with the training as a strong foundation."
+    answer: "It is a practical training course focused on real team capability. ABS provides training in agile frameworks to help your teams work effectively, and team members who want a formal personal certification can go on to pursue one through the relevant Scrum body, with the training as a strong foundation."
   - question: "What does Scrum training cover?"
-    answer: "Training introduces how Scrum works in practice — its roles, events and artefacts — and how teams use it to plan and deliver work in short, iterative cycles. ABS also trains teams in Kanban, so they can choose and combine the approaches that suit their context."
+    answer: "It introduces how Scrum works in practice — its roles, events and artefacts — and how teams use it to deliver in short, iterative cycles. ABS also trains teams in Kanban, so they can choose and combine the approaches that suit them."
 ---
 
 ## What Scrum training is

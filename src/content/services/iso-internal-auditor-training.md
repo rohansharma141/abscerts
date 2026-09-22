@@ -16,9 +16,9 @@ seo:
   keywords: ["ISO internal auditor training", "internal auditor course", "ISO 9001 internal audit", "internal audit training"]
 faqs:
   - question: "What is the difference between Internal Auditor and Lead Auditor training?"
-    answer: "Internal Auditor training prepares staff to audit their own organisation's management system — a requirement of every ISO standard. Lead Auditor training is more advanced and prepares people to lead full audits, including of other organisations. For most in-house teams, Internal Auditor training is the right starting point."
+    answer: "Internal Auditor training prepares staff to audit their own organisation's management system — a requirement of every ISO standard. Lead Auditor training is more advanced and prepares people to lead full audits, including of other organisations."
   - question: "Who should attend Internal Auditor training?"
-    answer: "Employees who will carry out internal audits of the management system — typically quality, safety, security or compliance staff, and process owners. It is well suited to organisations that hold, or are working towards, an ISO certification and need competent internal auditors."
+    answer: "Employees who will carry out internal audits — typically quality, safety, security or compliance staff and process owners — especially in organisations that hold or are working towards an ISO certification."
 ---
 
 ## What the course covers

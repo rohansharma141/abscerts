@@ -18,9 +18,9 @@ seo:
   keywords: ["HACCP certification", "hazard analysis critical control points", "food safety certification", "HACCP food"]
 faqs:
   - question: "What is the difference between HACCP and ISO 22000?"
-    answer: "HACCP is the method for identifying and controlling food safety hazards, built on seven principles. ISO 22000 wraps those HACCP principles inside a full management system, adding leadership, planning and continual improvement. HACCP is an excellent, widely recognised starting point; ISO 22000 is the certifiable management system that builds on it."
+    answer: "HACCP is the method for identifying and controlling food safety hazards. ISO 22000 wraps those principles inside a full management system, adding leadership, planning and continual improvement. HACCP is a widely recognised starting point; ISO 22000 builds on it, as does FSSC 22000."
   - question: "Who needs HACCP certification?"
-    answer: "Any business in the food chain — producers, processors, manufacturers, packaging, storage, transport and food service. Many retailers and customers require HACCP as a baseline condition of supply, and in many jurisdictions a HACCP-based approach to food safety is also a legal expectation."
+    answer: "Any business in the food chain — producers, processors, manufacturers, packaging, storage, transport and food service. Many retailers require HACCP as a condition of supply, and a HACCP-based approach is often a legal expectation too."
   - question: "How long does HACCP implementation take?"
     answer: "For most food businesses, implementing a HACCP system takes around 8–12 weeks from kick-off, depending on the size and complexity of the operation. Where independent HACCP certification is required, the assessment and certificate are provided by the appointed certification body — we get you ready for it."
   - question: "What does ABS do, and what does the certification body do?"

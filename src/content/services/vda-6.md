@@ -18,9 +18,9 @@ seo:
   keywords: ["VDA 6", "VDA 6.3 process audit", "automotive process audit", "German automotive quality"]
 faqs:
   - question: "What is VDA 6 and VDA 6.3?"
-    answer: "VDA 6 is a family of automotive quality standards from the VDA, the German Association of the Automotive Industry. VDA 6.3 is its process audit — used to assess the capability and risk of a manufacturing process — while related parts cover system and product audits. They are widely used by German OEMs and their suppliers."
+    answer: "VDA 6 is a family of automotive quality standards from the VDA. VDA 6.3 is its process audit, used to assess the capability and risk of a manufacturing process; related parts cover system and product audits."
   - question: "How does VDA 6 relate to IATF 16949?"
-    answer: "IATF 16949 is the global automotive quality management system standard; VDA 6 provides the audit methodology — especially process audits — favoured by the German automotive sector. Many suppliers to German OEMs hold IATF 16949 certification and also use VDA 6.3 because their customers specifically require it."
+    answer: "IATF 16949 is the global automotive quality management system standard; VDA 6 provides the audit methodology favoured by the German sector. Many suppliers to German OEMs hold IATF 16949 and also use VDA 6.3 because their customers require it. It is especially relevant to automotive manufacturers."
   - question: "How long does a VDA 6 engagement take?"
     answer: "For most organisations, a VDA 6 engagement takes around 12–16 weeks, depending on the scope and the number of processes assessed."
   - question: "What does ABS do, and who carries out the VDA 6.3 audit?"

@@ -17,9 +17,9 @@ seo:
   keywords: ["CE marking", "CE marking support", "EU product conformity", "CE marking requirements"]
 faqs:
   - question: "Is CE marking a certification?"
-    answer: "Not in the usual sense. CE marking is a manufacturer's declaration that a product conforms to the applicable EU health, safety and environmental requirements. For many products the manufacturer self-assesses and declares conformity; for higher-risk products a Notified Body must be involved in the conformity assessment. It is a regulatory marking, not an ISO-style certificate."
+    answer: "Not in the usual sense. It is a manufacturer's declaration that a product conforms to the applicable EU requirements. Many products are self-assessed and declared; higher-risk products require a Notified Body in the conformity assessment. It is a regulatory marking, not an ISO-style certificate."
   - question: "How does ABS help with CE marking?"
-    answer: "ABS provides advisory and conformity support — helping identify which EU directives or regulations apply to a product, the correct conformity-assessment route, and the technical documentation and declaration of conformity required. The goal is a product that can be placed on the European market with confidence that the requirements are met."
+    answer: "ABS provides advisory and conformity support — identifying which EU directives or regulations apply, the correct conformity-assessment route, and the technical documentation and declaration of conformity required. It is one of the Food Industry Certifications services and is especially relevant to manufacturers exporting to Europe."
   - question: "Which products need CE marking?"
     answer: "Products covered by EU product legislation that requires it, such as machinery, electrical and electronic equipment, radio equipment, toys, construction products and medical devices, when they are placed on the market in the European Economic Area."
   - question: "How long does CE marking support take?"

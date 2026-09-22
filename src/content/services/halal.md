@@ -17,9 +17,9 @@ seo:
   keywords: ["Halal certification", "Halal food certification", "Halal market access", "Halal compliance"]
 faqs:
   - question: "What does Halal certification cover?"
-    answer: "It confirms that a product and the way it is made comply with Islamic dietary law — covering ingredients (no prohibited substances), the production process, segregation from non-Halal products, hygiene, handling and storage. Certification gives Muslim consumers and importing markets confidence that the product is genuinely Halal."
+    answer: "It confirms that a product and how it is made comply with Islamic dietary law — ingredients (no prohibited substances), processing, segregation from non-Halal products, and hygiene, handling and storage."
   - question: "Why do businesses seek Halal certification?"
-    answer: "Primarily market access. Many Muslim-majority countries require Halal certification for imported food and related products, and Muslim consumers worldwide actively look for it. Certification opens those markets and signals trust to a large and growing consumer base."
+    answer: "Mainly market access: many Muslim-majority countries require it for imported products, and Muslim consumers worldwide look for it. It is often pursued alongside other Food Industry certifications such as HACCP, and is especially relevant to food manufacturers."
   - question: "How long does Halal certification take?"
     answer: "For most operations, Halal certification takes around 6–10 weeks, depending on the range of products and the complexity of the process."
   - question: "What does ABS do, and what does the certification body do?"

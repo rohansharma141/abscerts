@@ -16,9 +16,9 @@ seo:
   keywords: ["recruitment services", "talent acquisition", "talent scouting", "employee lifecycle"]
 faqs:
   - question: "What does ABS's recruitment service cover?"
-    answer: "It covers talent scouting at all levels, interviewing — including behavioural and leadership assessment — and salary negotiation and the extension of offers. It also extends into the wider employee lifecycle, from onboarding through to exit, and payroll processing, so the support doesn't stop once a hire is made."
+    answer: "Talent scouting at all levels, interviewing (including behavioural and leadership assessment), and salary negotiation and offers — extending into the wider employee lifecycle from onboarding to exit, and payroll processing."
   - question: "Does ABS recruit at senior and leadership levels?"
-    answer: "Yes. Talent scouting is offered at all levels, and interviewing includes behavioural and leadership assessment — so the service is suited to senior and leadership hires as well as volume or specialist roles."
+    answer: "Yes. Talent scouting is offered at all levels and interviewing includes behavioural and leadership assessment, so the service suits senior and leadership hires as well as volume or specialist roles."
 ---
 
 ## What the service covers

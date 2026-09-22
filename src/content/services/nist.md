@@ -18,7 +18,7 @@ seo:
   keywords: ["NIST CSF assessment", "NIST cybersecurity framework", "NIST CSF vs ISO 27001", "cyber risk framework"]
 faqs:
   - question: "Is the NIST Cybersecurity Framework a certification?"
-    answer: "No. The NIST CSF is a voluntary framework, not a certifiable standard, so there is no single official 'NIST CSF certificate'. Alignment is demonstrated through an assessment of your programme against the framework. If you need a certifiable security management system, ISO 27001 is the recognised route, and it maps closely to the CSF."
+    answer: "No. The NIST CSF is a voluntary framework, not a certifiable standard, so there is no single official \"NIST CSF certificate.\" Alignment is demonstrated through an assessment of your programme. If you need a certifiable security management system, ISO 27001 is the recognised route, and it maps closely to the CSF."
   - question: "What are the functions of the NIST CSF?"
     answer: "The framework organises cyber risk management into a set of core functions: Govern, Identify, Protect, Detect, Respond and Recover. Each breaks down into categories of outcomes, giving a common language for describing where your security programme is strong and where it needs work."
   - question: "How is the NIST CSF different from ISO 27001?"

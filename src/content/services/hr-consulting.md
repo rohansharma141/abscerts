@@ -16,9 +16,9 @@ seo:
   keywords: ["HR consulting", "HR policy development", "performance management", "HR compliance audit"]
 faqs:
   - question: "What areas does ABS's HR consulting cover?"
-    answer: "It spans the people function: HR documentation (manuals, policies and processes, benchmarked against industry and international standards); learning and development and executive coaching; performance management (role and goal setting, reward, competency development); employee health and wellness; HR compliance and audits including employment-law compliance, DEI, CSR and ESG; and HR digitisation."
+    answer: "The people function end to end: HR documentation and policy; L&D and executive coaching; performance management; employee wellness; HR compliance and audits (including employment law, DEI, CSR and ESG); and HR digitisation — benchmarked against industry and international standards."
   - question: "Can ABS help assess and improve an existing HR function?"
-    answer: "Yes. ABS offers HR process efficiency assessment and gap identification, HR process re-engineering, and audit compliance — so an organisation can understand where its HR function stands today and make it more effective and compliant."
+    answer: "Yes. ABS offers HR process efficiency assessment and gap identification, process re-engineering and audit compliance, so you can see where your HR function stands and make it more effective and compliant."
 ---
 
 ## What the service covers

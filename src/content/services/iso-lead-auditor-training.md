@@ -16,9 +16,9 @@ seo:
   keywords: ["ISO lead auditor training", "lead auditor course", "ISO 27001 lead auditor", "management system audit training"]
 faqs:
   - question: "Does this course make me a certified Lead Auditor?"
-    answer: "The course gives you an ABS Academy course-completion certificate and the knowledge and skills to lead management system audits — the capability behind auditor registration or personnel certification, which you can go on to pursue through the relevant external scheme. ABS Academy has delivered training since 2004 with experienced trainers and auditors."
+    answer: "The course gives you an ABS Academy course-completion certificate and the knowledge and skills to lead management system audits — the capability behind auditor registration or personnel certification, which you can go on to pursue through the relevant external scheme. It prepares you for the role. ABS Academy has delivered training since 2004 with experienced trainers and auditors."
   - question: "Which ISO standards can the Lead Auditor course cover?"
-    answer: "ABS Academy delivers training across the major management system standards, including ISO 9001, ISO 14001, ISO 45001, ISO 22000, ISO 50001, ISO 27001, ISO 22301 and ISO 31000, as well as HACCP. The Lead Auditor course is tailored to the standard you need to audit against."
+    answer: "ABS Academy delivers training across the major standards — including ISO 9001, ISO 14001, ISO 45001, ISO 22000, ISO 50001, ISO 27001, ISO 22301 and ISO 31000, plus HACCP — tailored to the standard you need to audit against."
 ---
 
 ## What the course covers

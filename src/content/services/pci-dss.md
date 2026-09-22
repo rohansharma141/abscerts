@@ -19,11 +19,11 @@ seo:
   keywords: ["PCI DSS compliance", "PCI DSS assessment", "cardholder data security", "PCI DSS for fintech"]
 faqs:
   - question: "Which PCI DSS validation level applies to us?"
-    answer: "It depends on your role — merchant or service provider — and your annual card transaction volume. Lower volumes typically validate through a Self-Assessment Questionnaire (SAQ), while higher volumes require an on-site assessment by a Qualified Security Assessor (QSA). We confirm the correct route during the scoping review so you are neither under- nor over-assessed."
+    answer: "It depends on your role — merchant or service provider — and your annual card transaction volume. Lower volumes typically validate through a Self-Assessment Questionnaire (SAQ); higher volumes require an on-site assessment by a Qualified Security Assessor (QSA). We confirm the correct route during scoping so you are neither under- nor over-assessed."
   - question: "Can we reduce our PCI DSS scope?"
-    answer: "Almost always, yes. Tokenisation, outsourcing card capture to a compliant payment provider, and network segmentation can dramatically shrink the environment that touches cardholder data — which lowers both risk and the cost of compliance. Identifying these opportunities is a core part of the readiness review."
+    answer: "Almost always, yes. Tokenisation, outsourcing card capture to a compliant provider, and network segmentation can dramatically shrink the environment that touches cardholder data — lowering both risk and cost. Identifying these opportunities is a core part of the readiness review."
   - question: "How does PCI DSS relate to ISO 27001 and SOC 2?"
-    answer: "There is meaningful overlap in access control, monitoring, vulnerability management and policy. PCI DSS is narrower and more prescriptive — it focuses specifically on cardholder data. If you already hold ISO 27001 or run a SOC 2 programme, much of that evidence supports your PCI DSS work."
+    answer: "There is meaningful overlap in access control, monitoring and policy. Where SOC 2 covers broad trust criteria, PCI DSS focuses specifically on cardholder data. If you already hold ISO 27001 or run a SOC 2 programme, much of that evidence supports your PCI DSS work — which matters for financial services and fintech especially."
   - question: "Is PCI DSS a one-time exercise?"
     answer: "No. PCI DSS compliance is ongoing — it must be maintained and re-validated, typically annually, and whenever your environment changes materially. The goal is a payment environment that stays compliant, not a point-in-time pass."
 ---

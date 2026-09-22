@@ -18,11 +18,11 @@ seo:
   keywords: ["HIPAA compliance", "HIPAA readiness assessment", "HIPAA business associate", "PHI security"]
 faqs:
   - question: "Is there an official HIPAA certificate?"
-    answer: "No. There is no single government-issued HIPAA certification — compliance is demonstrated through documented safeguards, policies and a required risk analysis, not a certificate. Many vendors to healthcare also use a SOC 2 report to evidence their controls to buyers, because it provides an independent, recognised assurance report."
+    answer: "No. There is no single government-issued HIPAA certification — compliance is demonstrated through documented safeguards, policies and a required risk analysis. Many vendors to healthcare also use a SOC 2 report to evidence their controls to buyers, because it provides an independent, recognised assurance report."
   - question: "Who has to comply with HIPAA?"
-    answer: "Two groups: covered entities (health plans, healthcare providers and healthcare clearinghouses) and their business associates — vendors that create, receive, maintain or transmit protected health information on a covered entity's behalf, which includes many SaaS, hosting and IT providers."
+    answer: "Two groups: covered entities (health plans, healthcare providers and clearinghouses) and their business associates — vendors that create, receive, maintain or transmit protected health information on a covered entity's behalf, which includes many SaaS, hosting and IT providers."
   - question: "What is the difference between the Privacy Rule and the Security Rule?"
-    answer: "The Privacy Rule governs how protected health information (PHI) in any form may be used and disclosed, and sets out individuals' rights over their data. The Security Rule sets administrative, physical and technical safeguards specifically for electronic PHI (ePHI). A third rule, Breach Notification, governs what happens when PHI is exposed."
+    answer: "The Privacy Rule governs how PHI in any form may be used and disclosed, and sets out individuals' rights over their data. The Security Rule sets administrative, physical and technical safeguards specifically for electronic PHI. A third rule, Breach Notification, governs what happens when PHI is exposed."
   - question: "What are the penalties for non-compliance?"
     answer: "HIPAA carries substantial tiered civil monetary penalties that scale with the degree of culpability, and criminal penalties are possible for wilful violations. Beyond enforcement, a breach of PHI carries serious reputational and contractual consequences with healthcare clients."
 ---

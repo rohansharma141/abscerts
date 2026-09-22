@@ -18,9 +18,9 @@ seo:
   keywords: ["BRCGS certification", "BRC Global Standard", "food safety GFSI", "British Retail Consortium standard"]
 faqs:
   - question: "What is BRCGS and who requires it?"
-    answer: "BRCGS (originally the British Retail Consortium Global Standard) is a GFSI-recognised certification scheme for food safety and quality. It is widely required by retailers — particularly UK and European supermarkets — as a condition of supplying own-brand and other products, so it is essential for many manufacturers selling into retail."
+    answer: "BRCGS is a GFSI-recognised certification scheme for food safety and quality, widely required by retailers — particularly UK and European supermarkets — as a condition of supplying own-brand and other products."
   - question: "How does BRCGS relate to FSSC 22000?"
-    answer: "Both are GFSI-recognised food safety schemes, so both satisfy a retailer's requirement for a GFSI-benchmarked certification. They differ in structure and emphasis, and which one you need usually depends on what your specific customers ask for. Some manufacturers hold more than one to meet different buyers' requirements."
+    answer: "Both are GFSI-recognised food safety schemes, so both satisfy a retailer's requirement for a GFSI-benchmarked certification. Which you need depends on what your customers ask for; some manufacturers hold both. Many build from a HACCP foundation. It sits alongside FSSC 22000 in the Food Industry Certifications portfolio for manufacturers."
   - question: "How long does BRCGS certification take?"
     answer: "For most food manufacturers, BRCGS certification takes around 12–16 weeks from kick-off, depending on the size and complexity of the site and the maturity of existing food safety systems."
   - question: "What does ABS do, and what does the certification body do?"

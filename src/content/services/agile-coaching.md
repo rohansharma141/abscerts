@@ -16,9 +16,9 @@ seo:
   keywords: ["agile coaching", "agile transformation", "agile coach", "enterprise agile"]
 faqs:
   - question: "What does an agile coach do?"
-    answer: "An agile coach works closely with your teams to help them adopt agile ways of working and make them stick. That includes assessing how teams work today, shaping a practical strategy for change, and providing hands-on support as new practices are put in place — coaching people through the shift rather than just prescribing a process."
+    answer: "An agile coach works closely with your teams to help them adopt agile ways of working and make them stick — assessing how teams work today, shaping a practical strategy for change, and providing hands-on support as new practices are put in place."
   - question: "Is agile coaching only for software teams?"
-    answer: "It is most established in software and product delivery, but the principles apply more widely. ABS works with the teams that deliver and the leaders who set priorities, because agile only holds when both change together — so coaching often extends beyond a single team to the organisation around it."
+    answer: "It is most established in software and product delivery, but the principles apply more widely. ABS works with both delivery teams and the leaders around them, because agile only holds when both change together."
 ---
 
 ## What agile coaching is

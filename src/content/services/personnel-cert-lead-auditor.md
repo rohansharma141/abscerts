@@ -16,9 +16,9 @@ seo:
   keywords: ["personnel certification", "lead auditor certification", "auditor competence", "certified auditor"]
 faqs:
   - question: "What is the difference between personnel certification and management system certification?"
-    answer: "Management system certification confirms that an organisation's system (for example its ISO 9001 quality system) meets a standard. Personnel certification confirms that an individual — such as an auditor — has the competence to perform a role. One certifies an organisation; the other certifies a person."
+    answer: "Management system certification confirms that an organisation's system meets a standard; personnel certification confirms that an individual has the competence to perform a role. One certifies an organisation, the other a person."
   - question: "How does personnel certification relate to auditor training?"
-    answer: "Training builds the knowledge and skills; a registration scheme recognises that an individual has demonstrated the competence to apply them — usually through a recognised course plus audit experience. Lead Auditor training is typically the first step on that route."
+    answer: "Training builds the knowledge and skills; a registration scheme recognises that you have demonstrated the competence to apply them — usually through a recognised course plus audit experience. Lead Auditor training is typically the first step on that route."
 ---
 
 ## From training to a recognised credential

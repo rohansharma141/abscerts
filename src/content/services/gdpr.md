@@ -18,7 +18,7 @@ seo:
   keywords: ["GDPR compliance", "GDPR readiness assessment", "GDPR for non-EU companies", "UK GDPR"]
 faqs:
   - question: "Is GDPR mandatory for companies outside the EU?"
-    answer: "Often, yes. The GDPR applies extraterritorially: any organisation that offers goods or services to, or monitors the behaviour of, individuals in the EU must comply regardless of where the organisation itself is based. The UK GDPR places equivalent obligations on processing relating to individuals in the UK."
+    answer: "Often, yes. The GDPR applies extraterritorially: any organisation that offers goods or services to, or monitors the behaviour of, individuals in the EU must comply regardless of where it is based. The UK GDPR places equivalent obligations on processing relating to individuals in the UK — which is why so many SaaS and technology companies address both."
   - question: "Is there an official GDPR certificate?"
     answer: "There is no single official 'GDPR certificate' issued by one body — compliance is demonstrated through your records, policies and practices. One certifiable route is ISO/IEC 27701, a privacy management system standard (standalone since its 2025 edition) that maps closely to GDPR. GDPR also allows approved certification schemes under Article 42, such as Europrivacy, which the European Data Protection Board has approved as a European Data Protection Seal."
   - question: "How is GDPR different from ISO 27701?"

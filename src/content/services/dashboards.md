@@ -16,9 +16,9 @@ seo:
   keywords: ["dashboards", "business intelligence dashboards", "Power BI", "Tableau reporting"]
 faqs:
   - question: "What makes a good dashboard?"
-    answer: "A good dashboard consolidates the right data into a clear, unified view that answers a specific question at a glance. It focuses on the metrics that drive decisions, updates from trustworthy data, and avoids clutter — the goal is faster, better-informed decisions, not more charts."
+    answer: "A good dashboard consolidates the right data into a clear, unified view that answers a specific question at a glance — focused on decision-driving metrics, updated from trustworthy data, and free of clutter."
   - question: "Which tools does ABS use to build dashboards?"
-    answer: "ABS works with established business-intelligence and analytics tools, including Power BI, Tableau and Qlik, alongside data-handling tools such as Python and R where needed. The right tool depends on your existing systems and the audience for the dashboard."
+    answer: "ABS works with established BI and analytics tools including Power BI, Tableau and Qlik, alongside Python and R where needed. The right choice depends on your existing systems and the dashboard's audience."
 ---
 
 ## What dashboards are

@@ -18,13 +18,13 @@ seo:
   keywords: ["SOC 1 audit", "SOC 1 Type 2", "SSAE 18 SOC 1", "service organization controls"]
 faqs:
   - question: "What's the difference between SOC 1 and SOC 2?"
-    answer: "SOC 1 reports on controls relevant to your clients' financial reporting; SOC 2 reports on controls against the AICPA Trust Services Criteria (security, availability, processing integrity, confidentiality, privacy). A buyer's finance and audit teams ask for SOC 1; their security and procurement teams ask for SOC 2. Many service organisations end up needing both."
+    answer: "SOC 1 reports on controls relevant to your clients' financial reporting; SOC 2 reports on controls against the AICPA Trust Services Criteria — security, availability, processing integrity, confidentiality and privacy. A buyer's finance and audit teams ask for SOC 1; their security and procurement teams ask for SOC 2. Many service organisations end up needing both."
   - question: "What is the difference between a Type I and a Type II report?"
     answer: "A Type I report assesses whether your controls are suitably designed at a single point in time. A Type II report goes further and tests whether those controls operated effectively over a period — commonly 6 to 12 months. Most clients of a service organisation ultimately want a Type II report."
   - question: "How does SOC 1 relate to ISAE 3402 and SSAE 18?"
     answer: "SSAE 18 is the AICPA attestation standard that governs SOC 1 engagements in the United States. ISAE 3402 is the international equivalent, issued by the IAASB, and is often requested when reporting to organisations outside the US. The three describe the same kind of service-organisation controls report under different standards."
   - question: "Who needs a SOC 1 report?"
-    answer: "Service organisations whose services could affect their customers' financial statements — payroll processors, data hosting and SaaS providers, claims administrators, loan servicers and similar — are most often asked for one, because their clients' auditors need assurance over those outsourced controls."
+    answer: "Service organisations whose services could affect their customers' financial statements — payroll processors, data hosting and SaaS providers, claims administrators, loan servicers and similar — are most often asked for one. It is especially common for vendors to financial services clients, whose own auditors need assurance over those outsourced controls."
   - question: "Who issues a SOC 1 report?"
     answer: "A licensed CPA firm performs the examination and issues the report, under the AICPA's SSAE 18 attestation standard. ABS prepares you for it: scoping, a readiness assessment, remediation and support through the examination."
   - question: "How long does a SOC 1 report stay current?"

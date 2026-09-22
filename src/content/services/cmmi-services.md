@@ -17,9 +17,9 @@ seo:
   keywords: ["CMMI for Services", "CMMI-SVC", "CMMI services maturity", "IT services process improvement"]
 faqs:
   - question: "How is CMMI for Services different from CMMI for Development?"
-    answer: "Both use the same five-level maturity scale and appraisal approach, but they target different work. CMMI for Development focuses on designing and building products and systems; CMMI for Services focuses on establishing, managing and delivering services — for example IT services, BPO and managed services. Organisations that both build and run software sometimes pursue both."
+    answer: "Both use the same five-level maturity scale and appraisal approach, but they target different work. CMMI for Development focuses on designing and building products and systems; CMMI for Services focuses on establishing, managing and delivering services such as IT services, BPO and managed services."
   - question: "Who needs CMMI for Services?"
-    answer: "Service-delivery organisations such as IT service providers, business process outsourcing (BPO) firms, managed-services and support organisations — particularly those competing for contracts that ask suppliers to demonstrate a defined service-management maturity. It signals that service delivery is consistent and continually improving, not dependent on individuals."
+    answer: "Service-delivery organisations — IT service providers, BPO firms, managed-services and support organisations — particularly those competing for contracts that ask suppliers to demonstrate a defined service-management maturity."
 ---
 
 ## What CMMI for Services is

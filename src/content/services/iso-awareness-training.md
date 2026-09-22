@@ -16,9 +16,9 @@ seo:
   keywords: ["ISO awareness training", "ISO orientation", "staff ISO training", "management system awareness"]
 faqs:
   - question: "What is ISO awareness training for?"
-    answer: "Awareness training gives all staff a clear understanding of what an ISO standard requires and how their own work contributes to meeting it. It is the foundation that makes a management system actually function day to day, rather than existing only on paper — and it helps everyone be ready when an audit comes."
+    answer: "It gives all staff a clear understanding of what an ISO standard requires and how their work contributes to meeting it — the foundation that makes a management system function day to day, and helps everyone be ready for an audit."
   - question: "Who should attend awareness training?"
-    answer: "It is intended for staff across the organisation, not just specialists — anyone whose work is touched by the management system. It is often the first step when an organisation adopts a new standard, before more specialised internal auditor or lead auditor training for the people who need it."
+    answer: "Staff across the organisation, not just specialists — anyone whose work is touched by the management system. It is often the first step when adopting a new standard, before more specialised internal auditor or lead auditor training."
 ---
 
 ## What the course covers

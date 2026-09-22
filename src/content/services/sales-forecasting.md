@@ -16,9 +16,9 @@ seo:
   keywords: ["sales forecasting", "demand forecasting", "predictive analytics", "sales prediction"]
 faqs:
   - question: "What is sales forecasting?"
-    answer: "Sales forecasting is the systematic analysis of past sales data, current market trends and other influencing factors to predict future sales. A reliable forecast supports better planning across inventory, staffing, cash flow and targets — turning guesswork into evidence-based expectations."
+    answer: "It is the systematic analysis of past sales data, current market trends and other influencing factors to predict future sales, supporting better planning across inventory, staffing, cash flow and targets."
   - question: "How accurate can a sales forecast be?"
-    answer: "No forecast is perfect, because the future is uncertain — but a forecast built on good data and sound method is far more reliable than intuition alone. ABS focuses on using the right historical data and techniques for your business, and on being clear about the assumptions behind each forecast."
+    answer: "No forecast is perfect, but one built on good data and sound method is far more reliable than intuition. ABS focuses on the right historical data and techniques for your business, and is clear about the assumptions behind each forecast."
 ---
 
 ## What sales forecasting is

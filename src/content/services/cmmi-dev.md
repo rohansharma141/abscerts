@@ -17,9 +17,9 @@ seo:
   keywords: ["CMMI for Development", "CMMI-DEV", "CMMI maturity level", "CMMI appraisal"]
 faqs:
   - question: "Is CMMI a certification?"
-    answer: "No. CMMI maturity is confirmed through an appraisal, not a certification. The formal method is the current CMMI Appraisal Method, carried out by an appraisal team led by a Lead Appraiser certified by the model's owner, and the appraisal result is typically valid for three years. Using the word 'appraisal' rather than 'certificate' is the correct CMMI terminology."
+    answer: "No. CMMI maturity is confirmed through an appraisal, not a certification. The formal method is the current CMMI Appraisal Method, carried out by an appraisal team led by a certified Lead Appraiser, and the result is typically valid for three years — which is why the correct term is \"appraisal,\" not \"certificate.\""
   - question: "Which CMMI maturity level do we need?"
-    answer: "It depends on what your customers and contracts require. Many enterprise, government and defence tenders specify Maturity Level 3 (Defined), while some require Level 2. ABS assesses your current state against the target level and builds a roadmap to close the gap, so you pursue the level that actually matters for your buyers."
+    answer: "It depends on what your customers and contracts require. Many enterprise, government and defence tenders specify Maturity Level 3, while some require Level 2. ABS assesses your current state against the target level and builds a roadmap to close the gap."
 ---
 
 ## What CMMI for Development is

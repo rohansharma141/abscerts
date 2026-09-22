@@ -16,9 +16,9 @@ seo:
   keywords: ["social media analytics", "social media insights", "engagement analytics", "marketing analytics"]
 faqs:
   - question: "What is social media analytics?"
-    answer: "Social media analytics is the systematic analysis of data generated through social platforms, distilling meaningful insights from user interactions. It helps organisations understand what content resonates, how audiences engage, and how sentiment and reach are changing over time."
+    answer: "It is the systematic analysis of data generated through social platforms, distilling meaningful insights from user interactions — helping you understand what content resonates, how audiences engage, and how sentiment and reach change over time."
   - question: "What can social media analytics tell us?"
-    answer: "Beyond follower counts, it reveals which content drives engagement, how audiences respond, emerging sentiment, and how performance compares across channels and campaigns — insight that can guide both marketing and broader business decisions."
+    answer: "Beyond follower counts, it reveals which content drives engagement, how audiences respond, emerging sentiment, and how performance compares across channels and campaigns — insight that guides marketing and broader business decisions."
 ---
 
 ## What social media analytics is

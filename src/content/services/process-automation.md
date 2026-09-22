@@ -16,9 +16,9 @@ seo:
   keywords: ["process automation", "workflow automation", "business process automation", "data automation"]
 faqs:
   - question: "What is process automation?"
-    answer: "Process automation is the use of technology to perform repetitive, rule-based tasks, facilitate communication and manage data with minimal human intervention. It reduces manual effort and error in routine work — for example data entry, report generation and approval workflows — so staff can focus on judgement-based work."
+    answer: "Process automation is the use of technology to perform repetitive, rule-based tasks, facilitate communication and manage data with minimal human intervention — for example data entry, report generation and approval workflows — so staff can focus on higher-value work."
   - question: "Which processes are worth automating?"
-    answer: "The best candidates are tasks that are repetitive, rule-based, high-volume and prone to manual error. ABS starts by understanding your current processes, then identifies where automation delivers the most value, rather than automating for its own sake."
+    answer: "The best candidates are repetitive, rule-based, high-volume and error-prone. ABS starts by understanding your current processes, then targets the steps where automation delivers the most value rather than automating indiscriminately."
 ---
 
 ## What process automation is

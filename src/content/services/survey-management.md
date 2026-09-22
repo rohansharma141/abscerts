@@ -16,9 +16,9 @@ seo:
   keywords: ["survey management", "survey analysis", "stakeholder feedback", "customer surveys"]
 faqs:
   - question: "What does survey management involve?"
-    answer: "Survey management is the systematic administration, analysis and interpretation of surveys to gather insights from stakeholders. It covers the full cycle — designing the survey, collecting responses, and turning the results into clear, actionable findings rather than just raw data."
+    answer: "It is the systematic administration, analysis and interpretation of surveys to gather insights from stakeholders — covering the full cycle from designing the survey to turning results into clear, actionable findings."
   - question: "Why use a structured approach to surveys?"
-    answer: "A structured approach improves the quality and credibility of what you learn. Well-designed questions, sound sampling and careful analysis reduce bias and make the findings trustworthy enough to act on — whether you are measuring customer satisfaction, employee engagement or market opinion."
+    answer: "A structured approach improves the quality and credibility of what you learn. Well-designed questions, sound sampling and careful analysis reduce bias and make findings trustworthy enough to act on."
 ---
 
 ## What survey management is

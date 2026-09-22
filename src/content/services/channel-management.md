@@ -16,9 +16,9 @@ seo:
   keywords: ["channel management", "distribution channel optimisation", "go-to-market", "channel strategy"]
 faqs:
   - question: "What is channel management?"
-    answer: "Channel management is the strategic planning, development and optimisation of the distribution channels through which products or services reach end-users. It covers how you select channels, support them and measure their performance, so that the route to market is efficient and aligned with customer demand."
+    answer: "Channel management is the strategic planning, development and optimisation of the distribution channels through which products or services reach end-users — selecting channels, supporting them and measuring their performance so the route to market stays efficient."
   - question: "How does data help with channel management?"
-    answer: "Channel decisions improve when they are based on evidence — which channels convert, where there is friction, and how performance varies by segment or region. ABS uses analytics to make those patterns visible, so channel investment goes where it delivers the best return."
+    answer: "Channel decisions improve when based on evidence — which channels convert, where friction sits, and how performance varies by segment or region. ABS uses analytics to surface those patterns so channel investment goes where the return is best."
 ---
 
 ## What channel management is
