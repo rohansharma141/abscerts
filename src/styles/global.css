@@ -1861,6 +1861,11 @@ textarea.form-control {
   flex-shrink: 0;
   margin-top: 2px;
 }
+/* Flags are small SVG images (flag-icons, MIT; public/images/flags/), not emoji, which Windows shows as letters
+   (content review, N24). The hairline keeps white flag areas visible on white cards. */
+.phone-flag img, .testimonial-img-flag img, img.region-flag { display: block; border: 1px solid var(--line); }
+.phone-flag img { width: 24px; height: 18px; margin-top: 4px; }
+.testimonial-img-flag img { width: 16px; height: 12px; }
 .phone-num {
   font-family: 'Fraunces', serif;
   font-size: 22px;
@@ -2008,7 +2013,7 @@ textarea.form-control {
   background: linear-gradient(135deg, transparent 60%, rgba(10, 14, 26, 0.2));
 }
 .region-body { padding: 28px; }
-.region-flag { font-size: 28px; margin-bottom: 14px; display: block; }
+.region-flag { width: 32px; height: 24px; margin-bottom: 14px; display: block; }
 .region-card h3 {
   font-family: 'Fraunces', serif;
   font-size: 26px;
