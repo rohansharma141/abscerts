@@ -3210,6 +3210,9 @@ em,
 .verify-example code,
 .prose a,
 .category-empty-state a,
-.services-az-letter {
+.services-az-letter,
+.testimonial-author-avatar,
+.email-item-meta,
+.btn-outline-blue {
   color: var(--accent-text);
 }
