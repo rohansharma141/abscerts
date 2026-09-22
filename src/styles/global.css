@@ -2863,7 +2863,10 @@ a.float-btn { text-decoration: none; } /* the call button is a tel: link (single
   padding: 36px 40px 32px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  /* Hidden (not just transparent) when closed, so its links leave the keyboard tab order (content review, N21);
+     visibility switches after the fade-out, so the animation is unchanged. */
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0.2s;
   z-index: 99;
 }
 .mega-menu::before {
@@ -2872,7 +2875,7 @@ a.float-btn { text-decoration: none; } /* the call button is a tel: link (single
   width: 100%; height: 4px;
   background: var(--blue);
 }
-.mega-menu.open { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+.mega-menu.open { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(0); visibility: visible; transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s; }
 .mega-menu-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
