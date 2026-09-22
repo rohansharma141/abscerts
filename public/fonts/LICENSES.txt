@@ -1,0 +1,9 @@
+Self-hosted web fonts (content review, finding N19, 2026-09-22). Copied from Google Fonts; each is licensed
+under the SIL Open Font License, Version 1.1 (https://openfontlicense.org), with copyright held by its authors:
+
+- Fraunces   https://github.com/undercasetype/Fraunces      (OFL-1.1)
+- Inter      https://github.com/rsms/inter                  (OFL-1.1)
+- JetBrains Mono  https://github.com/JetBrains/JetBrainsMono (OFL-1.1)
+
+fonts.css holds the same @font-face rules (families, weights, subsets, unicode-ranges) that the site used to
+load from fonts.googleapis.com. To change weights, regenerate from the Google Fonts CSS2 URL.
