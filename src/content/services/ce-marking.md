@@ -2,7 +2,7 @@
 title: "CE Marking Support"
 shortName: "CE Marking"
 description: "Advisory and conformity support to help manufacturers achieve CE marking and place products on the European market in line with applicable EU requirements."
-icon: "ti-stamp"
+icon: "ti-rubber-stamp"
 tags: ["CE Marking", "EU Conformity", "Product Compliance"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "CE marking conformity support for products"
