@@ -26,6 +26,15 @@ const year = new Date().getFullYear();
 // Footer "Services" column — every category, in the same order as the mega-menu.
 const footerCategories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
 
+// Social profiles (content review, §7 #8): the footer icons and the search-engine `sameAs` list show only profiles
+// with a confirmed URL. None is confirmed yet — the icons used to link to "#" and the search data listed unverified
+// addresses — so nothing is shown until ABS supplies its real profiles. To add one, fill in its url.
+const socialProfiles = [
+  { label: 'LinkedIn', icon: 'ti-brand-linkedin', url: '' },
+  { label: 'X', icon: 'ti-brand-x', url: '' },
+  { label: 'YouTube', icon: 'ti-brand-youtube', url: '' },
+].filter((profile) => profile.url);
+
 // Organization + WebSite JSON-LD — emitted on every page (extracted from v7 head).
 // Service + FAQPage nodes from v7 are emitted per-page (home / contact) via the "head" slot.
 const orgSchema = {
@@ -63,11 +72,7 @@ const orgSchema = {
           availableLanguage: ['English'],
         },
       ],
-      sameAs: [
-        'https://www.linkedin.com/company/abs-certifications',
-        'https://twitter.com/abscerts',
-        'https://www.youtube.com/@abscerts',
-      ],
+      ...(socialProfiles.length > 0 ? { sameAs: socialProfiles.map((profile) => profile.url) } : {}),
       areaServed: [
         { '@type': 'Country', name: 'United Kingdom' },
         { '@type': 'Country', name: 'United States' },
@@ -256,11 +261,13 @@ const orgSchema = {
     <p class="footer-disclaimer" style="max-width:100%;margin:32px 0 0;padding-top:20px;border-top:1px solid rgba(255,255,255,0.12);font-size:12.5px;line-height:1.6;color:rgba(255,255,255,0.66);">ABS Certifications &amp; Advisory is a consulting and advisory firm, working alongside independent certification bodies and audit firms to help organisations achieve and maintain certification.</p>
     <div class="footer-bottom">
       <span>© 2004–{year} ABS Certifications & Advisory. All rights reserved.</span>
-      <div class="footer-social">
-        <a href="#" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
-        <a href="#" aria-label="X"><i class="ti ti-brand-x"></i></a>
-        <a href="#" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
-      </div>
+      {socialProfiles.length > 0 && (
+        <div class="footer-social">
+          {socialProfiles.map((profile) => (
+            <a href={profile.url} aria-label={profile.label} target="_blank" rel="noopener"><i class={`ti ${profile.icon}`}></i></a>
+          ))}
+        </div>
+      )}
       <span><a href="/privacy">Privacy</a></span>
     </div>
   </div>
