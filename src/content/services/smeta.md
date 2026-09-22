@@ -19,7 +19,7 @@ faqs:
   - question: "Is SMETA a certification?"
     answer: "No. SMETA is an ethical audit methodology, and the deliverable is an audit report — not a certificate. The report is typically shared with customers through the Sedex platform for responsible-sourcing due diligence."
   - question: "What does a SMETA audit cover?"
-    answer: "It runs as a 2-pillar or 4-pillar audit. The core pillars are Labour Standards and Health & Safety; the 4-pillar version adds Environment and Business Ethics. It is one of the Food Industry Certifications services and is especially relevant to manufacturers and their supply chains."
+    answer: "It runs as a 2-pillar or 4-pillar audit. The core pillars are Labour Standards and Health & Safety; the 4-pillar version adds Environment and Business Ethics. It is especially relevant to manufacturers and their supply chains."
   - question: "Who needs a SMETA audit?"
     answer: "Suppliers whose customers ask for it. SMETA has become a standard way for retailers and brands to check the ethics of their suppliers, and buyers increasingly ask for a recent SMETA audit, shared through the Sedex platform, as a condition of doing business."
   - question: "How long does SMETA preparation take?"
@@ -69,7 +69,7 @@ No. SMETA is an ethical audit methodology, and the deliverable is an audit repor
 
 ### What does a SMETA audit cover?
 
-It runs as a 2-pillar or 4-pillar audit. The core pillars are Labour Standards and Health & Safety; the 4-pillar version adds Environment and Business Ethics. It is one of the [Food Industry Certifications](/services/industry-food-certifications) services and is especially relevant to [manufacturers](/industries/manufacturing) and their supply chains.
+It runs as a 2-pillar or 4-pillar audit. The core pillars are Labour Standards and Health & Safety; the 4-pillar version adds Environment and Business Ethics. It is especially relevant to [manufacturers](/industries/manufacturing) and their supply chains.
 
 ### Who needs a SMETA audit?
 

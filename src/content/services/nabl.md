@@ -19,7 +19,7 @@ faqs:
   - question: "What is NABL accreditation?"
     answer: "NABL, a body under the Quality Council of India, accredits laboratories for technical competence — testing and calibration labs against ISO/IEC 17025, medical labs against ISO 15189. The accreditation is granted by NABL and gives confidence in a lab's results."
   - question: "How does ABS help with NABL accreditation?"
-    answer: "ABS provides readiness and advisory support — gap assessment, building the quality system and documentation, and preparation for the NABL assessment. It is one of the Food Industry Certifications services, and complements NABH support for healthcare organisations."
+    answer: "ABS provides readiness and advisory support — gap assessment, building the quality system and documentation, and preparation for the NABL assessment. It complements NABH support for healthcare organisations."
   - question: "How long does NABL readiness take?"
     answer: "NABL readiness is scoped per laboratory, depending on the range of tests or calibrations and the maturity of the existing system. We begin with a fixed-price scoping call and a proposal within 24 hours."
 ---
@@ -53,7 +53,7 @@ NABL, a body under the Quality Council of India, accredits laboratories for tech
 
 ### How does ABS help with NABL accreditation?
 
-ABS provides readiness and advisory support — gap assessment, building the quality system and documentation, and preparation for the NABL assessment. It is one of the [Food Industry Certifications](/services/industry-food-certifications) services, and complements [NABH](/services/nabh) support for healthcare organisations.
+ABS provides readiness and advisory support — gap assessment, building the quality system and documentation, and preparation for the NABL assessment. It complements [NABH](/services/nabh) support for healthcare organisations.
 
 ### How long does NABL readiness take?
 

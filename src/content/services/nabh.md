@@ -19,7 +19,7 @@ faqs:
   - question: "What is NABH accreditation?"
     answer: "NABH, a body under the Quality Council of India, accredits hospitals and healthcare organisations against standards for patient safety and quality of care. The accreditation is granted by NABH and is recognised by patients, insurers and regulators."
   - question: "How does ABS help with NABH accreditation?"
-    answer: "ABS provides readiness and advisory support — gap assessment, building the necessary processes and documentation, and preparation for the NABH assessment. It is one of the Food Industry Certifications services and complements NABL support for laboratories."
+    answer: "ABS provides readiness and advisory support — gap assessment, building the necessary processes and documentation, and preparation for the NABH assessment. It complements NABL support for laboratories."
   - question: "How long does NABH readiness take?"
     answer: "NABH readiness is scoped per organisation, depending on the size and type of facility and the maturity of existing processes. We begin with a fixed-price scoping call and a proposal within 24 hours."
 ---
@@ -53,7 +53,7 @@ NABH, a body under the Quality Council of India, accredits hospitals and healthc
 
 ### How does ABS help with NABH accreditation?
 
-ABS provides readiness and advisory support — gap assessment, building the necessary processes and documentation, and preparation for the NABH assessment. It is one of the [Food Industry Certifications](/services/industry-food-certifications) services and complements [NABL](/services/nabl) support for laboratories.
+ABS provides readiness and advisory support — gap assessment, building the necessary processes and documentation, and preparation for the NABH assessment. It complements [NABL](/services/nabl) support for laboratories.
 
 ### How long does NABH readiness take?
 
