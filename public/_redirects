@@ -1,6 +1,123 @@
 # Withdrawn ISO standards → current successors (301 permanent)
-/services/iso-19600  /services/iso-37301  301
-/services/iso-29990  /services/iso-21001  301
+/services/iso-19600  /services/iso-37301/  301
+/services/iso-29990  /services/iso-21001/  301
 
 # Categories merged (Sep 2026): Personnel Certifications → Training & Professional Development
-/services/personnel-certifications  /services/management-system-training  301
+/services/personnel-certifications  /services/management-system-training/  301
+
+# Old WordPress site (www.abscerts.com until go-live) -> new pages. From its Rank Math sitemaps
+# (post-, page- and sitemap.xml, read 22 Sep 2026); content review, go-live checklist B2. Cloudflare treats
+# /path and /path/ as different URLs, so both forms are listed; targets end in / (the form Pages serves, one hop). Never add a rule for a path the new site uses:
+# redirects run before files and would hide the page.
+
+# Pages
+/contact-us  /contact/  301
+/contact-us/  /contact/  301
+/about-us  /about/  301
+/about-us/  /about/  301
+/iso-certifications-advisory  /services/iso-certifications/  301
+/iso-certifications-advisory/  /services/iso-certifications/  301
+/management-certificates  /services/iso-certifications/  301
+/management-certificates/  /services/iso-certifications/  301
+/iso-certification-in-delhi  /services/iso-certifications/  301
+/iso-certification-in-delhi/  /services/iso-certifications/  301
+/iso-certification-in-bangalore  /services/iso-certifications/  301
+/iso-certification-in-bangalore/  /services/iso-certifications/  301
+/iso-90012015-overview  /services/iso-9001/  301
+/iso-90012015-overview/  /services/iso-9001/  301
+/cyber-security  /services/cyber-security/  301
+/cyber-security/  /services/cyber-security/  301
+/soc-2-certifications-in-delhi  /services/soc-2/  301
+/soc-2-certifications-in-delhi/  /services/soc-2/  301
+/capability-maturity-model-cmmi  /services/cmmi/  301
+/capability-maturity-model-cmmi/  /services/cmmi/  301
+/product-certification  /services/ce-marking/  301
+/product-certification/  /services/ce-marking/  301
+/management-system-training  /services/management-system-training/  301
+/management-system-training/  /services/management-system-training/  301
+/training  /services/management-system-training/  301
+/training/  /services/management-system-training/  301
+/personnel-certifications  /services/management-system-training/  301
+/personnel-certifications/  /services/management-system-training/  301
+/data-analytics  /services/data-analytics/  301
+/data-analytics/  /services/data-analytics/  301
+/agile-transformation-and-trainings  /services/agile-transformation/  301
+/agile-transformation-and-trainings/  /services/agile-transformation/  301
+/inspection  /services/third-party-inspection/  301
+/inspection/  /services/third-party-inspection/  301
+/third-party-inspection  /services/third-party-inspection/  301
+/third-party-inspection/  /services/third-party-inspection/  301
+/hr-service  /services/hr-services/  301
+/hr-service/  /services/hr-services/  301
+/human-resource  /services/hr-services/  301
+/human-resource/  /services/hr-services/  301
+/become-a-partner  /contact/  301
+/become-a-partner/  /contact/  301
+/privacy-policy  /privacy/  301
+/privacy-policy/  /privacy/  301
+/privacy-policy-2  /privacy/  301
+/privacy-policy-2/  /privacy/  301
+/legal-notice  /privacy/  301
+/legal-notice/  /privacy/  301
+
+# Blog posts (migrated posts keep their article; the rest go to the page that now covers the topic)
+/iso-140012026-what-has-actually-changed  /blog/iso-14001-2026-what-has-changed/  301
+/iso-140012026-what-has-actually-changed/  /blog/iso-14001-2026-what-has-changed/  301
+/the-iso-27000-family-of-standards  /blog/iso-27000-family-of-standards/  301
+/the-iso-27000-family-of-standards/  /blog/iso-27000-family-of-standards/  301
+/iso-42001-2023  /blog/iso-42001-ai-management/  301
+/iso-42001-2023/  /blog/iso-42001-ai-management/  301
+/what-is-iso-71012023  /blog/iso-7101-healthcare/  301
+/what-is-iso-71012023/  /blog/iso-7101-healthcare/  301
+/national-accreditation-board-for-hospitals  /blog/nabh-hospital-accreditation/  301
+/national-accreditation-board-for-hospitals/  /blog/nabh-hospital-accreditation/  301
+/phishing-simulation  /blog/phishing-simulation/  301
+/phishing-simulation/  /blog/phishing-simulation/  301
+/frequently-asked-questions-soc2  /blog/soc-2-faq/  301
+/frequently-asked-questions-soc2/  /blog/soc-2-faq/  301
+/what-is-statement-of-applicability-soa  /blog/statement-of-applicability-soa/  301
+/what-is-statement-of-applicability-soa/  /blog/statement-of-applicability-soa/  301
+/what-is-vapt  /blog/what-is-vapt/  301
+/what-is-vapt/  /blog/what-is-vapt/  301
+/5-best-data-science-companies-in-bangalore  /blog/data-science-companies-bangalore/  301
+/5-best-data-science-companies-in-bangalore/  /blog/data-science-companies-bangalore/  301
+/iso-90012026-complete-guide  /services/iso-9001/  301
+/iso-90012026-complete-guide/  /services/iso-9001/  301
+/what-is-iso-9001  /services/iso-9001/  301
+/what-is-iso-9001/  /services/iso-9001/  301
+/what-is-iso-14001  /services/iso-14001/  301
+/what-is-iso-14001/  /services/iso-14001/  301
+/what-is-iso-45001  /services/iso-45001/  301
+/what-is-iso-45001/  /services/iso-45001/  301
+/iso-management-system-implementation-iso-22301  /services/iso-22301/  301
+/iso-management-system-implementation-iso-22301/  /services/iso-22301/  301
+/information-security-processes  /services/iso-27001/  301
+/information-security-processes/  /services/iso-27001/  301
+/soc-2-type-i-vs-type-ii  /services/soc-2/  301
+/soc-2-type-i-vs-type-ii/  /services/soc-2/  301
+/iso-27001-vs-soc2  /faq/  301
+/iso-27001-vs-soc2/  /faq/  301
+/iso-certification-process  /process/  301
+/iso-certification-process/  /process/  301
+/what-is-cmmi  /services/cmmi/  301
+/what-is-cmmi/  /services/cmmi/  301
+/what-is-cmmi-2  /services/cmmi/  301
+/what-is-cmmi-2/  /services/cmmi/  301
+/what-is-cmmi-maturity-level-2  /services/cmmi/  301
+/what-is-cmmi-maturity-level-2/  /services/cmmi/  301
+/cmmi-consulting-and-appraisal  /services/cmmi/  301
+/cmmi-consulting-and-appraisal/  /services/cmmi/  301
+/cmmi-implementation-approach  /services/cmmi/  301
+/cmmi-implementation-approach/  /services/cmmi/  301
+/cmmi-v-3-0  /services/cmmi/  301
+/cmmi-v-3-0/  /services/cmmi/  301
+/what-is-employee-screening-how-it-should-be-done  /services/hr-services/  301
+/what-is-employee-screening-how-it-should-be-done/  /services/hr-services/  301
+
+# WordPress archives and feed
+/category/*  /blog/  301
+/tag/*  /blog/  301
+/author/*  /about/  301
+/blog/page/*  /blog/  301
+/feed  /blog/  301
+/feed/  /blog/  301
