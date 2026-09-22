@@ -150,6 +150,10 @@ The site's canonical URL is **`https://www.abscerts.com`** (set in `astro.config
 - **Reviving Verify later:** build a `/verify` page, create + bind the `CERTIFICATES` KV namespace
   (un-comment the `wrangler.toml` block / add the dashboard binding), seed certificate records, and
   re-add the nav/footer/home entry points. The function (`functions/api/verify.ts`) is already there.
+- **Adding an icon:** the Tabler icon font in `public/vendor/tabler-icons-2.47.0/` is cut down to the
+  icons the site uses. After adding a new `ti-<name>` icon, run `python scripts/subset-icons.py`
+  (needs `pip install fonttools brotli`) and commit the regenerated files. `npm run build` checks
+  this (`scripts/check-icons.mjs`) and fails with that instruction if an icon is missing.
 
 ---
 
