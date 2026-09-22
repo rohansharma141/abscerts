@@ -20,11 +20,12 @@ const catCards = categories.map((c) => ({
   count: allServices.filter((s) => s.data.category === c.id).length,
 }));
 
-// A–Z power-user view — every service, grouped by first letter of shortName.
-const azServices = [...allServices].sort((a, b) => a.data.shortName.localeCompare(b.data.shortName));
+// A–Z power-user view — every service by its title, grouped by the title's first letter. Each entry shows the
+// title only: most titles already begin with the short name (content review, N7: "ISO 9001 — ISO 9001 — …").
+const azServices = [...allServices].sort((a, b) => a.data.title.localeCompare(b.data.title, 'en', { numeric: true }));
 const azGroups: Record<string, typeof azServices> = {};
 for (const s of azServices) {
-  const letter = s.data.shortName.charAt(0).toUpperCase();
+  const letter = s.data.title.charAt(0).toUpperCase();
   (azGroups[letter] ??= []).push(s);
 }
 const azLetters = Object.keys(azGroups).sort();
@@ -86,7 +87,7 @@ const azLetters = Object.keys(azGroups).sort();
               <span class="services-az-letter">{letter}</span>
               <ul>
                 {azGroups[letter].map((s) => (
-                  <li><a href={`/services/${s.id}`}>{s.data.shortName} — {s.data.title}</a></li>
+                  <li><a href={`/services/${s.id}`}>{s.data.title}</a></li>
                 ))}
               </ul>
             </div>

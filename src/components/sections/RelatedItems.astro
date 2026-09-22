@@ -1,6 +1,7 @@
 ---
 // Related items strip — used on service detail (related services) and industry
 // detail (related industries). Reuses ServiceCard / IndustryCard for the grid.
+import { getCollection } from 'astro:content';
 import ServiceCard from '../ui/ServiceCard.astro';
 import IndustryCard from '../ui/IndustryCard.astro';
 
@@ -16,6 +17,8 @@ interface Props {
 }
 const { type, title, eyebrow = 'Keep exploring', items } = Astro.props;
 const num = (i: number) => `/ ${String(i + 1).padStart(2, '0')}`;
+// A service card's tag shows its category's name as the menus do ("ISO Certifications"), not its slug.
+const categoryNames = new Map((await getCollection('categories')).map((c) => [c.id, c.data.shortName]));
 ---
 <section class="section section-tint">
   <div class="container">
@@ -30,7 +33,7 @@ const num = (i: number) => `/ ${String(i + 1).padStart(2, '0')}`;
       <div class="services-grid">
         {items.map((item, i) => (
           <ServiceCard
-            tag={item.data.category}
+            tag={categoryNames.get(item.data.category) ?? item.data.categoryName}
             num={num(i)}
             image={item.data.image}
             imageAlt={item.data.imageAlt}
