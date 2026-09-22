@@ -15,6 +15,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       phone?: string;
       companySize?: string;
       message?: string;
+      marketing?: string; // optional opt-in checkbox: "on" when ticked, absent when not
       website?: string; // honeypot — must stay empty
     }>();
 
@@ -64,6 +65,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
           ${data.phone ? `<p><strong>Phone:</strong> ${escape(data.phone)}</p>` : ''}
           ${data.companySize ? `<p><strong>Company size:</strong> ${escape(data.companySize)}</p>` : ''}
           ${data.message ? `<p><strong>Message:</strong><br>${escape(data.message)}</p>` : ''}
+          <p><strong>Email updates (marketing opt-in):</strong> ${data.marketing ? 'Yes' : 'No'}</p>
         `,
       }),
     });
