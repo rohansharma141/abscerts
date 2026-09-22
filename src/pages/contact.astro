@@ -91,11 +91,11 @@ const faqSchema = {
           <p>30-min consultation in your time zone</p>
           <button type="button" class="quick-action-link">Request a time <i class="ti ti-arrow-right" style="font-size:11px"></i></button>
         </div>
-        <div class="quick-action">
+        <div class="quick-action" onclick="if (!event.target.closest('a')) this.querySelector('a').click()">
           <div class="quick-action-icon"><i class="ti ti-headset"></i></div>
           <h3>Existing client</h3>
           <p>Audit & support help</p>
-          <span class="quick-action-link">Contact support <i class="ti ti-arrow-right" style="font-size:11px"></i></span>
+          <a href="mailto:audits@abscerts.com" class="quick-action-link">Contact support <i class="ti ti-arrow-right" style="font-size:11px"></i></a>
         </div>
       </div>
 
