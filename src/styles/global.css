@@ -1658,6 +1658,8 @@ em {
   gap: 16px;
   margin-bottom: 80px;
 }
+/* Three cards (contact page). Defined before the responsive rules, so they still take it to 2 columns and then 1. */
+.quick-actions-grid-3 { grid-template-columns: repeat(3, 1fr); }
 .quick-action {
   background: var(--white);
   padding: 32px 28px;

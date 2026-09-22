@@ -30,7 +30,7 @@ You need:
 
    (`NOTIFICATION_EMAIL` / `MARKETING_EMAIL` can be any inbox you read — they don't need to be on the abscerts.com domain; only `FROM_EMAIL` must be on the Resend-verified domain.)
 
-> The functions are written to **fail safe**: if `RESEND_API_KEY` is missing or left as `re_placeholder`, the form still returns success to the user but logs a warning and does **not** send. So set a real key before launch.
+> If `RESEND_API_KEY` is missing or left as `re_placeholder`, the functions log a warning and the send fails. The contact, quote, partner, consultation and newsletter forms then show the visitor their error message (call or email us), so no enquiry is lost silently; the download form still shows the download link, but no emails are sent. So set a real key before launch.
 
 ---
 
