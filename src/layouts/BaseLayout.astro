@@ -177,7 +177,7 @@ const orgSchema = {
     <nav class="nav" aria-label="Primary navigation">
       <a href="/" id="nav-home" class:list={[{ active: path === '/' }]}>Home</a>
       <a href="/about" class:list={[{ active: path === '/about' }]}>About</a>
-      <a href="/services" id="megaTrigger" class:list={["mega-trigger", { active: path.startsWith('/services') }]} aria-haspopup="true" aria-expanded="false">Services <i class="ti ti-chevron-down" style="font-size:14px"></i></a>
+      <a href="/services" id="megaTrigger" class:list={["mega-trigger", { active: path.startsWith('/services') }]} aria-controls="megaMenu" aria-expanded="false">Services <i class="ti ti-chevron-down" style="font-size:14px"></i></a>
       <a href="/#industries">Industries</a>
       <a href="/process" class:list={[{ active: path === '/process' }]}>Process</a>
       <a href="/blog" class:list={[{ active: path.startsWith('/blog') }]}>Blog</a>
@@ -305,7 +305,7 @@ const orgSchema = {
 
 <!-- ============ QUOTE MODAL ============ -->
 <div class="modal-backdrop" id="quoteModal" inert onclick="if(event.target===this) closeQuoteModal()">
-  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle" tabindex="-1">
     <div class="modal-header">
       <button class="modal-close" onclick="closeQuoteModal()" aria-label="Close"><i class="ti ti-x"></i></button>
       <p class="eyebrow">Free · No obligation</p>
@@ -422,7 +422,7 @@ const orgSchema = {
 
 <!-- ============ PARTNER MODAL ============ -->
 <div class="modal-backdrop" id="partnerModal" inert onclick="if(event.target===this) closePartnerModal()">
-  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="partnerModalTitle">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="partnerModalTitle" tabindex="-1">
     <div class="modal-header">
       <button class="modal-close" onclick="closePartnerModal()" aria-label="Close"><i class="ti ti-x"></i></button>
       <p class="eyebrow">Partnerships</p>
@@ -470,11 +470,11 @@ const orgSchema = {
 
 <!-- ============ EXIT-INTENT POPUP ============ -->
 <div class="exit-popup" id="exitPopup" inert onclick="if(event.target===this) closeExitPopup()">
-  <div class="exit-popup-card">
+  <div class="exit-popup-card" role="dialog" aria-modal="true" aria-labelledby="exitPopupTitle" tabindex="-1">
     <div class="exit-popup-banner">
       <button class="exit-popup-close" onclick="closeExitPopup()" aria-label="Close"><i class="ti ti-x"></i></button>
       <div class="exit-popup-icon"><i class="ti ti-gift"></i></div>
-      <h3>Before you go — let us <em>help</em></h3>
+      <h3 id="exitPopupTitle">Before you go — let us <em>help</em></h3>
       <p>Drop your details and we'll send a free certification roadmap tailored to your business. No spam, ever.</p>
     </div>
     <div class="exit-popup-body">

@@ -86,18 +86,55 @@ function toggleMobileNav() {
   document.body.style.overflow = isOpen ? 'hidden' : '';
 }
 
+/* ===== Pop-up focus handling (quote, partner, consultation, "Before you go") =====
+   While a pop-up is open the rest of the page is inert, focus moves into its dialog, and on close it returns to
+   the element that opened it (content review: decision §8.2 for the consultation pop-up, finding N14 for the
+   others). Overlays that manage their own inert state (the mobile menu, the other pop-ups) are left alone. */
+const OWN_INERT = '#mobileNav, #mobileNavBackdrop, .modal-backdrop, .exit-popup, script';
+const overlayState = new Map(); // open overlay → { returnTo, inerted }
+function overlayOpened(overlay, dialog) {
+  if (overlayState.has(overlay)) return;
+  // Make everything outside the overlay inert: the siblings of the overlay and of each of its ancestors.
+  const inerted = [];
+  for (let node = overlay; node !== document.body && node.parentElement; node = node.parentElement) {
+    for (const sib of node.parentElement.children) {
+      if (sib !== node && !sib.hasAttribute('inert') && !sib.matches(OWN_INERT)) {
+        sib.setAttribute('inert', '');
+        inerted.push(sib);
+      }
+    }
+  }
+  overlayState.set(overlay, { returnTo: document.activeElement, inerted });
+  if (dialog) dialog.focus({ preventScroll: true });
+}
+function overlayClosed(overlay) {
+  const state = overlayState.get(overlay);
+  if (!state) return;
+  overlayState.delete(overlay);
+  state.inerted.forEach((el) => el.removeAttribute('inert'));
+  // Back to the opener; if it has gone (e.g. a mobile-menu button, now closed), to the menu button if visible.
+  let back = state.returnTo;
+  if (!back || back === document.body || back.closest('[inert]') || typeof back.focus !== 'function') {
+    const burger = document.querySelector('.hamburger');
+    back = burger && burger.offsetParent !== null ? burger : null;
+  }
+  if (back) back.focus({ preventScroll: true });
+}
+
 /* ===== Quote Modal ===== */
 function openQuoteModal() {
   const m = document.getElementById('quoteModal');
   m.classList.add('open');
   m.removeAttribute('inert');
   document.body.style.overflow = 'hidden';
+  overlayOpened(m, m.querySelector('.modal'));
 }
 function closeQuoteModal() {
   const m = document.getElementById('quoteModal');
   m.classList.remove('open');
   m.setAttribute('inert', '');
   document.body.style.overflow = '';
+  overlayClosed(m);
 }
 
 /* ===== Partner Modal ("Become a Partner" — header + mobile menu) ===== */
@@ -106,37 +143,26 @@ function openPartnerModal() {
   m.classList.add('open');
   m.removeAttribute('inert');
   document.body.style.overflow = 'hidden';
+  overlayOpened(m, m.querySelector('.modal'));
 }
 function closePartnerModal() {
   const m = document.getElementById('partnerModal');
   m.classList.remove('open');
   m.setAttribute('inert', '');
   document.body.style.overflow = '';
+  overlayClosed(m);
 }
 
 /* ===== Consultation Modal ("Book a free consultation" — contact page only) =====
    Opened by the closing banner's "Book free consultation" button and the "Book a meeting" card
-   (content review, decision §8.2). It also handles keyboard focus: while it's open the rest of the
-   page is inert, focus moves into the dialog, and it returns to the button that opened it on close. */
-let consultState = null;
+   (content review, decision §8.2). */
 function openConsultModal() {
   const m = document.getElementById('consultModal');
   if (!m || m.classList.contains('open')) return;
-  // Make everything outside the dialog inert: the siblings of the modal and of each of its ancestors.
-  const inerted = [];
-  for (let node = m; node !== document.body && node.parentElement; node = node.parentElement) {
-    for (const sib of node.parentElement.children) {
-      if (sib !== node && !sib.hasAttribute('inert') && sib.tagName !== 'SCRIPT') {
-        sib.setAttribute('inert', '');
-        inerted.push(sib);
-      }
-    }
-  }
-  consultState = { returnTo: document.activeElement, inerted };
   m.classList.add('open');
   m.removeAttribute('inert');
   document.body.style.overflow = 'hidden';
-  m.querySelector('.modal').focus({ preventScroll: true });
+  overlayOpened(m, m.querySelector('.modal'));
 }
 function closeConsultModal() {
   const m = document.getElementById('consultModal');
@@ -144,12 +170,7 @@ function closeConsultModal() {
   m.classList.remove('open');
   m.setAttribute('inert', '');
   document.body.style.overflow = '';
-  if (consultState) {
-    consultState.inerted.forEach((el) => el.removeAttribute('inert'));
-    const back = consultState.returnTo;
-    consultState = null;
-    if (back && back !== document.body && typeof back.focus === 'function') back.focus({ preventScroll: true });
-  }
+  overlayClosed(m);
 }
 
 /* ===== Scroll to contact form on contact page ===== */
@@ -185,6 +206,7 @@ function showExitPopup() {
   p.classList.add('open');
   p.removeAttribute('inert');
   document.body.style.overflow = 'hidden';
+  overlayOpened(p, p.querySelector('.exit-popup-card'));
   try { sessionStorage.setItem('absExitShown', '1'); } catch(e) {}
 }
 function closeExitPopup() {
@@ -192,6 +214,7 @@ function closeExitPopup() {
   p.classList.remove('open');
   p.setAttribute('inert', '');
   document.body.style.overflow = '';
+  overlayClosed(p);
 }
 function switchExitTab(btn, type) {
   document.querySelectorAll('.exit-popup-tab').forEach(t => t.classList.remove('active'));
@@ -252,6 +275,10 @@ document.addEventListener('keydown', (e) => {
   };
 
   forms.forEach((form) => {
+    // Screen readers announce messages written into the status area (content review, N14).
+    const statusArea = form.querySelector('[data-form-status]');
+    if (statusArea) statusArea.setAttribute('role', 'status');
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const type = form.getAttribute('data-form'); // quote | contact | newsletter
@@ -290,6 +317,10 @@ document.addEventListener('keydown', (e) => {
           '<p>' + (form.dataset.success || SUCCESS_MESSAGES[type] || 'Thanks — message received.') + '</p>' +
           downloadHtml +
           '</div>';
+        // The form (and its focused button) is gone: move focus to the confirmation so it's read out.
+        const done = form.querySelector('.form-success');
+        done.setAttribute('tabindex', '-1');
+        done.focus({ preventScroll: true });
 
         if (type === 'quote') setTimeout(closeQuoteModal, 3000);
         if (type === 'partner') setTimeout(closePartnerModal, 3000);

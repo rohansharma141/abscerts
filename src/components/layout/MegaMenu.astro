@@ -22,22 +22,24 @@ const cells = categories.map((cat) => {
 });
 ---
 
-<div class="mega-menu" id="megaMenu" role="menu" aria-label="Services categories">
+<!-- A navigation landmark of plain links (content review, N15): ARIA menu roles don't fit site navigation
+     and failed Lighthouse's aria-required-children / aria-required-parent checks. -->
+<nav class="mega-menu" id="megaMenu" aria-label="Services categories">
   <div class="mega-menu-grid">
     {cells.map((cell) => (
       <div class="mega-cell" style={`grid-column:${cell.column};grid-row:${cell.row};`}>
-        <a href={`/services/${cell.slug}`} class="mega-cell-head" role="menuitem">{cell.shortName}</a>
+        <a href={`/services/${cell.slug}`} class="mega-cell-head">{cell.shortName}</a>
         {cell.topServices.length > 0 && (
           <ul class="mega-cell-list">
             {cell.topServices.map((s) => (
-              <li><a href={`/services/${s.id}`} role="menuitem">{s.data.shortName}</a></li>
+              <li><a href={`/services/${s.id}`}>{s.data.shortName}</a></li>
             ))}
           </ul>
         )}
-        <a href={`/services/${cell.slug}`} class="mega-cell-all" role="menuitem">
+        <a href={`/services/${cell.slug}`} class="mega-cell-all">
           View all{cell.count > 0 ? ` ${cell.count}` : ''} <i class="ti ti-arrow-right"></i>
         </a>
       </div>
     ))}
   </div>
-</div>
+</nav>

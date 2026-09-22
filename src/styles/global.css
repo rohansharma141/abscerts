@@ -1721,7 +1721,7 @@ em {
   font-weight: 500;
 }
 .quick-action:hover .quick-action-link { color: var(--blue); gap: 10px; }
-/* Contact page "Book a meeting" card: its link is a real button so keyboard users can open the consultation form. */
+/* Contact page action cards: the link is a real button so keyboard users can open the pop-up. */
 button.quick-action-link { padding: 0; line-height: inherit; text-align: left; }
 
 .contact-grid {
@@ -2359,8 +2359,8 @@ a.float-btn { text-decoration: none; } /* the call button is a tel: link (single
 .modal-trust span { display: flex; align-items: center; gap: 6px; }
 .modal-privacy { margin-top: 14px; font-size: 12.5px; color: var(--gray-text); text-align: center; }
 .modal-privacy a { color: var(--accent-text); text-decoration: underline; }
-/* The consultation dialog takes focus itself when it opens (tabindex="-1"); the container needs no focus ring. */
-.modal[tabindex="-1"]:focus { outline: none; }
+/* Pop-up dialogs and form confirmations take focus themselves (tabindex="-1"); the container needs no focus ring. */
+.modal[tabindex="-1"]:focus, .exit-popup-card[tabindex="-1"]:focus, .form-success[tabindex="-1"]:focus { outline: none; }
 .modal-trust i { color: var(--blue); }
 
 /* ============ Exit-Intent Popup ============ */
