@@ -1,7 +1,7 @@
 ---
 title: "GDPR Compliance — EU & UK Data Protection"
 shortName: "GDPR"
-description: "Independent GDPR readiness and gap assessments for organisations that process the personal data of individuals in the EU and UK."
+description: "GDPR readiness and gap assessments for organisations that process the personal data of individuals in the EU and UK."
 icon: "ti-shield-lock"
 tags: ["GDPR", "Data Privacy", "EU Regulation", "Compliance"]
 image: "/images/cat-cyber-security.jpg"
@@ -14,7 +14,7 @@ governingBody: "European Union (EDPB)"
 featured: false
 seo:
   title: "GDPR Compliance & Readiness Assessment | EU & UK | ABS"
-  description: "Independent GDPR readiness and gap assessments for organisations processing EU and UK personal data. Map your obligations and close the gaps. Quote in 24 hours."
+  description: "GDPR readiness and gap assessments for organisations processing EU and UK personal data. Map your obligations and close the gaps. Quote in 24 hours."
   keywords: ["GDPR compliance", "GDPR readiness assessment", "GDPR for non-EU companies", "UK GDPR"]
 faqs:
   - question: "Is GDPR mandatory for companies outside the EU?"

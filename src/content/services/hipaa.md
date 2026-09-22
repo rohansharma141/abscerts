@@ -1,7 +1,7 @@
 ---
 title: "HIPAA Compliance — US Healthcare Data Protection"
 shortName: "HIPAA"
-description: "Independent HIPAA readiness and gap assessments for organisations that handle the protected health information of US individuals."
+description: "HIPAA readiness and gap assessments for organisations that handle the protected health information of US individuals."
 icon: "ti-stethoscope"
 tags: ["HIPAA", "PHI", "Healthcare", "US Privacy"]
 image: "/images/cat-cyber-security.jpg"
@@ -14,7 +14,7 @@ governingBody: "US Department of Health & Human Services"
 featured: false
 seo:
   title: "HIPAA Compliance & Readiness Assessment | US Healthcare | ABS"
-  description: "Independent HIPAA readiness and gap assessments for covered entities and business associates handling US protected health information (PHI). Quote in 24 hours."
+  description: "HIPAA readiness and gap assessments for covered entities and business associates handling US protected health information (PHI). Quote in 24 hours."
   keywords: ["HIPAA compliance", "HIPAA readiness assessment", "HIPAA business associate", "PHI security"]
 faqs:
   - question: "Is there an official HIPAA certificate?"

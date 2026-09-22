@@ -13,7 +13,7 @@ timelineWeeks: "10-14"
 governingBody: "AICPA"
 featured: false
 seo:
-  title: "SSAE 18 Attestation & SOC Reporting | AICPA | ABS"
+  title: "SSAE 18 Readiness | SOC Reporting | AICPA | ABS"
   description: "SOC report readiness under SSAE 18, the AICPA attestation standard for US service organisation controls. Type I and Type II. Fixed-price quote in 24 hours."
   keywords: ["SSAE 18 attestation", "SSAE 18 SOC 1", "SSAE 16 vs SSAE 18", "AICPA attestation standard"]
 faqs:

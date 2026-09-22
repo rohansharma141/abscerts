@@ -1,7 +1,7 @@
 ---
 title: "NIST Cybersecurity Framework — Readiness & Alignment"
 shortName: "NIST CSF"
-description: "Independent assessment of your security programme against the NIST Cybersecurity Framework — a widely used voluntary framework for managing cyber risk."
+description: "Assessment of your security programme against the NIST Cybersecurity Framework — a widely used voluntary framework for managing cyber risk."
 icon: "ti-shield-cog"
 tags: ["NIST", "NIST CSF", "Cyber Risk", "Framework"]
 image: "/images/cat-cyber-security.jpg"
@@ -14,7 +14,7 @@ governingBody: "NIST"
 featured: false
 seo:
   title: "NIST Cybersecurity Framework (CSF) Assessment | ABS"
-  description: "Independent NIST Cybersecurity Framework readiness and gap assessment. Map your security programme against the CSF functions and build a clear roadmap. Quote in 24 hours."
+  description: "NIST Cybersecurity Framework readiness and gap assessment. Map your security programme against the CSF functions and build a clear roadmap. Quote in 24 hours."
   keywords: ["NIST CSF assessment", "NIST cybersecurity framework", "NIST CSF vs ISO 27001", "cyber risk framework"]
 faqs:
   - question: "Is the NIST Cybersecurity Framework a certification?"

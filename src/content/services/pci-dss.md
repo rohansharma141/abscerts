@@ -15,7 +15,7 @@ featured: false
 related: ["vapt", "iso-27001", "soc-2"]
 seo:
   title: "PCI DSS Compliance & Readiness | Payment Card Security | ABS"
-  description: "Independent PCI DSS readiness, scoping and assessment support for merchants and service providers handling cardholder data. Fixed-price quote in 24 hours."
+  description: "PCI DSS readiness, scoping and assessment support for merchants and service providers handling cardholder data. Fixed-price quote in 24 hours."
   keywords: ["PCI DSS compliance", "PCI DSS assessment", "cardholder data security", "PCI DSS for fintech"]
 faqs:
   - question: "Which PCI DSS validation level applies to us?"
