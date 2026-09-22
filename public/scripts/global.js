@@ -173,6 +173,19 @@ function closeConsultModal() {
   overlayClosed(m);
 }
 
+/* ===== Contact page map: Google Maps loads only when the visitor asks (content review, N19) ===== */
+function loadContactMap(btn) {
+  const box = btn.closest('[data-map-src]');
+  const frame = document.createElement('iframe');
+  frame.className = 'map-embed';
+  frame.src = box.dataset.mapSrc;
+  frame.title = box.dataset.mapTitle;
+  frame.allowFullscreen = true;
+  frame.referrerPolicy = 'strict-origin-when-cross-origin';
+  box.replaceWith(frame);
+  frame.focus(); // the button is gone; keep keyboard focus on the map
+}
+
 /* ===== Scroll to contact form on contact page ===== */
 function jumpToContactForm() {
   showPage('contact');
