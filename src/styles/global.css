@@ -2518,6 +2518,7 @@ a.float-btn { text-decoration: none; } /* the call button is a tel: link (single
   text-align: center;
   line-height: 1.5;
 }
+.exit-popup-disclaimer a { color: var(--accent-text); text-decoration: underline; } /* same as the other pop-ups' privacy links */
 .exit-popup-close {
   position: absolute;
   top: 16px;
