@@ -50,7 +50,7 @@ ABS supports the full path: a readiness assessment to map your current controls 
 
 ## Typical timeline
 
-For most organisations under 200 people, a SOC 1 Type I report takes around 10–14 weeks from kick-off, depending on how mature your control environment already is. A Type II report then adds the observation period (commonly 6–12 months) during which the controls are tested in operation. Every engagement begins with a fixed-price scoping call, and we send a proposal within 24 hours so you know the scope, timeline and cost before committing.
+A SOC 1 Type I report typically takes around 10–14 weeks from kick-off, depending on the scope of the services covered, your organisation's size and how mature your control environment already is. A Type II report then adds the observation period (commonly 6–12 months) during which the controls are tested in operation. Every engagement begins with a fixed-price scoping call, and we send a proposal within 24 hours so you know the scope, timeline and cost before committing.
 
 ## Common questions
 
