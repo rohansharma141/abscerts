@@ -7,7 +7,7 @@ tags: ["Halal", "Food Certification", "Market Access"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "Halal food and product compliance"
 category: "industry-food-certifications"
-categoryName: "Food Industry Certifications"
+categoryName: "Food, Automotive, Manufacturing & Lab Certifications"
 order: 4
 timelineWeeks: "6-10"
 featured: false
@@ -19,7 +19,7 @@ faqs:
   - question: "What does Halal certification cover?"
     answer: "It confirms that a product and how it is made comply with Islamic dietary law — ingredients (no prohibited substances), processing, segregation from non-Halal products, and hygiene, handling and storage."
   - question: "Why do businesses seek Halal certification?"
-    answer: "Mainly market access: many Muslim-majority countries require it for imported products, and Muslim consumers worldwide look for it. It is often pursued alongside other Food Industry certifications such as HACCP, and is especially relevant to food manufacturers."
+    answer: "Mainly market access: many Muslim-majority countries require it for imported products, and Muslim consumers worldwide look for it. It is often pursued alongside other sector certifications such as HACCP, and is especially relevant to food manufacturers."
   - question: "How long does Halal certification take?"
     answer: "For most operations, Halal certification takes around 6–10 weeks, depending on the range of products and the complexity of the process."
   - question: "What does ABS do, and what does the certification body do?"
@@ -68,7 +68,7 @@ It confirms that a product and how it is made comply with Islamic dietary law �
 
 ### Why do businesses seek Halal certification?
 
-Mainly market access: many Muslim-majority countries require it for imported products, and Muslim consumers worldwide look for it. It is often pursued alongside other [Food Industry](/services/industry-food-certifications) certifications such as [HACCP](/services/haccp), and is especially relevant to food [manufacturers](/industries/manufacturing).
+Mainly market access: many Muslim-majority countries require it for imported products, and Muslim consumers worldwide look for it. It is often pursued alongside other [sector certifications](/services/industry-food-certifications) such as [HACCP](/services/haccp), and is especially relevant to food [manufacturers](/industries/manufacturing).
 
 ### How long does Halal certification take?
 

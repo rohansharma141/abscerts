@@ -7,7 +7,7 @@ tags: ["VDA 6", "VDA 6.3", "Automotive"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "VDA 6.3 automotive process audit readiness"
 category: "industry-food-certifications"
-categoryName: "Food Industry Certifications"
+categoryName: "Food, Automotive, Manufacturing & Lab Certifications"
 order: 7
 timelineWeeks: "12-16"
 governingBody: "VDA"

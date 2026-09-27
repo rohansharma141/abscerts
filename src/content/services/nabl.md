@@ -7,7 +7,7 @@ tags: ["NABL", "Laboratory Accreditation", "ISO 17025"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "NABL laboratory accreditation support"
 category: "industry-food-certifications"
-categoryName: "Food Industry Certifications"
+categoryName: "Food, Automotive, Manufacturing & Lab Certifications"
 order: 9
 governingBody: "NABL (Quality Council of India)"
 featured: false

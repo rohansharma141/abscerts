@@ -7,7 +7,7 @@ tags: ["NABH", "Healthcare Accreditation", "Patient Safety"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "NABH hospital accreditation support"
 category: "industry-food-certifications"
-categoryName: "Food Industry Certifications"
+categoryName: "Food, Automotive, Manufacturing & Lab Certifications"
 order: 10
 governingBody: "NABH (Quality Council of India)"
 featured: false

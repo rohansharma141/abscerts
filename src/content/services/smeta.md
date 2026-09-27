@@ -7,7 +7,7 @@ tags: ["SMETA", "Ethical Audit", "Sedex"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "SMETA ethical trade audit readiness at a workplace"
 category: "industry-food-certifications"
-categoryName: "Food Industry Certifications"
+categoryName: "Food, Automotive, Manufacturing & Lab Certifications"
 order: 8
 governingBody: "Sedex"
 featured: false

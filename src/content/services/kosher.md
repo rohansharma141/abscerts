@@ -7,7 +7,7 @@ tags: ["Kosher", "Food Certification", "Market Access"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "Kosher food and product compliance"
 category: "industry-food-certifications"
-categoryName: "Food Industry Certifications"
+categoryName: "Food, Automotive, Manufacturing & Lab Certifications"
 order: 5
 timelineWeeks: "6-10"
 featured: false
@@ -19,7 +19,7 @@ faqs:
   - question: "What does Kosher certification cover?"
     answer: "It confirms that a product and how it is produced comply with Jewish dietary law (kashrut) — the ingredients and their sources, the equipment and lines used, and the separation requirements kashrut sets out."
   - question: "Who benefits from Kosher certification?"
-    answer: "Beyond kosher-observant consumers, many buyers treat the kosher mark as a signal of careful ingredient control and production discipline. It opens kosher markets and can broaden appeal — and is often pursued alongside other Food Industry certifications such as Halal and HACCP by food manufacturers."
+    answer: "Beyond kosher-observant consumers, many buyers treat the kosher mark as a signal of careful ingredient control and production discipline. It opens kosher markets and can broaden appeal — and is often pursued alongside other sector certifications such as Halal and HACCP by food manufacturers."
   - question: "How long does Kosher certification take?"
     answer: "For most operations, Kosher certification takes around 6–10 weeks, depending on the range of products and the complexity of the process."
   - question: "What does ABS do, and what does the kosher agency do?"
@@ -68,7 +68,7 @@ It confirms that a product and how it is produced comply with Jewish dietary law
 
 ### Who benefits from Kosher certification?
 
-Beyond kosher-observant consumers, many buyers treat the kosher mark as a signal of careful ingredient control and production discipline. It opens kosher markets and can broaden appeal — and is often pursued alongside other [Food Industry](/services/industry-food-certifications) certifications such as [Halal](/services/halal) and [HACCP](/services/haccp) by food [manufacturers](/industries/manufacturing).
+Beyond kosher-observant consumers, many buyers treat the kosher mark as a signal of careful ingredient control and production discipline. It opens kosher markets and can broaden appeal — and is often pursued alongside other [sector certifications](/services/industry-food-certifications) such as [Halal](/services/halal) and [HACCP](/services/haccp) by food [manufacturers](/industries/manufacturing).
 
 ### How long does Kosher certification take?
 

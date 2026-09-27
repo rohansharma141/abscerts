@@ -7,7 +7,7 @@ tags: ["CE Marking", "EU Conformity", "Product Compliance"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "CE marking conformity support for products"
 category: "industry-food-certifications"
-categoryName: "Food Industry Certifications"
+categoryName: "Food, Automotive, Manufacturing & Lab Certifications"
 order: 11
 governingBody: "European Commission"
 featured: false

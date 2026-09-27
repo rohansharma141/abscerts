@@ -7,7 +7,7 @@ tags: ["HACCP", "Food Safety", "Hazard Analysis"]
 image: "/images/service-haccp.jpg"
 imageAlt: "HACCP food safety hazard analysis"
 category: "industry-food-certifications"
-categoryName: "Food Industry Certifications"
+categoryName: "Food, Automotive, Manufacturing & Lab Certifications"
 order: 1
 timelineWeeks: "8-12"
 governingBody: "Codex Alimentarius"

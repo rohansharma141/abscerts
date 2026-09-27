@@ -7,7 +7,7 @@ tags: ["BRCGS", "Food Safety", "GFSI"]
 image: "/images/cat-industry-food-certifications.jpg"
 imageAlt: "BRCGS Global Standard for Food Safety implementation"
 category: "industry-food-certifications"
-categoryName: "Food Industry Certifications"
+categoryName: "Food, Automotive, Manufacturing & Lab Certifications"
 order: 3
 timelineWeeks: "12-16"
 governingBody: "BRCGS"
@@ -20,7 +20,7 @@ faqs:
   - question: "What is BRCGS and who requires it?"
     answer: "BRCGS is a GFSI-recognised certification scheme for food safety and quality, widely required by retailers — particularly UK and European supermarkets — as a condition of supplying own-brand and other products."
   - question: "How does BRCGS relate to FSSC 22000?"
-    answer: "Both are GFSI-recognised food safety schemes, so both satisfy a retailer's requirement for a GFSI-benchmarked certification. Which you need depends on what your customers ask for; some manufacturers hold both. Many build from a HACCP foundation. It sits alongside FSSC 22000 in the Food Industry Certifications portfolio for manufacturers."
+    answer: "Both are GFSI-recognised food safety schemes, so both satisfy a retailer's requirement for a GFSI-benchmarked certification. Which you need depends on what your customers ask for; some manufacturers hold both. Many build from a HACCP foundation. It sits alongside FSSC 22000 in the Food, Automotive, Manufacturing & Lab Certifications portfolio for manufacturers."
   - question: "How long does BRCGS certification take?"
     answer: "For most food manufacturers, BRCGS certification takes around 12–16 weeks from kick-off, depending on the size and complexity of the site and the maturity of existing food safety systems."
   - question: "What does ABS do, and what does the certification body do?"
@@ -70,7 +70,7 @@ BRCGS is a GFSI-recognised certification scheme for food safety and quality, wid
 
 ### How does BRCGS relate to FSSC 22000?
 
-Both are GFSI-recognised food safety schemes, so both satisfy a retailer's requirement for a GFSI-benchmarked certification. Which you need depends on what your customers ask for; some manufacturers hold both. Many build from a [HACCP](/services/haccp) foundation. It sits alongside [FSSC 22000](/services/fssc-22000) in the [Food Industry Certifications](/services/industry-food-certifications) portfolio for [manufacturers](/industries/manufacturing).
+Both are GFSI-recognised food safety schemes, so both satisfy a retailer's requirement for a GFSI-benchmarked certification. Which you need depends on what your customers ask for; some manufacturers hold both. Many build from a [HACCP](/services/haccp) foundation. It sits alongside [FSSC 22000](/services/fssc-22000) in the [Food, Automotive, Manufacturing & Lab Certifications](/services/industry-food-certifications) portfolio for [manufacturers](/industries/manufacturing).
 
 ### How long does BRCGS certification take?
 
