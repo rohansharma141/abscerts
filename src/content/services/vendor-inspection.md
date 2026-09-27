@@ -26,7 +26,7 @@ faqs:
 ABS's vendor and supplier inspection provides independent verification across the supplier relationship — from assessing a supplier's capability to checking goods before they ship. It includes:
 
 - **Factory Audits** — assessing a supplier's facilities, processes and capability
-- **OEM Development** — supporting the development of original-equipment manufacturing
+- **Supplier development for OEM programmes** — building supplier capability to meet original-equipment manufacturer requirements
 - **Raw Material Inspection** — verifying inputs before they enter production
 - **Loading Supervision** — checking goods as they are loaded and dispatched
 

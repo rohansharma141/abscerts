@@ -28,7 +28,7 @@ faqs:
 
 ## What VAPT is and why buyers ask for it
 
-VAPT — the "deadly duo" of Vulnerability Assessment and Penetration Testing — is a security testing service that identifies weaknesses in your systems and tests how well they would hold up against a real attack. A vulnerability assessment scans broadly for known weaknesses; a penetration test goes deeper, with experienced testers attempting to exploit them. Together they give you a clear, prioritised picture of your actual exposure.
+VAPT — Vulnerability Assessment and Penetration Testing — is a security testing service that identifies weaknesses in your systems and tests how well they would hold up against a real attack. A vulnerability assessment scans broadly for known weaknesses; a penetration test goes deeper, with experienced testers attempting to exploit them. Together they give you a clear, prioritised picture of your actual exposure.
 
 It is important to be precise about what VAPT is: it is a **service, not a certification**. The output is a report — documenting the vulnerabilities found, their potential impact, and recommended remediation — rather than a certificate on the wall. Buyers ask for a recent VAPT or penetration test report during security due diligence, and the work also underpins certifications like [SOC 2](/services/soc-2) and [ISO 27001](/services/iso-27001), both of which expect regular vulnerability testing. VAPT sits within the wider [Cyber Security](/services/cyber-security) work ABS delivers, where our practitioners bring more than a decade of cumulative experience.
 

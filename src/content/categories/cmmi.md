@@ -17,7 +17,7 @@ seo:
 
 ## What CMMI is
 
-Capability Maturity Model Integration (CMMI) is a process-improvement framework, administered by the CMMI Institute — a subsidiary of ISACA — and originally developed at Carnegie Mellon University. It gives organisations a structured way to assess and improve how they deliver, across development, services and acquisition, against five maturity levels that run from ad-hoc and unpredictable (Level 1) through managed and defined to quantitatively managed and optimising (Level 5).
+Capability Maturity Model Integration (CMMI) is a process-improvement framework, now owned and published by ISACA (the current model is CMMI V3.0, released in 2023) and originally developed at Carnegie Mellon University. It gives organisations a structured way to assess and improve how they deliver, across development, services and acquisition, against five maturity levels that run from ad-hoc and unpredictable (Level 1) through managed and defined to quantitatively managed and optimising (Level 5).
 
 ## Why it matters, and who needs it
 
