@@ -78,9 +78,58 @@ not lost. Nothing here is actioned without the stakeholder's say-so.
   The backend is intact for future reintroduction: `functions/api/verify.ts` and the
   `CERTIFICATES` KV binding in `wrangler.toml` remain. To revive: rebuild a `/verify` page,
   seed a KV namespace, and re-add the nav/footer/home entry points.
-- **Category-page "Industries we serve" + "Category FAQ" sections** — deferred feature stubs
-  marked in `CategoryLandingLayout.astro` (TODO comments). Optional future enhancement.
+- **Category-page "Industries we serve" section** — deferred feature stub marked in
+  `CategoryLandingLayout.astro` (TODO comment). Optional future enhancement. (The category
+  FAQ stub was built in Sep 2026: ISO Certifications, Cyber Security and CMMI carry four
+  Q&As each, with FAQPage schema.)
 - `cmmi.md` service file is orphaned (no route — `/services/cmmi` is the category page; the
   4e-1 self-slug filter drops its tile). Body isn't user-visible; frontmatter feeds related
   strips. Fine as-is; only matters if a dedicated CMMI overview route is ever wanted.
 - Resources / blog migration (Phase 5).
+
+---
+
+## Search and AI visibility — post-launch
+
+Assessed 25 Sep 2026 against both Google and AI search (AI Overviews, ChatGPT, Perplexity,
+Copilot). Parked here by Rohan: "after ABS answers, add to enhancements." Nothing below is
+built. Full assessment and reasoning: `feedback/phase3-decisions-2026-09.md` §15.
+
+**Already in place — don't rebuild it.** Static HTML that needs no JavaScript to read (most AI
+crawlers don't run it); mobile performance 91; one canonical address per page; sitemap;
+`robots.txt` allowing everything except `/api/`; Organization + WebSite schema site-wide;
+Service + OfferCatalog + BreadcrumbList on every service page; FAQPage on 79 pages, with the
+machine-readable copy identical to the visible answer; BlogPosting with dates; question-shaped
+headings and short paragraphs.
+
+**The biggest factor is not on this list:** none of it earns anything until the site is live on
+abscerts.com. The test site is deliberately `noindex`.
+
+- [ ] **S1 — A direct-answer block at the top of each service page** (1–2 h). What the standard
+  is, who needs it, what ABS does versus the certification body — built from facts already in
+  the front matter, no new claims. Pages currently open with why the standard matters, which is
+  not what an AI assistant quotes. Highest-value content change for AI search.
+- [ ] **S2 — "Last updated" dates on pages, and `lastmod` in the sitemap** (0.5 h). Only blog
+  posts carry `dateModified` today. Freshness counts for both Google and AI answers.
+- [ ] **S3 — Named expert authors** (0.5 h once ABS answers). Posts are credited to the
+  organisation; a named consultant with credentials carries more weight. Needs ABS: decisions
+  doc §13 D15.
+- [ ] **S4 — More long-tail question content.** Nine blog posts today. New posts were already
+  deferred to after go-live with ABS.
+
+**Outside the code (Rohan / ABS, at or after launch)**
+- Submit the sitemap to **Bing Webmaster Tools** as well as Google Search Console: ChatGPT and
+  Copilot lean on Bing's index.
+- Check **Cloudflare's AI crawler setting**. Cloudflare can block AI bots by default on some
+  plans; if GPTBot, ClaudeBot or PerplexityBot are blocked, none of the above matters.
+- A **Google Business Profile** for the New Delhi address — confirms ABS as a real entity, which
+  helps AI answers as well as local search.
+- Backlinks and brand mentions are ABS's to drive; not a website job.
+- The experience signals already on ABS's list matter more than any markup: case studies,
+  testimonials, real photography.
+
+**Deliberately not doing**
+- `llms.txt` — talked about, but no major AI provider has committed to reading it.
+- HowTo schema — Google dropped HowTo results in 2023.
+- Don't expect Google rich snippets from FAQPage schema: since 2023 those show only for
+  government and health sites. We keep FAQ schema because AI assistants read it.
