@@ -56,6 +56,7 @@ const categories = defineCollection({
     row: z.number().min(1).max(2),              // mega-menu row (1-2)
     educationalContent: z.string().optional(),  // 300-500 word intro — can also be the .md body (Phase 4b)
     industries: z.array(z.string()).optional(), // industry slugs relevant to this category
+    faqs: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),  // "which one do I need?" Q&As (ABS, question 14)
     seo: z.object({
       title: z.string().optional(),
       description: z.string().optional(),

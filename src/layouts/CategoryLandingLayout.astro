@@ -5,7 +5,7 @@ import CTABanner from '../components/sections/CTABanner.astro';
 import ServiceTile from '../components/ui/ServiceTile.astro';
 
 // Category landing layout. Phase 4b: real educational body, smart-tile grid and
-// search-within-category. Industries + FAQ sections remain deferred (TODO markers).
+// search-within-category. Category FAQs added Sep 2026 (ABS, question 14); the industries section is still deferred.
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const d = entry.data;
@@ -41,6 +41,17 @@ const breadcrumbSchema = {
     { '@type': 'ListItem', position: 3, name: d.title, item: canonical },
   ],
 };
+// FAQPage JSON-LD — emitted only where the category provides faqs (ABS, question 14). The
+// visible answers live in the page body under "## Common questions" and must stay identical.
+const faqSchema = d.faqs && d.faqs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: d.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+} : null;
 const collectionSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
@@ -65,6 +76,7 @@ const collectionSchema = {
   <Fragment slot="head">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(collectionSchema)} />
+    {faqSchema && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />}
   </Fragment>
 
   <!-- COMPACT HERO — text + small framed photo -->
@@ -139,7 +151,6 @@ const collectionSchema = {
   </section>
 
   <!-- TODO Phase 4f or later: "Industries we serve in this category" section -->
-  <!-- TODO Phase 4f or later: Category-level FAQ section -->
 
   <CTABanner />
 </BaseLayout>

@@ -13,6 +13,15 @@ seo:
   title: "CMMI Appraisal Readiness | Maturity Level 2 & 3 | ABS"
   description: "CMMI for Development, Services and Supplier Management — Level 2 and 3 readiness, gap analysis and appraisal support for enterprise and government tenders."
   keywords: ["CMMI appraisal India", "CMMI Level 3", "CMMI for development", "process maturity"]
+faqs:
+  - question: "Which CMMI domain applies to us?"
+    answer: "CMMI for Development suits organisations that build products or software; CMMI for Services suits those that deliver and run services; and CMMI for Supplier Management, formerly CMMI for Acquisition, suits organisations that obtain products and services from suppliers rather than build them in-house. Some organisations are appraised against more than one."
+  - question: "Which maturity level should we target?"
+    answer: "Most organisations aim for Maturity Level 2 or Level 3, which is what enterprise and government tenders usually ask for. Level 2 establishes managed processes at project level; Level 3 raises that to standardised, organisation-wide processes that are tailored for each project. ABS supports Level 2 and Level 3 readiness."
+  - question: "Who carries out the appraisal?"
+    answer: "A certified Lead Appraiser, through ISACA-recognised appraisal arrangements — not ABS on its own. ABS prepares you for it: a gap assessment against your target level, the work to close those gaps, the evidence base behind each practice, and support through the appraisal itself."
+  - question: "How long does reaching a maturity level take?"
+    answer: "There is no fixed timeline. It depends on the level you target, the size of the organisation, how many projects are in scope and how much of the process evidence already exists. You receive a firm timeline with your fixed-price quote."
 ---
 
 ## What CMMI is
@@ -28,3 +37,22 @@ Reaching a maturity level typically involves a gap assessment against your targe
 ## How ABS approaches CMMI
 
 ABS provides CMMI consulting and appraisal support, working with highly experienced certified lead appraisers recognised by the CMMI Institute and consultants who have spent years implementing the model. Formal appraisals are conducted through ISACA-recognised appraisal arrangements. Each engagement starts with a fixed-price scope and a realistic target level, so you know what the path looks like before you commit.
+
+## Common questions
+
+### Which CMMI domain applies to us?
+
+[CMMI for Development](/services/cmmi-dev) suits organisations that build products or software; [CMMI for Services](/services/cmmi-services) suits those that deliver and run services; and [CMMI for Supplier Management](/services/cmmi-acquisition), formerly CMMI for Acquisition, suits organisations that obtain products and services from suppliers rather than build them in-house. Some organisations are appraised against more than one.
+
+### Which maturity level should we target?
+
+Most organisations aim for Maturity Level 2 or Level 3, which is what enterprise and government tenders usually ask for. Level 2 establishes managed processes at project level; Level 3 raises that to standardised, organisation-wide processes that are tailored for each project. ABS supports Level 2 and Level 3 readiness.
+
+### Who carries out the appraisal?
+
+A certified Lead Appraiser, through ISACA-recognised appraisal arrangements — not ABS on its own. ABS prepares you for it: a gap assessment against your target level, the work to close those gaps, the evidence base behind each practice, and support through the appraisal itself.
+
+### How long does reaching a maturity level take?
+
+There is no fixed timeline. It depends on the level you target, the size of the organisation, how many projects are in scope and how much of the process evidence already exists. You receive a firm timeline with your fixed-price quote.
+
