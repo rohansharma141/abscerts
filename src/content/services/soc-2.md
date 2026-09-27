@@ -39,7 +39,7 @@ Unlike ISO certification, SOC 2 results in an attestation report rather than a c
 
 ## What the assessment covers
 
-A **Type I** report assesses whether your controls are suitably designed at a single point in time — the fastest route to having something to show a prospect. A **Type II** report goes further, testing whether those controls operated effectively over a period (commonly 3–12 months), and is what most enterprise buyers ultimately want.
+A **Type I** report assesses whether your controls are suitably designed at a single point in time — the fastest route to having something to show a prospect. A **Type II** report goes further, testing whether those controls operated effectively over a period (commonly 6–12 months), and is what most enterprise buyers ultimately want.
 
 We help you scope the report, select the applicable Trust Services Criteria, document the system, map and implement controls, close gaps and organise the evidence — then support you through the independent examination by a licensed CPA firm, through to your SOC 2 report.
 

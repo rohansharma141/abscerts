@@ -22,7 +22,7 @@ faqs:
   - question: "What happened to SSAE 16?"
     answer: "SSAE 18 superseded SSAE 16 in 2017, consolidating and updating the AICPA's attestation standards. Among other changes it strengthened requirements around the monitoring of sub-service organisations. Reports previously issued under SSAE 16 are now performed under SSAE 18."
   - question: "What is the difference between a Type I and a Type II report?"
-    answer: "A Type I report assesses the design and implementation of controls at a specific point in time. A Type II report assesses design and operating effectiveness over a period — commonly six months to a year. Most clients expect a Type II report."
+    answer: "A Type I report assesses the design and implementation of controls at a specific point in time. A Type II report assesses design and operating effectiveness over a period — commonly 6–12 months. Most clients expect a Type II report."
   - question: "How does SSAE 18 relate to ISAE 3402?"
     answer: "SSAE 18 governs SOC 1 reports in the US, while ISAE 3402 is the international equivalent issued by the IAASB. Organisations reporting to overseas clients often choose ISAE 3402; those reporting primarily to US audiences use SOC 1 under SSAE 18."
   - question: "Who performs an SSAE 18 examination?"
@@ -44,7 +44,7 @@ In practice, when a customer asks a vendor for "an SSAE 18 report," they are ask
 An SSAE 18 engagement reports on the controls relevant to the service you provide, in two forms:
 
 - **Type I** — an assessment of the design and implementation of controls at a specific point in time.
-- **Type II** — design and operating effectiveness tested over a period, commonly six months to a year.
+- **Type II** — design and operating effectiveness tested over a period, commonly 6–12 months.
 
 A defining feature of SSAE 18 compared with its predecessor is the emphasis on how a service organisation monitors any **sub-service organisations** it relies on, and on the complementary controls customers are expected to have in place. The engagement is scoped to the control objectives that matter for your service, with readiness work to close gaps before the formal examination.
 
@@ -73,7 +73,7 @@ SSAE 18 superseded SSAE 16 in 2017, consolidating and updating the AICPA's attes
 
 ### What is the difference between a Type I and a Type II report?
 
-A Type I report assesses the design and implementation of controls at a specific point in time. A Type II report assesses design and operating effectiveness over a period — commonly six months to a year. Most clients expect a Type II report.
+A Type I report assesses the design and implementation of controls at a specific point in time. A Type II report assesses design and operating effectiveness over a period — commonly 6–12 months. Most clients expect a Type II report.
 
 ### How does SSAE 18 relate to ISAE 3402?
 

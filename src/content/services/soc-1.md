@@ -20,7 +20,7 @@ faqs:
   - question: "What's the difference between SOC 1 and SOC 2?"
     answer: "SOC 1 reports on controls relevant to your clients' financial reporting; SOC 2 reports on controls against the AICPA Trust Services Criteria — security, availability, processing integrity, confidentiality and privacy. A buyer's finance and audit teams ask for SOC 1; their security and procurement teams ask for SOC 2. Many service organisations end up needing both."
   - question: "What is the difference between a Type I and a Type II report?"
-    answer: "A Type I report assesses whether your controls are suitably designed at a single point in time. A Type II report goes further and tests whether those controls operated effectively over a period — commonly 6 to 12 months. Most clients of a service organisation ultimately want a Type II report."
+    answer: "A Type I report assesses whether your controls are suitably designed at a single point in time. A Type II report goes further and tests whether those controls operated effectively over a period — commonly 6–12 months. Most clients of a service organisation ultimately want a Type II report."
   - question: "How does SOC 1 relate to ISAE 3402 and SSAE 18?"
     answer: "SSAE 18 is the AICPA attestation standard that governs SOC 1 engagements in the United States. ISAE 3402 is the international equivalent, issued by the IAASB, and is often requested when reporting to organisations outside the US. The three describe the same kind of service-organisation controls report under different standards."
   - question: "Who needs a SOC 1 report?"
@@ -44,7 +44,7 @@ A SOC 1 report gives them exactly that. Rather than each customer auditing you s
 A SOC 1 engagement is built around the control objectives relevant to financial reporting in your specific service. It comes in two report types:
 
 - **Type I** — an opinion on whether the controls are suitably designed at a specific date.
-- **Type II** — design plus a test of operating effectiveness over a period, typically 6 to 12 months.
+- **Type II** — design plus a test of operating effectiveness over a period, commonly 6–12 months.
 
 ABS supports the full path: a readiness assessment to map your current controls against the objectives, evaluation of control design, remediation assistance to close gaps, and support through the examination. The examination and report are performed and issued by a licensed CPA firm under SSAE 18, the AICPA attestation standard that governs SOC 1; where a client needs the international form, the equivalent [ISAE 3402](/services/isae-3402) report covers the same ground for audiences outside the US.
 
@@ -60,7 +60,7 @@ SOC 1 reports on controls relevant to your clients' financial reporting; SOC 2 r
 
 ### What is the difference between a Type I and a Type II report?
 
-A Type I report assesses whether your controls are suitably designed at a single point in time. A Type II report goes further and tests whether those controls operated effectively over a period — commonly 6 to 12 months. Most clients of a service organisation ultimately want a Type II report.
+A Type I report assesses whether your controls are suitably designed at a single point in time. A Type II report goes further and tests whether those controls operated effectively over a period — commonly 6–12 months. Most clients of a service organisation ultimately want a Type II report.
 
 ### How does SOC 1 relate to ISAE 3402 and SSAE 18?
 
