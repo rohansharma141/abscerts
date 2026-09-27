@@ -19,6 +19,8 @@ faqs:
     answer: "It gives all staff a clear understanding of what an ISO standard requires and how their work contributes to meeting it — the foundation that makes a management system function day to day, and helps everyone be ready for an audit."
   - question: "Who should attend awareness training?"
     answer: "Staff across the organisation, not just specialists — anyone whose work is touched by the management system. It is often the first step when adopting a new standard, before more specialised internal auditor or lead auditor training."
+  - question: "How long is the course?"
+    answer: "Awareness training typically runs over two days. Where a standard or an audience needs more or less depth, we agree the schedule with you before the course."
 ---
 
 ## What the course covers
@@ -31,7 +33,7 @@ Awareness training is aimed at all staff whose work is touched by the management
 
 ## Format
 
-Awareness courses are the shortest of the management-system courses — a half-day or single-day orientation — compared with the more involved [Internal Auditor](/services/iso-internal-auditor-training) and [Lead Auditor](/services/iso-lead-auditor-training) programmes.
+Awareness courses are the shortest of the management-system courses — typically two days — compared with the more involved [Internal Auditor](/services/iso-internal-auditor-training) and [Lead Auditor](/services/iso-lead-auditor-training) programmes.
 
 It sits within the [Training & Professional Development](/services/management-system-training) portfolio, which spans awareness, internal auditor, lead implementer and lead auditor levels.
 
@@ -44,3 +46,7 @@ It gives all staff a clear understanding of what an ISO standard requires and ho
 ### Who should attend awareness training?
 
 Staff across the organisation, not just specialists — anyone whose work is touched by the management system. It is often the first step when adopting a new standard, before more specialised [internal auditor](/services/iso-internal-auditor-training) or [lead auditor](/services/iso-lead-auditor-training) training.
+
+### How long is the course?
+
+Awareness training typically runs over two days. Where a standard or an audience needs more or less depth, we agree the schedule with you before the course.

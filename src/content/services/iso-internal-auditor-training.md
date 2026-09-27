@@ -19,6 +19,8 @@ faqs:
     answer: "Internal Auditor training prepares staff to audit their own organisation's management system — a requirement of every ISO standard. Lead Auditor training is more advanced and prepares people to lead full audits, including of other organisations."
   - question: "Who should attend Internal Auditor training?"
     answer: "Employees who will carry out internal audits — typically quality, safety, security or compliance staff and process owners — especially in organisations that hold or are working towards an ISO certification."
+  - question: "How long is the course?"
+    answer: "Internal Auditor training typically runs over two days, covering the audit process and the practical skills an internal auditor needs. We confirm the schedule with you before the course."
 ---
 
 ## What the course covers
@@ -31,7 +33,7 @@ The course is aimed at employees who will run internal audits — quality, safet
 
 ## Format
 
-Internal Auditor courses are shorter and more focused than the [Lead Auditor](/services/iso-lead-auditor-training) programme, concentrating on the practical skills an internal auditor needs. For staff who only need to understand a standard rather than audit it, the [Awareness](/services/iso-awareness-training) course is the lighter option.
+Internal Auditor courses typically run over two days — shorter and more focused than the [Lead Auditor](/services/iso-lead-auditor-training) programme, concentrating on the practical skills an internal auditor needs. For staff who only need to understand a standard rather than audit it, the [Awareness](/services/iso-awareness-training) course is the lighter option.
 
 It sits within the [Training & Professional Development](/services/management-system-training) portfolio.
 
@@ -44,3 +46,7 @@ Internal Auditor training prepares staff to audit their own organisation's manag
 ### Who should attend Internal Auditor training?
 
 Employees who will carry out internal audits — typically quality, safety, security or compliance staff and process owners — especially in organisations that hold or are working towards an ISO certification.
+
+### How long is the course?
+
+Internal Auditor training typically runs over two days, covering the audit process and the practical skills an internal auditor needs. We confirm the schedule with you before the course.

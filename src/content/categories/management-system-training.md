@@ -21,7 +21,7 @@ The strongest management systems are run by people who understand the standard f
 
 ## What's included, and who needs it
 
-Delivered through ABS ACADEMY, the training runs across four levels — Basic, Internal Auditor, Lead Implementer (advanced) and Lead Auditor — so professionals can join at the right point for their experience and goals. Courses span the major management system standards, including ISO 9001 (quality), ISO 14001 (environment), ISO 45001 (occupational health and safety), ISO 22000 (food safety), ISO 50001 (energy), ISO 27001 (information security), ISO 22301 (business continuity) and ISO 31000 (risk management), as well as HACCP requirements.
+Delivered through ABS ACADEMY, the training runs across four levels — Awareness, Internal Auditor, Lead Implementer and Lead Auditor — so professionals can join at the right point for their experience and goals. Awareness and Internal Auditor courses typically run over two days, and Lead Implementer and Lead Auditor courses over five. Courses span the major management system standards, including ISO 9001 (quality), ISO 14001 (environment), ISO 45001 (occupational health and safety), ISO 22000 (food safety), ISO 50001 (energy), ISO 27001 (information security), ISO 22301 (business continuity) and ISO 31000 (risk management), as well as HACCP requirements.
 
 The training is designed for professionals who want to demonstrate their competence and develop their careers in management-system auditing and related areas — from quality and compliance staff taking on internal-audit duties to those moving toward full lead-auditor roles.
 

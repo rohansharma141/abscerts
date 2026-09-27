@@ -19,6 +19,8 @@ faqs:
     answer: "The course gives you an ABS Academy course-completion certificate and the knowledge and skills to lead management system audits — the capability behind auditor registration or personnel certification, which you can go on to pursue through the relevant external scheme. It prepares you for the role. ABS Academy has delivered training since 2004 with experienced trainers and auditors."
   - question: "Which ISO standards can the Lead Auditor course cover?"
     answer: "ABS Academy delivers training across the major standards — including ISO 9001, ISO 14001, ISO 45001, ISO 22000, ISO 50001, ISO 27001, ISO 22301 and ISO 31000, plus HACCP — tailored to the standard you need to audit against."
+  - question: "How long is the course?"
+    answer: "Lead Auditor training typically runs over five days, reflecting the depth of the syllabus and the practical exercises and assessment it includes. Lead Implementer training also runs over five days."
 ---
 
 ## What the course covers
@@ -31,7 +33,7 @@ The course suits people who want to lead audits rather than just take part in th
 
 ## Format
 
-Lead Auditor programmes are intensive, multi-day courses that combine instruction with practical exercises and assessment — more demanding than the [Internal Auditor](/services/iso-internal-auditor-training) and [Awareness](/services/iso-awareness-training) courses, and built for those taking on the lead auditing role.
+Lead Auditor programmes are intensive, typically five-day courses that combine instruction with practical exercises and assessment — more demanding than the [Internal Auditor](/services/iso-internal-auditor-training) and [Awareness](/services/iso-awareness-training) courses, and built for those taking on the lead auditing role.
 
 It sits within the [Training & Professional Development](/services/management-system-training) portfolio, which spans awareness, internal auditor, lead implementer and lead auditor levels.
 
@@ -44,3 +46,7 @@ The course gives you an ABS Academy course-completion certificate and the knowle
 ### Which ISO standards can the Lead Auditor course cover?
 
 ABS Academy delivers training across the major standards — including [ISO 9001](/services/iso-9001), ISO 14001, ISO 45001, ISO 22000, ISO 50001, [ISO 27001](/services/iso-27001), ISO 22301 and ISO 31000, plus HACCP — tailored to the standard you need to audit against.
+
+### How long is the course?
+
+Lead Auditor training typically runs over five days, reflecting the depth of the syllabus and the practical exercises and assessment it includes. Lead Implementer training also runs over five days.
