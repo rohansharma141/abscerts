@@ -80,8 +80,13 @@
 /what-is-statement-of-applicability-soa/  /blog/statement-of-applicability-soa  301
 /what-is-vapt  /blog/what-is-vapt  301
 /what-is-vapt/  /blog/what-is-vapt  301
-/5-best-data-science-companies-in-bangalore  /blog/data-science-companies-bangalore  301
-/5-best-data-science-companies-in-bangalore/  /blog/data-science-companies-bangalore  301
+# The Bangalore data-science post was unpublished at ABS's request (question 15): it listed other
+# companies. Both the old WordPress URL and the post's own address go straight to Data Analytics,
+# one hop each.
+/5-best-data-science-companies-in-bangalore  /services/data-analytics  301
+/5-best-data-science-companies-in-bangalore/  /services/data-analytics  301
+/blog/data-science-companies-bangalore  /services/data-analytics  301
+/blog/data-science-companies-bangalore/  /services/data-analytics  301
 /iso-90012026-complete-guide  /services/iso-9001  301
 /iso-90012026-complete-guide/  /services/iso-9001  301
 /what-is-iso-9001  /services/iso-9001  301
