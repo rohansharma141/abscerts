@@ -2771,6 +2771,7 @@ a.float-btn { text-decoration: none; } /* the call button is a tel: link (single
 .prose li { font-size: 17px; line-height: 1.7; color: var(--gray-text); margin-bottom: 8px; }
 .prose a { color: var(--blue); border-bottom: 1px solid var(--line-blue); }
 .prose strong { color: var(--blue-ink); font-weight: 600; }
+.prose .policy-date { font-size: 15px; color: var(--gray-soft); margin-bottom: 28px; }
 
 /* Category landing — compact hero (soft tint background) */
 .cat-hero {
