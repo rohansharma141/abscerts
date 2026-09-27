@@ -11,7 +11,7 @@ categoryName: "Training & Professional Development"
 order: 2
 featured: false
 seo:
-  title: "ISO Internal Auditor Training | Management System Courses | ABS"
+  title: "ISO Internal Auditor Training | Courses | ABS"
   description: "ISO Internal Auditor training to equip staff to run effective internal audits of your management system. Delivered by ABS Academy across major ISO standards."
   keywords: ["ISO internal auditor training", "internal auditor course", "ISO 9001 internal audit", "internal audit training"]
 faqs:

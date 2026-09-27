@@ -12,7 +12,7 @@ order: 3
 featured: false
 seo:
   title: "Dashboards & BI Reporting | Data Analytics | ABS"
-  description: "Dashboards that consolidate diverse datasets into a unified view for quick, informed decisions. Built in tools such as Power BI, Tableau and Qlik. Part of ABS Data Analytics."
+  description: "Dashboards that bring diverse datasets into one view for quick decisions. Built in tools such as Power BI, Tableau and Qlik. Part of ABS Data Analytics."
   keywords: ["dashboards", "business intelligence dashboards", "Power BI", "Tableau reporting"]
 faqs:
   - question: "What makes a good dashboard?"

@@ -13,7 +13,7 @@ timelineWeeks: "8-12"
 governingBody: "US Department of Health & Human Services"
 featured: false
 seo:
-  title: "HIPAA Compliance & Readiness Assessment | US Healthcare | ABS"
+  title: "HIPAA Readiness Assessment | US Healthcare | ABS"
   description: "HIPAA readiness and gap assessments for covered entities and business associates handling US protected health information (PHI). Quote in 24 hours."
   keywords: ["HIPAA compliance", "HIPAA readiness assessment", "HIPAA business associate", "PHI security"]
 faqs:

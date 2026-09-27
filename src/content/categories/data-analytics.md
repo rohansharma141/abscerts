@@ -10,7 +10,7 @@ column: 1
 row: 2
 industries: ["saas", "finance"]
 seo:
-  title: "Data Analytics Services | Management, Automation & Insight | ABS"
+  title: "Data Analytics Services | Automation & Insight | ABS"
   description: "Data management, process automation, decision analytics, visualisation and cloud management — helping compliance-driven teams turn data into decisions."
   keywords: ["data analytics services India", "process automation", "decision analytics", "data visualisation"]
 ---

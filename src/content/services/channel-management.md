@@ -12,7 +12,7 @@ order: 2
 featured: false
 seo:
   title: "Channel Management Services | Data Analytics | ABS"
-  description: "Strategic planning, development and optimisation of distribution channels to ensure products and services reach end-users efficiently. Part of ABS Data Analytics."
+  description: "Planning, development and optimisation of distribution channels so products and services reach end users efficiently. Part of ABS Data Analytics."
   keywords: ["channel management", "distribution channel optimisation", "go-to-market", "channel strategy"]
 faqs:
   - question: "What is channel management?"

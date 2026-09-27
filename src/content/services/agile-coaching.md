@@ -12,7 +12,7 @@ order: 1
 featured: false
 seo:
   title: "Agile Coaching | Team & Enterprise Transformation | ABS"
-  description: "Experienced agile coaches help your teams and leaders adopt and sustain agile ways of working. Assessment, strategy and hands-on implementation support from ABS."
+  description: "Agile coaches help teams and leaders adopt and sustain agile ways of working. Assessment, strategy and hands-on implementation support from ABS."
   keywords: ["agile coaching", "agile transformation", "agile coach", "enterprise agile"]
 faqs:
   - question: "What does an agile coach do?"

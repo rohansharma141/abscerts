@@ -12,7 +12,7 @@ order: 7
 featured: false
 seo:
   title: "Data Warehousing Services | Analytics Foundation | ABS"
-  description: "Data warehousing — a centralised repository that lets organisations extract actionable insights and make informed decisions. The foundation of ABS Data Analytics."
+  description: "Data warehousing — a central repository that lets organisations draw out insight and make informed decisions. The foundation of ABS Data Analytics."
   keywords: ["data warehousing", "data warehouse", "centralised data repository", "analytics infrastructure"]
 faqs:
   - question: "What is a data warehouse?"

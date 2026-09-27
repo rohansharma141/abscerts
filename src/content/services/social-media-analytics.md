@@ -12,7 +12,7 @@ order: 5
 featured: false
 seo:
   title: "Social Media Analytics | Marketing Insights | ABS"
-  description: "Social media analytics that turns data from social platforms into meaningful insights about user interactions and engagement. Part of ABS Data Analytics services."
+  description: "Social media analytics that turns platform data into clear insight on user interaction and engagement. Part of ABS Data Analytics."
   keywords: ["social media analytics", "social media insights", "engagement analytics", "marketing analytics"]
 faqs:
   - question: "What is social media analytics?"

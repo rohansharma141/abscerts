@@ -12,7 +12,7 @@ order: 3
 featured: false
 seo:
   title: "ISO Awareness Training | Staff Orientation Courses | ABS"
-  description: "Short ISO awareness training to help staff understand a standard's requirements and their role. Delivered by ABS Academy across major management system standards."
+  description: "Short ISO awareness training so staff understand a standard's requirements and their role. Delivered by ABS Academy across major standards."
   keywords: ["ISO awareness training", "ISO orientation", "staff ISO training", "management system awareness"]
 faqs:
   - question: "What is ISO awareness training for?"

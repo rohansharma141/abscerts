@@ -14,7 +14,7 @@ governingBody: "Codex Alimentarius"
 featured: false
 seo:
   title: "HACCP Implementation & Certification Readiness | ABS"
-  description: "Implementation and certification-readiness support for HACCP — the internationally recognised system for identifying and controlling food safety hazards. Quote in 24 hours."
+  description: "Implementation and certification-readiness support for HACCP, the recognised system for identifying and controlling food safety hazards. Quote in 24 hours."
   keywords: ["HACCP certification", "hazard analysis critical control points", "food safety certification", "HACCP food"]
 faqs:
   - question: "What is the difference between HACCP and ISO 22000?"

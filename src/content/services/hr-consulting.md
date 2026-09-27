@@ -11,7 +11,7 @@ categoryName: "HR Services"
 order: 2
 featured: false
 seo:
-  title: "HR Consulting | Policy, Performance & Compliance | ABS HR Services"
+  title: "HR Consulting | Policy, Performance & Compliance | ABS"
   description: "HR consulting across policy and process development, L&D, performance management, wellness, and HR compliance and audits. Part of ABS HR Services."
   keywords: ["HR consulting", "HR policy development", "performance management", "HR compliance audit"]
 faqs:

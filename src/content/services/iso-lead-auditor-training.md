@@ -12,7 +12,7 @@ order: 1
 featured: false
 seo:
   title: "ISO Lead Auditor Training | Management System Courses | ABS"
-  description: "Intensive ISO Lead Auditor training to plan, lead and report management system audits. Delivered by ABS Academy's highly competent trainers across ISO standards."
+  description: "Intensive ISO Lead Auditor training to plan, lead and report management system audits. Delivered by ABS Academy across ISO standards."
   keywords: ["ISO lead auditor training", "lead auditor course", "ISO 27001 lead auditor", "management system audit training"]
 faqs:
   - question: "Does this course make me a certified Lead Auditor?"

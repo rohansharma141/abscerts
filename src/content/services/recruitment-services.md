@@ -12,7 +12,7 @@ order: 1
 featured: false
 seo:
   title: "Recruitment Services | Talent Acquisition | ABS HR Services"
-  description: "Talent scouting at all levels, behavioural and leadership interviewing, salary negotiation and lifecycle support from onboarding to exit. Part of ABS HR Services."
+  description: "Talent scouting, behavioural and leadership interviewing, salary negotiation and support from onboarding to exit. Part of ABS HR Services."
   keywords: ["recruitment services", "talent acquisition", "talent scouting", "employee lifecycle"]
 faqs:
   - question: "What does ABS's recruitment service cover?"

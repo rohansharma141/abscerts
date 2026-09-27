@@ -13,7 +13,7 @@ governingBody: "European Commission"
 featured: false
 seo:
   title: "CE Marking Support | EU Product Conformity | ABS"
-  description: "Advisory and conformity support to help manufacturers achieve CE marking and place products on the European market in line with applicable EU requirements. From ABS."
+  description: "Advisory and conformity support to help manufacturers achieve CE marking and place products on the European market in line with EU requirements."
   keywords: ["CE marking", "CE marking support", "EU product conformity", "CE marking requirements"]
 faqs:
   - question: "Is CE marking a certification?"

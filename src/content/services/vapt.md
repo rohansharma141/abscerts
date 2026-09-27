@@ -13,7 +13,7 @@ timelineWeeks: "2-4"
 featured: false
 seo:
   title: "VAPT — Vulnerability Assessment & Penetration Testing | ABS"
-  description: "Independent VAPT: vulnerability assessment plus penetration testing that finds and helps fix security weaknesses. Clear report and remediation support. Quote in 24 hours."
+  description: "VAPT: vulnerability assessment plus penetration testing to find and fix security weaknesses. Clear report and remediation support. Quote in 24 hours."
   keywords: ["VAPT services", "penetration testing", "vulnerability assessment", "VAPT for SOC 2 ISO 27001"]
 faqs:
   - question: "Is VAPT a certification?"

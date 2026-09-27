@@ -11,7 +11,7 @@ row: 1
 industries: ["saas", "manufacturing", "healthcare", "finance"]
 seo:
   title: "ISO Certifications | 9001, 27001, 14001, 45001 & more | ABS"
-  description: "ISO certification consulting across quality, security, environment, safety and more. Gap analysis, implementation and audit readiness. Fixed-price quote in 24 hours."
+  description: "ISO certification consulting across quality, security, environment and safety. Gap analysis, implementation and audit readiness. Quote in 24 hours."
   keywords: ["ISO certification India", "ISO 9001 certification", "ISO 27001 certification", "ISO certification consultant"]
 ---
 
