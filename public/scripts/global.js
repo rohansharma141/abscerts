@@ -280,7 +280,7 @@ document.addEventListener('keydown', (e) => {
 
   const SUCCESS_MESSAGES = {
     quote: "Thanks — we'll be in touch within 24 hours.",
-    contact: "Thanks — your enquiry is in. We'll reply within 4 business hours.",
+    contact: "Thanks — your enquiry is in. We'll reply within one working day.", // one reply time site-wide (ABS, §13.1 question 9)
     newsletter: "Thanks — we'll be in touch shortly.",
     download: "Thanks — we've emailed you the guide. You can also download it now:",
     partner: "Thanks — your partner enquiry is in. Our team will be in touch.",
