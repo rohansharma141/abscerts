@@ -14,12 +14,18 @@ const description =
 const FOUNDED = 2004;
 const yearsActive = new Date().getFullYear() - FOUNDED;
 
+// Standards and services covered, counted from the service collection at build time and
+// rounded down to the nearest ten, so the figure on the numbers band stays true as pages
+// are added. Replaces the old "11 wk" timeline figure: ABS confirmed there is no fixed
+// implementation timeline (§13.1, question 7).
+const servicesCovered = Math.floor((await getCollection('services')).length / 10) * 10;
+
 // Home services grid: all 9 service categories, in the client's order (Sep 2026) —
 // the same order as the mega-menu, /services and the footer (category `order`).
 // Kept as literal ServiceCard props (richer copy and tag pills than the collection);
 // the /services index is the collection-driven one.
 const homeServices = [
-  { tag: 'Fast-track 8 weeks', num: '/ 01', href: '/services/cyber-security', image: '/images/home-cyber-security.jpg', imageAlt: 'SOC 2 cyber security and information security readiness', title: 'Cyber Security', description: 'End-to-end security assurance from SOC 2 readiness to penetration testing and PCI DSS readiness.', tags: ['SOC 2', 'VAPT', 'GDPR', 'NIST', 'PCI DSS'] },
+  { tag: 'Security assurance', num: '/ 01', href: '/services/cyber-security', image: '/images/home-cyber-security.jpg', imageAlt: 'SOC 2 cyber security and information security readiness', title: 'Cyber Security', description: 'End-to-end security assurance from SOC 2 readiness to penetration testing and PCI DSS readiness.', tags: ['SOC 2', 'VAPT', 'GDPR', 'NIST', 'PCI DSS'] },
   { tag: 'Most requested', num: '/ 02', href: '/services/iso-certifications', image: '/images/service-iso-9001.jpg', imageAlt: 'ISO 9001 quality management system documentation', title: 'ISO Certifications', description: 'Globally accepted certifications covering quality, environment, security, safety and energy management.', tags: ['ISO 9001', '14001', '27001', '45001', '+ more'] },
   { tag: 'IT & software', num: '/ 03', href: '/services/cmmi', image: '/images/service-cmmi-dev.jpg', imageAlt: 'CMMI process maturity for IT services and software development', title: 'CMMI & Process', description: 'CMMI maturity level 2 and 3 readiness assessments, gap analysis and ATM support for IT services.', tags: ['CMMI ML2', 'CMMI ML3', 'ATM'] },
   { tag: 'Supply chain', num: '/ 04', href: '/services/industry-food-certifications', image: '/images/cat-industry-food-certifications.jpg', imageAlt: 'Food safety and industrial product compliance', title: 'Food Industry', description: 'HACCP, FSSC 22000, BRCGS, Halal and Kosher readiness, plus sector schemes such as IATF 16949 and CE marking.', tags: ['HACCP', 'FSSC 22000', 'BRCGS', 'Halal', '+ more'] },
@@ -432,8 +438,8 @@ const serviceSchema = {
           <div class="numbers-label">Typical response time for enquiries — within one working day.</div>
         </div>
         <div class="numbers-item">
-          <div class="numbers-num">11<small>wk</small></div>
-          <div class="numbers-label">Typical implementation timeline to certification readiness for ISO standards.</div>
+          <div class="numbers-num">{servicesCovered}<small>+</small></div>
+          <div class="numbers-label">Standards and services covered — ISO, SOC 2, CMMI, cyber security, training and inspection.</div>
         </div>
       </div>
       <p style="margin-top:16px;font-size:12px;opacity:0.6;">Figures updated September 2026.</p>

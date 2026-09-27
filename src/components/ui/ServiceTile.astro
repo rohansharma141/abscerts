@@ -21,7 +21,7 @@ const slug = service.id.replace(/\.md$/, '');
   <h3>{shortName}</h3>
   <p>{description}</p>
   <div class="service-tile-meta">
-    {timelineWeeks && <span>{timelineWeeks} weeks</span>}
+    {timelineWeeks && <span>Typically {timelineWeeks} weeks</span>}
     {timelineWeeks && governingBody && <span aria-hidden="true">·</span>}
     {governingBody && <span>{governingBody}</span>}
   </div>
