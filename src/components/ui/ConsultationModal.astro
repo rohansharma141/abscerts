@@ -8,6 +8,7 @@
 interface Props {
   variant?: 'full' | 'basic';
   eyebrow?: string;
+  eyebrowBold?: boolean;        // QBIX page: its label is bold (Rohan, 18 Nov 2026)
   title?: string;
   intro?: string;
   service?: string;             // basic variant: the hidden `service` value
@@ -16,6 +17,7 @@ interface Props {
 const {
   variant = 'full',
   eyebrow = 'Free · No obligation',
+  eyebrowBold = false,
   title = 'Book a free consultation',
   intro = "Tell us what you'd like to discuss and when suits you, and we'll be in touch to arrange a time.",
   service = '',
@@ -27,7 +29,7 @@ const {
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="consultModalTitle" tabindex="-1">
     <div class="modal-header">
       <button class="modal-close" onclick="closeConsultModal()" aria-label="Close"><i class="ti ti-x"></i></button>
-      <p class="eyebrow">{eyebrow}</p>
+      <p class="eyebrow" style={eyebrowBold ? 'font-weight:700' : undefined}>{eyebrow}</p>
       <h2 id="consultModalTitle">{title}</h2>
       <p>{intro}</p>
     </div>
