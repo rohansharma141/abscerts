@@ -2,6 +2,11 @@
 /services/iso-19600  /services/iso-37301  301
 /services/iso-29990  /services/iso-21001  301
 
+# Automation (Nov 2026): no /automation page yet; send it to its one product, QBIX. 302 (temporary), so an
+# Automation landing page can replace it later without browsers having cached a permanent redirect.
+/automation  /automation/qbix  302
+/automation/  /automation/qbix  302
+
 # Categories merged (Sep 2026): Personnel Certifications → Training & Professional Development
 /services/personnel-certifications  /services/management-system-training  301
 

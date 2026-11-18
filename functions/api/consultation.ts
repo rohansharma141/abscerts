@@ -4,17 +4,18 @@ interface Env {
   FROM_EMAIL: string;
 }
 
-// "Book a free consultation" popup (contact page: the closing banner button and the "Book a meeting" card)
-// → same inbox as quote/contact/partner enquiries. A request for a call, not a booked slot: ABS replies to
-// arrange a time (content review, decision §8.2).
+// "Book a consultation" popup (src/components/ui/ConsultationModal.astro) → same inbox as quote/contact/partner
+// enquiries. A request for a call, not a booked slot: ABS replies to arrange a time (content review, decision §8.2).
+// Contact page: the full form (country and service area chosen by the visitor). QBIX page (Nov 2026): basic
+// details only, the service sent as a hidden field and no country, so country is optional here.
 export const onRequestPost: PagesFunction<Env> = async (context) => {
   try {
     const data = await context.request.json<{
       name: string;
       email: string;
       phone: string;
-      country: string;
-      service: string;          // service area (the 9 service groups + "Other")
+      country?: string;         // contact page only (required there in the form); not asked on the QBIX page
+      service: string;          // service area (the 9 service groups + "Other"), or "QBIX" from the QBIX page
       company?: string;         // optional
       message?: string;         // optional — what they'd like to discuss
       preferredTimes?: string;  // optional — free text, e.g. "Tuesday or Wednesday afternoon"
@@ -29,7 +30,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     }
 
     // Basic validation
-    if (!data.name || !data.email || !data.phone || !data.country || !data.service) {
+    if (!data.name || !data.email || !data.phone || !data.service) {
       return new Response(JSON.stringify({ error: 'Missing required fields' }), {
         status: 400,
         headers: { 'Content-Type': 'application/json' },
@@ -56,14 +57,14 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         from: context.env.FROM_EMAIL,
         to: context.env.NOTIFICATION_EMAIL,
         reply_to: data.email,
-        subject: `New consultation request — ${data.company || data.name} (${data.country})`,
+        subject: `New consultation request — ${data.company || data.name}${data.country ? ` (${data.country})` : ''}${data.service === 'QBIX' ? ' — QBIX' : ''}`,
         html: `
           <h2>New consultation request</h2>
           <p><strong>Name:</strong> ${escape(data.name)}</p>
           <p><strong>Email:</strong> ${escape(data.email)}</p>
           <p><strong>Phone:</strong> ${escape(data.phone)}</p>
           ${data.company ? `<p><strong>Company:</strong> ${escape(data.company)}</p>` : ''}
-          <p><strong>Country:</strong> ${escape(data.country)}</p>
+          ${data.country ? `<p><strong>Country:</strong> ${escape(data.country)}</p>` : ''}
           <p><strong>Service area:</strong> ${escape(data.service)}</p>
           ${data.message ? `<p><strong>What they'd like to discuss:</strong><br>${escape(data.message)}</p>` : ''}
           ${data.preferredTimes ? `<p><strong>Preferred days and times:</strong> ${escape(data.preferredTimes)}</p>` : ''}

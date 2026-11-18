@@ -41,5 +41,17 @@ const cells = categories.map((cat) => {
         </a>
       </div>
     ))}
+    {/* Automation (Nov 2026): ABS's own platform, QBIX, at /automation/qbix. Not a consulting category, so it
+        isn't in the categories collection (that would create a /services/automation page); it fills the
+        grid's free cell (column 5, row 2). */}
+    <div class="mega-cell" style="grid-column:5;grid-row:2;">
+      <a href="/automation/qbix" class="mega-cell-head">Automation</a>
+      <ul class="mega-cell-list">
+        <li><a href="/automation/qbix">QBIX</a></li>
+      </ul>
+      <a href="/automation/qbix" class="mega-cell-all">
+        Explore QBIX <i class="ti ti-arrow-right"></i>
+      </a>
+    </div>
   </div>
 </nav>

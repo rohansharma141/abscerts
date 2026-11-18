@@ -40,5 +40,15 @@ const cells = categories.map((cat) => {
         </div>
       )
     ))}
+    {/* Automation (Nov 2026): QBIX, ABS's own platform — same place as in the desktop mega-menu. */}
+    <div class="m-cat">
+      <button class="m-cat-toggle" type="button" aria-expanded="false">
+        Automation <i class="ti ti-chevron-down"></i>
+      </button>
+      <div class="m-cat-panel">
+        <a href="/automation/qbix" onclick="toggleMobileNav()">QBIX</a>
+        <a href="/automation/qbix" class="m-cat-all" onclick="toggleMobileNav()">Explore QBIX →</a>
+      </div>
+    </div>
   </div>
 </div>

@@ -12,9 +12,18 @@ interface Props {
   // Keep the page out of search results (robots noindex). Used by /case-studies until the
   // first real case study is published (content review, B1-23).
   noindex?: boolean;
+  // Meta keywords; the site-wide list unless a page sets its own (the QBIX page, Nov 2026).
+  keywords?: string;
 }
 
-const { title, description, canonical, ogImage, noindex = false } = Astro.props;
+const {
+  title,
+  description,
+  canonical,
+  ogImage,
+  noindex = false,
+  keywords = 'ISO certification, ISO 9001, ISO 27001, ISO 14001, ISO 45001, SOC 2, PCI DSS, CMMI, ISO consultant, certification consulting, audit readiness, UK, Europe, Middle East, USA',
+} = Astro.props;
 
 // The page's public path: pages build as files (about.html) that Cloudflare Pages serves at /about (N23), so drop
 // ".html" / "index.html" and any trailing slash. Used for the canonical URL and the active menu item.
@@ -23,7 +32,7 @@ const canonicalURL = canonical ?? new URL(path, Astro.site).href;
 const ogImageURL = new URL(ogImage ?? '/og-image.jpg', Astro.site).href;
 const year = new Date().getFullYear();
 
-// Footer "Services" column — every category, in the same order as the mega-menu.
+// Footer "Services" column — every category, in the same order as the mega-menu, then Automation (QBIX) as there.
 const footerCategories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
 
 // Social profiles (content review, §7 #8): the footer icons and the search-engine `sameAs` list show only profiles
@@ -104,7 +113,7 @@ const orgSchema = {
 <!-- ============ Primary SEO ============ -->
 <title>{title}</title>
 <meta name="description" content={description}>
-<meta name="keywords" content="ISO certification, ISO 9001, ISO 27001, ISO 14001, ISO 45001, SOC 2, PCI DSS, CMMI, ISO consultant, certification consulting, audit readiness, UK, Europe, Middle East, USA">
+<meta name="keywords" content={keywords}>
 <meta name="author" content="ABS Certifications & Advisory">
 <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}>
 <meta name="googlebot" content={noindex ? 'noindex, follow' : 'index, follow'}>
@@ -184,7 +193,7 @@ const orgSchema = {
     <nav class="nav" aria-label="Primary navigation">
       <a href="/" id="nav-home" class:list={[{ active: path === '/' }]}>Home</a>
       <a href="/about" class:list={[{ active: path === '/about' }]}>About</a>
-      <a href="/services" id="megaTrigger" class:list={["mega-trigger", { active: path.startsWith('/services') }]} aria-controls="megaMenu" aria-expanded="false">Services <i class="ti ti-chevron-down" style="font-size:14px"></i></a>
+      <a href="/services" id="megaTrigger" class:list={["mega-trigger", { active: path.startsWith('/services') || path.startsWith('/automation') }]} aria-controls="megaMenu" aria-expanded="false">Services <i class="ti ti-chevron-down" style="font-size:14px"></i></a>
       <a href="/#industries">Industries</a>
       <a href="/process" class:list={[{ active: path === '/process' }]}>Process</a>
       <a href="/blog" class:list={[{ active: path.startsWith('/blog') }]}>Blog</a>
@@ -239,6 +248,7 @@ const orgSchema = {
           {footerCategories.map((cat) => (
             <li><a href={`/services/${cat.id}`}>{cat.data.shortName}</a></li>
           ))}
+          <li><a href="/automation/qbix">Automation</a></li>
         </ul>
       </div>
       <div>
